@@ -1,0 +1,23 @@
+@use 'global' as g;
+@use 'veriables' as v;
+@use 'mixin' as m;
+
+
+header {
+    padding: 10px;
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .nav {
+            &-item {
+                padding: 0px 10px;
+            }
+            &-link {
+                font-size: 1.3rem;
+                color: #010101;
+            }
+        }
+    }
+}

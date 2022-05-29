@@ -1,0 +1,19 @@
+@use 'global' as g;
+@use 'veriables' as v;
+
+main.services {
+    padding-top: 80px;
+    .services-tab {
+        .nav-item {
+            .nav-link {
+                color: v.$black;
+                font-weight: bold;
+                cursor: pointer;
+                &.active {
+                    color: v.$orange;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<template>
+  <div class="global-hero-top">
+    <div class="row">
+      <div class="col-lg-2">
+        <h1>
+          {{ title }} <br /> <span>{{ miniTitle }}</span>
+        </h1>
+      </div>
+      <div class="col-lg-10 global-hero-img">
+        <img :src="img" alt="" />
+        <div class="global-hero-bottom-btn">{{ miniTitle }}</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "HeroImage",
+  props: {
+    img: String,
+    title: String,
+    miniTitle: String,
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

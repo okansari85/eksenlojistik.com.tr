@@ -6,7 +6,9 @@
       <Number/>
       <Solutions/>
       <Cost/>
+      <HeroSlide1/>
     </main>
+    <Footer/>
   </div>
 </template>
 
@@ -18,9 +20,11 @@ import Hero from "@/components/home/Hero";
 import Number from "@/components/home/Number";
 import Solutions from "@/components/home/Solutions";
 import Cost from "@/components/home/Cost";
+import HeroSlide1 from "@/components/home/HeroSlide1";
+import Footer from "@/layout/Footer";
 
 export default {
   name: 'Index',
-  components: {Hero, Solutions, Number, Cost, Nav }
+  components: {Footer, HeroSlide1, Hero, Solutions, Number, Cost, Nav }
 }
 </script>

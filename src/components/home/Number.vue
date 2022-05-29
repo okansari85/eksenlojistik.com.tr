@@ -54,23 +54,23 @@ export default {
         },
         {
           img1: require('@/assets/image/home/eksen_country2.png'),
-          "country": "Norveç"
+          country: "Norveç"
         },
         {
           img1: require('@/assets/image/home/eksen_country3.png'),
-          "country": "İngiltere"
+          country: "İngiltere"
         },
         {
           img1: require('@/assets/image/home/eksen_country4.png'),
-          "country": "Almanya"
+          country: "Almanya"
         },
         {
           img1: require('@/assets/image/home/eksen_country5.png'),
-          "country": "Almanya"
+          country: "Almanya"
         },
         {
           img1: require('@/assets/image/home/eksen_country6.png'),
-          "country": "Almanya"
+          country: "Almanya"
         }
 
       ]

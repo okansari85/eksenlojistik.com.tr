@@ -10,18 +10,16 @@
           </p>
         </div>
         <div class="col-lg-7 text-end">
-          <swiper
-              :modules="modules"
-              :slides-per-view="1"
-              :space-between="50"
-              navigation
-          >
+          <swiper :options="swiperOption">
+            <swiper-slide>
+                <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
+            </swiper-slide>
             <swiper-slide>
                 <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
             </swiper-slide>
             <div class="way-slide-btn">
-              <span class="bi bi-arrow-left fs-3 way-slide-prev"></span>
-              <span class="bi bi-arrow-right fs-3 way-slide-next"></span>
+              <span ref="prevEl" class="bi bi-arrow-left fs-3 way-slide-prev"></span>
+              <span ref="nextEl" class="bi bi-arrow-right fs-3 way-slide-next"></span>
             </div>
           </swiper>
         </div>
@@ -35,22 +33,26 @@
 <script>
 
 
-import { useSwiper } from 'swiper/vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation } from 'swiper';
-
 
 
 export default {
   name: "HeroSlide1",
   components: {Swiper, SwiperSlide},
-  setup() {
-    const swiper = useSwiper();
+  data() {
     return {
-      swiper,
-      modules: [Navigation],
+      swiperOption: {
+        spaceBetween: 0,
+        slidesPerView: 2,
+        navigation: {
+          nextEl: '.way-slide-next',
+          prevEl: '.way-slide-prev',
+        },
+        loop:true,
+      }
     }
-  },
+  }
+
 }
 </script>
 

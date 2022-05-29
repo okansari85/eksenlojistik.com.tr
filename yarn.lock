@@ -2114,6 +2114,11 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
+"bootstrap-icons@^1.8.3":
+  "integrity" "sha512-s5kmttnbq4BXbx3Bwnj39y+t7Vc3blTtyD77W3aYQ1LlNoS3lNbbGvSYhIbg26Im8KmjScyFpHEevlPOBcIDdA=="
+  "resolved" "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.8.3.tgz"
+  "version" "1.8.3"
+
 "bootstrap-vue-3@^0.1.13":
   "integrity" "sha512-P3X3GvGaIzHyA14mC/jUWEGLU6XUK4b+JF+rdlWNIvihl9adqGwJSUw4LfajpvTjiqKrPi9x1ngL3UUz6jQitQ=="
   "resolved" "https://registry.npmjs.org/bootstrap-vue-3/-/bootstrap-vue-3-0.1.13.tgz"

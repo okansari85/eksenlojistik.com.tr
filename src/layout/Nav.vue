@@ -16,10 +16,10 @@
           <a class="nav-link" href="/services">Servisler</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Hakkımızda</a>
+          <a class="nav-link" href="/about">Hakkımızda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">İletişim</a>
+          <a class="nav-link" href="/contact">İletişim</a>
         </li>
 
       </ul>

@@ -1,9 +1,13 @@
 @use 'global' as g;
 @use 'veriables' as v;
 
-main.services {
+main.global-sub-page {
     padding-top: 80px;
-    .services-tab {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+    .sub-tab {
         .nav-item {
             .nav-link {
                 color: v.$black;
@@ -13,6 +17,17 @@ main.services {
                     color: v.$orange;
                     background-color: transparent;
                 }
+            }
+        }
+    }
+    .about-us-table {
+
+        td {
+            padding: 25px 0px;
+            font-weight: bold;
+            &:nth-child(odd) {
+                color: #3f5497;
+                font-size: 1.1rem;
             }
         }
     }

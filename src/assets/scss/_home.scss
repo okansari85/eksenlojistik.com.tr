@@ -54,23 +54,6 @@ section.solutions {
     
 }
 
-
-section.cost {
-    select, input {
-        padding: 20px 10px;
-        border: 0;
-        border-bottom: 2px solid #000;
-        border-radius: 0;
-        &:focus {
-            box-shadow: none;
-        }
-        &::placeholder {
-            text-transform: uppercase;
-            font-size: 13px;
-        }
-    }
-}
-
 section.way-slide {
     .way-slide-btn {
         width: 120px;

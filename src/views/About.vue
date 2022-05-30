@@ -58,18 +58,20 @@ import Footer from '@/layout/Footer';
 import Title from "@/components/global/Title";
 import AboutContent from "@/data/about-us/about";
 import AboutMission from "@/data/about-us/about-mission";
+import AboutTeam from "@/data/about-us/about-team";
+import AboutSustainability from "@/data/about-us/about-sustainability";
 
 
 export default {
   name: 'About',
-  components: {HeroImage, Title, Nav, Footer, AboutContent, AboutMission},
+  components: {HeroImage, Title, Nav, Footer, AboutContent, AboutMission, AboutTeam, AboutSustainability},
   data() {
     return {
       navsItem: [
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Eksen Lojistik",
-          heroImg: require('@/assets/image/services/depo-hero.png'),
+          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
           title: "Hakkımızda",
           content: "AboutContent"
 
@@ -77,15 +79,15 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Sürdürülebilirlik",
-          heroImg: require('@/assets/image/services/depo-hero.png'),
+          heroImg: require('@/assets/image/services/about-sub-page-hero2.png'),
           title: "Sürdürülebilirlik",
-          content: "AboutContent"
+          content: "AboutSustainability"
 
         },
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Misyon & Vizyon",
-          heroImg: require('@/assets/image/services/depo-hero.png'),
+          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
           title: "Misyon & Vizyon",
           content: 'AboutMission'
 
@@ -93,14 +95,15 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Takım Üyeleri",
-          heroImg: require('@/assets/image/services/depo-hero.png'),
+          heroImg: require('@/assets/image/services/about-sub-page-hero4.png'),
           title: "Takım Üyeleri",
+          content: 'AboutTeam'
 
         },
       ],
       heroTitle: "Hakkımızda",
       heroMiniTitle: "Eksen Lojistik",
-      heroImg: require('@/assets/image/services/depo-hero.png'),
+      heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
     }
   },
   methods: {

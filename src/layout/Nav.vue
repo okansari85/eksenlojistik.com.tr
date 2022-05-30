@@ -19,6 +19,12 @@
           <a class="nav-link" href="/about">Hakkımızda</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/news">Haberler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ik">IK</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/contact">İletişim</a>
         </li>
 

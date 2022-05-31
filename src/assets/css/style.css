@@ -430,4 +430,26 @@ main.global-sub-page .about-us-table td:nth-child(odd) {
   font-size: 2.5rem;
 }
 
+.news-item {
+  padding: 25px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  max-width: 400px;
+  margin: 15px 0;
+}
+.news-item .news-top img {
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.news-item .news-tag {
+  display: flex;
+  align-items: center;
+}
+.news-item .news-tag a {
+  padding: 5px;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -62,6 +62,7 @@ import AboutTeam from "@/data/about-us/about-team";
 import AboutSustainability from "@/data/about-us/about-sustainability";
 
 
+
 export default {
   name: 'About',
   components: {HeroImage, Title, Nav, Footer, AboutContent, AboutMission, AboutTeam, AboutSustainability},

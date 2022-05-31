@@ -59,7 +59,7 @@ export default {
         {
           heroTitle: "test1",
           heroMiniTitle: "Home Tab",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Gümrükleme",
           contentTitle: "Test Content Title1",
           contentText: "Test Content Text1",
@@ -68,7 +68,7 @@ export default {
         {
           heroTitle: "test2",
           heroMiniTitle: "Home Tab2",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Kara Taşımacılığı",
           contentTitle: "Test Content Title2",
           contentText: "Test Content Text2",
@@ -78,7 +78,7 @@ export default {
         {
           heroTitle: "test3",
           heroMiniTitle: "Home Tab3",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Parsiyel & LFT",
           contentTitle: "Test Content Title",
           contentText: "Test Content Text",
@@ -88,7 +88,7 @@ export default {
         {
           heroTitle: "test4",
           heroMiniTitle: "Home Tab4",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Depo Yönetimi",
           contentTitle: "Test Content Title",
           contentText: "Test Content Text",
@@ -97,7 +97,7 @@ export default {
         {
           heroTitle: "test5",
           heroMiniTitle: "Home Tab",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Ekspres & Minivan",
           contentTitle: "Test Content Title",
           contentText: "Test Content Text",
@@ -106,7 +106,7 @@ export default {
         {
           heroTitle: "test6",
           heroMiniTitle: "Home Tab",
-          heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo-hero.png'),
           title: "Proje Taşımacılığı",
           contentTitle: "Test Content Title",
           contentText: "Test Content Text",
@@ -115,7 +115,7 @@ export default {
       ],
       heroTitle: "test1",
       heroMiniTitle: "Home Tab",
-      heroImg: require('../../../../vue-first-app/src/assets/image/services/depo-hero.png'),
+      heroImg: require('../assets/image/services/depo-hero.png'),
     }
   },
   methods: {

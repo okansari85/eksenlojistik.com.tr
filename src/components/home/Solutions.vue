@@ -1,4 +1,4 @@
-<template>
+  <template>
 <section class="solutions">
   <div class="container">
     <div class="row justify-content-between align-items-center">

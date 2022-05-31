@@ -1,15 +1,17 @@
 <template>
-  <div>
     <Nav/>
+
     <main>
       <Hero/>
       <Number/>
       <Solutions/>
       <Cost/>
       <HeroSlide1/>
+      <Safely/>
+      <Team/>
+      <Country/>
     </main>
     <Footer/>
-  </div>
 </template>
 
 <script>
@@ -21,10 +23,15 @@ import Number from "@/components/home/Number";
 import Solutions from "@/components/home/Solutions";
 import Cost from "@/components/home/Cost";
 import HeroSlide1 from "@/components/home/HeroSlide1";
+import Safely from "@/components/home/Safely";
+import Team from "@/components/home/Team";
+import Country from "@/components/home/Country";
 import Footer from "@/layout/Footer";
+
+
 
 export default {
   name: 'Index',
-  components: {Footer, HeroSlide1, Hero, Solutions, Number, Cost, Nav }
+  components: {Nav, Footer, HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
 }
 </script>

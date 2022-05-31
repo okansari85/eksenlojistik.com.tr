@@ -15,7 +15,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import '@/assets/css/style.css'
 
 const app = createApp(App)

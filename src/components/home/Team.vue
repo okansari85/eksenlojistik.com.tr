@@ -1,0 +1,36 @@
+<template>
+
+  <section class="team">
+    <div class="container-fluid">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-4 paragraph-margin">
+          <Title
+              title='EKSEN, dünya çapında faaliyet gösteren lojistik endüstrisinde özel bir konuma sahiptir.'
+              subtitle='biz bir aileyiz '
+              paragraph='Şirket, profesyonel kurumsal yapılarını sürdürürken, çalışanlarına da herkesin takdir edildiği, insan dokunuşu ile hoşgörülü bir çalışma ortamı sunmaktadır.
+                    EKSEN LOJİSTİK’deki kariyer olanakları hakkında daha fazlasını okuyun.'
+          ></Title>
+          <a href="#!" className="btn btn-main mt-3">kariyer</a>
+        </div>
+        <div class="col-lg-7 text-end">
+          <img src="../../assets/image/home/eksen_team.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</template>
+
+<script>
+
+import Title from '@/components/global/Title'
+
+export default {
+  name: "Team",
+  components: { Title }
+}
+</script>
+
+<style scoped>
+
+</style>

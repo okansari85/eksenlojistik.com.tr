@@ -10,7 +10,13 @@
           </p>
         </div>
         <div class="col-lg-7 text-end">
-          <swiper :options="swiperOption">
+          <swiper
+              :modules="modules"
+              :slides-per-view="1"
+              :space-between="50"
+              @swiper="onSwiper"
+              @slideChange="onSlideChange"
+          >
             <swiper-slide>
                 <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
             </swiper-slide>
@@ -18,12 +24,8 @@
                 <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
             </swiper-slide>
             <div class="way-slide-btn">
-              <div slot="button-prev">
-                <span class="bi bi-arrow-left fs-3 way-slide-prev" @click="$refs.swiper.swiperInstance.slidePrev()"></span>
-              </div>
-              <div slot="button-next">
-                <span class="bi bi-arrow-right fs-3 way-slide-next" @click="$refs.swiper.swiperInstance.slideNext()"></span>
-              </div>
+                <span class="bi bi-arrow-left fs-3 way-slide-prev" @click="swiper.slideNext()"></span>
+                <span class="bi bi-arrow-right fs-3 way-slide-next" @click="swiper.slidePrev()"></span>
 
             </div>
           </swiper>
@@ -38,23 +40,28 @@
 <script>
 
 
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation} from 'swiper';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
+
 
 
 export default {
   name: "HeroSlide1",
   components: {Swiper, SwiperSlide},
-  data()  {
+  setup() {
+    const swiper = useSwiper();
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
     return {
-      swiperOption: {
-        spaceBetween: 20,
-        loop:true,
-        navigation: {
-          nextEl: ".way-slide-next",
-          prevEl: ".way-slide-prev"
-        }
-      }
-    }
+      swiper,
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation],
+    };
   },
 }
 </script>

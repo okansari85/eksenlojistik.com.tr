@@ -1,6 +1,5 @@
 <template>
-    <Nav/>
-
+  <div>
     <main>
       <Hero/>
       <Number/>
@@ -11,13 +10,14 @@
       <Team/>
       <Country/>
     </main>
-    <Footer/>
+  </div>
+
 </template>
 
 <script>
 // @ is an alias to /src
 
-import Nav from '@/layout/Nav.vue'
+import Nav from '@/layout/Header.vue'
 import Hero from "@/components/home/Hero";
 import Number from "@/components/home/Number";
 import Solutions from "@/components/home/Solutions";
@@ -32,6 +32,6 @@ import Footer from "@/layout/Footer";
 
 export default {
   name: 'Index',
-  components: {Nav, Footer, HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
+  components: {HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
 }
 </script>

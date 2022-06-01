@@ -10,12 +10,13 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Index
+    component: Index,
+
   },
   {
     path: '/services',
     name: 'services',
-    component: Services
+    component: Services,
   },
   {
     path: '/about',
@@ -47,3 +48,5 @@ const router = createRouter({
 })
 
 export default router
+
+

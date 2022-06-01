@@ -10,16 +10,17 @@
         </div>
       </div>
       <div class="numbers-map">
-        <img src="../../assets/image/home/maps_2.png">
+        <img  :src="ImgMaps" >
       </div>
       <div class="numbers-slide py-5">
         <swiper
             :modules="modules"
             :slides-per-view="6"
             :space-between="50"
+            :loop="true"
         >
-          <swiper-slide v-for="(slide, idx) in slides" :key="idx">
-            <div class="swiper-slide-inner position-relative">
+          <swiper-slide v-for="(slide, idx) in slides" :key="idx" @click="ChangerMap(idx)">
+            <div class="swiper-slide-inner position-relative" style="cursor: pointer">
               <img :src=slide.img1 alt=""/>
               <span class='position-absolute bottom-0 start-50 translate-middle text-white bg-black bg-opacity-50 w-100 py-3 fw-bold'>
                 <span class="fs-3 text-uppercase">{{slide.country}}</span>
@@ -50,35 +51,49 @@ export default {
       slides: [
         {
           img1: require('@/assets/image/home/eksen_country1.png'),
-          country: "Almanya"
+          country: "Almanya",
+          maps: require('@/assets/image/home/maps_2.png')
         },
         {
           img1: require('@/assets/image/home/eksen_country2.png'),
-          country: "Norveç"
+          country: "Norveç",
+          maps: require('@/assets/image/home/romania.png')
         },
         {
           img1: require('@/assets/image/home/eksen_country3.png'),
-          country: "İngiltere"
+          country: "İngiltere",
+          maps: require('@/assets/image/home/maps_2.png')
         },
         {
           img1: require('@/assets/image/home/eksen_country4.png'),
-          country: "Almanya"
+          country: "Almanya",
+          maps: require('@/assets/image/home/maps_2.png')
         },
         {
           img1: require('@/assets/image/home/eksen_country5.png'),
-          country: "Almanya"
+          country: "Almanya",
+          maps: require('@/assets/image/home/maps_2.png')
         },
         {
           img1: require('@/assets/image/home/eksen_country6.png'),
-          country: "Almanya"
+          country: "Almanya",
+          maps: require('@/assets/image/home/maps_2.png')
         }
 
-      ]
+      ],
+      ImgMaps:require('@/assets/image/home/maps_2.png'),
     }
   },
   methods: {
     debug(event) {
       console.log(event);
+    },
+    ChangerMap(index) {
+      this.slides.forEach((value, key) => {
+        if(key == index ) {
+          this.ImgMaps = value.maps
+        }
+      });
     }
   }
 }

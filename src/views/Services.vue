@@ -1,15 +1,15 @@
 <template>
-  <Header/>
-  <main class="global-sub-page">
-    <div class="container pt-5 mt-5">
+  <div>
+    <main class="global-sub-page">
+      <div class="container pt-5 mt-5">
 
-      <HeroImage
-      :title="heroTitle"
-      :miniTitle="heroMiniTitle"
-      :img="heroImg"
-      />
+        <HeroImage
+            :title="heroTitle"
+            :miniTitle="heroMiniTitle"
+            :img="heroImg"
+        />
 
-      <div class="py-5 my-5 d-flex justify-content-around">
+        <div class="py-5 my-5 d-flex justify-content-around">
 
           <b-tabs pills class="sub-tab">
 
@@ -23,13 +23,14 @@
             </b-tab>
           </b-tabs>
 
+        </div>
+
+
       </div>
+    </main>
 
 
-    </div>
-  </main>
-
-  <Footer/>
+  </div>
 
 
 </template>
@@ -37,9 +38,7 @@
 <script>
 
 import Title from "@/components/global/Title";
-import Header from '@/layout/Nav';
 import HeroImage from "@/components/global/HeroImage";
-import Footer from '@/layout/Footer';
 import ServicesCustom from "@/data/services/Services-Custom";
 import ServicesDomestic from "@/data/services/Services-Domestic";
 import ServicesLFT from "@/data/services/Services-LFT";
@@ -50,7 +49,7 @@ import ServicesProject from "@/data/services/Services-Project";
 
 export default {
   name: 'Services',
-  components: {HeroImage, Title, Header, Footer, ServicesCustom, ServicesDomestic, ServicesLFT, ServicesManagement, ServicesEkspress, ServicesProject},
+  components: {HeroImage, Title, ServicesCustom, ServicesDomestic, ServicesLFT, ServicesManagement, ServicesEkspress, ServicesProject},
   data() {
     return {
       navsItem: [

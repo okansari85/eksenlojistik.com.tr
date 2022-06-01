@@ -17,7 +17,6 @@
 <script>
 // @ is an alias to /src
 
-import Nav from '@/layout/Header.vue'
 import Hero from "@/components/home/Hero";
 import Number from "@/components/home/Number";
 import Solutions from "@/components/home/Solutions";
@@ -26,7 +25,6 @@ import HeroSlide1 from "@/components/home/HeroSlide1";
 import Safely from "@/components/home/Safely";
 import Team from "@/components/home/Team";
 import Country from "@/components/home/Country";
-import Footer from "@/layout/Footer";
 
 
 

@@ -9,7 +9,7 @@
             :img="heroImg"
         />
 
-        <div class="py-5 my-5 d-flex justify-content-around">
+        <div class="py-5 my-5 d-md-flex justify-content-around">
 
           <b-tabs pills class="sub-tab">
 

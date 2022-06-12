@@ -14,6 +14,7 @@
               :modules="modules"
               :slides-per-view="1"
               :space-between="50"
+
               @swiper="onSwiper"
               @slideChange="onSlideChange"
           >
@@ -23,11 +24,7 @@
             <swiper-slide>
                 <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
             </swiper-slide>
-            <div class="way-slide-btn">
-                <span class="bi bi-arrow-left fs-3 way-slide-prev" @click="swiper.slideNext()"></span>
-                <span class="bi bi-arrow-right fs-3 way-slide-next" @click="swiper.slidePrev()"></span>
-
-            </div>
+            <slider-navigation/>
           </swiper>
         </div>
       </div>
@@ -38,18 +35,14 @@
 </template>
 
 <script>
-
-
-import { Navigation} from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
-
-
+import {Swiper, SwiperSlide } from 'swiper/vue'
+import {Navigation} from 'swiper'
+import SliderNavigation from "@/components/home/SliderNavigation";
 
 export default {
   name: "HeroSlide1",
-  components: {Swiper, SwiperSlide},
+  components: {SliderNavigation, Swiper, SwiperSlide},
   setup() {
-    const swiper = useSwiper();
     const onSwiper = (swiper) => {
       console.log(swiper);
     };
@@ -57,12 +50,12 @@ export default {
       console.log('slide change');
     };
     return {
-      swiper,
       onSwiper,
       onSlideChange,
       modules: [Navigation],
     };
   },
+
 }
 </script>
 

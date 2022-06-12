@@ -2,8 +2,8 @@
 
   <section class="team">
     <div class="container-fluid">
-      <div class="row align-items-center py-5">
-        <div class="col-lg-4 paragraph-margin">
+      <div class="row align-items-center py-5 justify-content-between">
+        <div class="col-xl-5  paragraph-margin">
           <Title
               title='EKSEN, dünya çapında faaliyet gösteren lojistik endüstrisinde özel bir konuma sahiptir.'
               subtitle='biz bir aileyiz '
@@ -12,7 +12,7 @@
           ></Title>
           <a href="#!" className="btn btn-main mt-3">kariyer</a>
         </div>
-        <div class="col-lg-7 text-end">
+        <div class="col-xl-7 text-end">
           <img src="../../assets/image/home/eksen_team.png" alt="">
         </div>
       </div>

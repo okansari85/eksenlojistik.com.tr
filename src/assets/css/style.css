@@ -136,10 +136,6 @@ h1 {
   border: 1px solid #202020;
 }
 
-.paragraph-margin {
-  margin-left: 150px;
-}
-
 .global-hero-top {
   position: relative;
 }
@@ -148,18 +144,15 @@ h1 {
 }
 .global-hero-top::after {
   position: absolute;
-  padding: 20px;
-  background-color: #ffa10e;
-  top: -15px;
   right: 0px;
   content: "";
-  width: 50%;
-  height: 106%;
+  background-color: #ffa10e;
+  padding: 20px;
+  height: 100%;
   z-index: -1;
 }
 .global-hero-top h1 {
   font-size: 3.3rem;
-  writing-mode: vertical-rl;
   font-weight: bold;
 }
 .global-hero-top h1 span {
@@ -193,16 +186,32 @@ select::placeholder, input::placeholder, textarea::placeholder {
   font-size: 13px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
+@media (min-width: 992px) {
+  .paragraph-margin {
+    padding-left: 150px;
+  }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+  .global-hero-top h1 {
+    writing-mode: vertical-rl;
+  }
+  .global-hero-top::after {
+    top: -15px;
+    height: 106%;
+    width: 50%;
+  }
 }
-
+@media (max-width: 991.98px) {
+  .global-hero-top h1 {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+  }
+  .global-hero-top::after {
+    height: 69%;
+    top: 34%;
+    width: 100%;
+    right: -5px;
+  }
+}
 .fs-10 {
   font-size: 10px;
 }
@@ -264,6 +273,114 @@ header nav .nav-link {
   color: #010101;
 }
 
+@media (max-width: 991px) {
+  header nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  header nav ul li {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  header nav ul li a {
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  header nav ul li a:hover {
+    color: #ffa10e;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+  }
+  .toggle-btn .bar {
+    width: 30px;
+    height: 2px;
+    margin: 7px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  }
+  .toggle-btn .bar:nth-child(2) {
+    width: 20px;
+  }
+
+  #toggle:checked ~ nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  #toggle:checked ~ nav ul {
+    top: 200px;
+  }
+  #toggle:checked ~ nav ul li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  #toggle:checked ~ nav ul li:nth-child(1) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(2) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(3) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(4) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(5) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.5s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(6) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.6s;
+  }
+  #toggle:checked ~ nav ul li:nth-child(7) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.7s;
+  }
+  #toggle:checked + label.toggle-btn .bar {
+    background-color: red;
+  }
+  #toggle:checked + label.toggle-btn .bar:nth-child(2) {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  #toggle:checked + label.toggle-btn .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #toggle:checked + label.toggle-btn .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 .hero {
   height: 100vh;
   width: 100%;
@@ -314,6 +431,7 @@ section.solutions .solutions-icon-item span {
 }
 
 section.way-slide .way-slide-btn {
+  cursor: pointer;
   width: 120px;
   z-index: 2;
   display: flex;

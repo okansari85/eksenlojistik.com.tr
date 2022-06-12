@@ -153,11 +153,6 @@ h1 {
     }
 }
 
-.paragraph-margin {
-    margin-left: 150px;
-}
-
-
 
 .global-hero-top {
     position: relative;
@@ -166,19 +161,16 @@ h1 {
     }
     &::after {
         position: absolute;
-        padding: 20px;
-        background-color: v.$orange;
-        top: -15px;
         right: 0px;
         content: '';
-        width: 50%;
-        height: 106%;
+        background-color: v.$orange;
+        padding: 20px;
+        height: 100%;
         z-index: -1;
-        
     }
+
     h1 {
         font-size: 3.3rem;
-        writing-mode: vertical-rl;
         font-weight: bold;
         span {
             color: v.$orange;
@@ -214,15 +206,34 @@ select, input, textarea {
     }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s ease;
+@media(min-width:992px) {
+    .paragraph-margin {
+        padding-left: 150px;
+    }
+    .global-hero-top {
+        h1 {
+            writing-mode: vertical-rl;
+
+        }
+        &::after {
+            top: -15px;
+            height: 106%;
+            width: 50%;
+        }
+    }
 }
 
-
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
+@media(max-width:991.98px) {
+    .global-hero-top {
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.8rem;
+        }
+        &::after {
+            height: 69%;
+            top: 34%;
+            width: 100%;
+            right: -5px;
+        }
+    }
 }
-
-

@@ -1,17 +1,18 @@
 <template>
 <section class="numbers">
   <div class="container-fluid text-center py-5 gx-0 overflow-hidden">
-    <div class="row flex-column py-5">
-      <div class="numbers-top">
-        <div class="title text-uppercase display-4 fw-bold pb-3">63 ülke 52.311km <br /> yol yapılarak teslimat</div>
+    <div class="row justify-content-between py-5 align-items-center">
+      <div class="numbers-top text-lg-start col-lg-4 ps-5">
+        <div class="title text-uppercase display-4 fw-bold pb-3">63 ülke 52.311km yol yapılarak teslimat</div>
         <p>Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  <br /> sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
         <div class="py-3">
           <a href="" class="btn btn-outline-dark">avrupaya ulaştırıyoruz</a>
         </div>
       </div>
-      <div class="numbers-map">
+      <div class="numbers-map col-lg-8">
         <img  :src="ImgMaps" >
       </div>
+    </div>
       <div class="numbers-slide py-5">
         <swiper
             :modules="modules"
@@ -34,7 +35,6 @@
 
       </div>
     </div>
-  </div>
 </section>
 </template>
 

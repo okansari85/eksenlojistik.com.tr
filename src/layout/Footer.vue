@@ -1,6 +1,6 @@
 <template>
-  <footer class='px-md-5'>
-    <div class="container-fluid px-5 py-3">
+  <footer class='px-lg-5'>
+    <div class="container-fluid px-3 px-lg-5 py-3">
       <div class="row justify-content-between align-items-center pb-4">
         <div class="col-lg-3">
           <img src="../assets/image/global/eksen_logo.png" alt="" />
@@ -18,7 +18,7 @@
             verimli çözümler üretiyoruz.
           </p>
         </div>
-        <div class="col-6 col-lg-2">
+        <div class="col-sm-6 col-lg-2">
           <ul class="list-unstyled fs-08">
             <li>Büyükdere Cad. No.62</li>
             <li>Kat.5 Fulya Mah.</li>
@@ -26,7 +26,7 @@
             <li><strong>İstanbul</strong></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3 pt-4 pt-sm-0">
           <ul class="list-unstyled">
             <li class="fs-08"><a href="tel:092122670721"><i class="bi bi-telephone-fill pe-2"></i> +90 212 267 07 21</a></li>
             <li class="fs-08"><a href="mailto:info@eksenlojistik.com.tr"><i class="bi bi-envelope-fill pe-2"></i> info@eksenlojistik.com.tr</a></li>

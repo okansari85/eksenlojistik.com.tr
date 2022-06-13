@@ -1,9 +1,9 @@
 <template>
 
-  <section class='cost'>
-    <div class="container py-5">
-      <div class="row justify-content-between py-5">
-        <div class="col-lg-5">
+  <section class='cost px-3 px-lg-5'>
+    <div class="container-fluid p-lg-5">
+      <div class="row justify-content-between align-items-center py-5">
+        <div class="col-lg-4 order-2 order-lg-1">
           <div class="section-title">
             <span class="text-uppercase text-black-50 fs-4">size özel</span>
             <h1 class='display-4 text-uppercase fw-bold py-4'>maaliyet hesapla</h1>
@@ -44,8 +44,8 @@
           </form>
           <a href="#!" class='btn btn-main mt-5'>hesapla</a>
         </div>
-        <div class="col-lg-6">
-          <img src="../../assets/image/home/eksen_cost_map.png" alt="" />
+        <div class="col-lg-7 order-1 order-lg-2">
+          <img src="../../assets/image/home/eksen_cost_maps.png" alt="" />
         </div>
       </div>
     </div>

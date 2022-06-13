@@ -1,15 +1,15 @@
 <template>
 
-  <section class="way-slide">
+  <section class="way-slide px-3 px-lg-0">
     <div class="container-fluid gx-0 overflow-hidden py-5">
       <div class="row justify-content-between align-items-center">
-        <div class="col-lg-4 paragraph-margin">
-          <h1 class="display-3 fw-bold text-uppercase">daha iyi bir yol bulmak için kararlıyız</h1>
+        <div class="col-lg-4 paragraph-margin order-2 order-lg-1">
+          <h1 class="display-4 fw-bold text-uppercase">daha iyi bir yol bulmak için kararlıyız</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab laborum fugit totam ipsa nostrum, mollitia eos ex consequuntur accusamus dignissimos magnam impedit architecto modi nobis, sit nisi optio odio dolores.
           </p>
         </div>
-        <div class="col-lg-7 text-end">
+        <div class="col-lg-7 text-end order-1 order-lg-2">
           <swiper
               :modules="modules"
               :slides-per-view="1"
@@ -19,10 +19,10 @@
               @slideChange="onSlideChange"
           >
             <swiper-slide>
-                <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
+                <img src="../../assets/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <swiper-slide>
-                <img src="../../assets/image/home/eksen_way_slide1.png" alt=""/>
+                <img src="../../assets/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <slider-navigation/>
           </swiper>

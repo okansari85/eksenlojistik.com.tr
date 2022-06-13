@@ -186,11 +186,12 @@ select::placeholder, input::placeholder, textarea::placeholder {
   font-size: 13px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .paragraph-margin {
     padding-left: 150px;
   }
-
+}
+@media (min-width: 992px) {
   .global-hero-top h1 {
     writing-mode: vertical-rl;
   }
@@ -203,13 +204,17 @@ select::placeholder, input::placeholder, textarea::placeholder {
 @media (max-width: 991.98px) {
   .global-hero-top h1 {
     margin-bottom: 30px;
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .global-hero-top::after {
-    height: 69%;
-    top: 34%;
-    width: 100%;
-    right: -5px;
+    position: relative;
+    background-color: transparent;
+  }
+}
+@media (max-width: 576px) {
+  .btn-main {
+    width: 160px;
+    font-size: 13px;
   }
 }
 .fs-10 {
@@ -381,14 +386,19 @@ header nav .nav-link {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-.hero {
-  height: 100vh;
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.025);
+  transition: all 0.3s ease;
+  height: 100%;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  z-index: 2;
 }
 .hero-text h1 {
-  font-size: 6rem;
+  text-shadow: 2px 2px #fff;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -401,14 +411,6 @@ header nav .nav-link {
 }
 .hero-text h1 span:nth-child(2) {
   font-size: 4rem;
-}
-
-.hero-wrapper {
-  height: 100vh;
-  overflow: hidden;
-  padding-bottom: 60%;
-  background-image: url("../image/home/eksen_hero2.jpg");
-  background-position: top center;
 }
 
 section.numbers .swiper-slide-inner img {
@@ -430,7 +432,7 @@ section.solutions .solutions-icon-item span {
   padding: 15px 0;
 }
 
-section.way-slide .way-slide-btn {
+.way-slide-btn {
   cursor: pointer;
   width: 120px;
   z-index: 2;
@@ -438,11 +440,16 @@ section.way-slide .way-slide-btn {
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 40px;
-  position: absolute;
-  top: 50%;
-  margin-left: 50px;
+  margin: 30px auto;
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@media (min-width: 992px) {
+  .way-slide-btn {
+    position: absolute;
+    margin-left: 50px;
+    top: 50%;
+  }
 }
 
 section.news .nav-link {
@@ -495,7 +502,7 @@ section.country .country-item {
 }
 section.country .country-item-img {
   transition: all 0.3s ease;
-  height: 700px;
+  max-height: 700px;
   position: relative;
 }
 section.country .country-item-absolute {
@@ -512,7 +519,7 @@ section.country .country-item:hover .overlay, section.country .country-item.acti
 }
 section.country .country-item-img2 {
   width: 600px;
-  height: 250px;
+  max-height: 250px;
   object-fit: cover;
 }
 
@@ -528,6 +535,16 @@ section.country .country-item-img2 {
   z-index: 2;
 }
 
+@media (min-width: 991px) {
+  .swiper-img {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+@media (min-width: 768px) {
+  .modal-video-inner video {
+    height: 80vh;
+  }
+}
 main.global-sub-page {
   padding-top: 80px;
 }

@@ -1,17 +1,17 @@
 <template>
 
   <div>
-    <main class="global-sub-page mt-5">
+    <main class="global-sub-page mt-md-5">
       <section>
         <div class="container">
 
-          <div class="py-5 my-5">
+          <div class="py-5 my-md-5">
 
             <b-tabs pills class="sub-tab justify-content-center ">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"
               >
-                <b-card-text class="py-5 px-3">
+                <b-card-text class="py-md-5 px-3">
                   <component class="pt-5" :is="navs.content" :navs="navs"></component>
                 </b-card-text>
               </b-tab>

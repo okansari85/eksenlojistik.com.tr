@@ -1,35 +1,36 @@
-  <template>
-<section class="solutions">
+<template>
+
+  <section class="solutions px-3 px-lg-0">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5">
         <img src="../../assets/image/home/eksen_video_poster.png" alt="" />
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 py-3 py-lg-0">
         <Title
             title='büyük sevkiyatlar için premium çözümler'
             subtitle='size özel'
             paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
-        <a href='#!' class="btn btn-main">iletişime geç</a>
-        <a href='#!' class="btn btn-main active ms-2">daha fazla</a>
+        <a href='#!' class="btn btn-main my-2 my-md-0">iletişime geç</a>
+        <a href='#!' class="btn btn-main active ms-2 my-2 my-md-0">daha fazla</a>
       </div>
     </div>
     <div class="solutions-icon py-5">
-      <div class="row pt-5">
-        <div class="col-md-3 solutions-icon-item">
+      <div class="row pt-md-5">
+        <div class="col-6 col-md-3 solutions-icon-item">
           <img src="../../assets/image/global/icon/icon1.png" alt="" />
           <span> Tır <br /> Filosu </span>
         </div>
-        <div class="col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon1.png" alt="" />
+        <div class="col-6 col-md-3 solutions-icon-item">
+          <img src="../../assets/image/global/icon/icon2.png" alt="" />
           <span> Güvenlik <br /> Sözleşmesi </span>
         </div>
-        <div class="col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon1.png" alt="" />
+        <div class="col-6 col-md-3 solutions-icon-item">
+          <img src="../../assets/image/global/icon/icon3.png" alt="" />
           <span> Anında <br /> Çözümler </span>
         </div>
-        <div class="col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon1.png" alt="" />
+        <div class="col-6 col-md-3 solutions-icon-item">
+          <img src="../../assets/image/global/icon/icon4.png" alt="" />
           <span> Zamanında <br /> Teslimat </span>
         </div>
       </div>

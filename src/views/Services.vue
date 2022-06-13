@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="global-sub-page">
-      <div class="container pt-5 mt-5">
+      <div class="container pt-5 mt-md-5">
 
         <HeroImage
             :title="heroTitle"
@@ -9,7 +9,7 @@
             :img="heroImg"
         />
 
-        <div class="py-5 my-5 d-md-flex justify-content-around">
+        <div class="py-5 my-md-5 d-md-flex justify-content-around">
             <b-tabs pills class="sub-tab">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"

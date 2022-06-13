@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+</head>
+<body>
 
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
-    <script>
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            $(".hero-wrapper").css({
-                backgroundSize: (100 + scroll/5)  + "%",
-                top: -(scroll/10)  + "%",
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
 
-                //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
-                //"-webkit-filter": "blur(" + (scroll/200) + "px)",
-                //filter: "blur(" + (scroll/200) + "px)"
-            });
-        });
 
-    </script>
-  </body>
+
+
+
+
+
+</script>
+</body>
 </html>

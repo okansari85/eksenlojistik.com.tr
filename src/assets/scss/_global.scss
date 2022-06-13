@@ -1,5 +1,6 @@
 @use 'veriables' as v;
 
+
 * {
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;
@@ -20,11 +21,6 @@
         border-radius: 10px;
     }    
   
-}
-body {
-    // @media(min-width:768px) {
-    //     cursor: none!important;
-    // }
 }
 
 a {
@@ -63,9 +59,6 @@ img {
     background: v.$darkPurple;
 }
 
-// .pointer {
-//     cursor: pointer;
-// }
 
 .fw-500{
     font-weight: 500;
@@ -206,10 +199,13 @@ select, input, textarea {
     }
 }
 
-@media(min-width:992px) {
+@media(min-width:1200px) {
     .paragraph-margin {
         padding-left: 150px;
     }
+}
+
+@media(min-width:992px) {
     .global-hero-top {
         h1 {
             writing-mode: vertical-rl;
@@ -227,13 +223,19 @@ select, input, textarea {
     .global-hero-top {
         h1 {
             margin-bottom: 30px;
-            font-size: 2.8rem;
+            font-size: 2rem;
         }
         &::after {
-            height: 69%;
-            top: 34%;
-            width: 100%;
-            right: -5px;
+            position: relative;
+            background-color: transparent;
         }
+    }
+}
+
+
+@media(max-width:576px) {
+    .btn-main {
+        width: 160px;
+        font-size: 13px;
     }
 }

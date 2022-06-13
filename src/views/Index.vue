@@ -1,21 +1,14 @@
 <template>
   <div>
     <main>
-<!--      <Hero/>-->
-<!--      <Number/>-->
-<!--      <Solutions/>-->
-<!--      <Cost/>-->
-<!--      <HeroSlide1/>-->
-<!--      <Safely/>-->
-<!--      <Team/>-->
-<!--      <Country/>-->
-
-
-      <section>
-        <div class="text-center text-uppercase" style="padding: 200px 0">
-          <h1>Coming Soon...</h1>
-        </div>
-      </section>
+      <Hero/>
+      <Number/>
+      <Solutions/>
+      <Cost/>
+      <HeroSlide1/>
+      <Safely/>
+      <Team/>
+      <Country/>
 
     </main>
   </div>

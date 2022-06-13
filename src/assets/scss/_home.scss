@@ -1,60 +1,36 @@
 // Hero
+@use 'mixin' as m;
 
 .hero {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    img {
-        //transform: scale(1.3);
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        background-color: rgba(255, 255, 255, 0.025);
+        transition: all .3s ease;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
     }
-        &-text {
-            h1 {
-
-                font-size: 6rem;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                span {
-                    display: block;
-                    &:nth-child(1) {
-                        font-size: 3rem;
-                    }
-                    &:nth-child(2) {
-                        font-size: 4rem;
-                    }
+    &-text {
+        h1 {
+            text-shadow: 2px 2px #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            span {
+                display: block;
+                &:nth-child(1) {
+                    font-size: 3rem;
+                }
+                &:nth-child(2) {
+                    font-size: 4rem;
                 }
             }
         }
-
-
+    }
 }
-
-.hero-wrapper {
-    height: 100vh;
-    overflow: hidden;
-    padding-bottom: 60%;
-    background-image: url("../image/home/eksen_hero2.jpg");
-    background-position: top center;
-}
-
-//#image {
-//    width: 100%;
-//    height: 100vh;
-//    min-height: 600px;
-//    display: block;
-//    position: fixed;
-//    top: 0;
-//    left: 0;
-//    background-size: 150% auto;
-//    background-repeat: no-repeat;
-//    background-position: center center;
-//    background-image: url("../image/home/eksen_hero2.jpg");
-//}
-
-
-
-// END Hero
 
 
 section.numbers {
@@ -87,7 +63,6 @@ section.solutions {
     
 }
 
-section.way-slide {
     .way-slide-btn {
         cursor: pointer;
         width: 120px;
@@ -96,13 +71,16 @@ section.way-slide {
         justify-content: space-between;
         padding: 10px 15px;
         border-radius: 40px;
+        margin: 30px auto;
+        @include m.responsive(992) {
         position: absolute;
-        top: 50%;
-        margin-left: 50px;
+            margin-left: 50px;
+            top: 50%;
+        }
+
         background-color: white;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
-}
 
 
 section.news {
@@ -158,7 +136,7 @@ section.country {
         cursor: pointer;
         &-img {
             transition: all .3s ease;
-            height: 700px;
+            max-height: 700px;
             position: relative;
         }
         &-absolute {
@@ -177,11 +155,12 @@ section.country {
         }
         &-img2 {
             width: 600px;
-            height: 250px;
+            max-height: 250px;
             object-fit: cover;
         }
     }
 }
+
 
 .overlay {
     transition: all .3s ease;
@@ -196,5 +175,14 @@ section.country {
 }
 
 
+@media(min-width:991px) {
+    .swiper-img {
+        clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
 
-
+@media (min-width:768px){
+    .modal-video-inner video {
+        height: 80vh;
+    }
+}

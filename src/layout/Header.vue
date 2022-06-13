@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white shadow fixed-top">
+    <header class="bg-white shadow-sm fixed-top">
       <div class="container-fluid px-5 ">
         <nav class="navbar navbar-expand-lg d-none d-lg-flex">
           <router-link to="/" class="navbar-brand">

@@ -1,11 +1,11 @@
 <template>
-    <header class="bg-white shadow-sm fixed-top">
+    <header class="bg-white fixed-top">
       <div class="container-fluid px-5 ">
         <nav class="navbar navbar-expand-lg d-none d-lg-flex">
           <router-link to="/" class="navbar-brand">
             <img src="../assets/image/global/eksen_logo.png" alt="">
           </router-link>
-          <div class="collapse navbar-collapse justify-content-center pe-5" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/" class="nav-link active" aria-current="page">Anasayfa</router-link>

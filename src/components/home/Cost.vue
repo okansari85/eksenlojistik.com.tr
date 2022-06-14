@@ -13,17 +13,31 @@
           </div>
           <form action="">
             <div>
-              <select name="" id="" class='form-select'>
+              <select name="finishcountry" id="" class='form-select startCountry'>
                 <option value="1" selected>Başlangıç Ülkesi</option>
-                <option value="2">One</option>
-                <option value="3">Two</option>
+                <option value="2">Türkiye</option>
+                <option value="3">Rusya</option>
+                <option value="4">Ukranya</option>
+                <option value="5">Fransa</option>
+                <option value="6">İspanya</option>
+                <option value="7">İsveç</option>
+                <option value="8">Norveç</option>
+                <option value="9">Almanya</option>
+                <option value="10">Romanya</option>
               </select>
             </div>
             <div>
-              <select name="" id="" class='form-select'>
+              <select name="startcountry" id="" class='form-select finishCountry'>
                 <option value="1" selected>Bitiş Ülkesi</option>
-                <option value="2">One</option>
-                <option value="3">Two</option>
+                <option value="2">Türkiye</option>
+                <option value="3">Rusya</option>
+                <option value="4">Ukranya</option>
+                <option value="5">Fransa</option>
+                <option value="6">İspanya</option>
+                <option value="7">İsveç</option>
+                <option value="8">Norveç</option>
+                <option value="9">Almanya</option>
+                <option value="10">Romanya</option>
               </select>
             </div>
 
@@ -45,7 +59,12 @@
           <a href="#!" class='btn btn-main mt-5'>hesapla</a>
         </div>
         <div class="col-lg-7 order-1 order-lg-2">
-          <img src="../../assets/image/home/eksen_cost_maps.png" alt="" />
+<!--          <img src="../../assets/image/home/eksen_cost_maps.png" alt="" />-->
+          <img
+              src="https://app.image-maps.com/m/private/0/t1deudqqg8quun3iijl4ehecte_eksen_cost_maps.d6449d50.png"
+              usemap="#usa"
+              width="1084" height="995" orgWidth="1084" orgHeight="995"
+          />
         </div>
       </div>
     </div>

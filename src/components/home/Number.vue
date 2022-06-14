@@ -19,6 +19,7 @@
             :slides-per-view="6"
             :space-between="50"
             :loop="true"
+            :breakpoints="swiperOptions.breakpoints"
         >
           <swiper-slide v-for="(slide, idx) in slides" :key="idx" @click="ChangerMap(idx)">
             <div class="swiper-slide-inner position-relative" style="cursor: pointer">
@@ -82,6 +83,31 @@ export default {
 
       ],
       ImgMaps:require('@/assets/image/home/maps_2.png'),
+      swiperOptions: {
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          991: {
+            slidesPerView: 5,
+            spaceBetween: 30
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 30
+          }
+        }
+      }
     }
   },
   methods: {

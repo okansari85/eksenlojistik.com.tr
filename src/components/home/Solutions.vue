@@ -4,13 +4,13 @@
     <div class="container-fluid gx-0 overflow-hidden">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-6 position-relative">
-          <video poster="../../assets/image/home/k1.jpg"
+          <video poster="/image/home/k1.jpg"
                  style="width: 100%; max-width: 100%; height: 700px; min-height: 700px; object-fit: cover; cursor:pointer;"
                  class="solutionsVideo position-relative">
-            <source src="../../assets/image/home/eksen_hero_video2.mp4"/>
+            <source src="/image/home/eksen_hero_video2.mp4"/>
           </video>
           <div class="position-absolute top-50 start-50 translate-middle playBtn" style="cursor: pointer">
-            <img src="../../assets/image/home/k2.png" alt="" width="100" height="auto" style="z-index: 99;">
+            <img src="/image/home/k2.png" alt="" width="100" height="auto" style="z-index: 99;">
           </div>
         </div>
         <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2">
@@ -23,19 +23,19 @@
           <div class="solutions-icon py-5">
             <div class="row pt-md-5">
               <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="../../assets/image/global/icon/icon1.png" alt=""/>
+                <img src="/image/global/icon/icon1.png" alt=""/>
                 <span class="fs-09 text-uppercase"> Tır <br/> Filosu </span>
               </div>
               <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="../../assets/image/global/icon/icon2.png" alt=""/>
+                <img src="/image/global/icon/icon2.png" alt=""/>
                 <span class="fs-09 text-uppercase"> Güvenlik <br/> Sözleşmesi </span>
               </div>
               <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="../../assets/image/global/icon/icon3.png" alt=""/>
+                <img src="/image/global/icon/icon3.png" alt=""/>
                 <span class="fs-09 text-uppercase"> Anında <br/> Çözümler </span>
               </div>
               <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="../../assets/image/global/icon/icon4.png" alt=""/>
+                <img src="/image/global/icon/icon4.png" alt=""/>
                 <span class="fs-09 text-uppercase"> Zamanında <br/> Teslimat </span>
               </div>
             </div>

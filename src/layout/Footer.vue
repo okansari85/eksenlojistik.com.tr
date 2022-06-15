@@ -3,7 +3,7 @@
     <div class="container-fluid px-3 px-lg-5 py-3">
       <div class="row justify-content-between align-items-center pb-4">
         <div class="col-lg-3">
-          <img src="../assets/image/global/eksen_logo.png" alt="" />
+          <img src="/image/global/eksen_logo.png" alt="" />
         </div>
         <div class="col-md-3 pt-3 pt-lg-0">
           <i class='bi bi-instagram'></i>
@@ -51,7 +51,7 @@
           </ul>
         </div>
         <div class="col-lg-3">
-          <img src="../assets/image/global/icon/iso-9001.png" alt="" />
+          <img src="/image/global/icon/iso-9001.png" alt="" />
         </div>
       </div>
     </div>

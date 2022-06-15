@@ -61,7 +61,7 @@
         <div class="col-lg-7 col-xl-8 order-1 order-lg-2">
         <div>
           <img
-              src="../../assets/image/home/cost_maps_new.png"
+              src="/image/home/cost_maps_new.png"
               usemap="#usa" style="max-width: 100%;"
           />
         </div>

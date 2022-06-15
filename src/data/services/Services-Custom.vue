@@ -23,7 +23,7 @@
 
     </div>
     <div class="col-md-5">
-      <img src="../../assets/image/services/services-custom-botton.png" alt="">
+      <img src="/image/services/services-custom-botton.png" alt="">
     </div>
   </div>
 

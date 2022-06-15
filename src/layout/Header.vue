@@ -3,7 +3,7 @@
       <div class="container-fluid px-md-5 ">
         <nav class="navbar navbar-expand-lg d-none d-lg-flex">
           <router-link to="/" class="navbar-brand">
-            <img src="../assets/image/global/eksen_logo.png" alt="">
+            <img src="/image/global/eksen_logo.png" alt="">
           </router-link>
           <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -33,7 +33,7 @@
         <div class="d-lg-none">
           <div class="d-flex justify-content-between align-items-center">
             <a href="" class="navbar-brand">
-              <img src="../assets/image/global/eksen_logo.png" alt="">
+              <img src="/image/global/eksen_logo.png" alt="">
             </a>
             <div>
               <input type='checkbox' id='toggle' style='display:none;' />

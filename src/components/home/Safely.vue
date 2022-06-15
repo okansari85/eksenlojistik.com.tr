@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#home-video">
-            <img src="../../assets/image/home/eksen_videoo.jpg" alt="">
+            <img src="/image/home/eksen_videoo.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-4">

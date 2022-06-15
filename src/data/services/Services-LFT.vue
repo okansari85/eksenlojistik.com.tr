@@ -29,7 +29,7 @@
 
     </div>
     <div class="col-md-5">
-      <img src="../../assets/image/services/services-parsiyel-bottom1.png" alt="">
+      <img src="/image/services/services-parsiyel-bottom1.png" alt="">
     </div>
   </div>
 

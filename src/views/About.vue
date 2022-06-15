@@ -54,7 +54,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Eksen Lojistik",
-          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Hakkımızda",
           content: "AboutContent"
 
@@ -62,7 +62,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Sürdürülebilirlik",
-          heroImg: require('@/assets/image/services/about-sub-page-hero2.png'),
+          heroImg: ('/image/services/about-sub-page-hero2.png'),
           title: "Sürdürülebilirlik",
           content: "AboutSustainability"
 
@@ -70,7 +70,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Misyon & Vizyon",
-          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Misyon & Vizyon",
           content: 'AboutMission'
 
@@ -78,7 +78,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Takım Üyeleri",
-          heroImg: require('@/assets/image/services/about-sub-page-hero4.png'),
+          heroImg: ('/image/services/about-sub-page-hero4.png'),
           title: "Takım Üyeleri",
           content: 'AboutTeam'
 
@@ -86,7 +86,7 @@ export default {
       ],
       heroTitle: "Hakkımızda",
       heroMiniTitle: "Eksen Lojistik",
-      heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+      heroImg: ('/image/services/about-sub-page-hero1.png'),
     }
   },
   methods: {

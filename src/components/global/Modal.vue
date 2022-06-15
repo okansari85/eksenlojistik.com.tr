@@ -9,7 +9,7 @@
 
         <div class="modal-body p-0 border-0 bg-transparent">
           <div class="modal-video-inner bg-transparent p-0">
-            <video src="../../assets/image/home/eksen-video.mp4" autoplay loop muted style="max-width: 100%;"></video>
+            <video src="/image/home/eksen-video.mp4" autoplay loop muted style="max-width: 100%;"></video>
           </div>
         </div>
 

@@ -32,7 +32,7 @@
 
     </div>
     <div class="col-lg-5">
-      <img src="../../assets/image/services/about-sub-page-photo.png" alt="">
+      <img src="/image/services/about-sub-page-photo.png" alt="">
     </div>
   </div>
 

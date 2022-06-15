@@ -47,14 +47,14 @@ export default {
         {
           heroTitle: "IK",
           heroMiniTitle: "Çalışma Prensipleri",
-          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Çalışma Prensipleri",
           content: "IkPrinciple"
         },
         {
           heroTitle: "IK",
           heroMiniTitle: "Eğitim ve Gelişim",
-          heroImg: require('@/assets/image/services/about-sub-page-hero2.png'),
+          heroImg: ('/image/services/about-sub-page-hero2.png'),
           title: "Eğitim ve Gelişim",
           content: "IkDevelopment"
 
@@ -62,7 +62,7 @@ export default {
         {
           heroTitle: "IK",
           heroMiniTitle: "Başvuru",
-          heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Başvuru",
           content: 'IkPrinciple'
 
@@ -70,7 +70,7 @@ export default {
       ],
       heroTitle: "IK",
       heroMiniTitle: "Çalışma Prensipleri",
-      heroImg: require('@/assets/image/services/about-sub-page-hero1.png'),
+      heroImg: ('/image/services/about-sub-page-hero1.png'),
     }
   },
   methods: {

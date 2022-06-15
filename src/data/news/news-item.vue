@@ -29,7 +29,7 @@ export default {
   props: {
     img: {
       type:String,
-      default:require('../../assets/image/services/news-img.png')
+      default:('/image/services/news-img.png')
     },
     tag1: {
       type:String,

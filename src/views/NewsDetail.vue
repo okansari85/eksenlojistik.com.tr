@@ -53,7 +53,7 @@
                 mollitia omnis quas quibusdam quos, ratione rem!</p>
             </div>
             <div class="col-md-5 news-detail-middle-image">
-              <img src="../assets/image/home/news-detail1.png" alt="">
+              <img src="/image/home/news-detail1.png" alt="">
             </div>
           </div>
         </div>

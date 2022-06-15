@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col-md-5">
-      <img src="../../assets/image/services/services-project-bottom.png" alt="">
+      <img src="/image/services/services-project-bottom.png" alt="">
     </div>
   </div>
 

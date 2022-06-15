@@ -63,11 +63,11 @@
 
     </div>
     <div class="col-lg-5">
-      <img src="../../assets/image/services/about-team-photo.png" alt="Eksen Services"/>
+      <img src="/image/services/about-team-photo.png" alt="Eksen Services"/>
       <div class="py-3">
-        <img src="../../assets/image/services/about-gray1.png" alt="Eksen Services" class="py-2"/>
-        <img src="../../assets/image/services/about-gray2.png" alt="Eksen Services" class="py-2"/>
-        <img src="../../assets/image/services/about-gray3.png" alt="Eksen Services" class="py-2"/>
+        <img src="/image/services/about-gray1.png" alt="Eksen Services" class="py-2"/>
+        <img src="/image/services/about-gray2.png" alt="Eksen Services" class="py-2"/>
+        <img src="/image/services/about-gray3.png" alt="Eksen Services" class="py-2"/>
       </div>
     </div>
   </div>
@@ -79,27 +79,27 @@
       bir ekiptir</p>
     <div class="row">
       <div class="col-6 col-md-4 mt-3">
-        <img src="../../assets/image/global/k1.jpg" alt="">
+        <img src="/image/global/k1.jpg" alt="">
         <h6 class="fw-bold pt-3">John M. Smith</h6>
         <span>Lorem ipsum dolor.</span>
       </div>        <div class="col-6 col-md-4 my-3">
-      <img src="../../assets/image/global/k2.jpg" alt="">
+      <img src="/image/global/k2.jpg" alt="">
       <h6 class="fw-bold pt-3">John M. Smith</h6>
       <span>Lorem ipsum dolor.</span>
     </div>        <div class="col-6 col-md-4 my-3">
-      <img src="../../assets/image/global/k3.jpg" alt="">
+      <img src="/image/global/k3.jpg" alt="">
       <h6 class="fw-bold pt-3">John M. Smith</h6>
       <span>Lorem ipsum dolor.</span>
     </div>        <div class="col-6 col-md-4 my-3">
-      <img src="../../assets/image/global/k2.jpg" alt="">
+      <img src="/image/global/k2.jpg" alt="">
       <h6 class="fw-bold pt-3">John M. Smith</h6>
       <span>Lorem ipsum dolor.</span>
     </div>        <div class="col-6 col-md-4 my-3">
-      <img src="../../assets/image/global/k3.jpg" alt="">
+      <img src="/image/global/k3.jpg" alt="">
       <h6 class="fw-bold pt-3">John M. Smith</h6>
       <span>Lorem ipsum dolor.</span>
     </div>        <div class="col-6 col-md-4 my-3">
-      <img src="../../assets/image/global/k1.jpg" alt="">
+      <img src="/image/global/k1.jpg" alt="">
       <h6 class="fw-bold pt-3">John M. Smith</h6>
       <span>Lorem ipsum dolor.</span>
     </div>

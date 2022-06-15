@@ -13,7 +13,7 @@
           <router-link to="/contact" className="btn btn-main mt-3">kariyer</router-link>
         </div>
         <div class="col-xl-7 text-xl-end order-1 order-xl-2">
-          <img src="../../assets/image/home/eksen_team.png" alt="">
+          <img src="/image/home/eksen_team.png" alt="">
         </div>
       </div>
     </div>

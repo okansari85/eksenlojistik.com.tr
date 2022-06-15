@@ -33,7 +33,7 @@
     </div>
 
     <div class="col-lg-5">
-      <img src="../../assets/image/services/ik-development.png" alt="">
+      <img src="/image/services/ik-development.png" alt="">
     </div>
 
   </div>

@@ -45,7 +45,7 @@
   <div class="team-bottom py-5 mt-5">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6">
-        <img src="../../assets/image/services/about-team-truck.png" alt="">
+        <img src="/image/services/about-team-truck.png" alt="">
       </div>
       <div class="col-lg-5">
         <strong class="fs-5">Kariyerinizi Eksen'de ileriye taşıyın</strong>

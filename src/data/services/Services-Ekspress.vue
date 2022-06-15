@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="col-md-5">
-      <img src="../../assets/image/services/services-ekspress-bottom.png" alt="">
+      <img src="/image/services/services-ekspress-bottom.png" alt="">
     </div>
   </div>
 

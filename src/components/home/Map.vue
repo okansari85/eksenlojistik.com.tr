@@ -48,32 +48,32 @@ export default {
     return {
       slides: [
         {
-          img1: require('@/assets/image/home/eksen_country1.png'),
+          img1: ('./image/home/eksen_country1.png'),
           country: "Almanya",
         },
         {
-          img1: require('@/assets/image/home/eksen_country2.png'),
+          img1: ('/image/home/eksen_country2.png'),
           country: "Norveç",
         },
         {
-          img1: require('@/assets/image/home/eksen_country3.png'),
+          img1: ('/image/home/eksen_country3.png'),
           country: "Finlandiya",
         },
         {
-          img1: require('@/assets/image/home/eksen_country4.png'),
+          img1: ('/image/home/eksen_country4.png'),
           country: "Yunanistan",
         },
         {
-          img1: require('@/assets/image/home/eksen_country5.png'),
+          img1: ('/image/home/eksen_country5.png'),
           country: "Rusya",
         },
         {
-          img1: require('@/assets/image/home/eksen_country6.png'),
+          img1: ('/image/home/eksen_country6.png'),
           country: "Hindistan",
         }
 
       ],
-      ImgMaps:require('@/assets/image/home/map.png'),
+      ImgMaps:('/image/home/map.png'),
       swiperOptions: {
         breakpoints: {
           320: {

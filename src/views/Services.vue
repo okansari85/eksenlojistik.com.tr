@@ -55,14 +55,14 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Gümrükleme",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/gumruk3.jpg'),
           title: "Gümrükleme",
           content: 'ServicesCustom'
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/kara-tasimaciligi.jpg'),
           title: "Kara Taşımacılığı",
           content: 'ServicesDomestic'
 
@@ -70,7 +70,7 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Parsiyel & LFT",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/parsiyel.jpg'),
           title: "Parsiyel & LFT",
           content: 'ServicesLFT'
 
@@ -78,7 +78,7 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Depo Yönetimi",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/depo.jpg'),
           title: "Depo Yönetimi",
           content: 'ServicesManagement'
 
@@ -86,21 +86,21 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Ekspress & Minivan",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/ekspress.jpg'),
           title: "Ekspres & Minivan",
           content: 'ServicesEkspress'
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Proje Taşımacılığı",
-          heroImg: require('../assets/image/services/depo-hero.png'),
+          heroImg: require('../assets/image/services/proje-hero.jpg'),
           title: "Proje Taşımacılığı",
           content: 'ServicesProject'
         },
       ],
       heroTitle: "Servisler",
       heroMiniTitle: "Gümrükleme",
-      heroImg: require('../assets/image/services/depo-hero.png'),
+      heroImg: require('../assets/image/services/gumruk3.jpg'),
     }
   },
   methods: {

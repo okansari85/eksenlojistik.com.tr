@@ -25,7 +25,7 @@
                 <strong class="fw-bold fs-5">Türkiye - İstanbul İletisim.</strong>
                 <ul class="pt-4">
                   <li class="pb-2">
-                    <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat.5 Fulya Mah. Mecidiyeköy,
+                    <a href="https://goo.gl/maps/j2A1NvGLQvKG1PMu5"> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat.5 Fulya Mah. Mecidiyeköy,
                       Şişli / Istanbul</a>
                   </li>
                   <li class="pb-2">
@@ -54,7 +54,7 @@
 
             </div>
             <div class="col-md-5">
-              <Form/>
+              <Form id="formClass"/>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
           <p>Anında tıklayıp canlı destek alabilir, <br> uzmanlarımız tarafından kafanıza takılanların cevabını
             alabilirsiniz.</p>
           <div class="pt-5">
-            <a href="" class="btn btn-outline-dark py-3 text-uppercase">canlı destek al</a>
+            <a href="#formClass" class="btn btn-outline-dark py-3 text-uppercase">canlı destek al</a>
           </div>
         </div>
       </section>

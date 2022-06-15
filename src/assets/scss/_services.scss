@@ -11,7 +11,7 @@ main.global-sub-page {
         .nav-item {
             .nav-link {
                 color: v.$black;
-                font-weight: bold;
+                font-weight: 600;
                 cursor: pointer;
                 &.active {
                     color: v.$orange;

@@ -1,49 +1,80 @@
 <template>
 
-  <section class="solutions px-3 px-lg-0">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-5">
-        <img src="../../assets/image/home/eksen_video_poster.png" alt="" />
+  <section class="solutions px-3 py-5 px-lg-0">
+    <div class="container-fluid gx-0 overflow-hidden">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 position-relative">
+          <video poster="../../assets/image/home/k1.jpg"
+                 style="width: 100%; max-width: 100%; height: 700px; min-height: 700px; object-fit: cover; cursor:pointer;"
+                 class="solutionsVideo position-relative">
+            <source src="../../assets/image/home/eksen_hero_video2.mp4"/>
+          </video>
+          <div class="position-absolute top-50 start-50 translate-middle playBtn" style="cursor: pointer">
+            <img src="../../assets/image/home/k2.png" alt="" width="100" height="auto" style="z-index: 99;">
+          </div>
+        </div>
+        <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2">
+          <Title
+              title='büyük sevkiyatlar için premium çözümler'
+              subtitle='size özel'
+              paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
+          <router-link to="/contact" class="btn btn-main my-2 my-md-0">iletişime geç</router-link>
+          <router-link to="/services" class="btn btn-main active ms-2 my-2 my-md-0">daha fazla</router-link>
+          <div class="solutions-icon py-5">
+            <div class="row pt-md-5">
+              <div class="col-6 col-md-3 solutions-icon-item">
+                <img src="../../assets/image/global/icon/icon1.png" alt=""/>
+                <span class="fs-09 text-uppercase"> Tır <br/> Filosu </span>
+              </div>
+              <div class="col-6 col-md-3 solutions-icon-item">
+                <img src="../../assets/image/global/icon/icon2.png" alt=""/>
+                <span class="fs-09 text-uppercase"> Güvenlik <br/> Sözleşmesi </span>
+              </div>
+              <div class="col-6 col-md-3 solutions-icon-item">
+                <img src="../../assets/image/global/icon/icon3.png" alt=""/>
+                <span class="fs-09 text-uppercase"> Anında <br/> Çözümler </span>
+              </div>
+              <div class="col-6 col-md-3 solutions-icon-item">
+                <img src="../../assets/image/global/icon/icon4.png" alt=""/>
+                <span class="fs-09 text-uppercase"> Zamanında <br/> Teslimat </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6 py-3 py-lg-0">
-        <Title
-            title='büyük sevkiyatlar için premium çözümler'
-            subtitle='size özel'
-            paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
-        <a href='#!' class="btn btn-main my-2 my-md-0">iletişime geç</a>
-        <a href='#!' class="btn btn-main active ms-2 my-2 my-md-0">daha fazla</a>
-      </div>
+
+
     </div>
-    <div class="solutions-icon py-5">
-      <div class="row pt-md-5">
-        <div class="col-6 col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon1.png" alt="" />
-          <span> Tır <br /> Filosu </span>
-        </div>
-        <div class="col-6 col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon2.png" alt="" />
-          <span> Güvenlik <br /> Sözleşmesi </span>
-        </div>
-        <div class="col-6 col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon3.png" alt="" />
-          <span> Anında <br /> Çözümler </span>
-        </div>
-        <div class="col-6 col-md-3 solutions-icon-item">
-          <img src="../../assets/image/global/icon/icon4.png" alt="" />
-          <span> Zamanında <br /> Teslimat </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+    <Modal video-id="solutions-video"/>
+
+  </section>
 </template>
 
 <script>
 import Title from "@/components/global/Title";
+import Modal from "@/components/global/Modal";
+
 export default {
   name: "Solutions",
-  components: { Title }
+  components: {Title, Modal},
+  mounted() {
+    // document.querySelector(".solutionsVideo").addEventListener("click", () => {
+    //   alert();
+    // })
+    if($(".playBtn").click(() => {
+      $("video").trigger('play')
+      $(".playBtn").hide();
+    }));
+
+    if($("video").dblclick(() => {
+      $("video").trigger('pause');
+      $(".playBtn").show();
+    }));
+
+  }
+
+
 }
 </script>
 

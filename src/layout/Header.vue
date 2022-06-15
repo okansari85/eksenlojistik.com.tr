@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link active" aria-current="page">Anasayfa</router-link>
+              <router-link to="/" class="nav-link">Anasayfa</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/services" class="nav-link">Servisler</router-link>

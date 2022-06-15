@@ -199,9 +199,12 @@ select, input, textarea {
     }
 }
 
-@media(min-width:1200px) {
+@media(min-width:1366px) {
     .paragraph-margin {
         padding-left: 150px;
+    }
+    .paragraph-margin2 {
+        padding-right: 150px;
     }
 }
 
@@ -233,7 +236,7 @@ select, input, textarea {
 }
 
 
-@media(max-width:576px) {
+@media(max-width:1366px) {
     .btn-main {
         width: 160px;
         font-size: 13px;

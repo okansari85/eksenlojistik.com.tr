@@ -51,6 +51,49 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+section.country {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(10, 37, 64, 0.55);
+    transition: all .3s ease;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  .country-item {
+    position: relative;
+    transition: all .3s ease;
+    cursor: pointer;
+    &-img {
+      transition: all .3s ease;
+      max-height: 700px;
+      position: relative;
+    }
+    &-absolute {
+      display: none;
+      transition: all .3s ease;
+      z-index: 2;
+    }
+    &:hover, &.active {
+      .country-item-absolute {
+        display: block;
+        z-index: 99;
+      }
+      .overlay {
+        display: block;
+      }
+    }
+    &-img2 {
+      width: 600px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  }
+}
 
 </style>

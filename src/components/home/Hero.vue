@@ -1,24 +1,137 @@
 <template>
-  <section class="hero" style="backdrop-filter: blur(2px)">
+  <section class="hero w-100">
     <div class="overlay"></div>
-    <div class="position-relative hero-wrapper">
-      <!--   Hero Image   -->
-      <img src="../../assets/image/home/eksen_hero2.jpg" alt="" class="hero-img vh-100 w-100" style="object-fit: cover">
-      <div class="container-fluid gx-0 overflow-hidden">
-          <div class="hero-text position-absolute top-50 start-50 translate-middle bg-white bg-opacity-50 rounded-3 p-5">
-            <h1 class="display-1"><span>Sadece bir çağrıda</span> en kısa sürede <span>istediğin yere</span></h1>
-          </div>
-      </div>
+    <video src="../../assets/image/home/eksen_hero_video2.mp4" class="vh-100 w-100" style="object-fit: cover" autoplay loop
+           muted></video>
+    <div class="position-absolute hero-content hero-text text-center top-50 start-50 translate-middle">
+      <h1 class="text-white text-uppercase">
+        <span class="d-block fw-bold firstchild">sadece bir çağrıda</span>
+        <span class="fw-bold rolling-text">en kısa sürede</span>
+        <span class="d-block fw-bold mobile-rolling">en kısa sürede</span>
+        <span class="d-block fw-bold lastchild">istediğin yere</span>
+      </h1>
     </div>
+    <a class="wrapper-down-icon" href="#numberSection">
+      <div class="circle">
+      </div>
+      <div class="circle circle-2">
+      </div>
+      <div class="arrow">
+        <div class="arrow_line">
+        </div>
+        <div class="arrow_tip-wrapper">
+          <div class="arrow_tip left">
+          </div>
+          <div class="arrow_tip right">
+          </div>
+        </div>
+      </div>
+    </a>
   </section>
 </template>
 
 <script>
 export default {
   name: "Hero",
+  mounted() {
+    let elements = document.querySelectorAll('.rolling-text');
+
+    elements.forEach(element => {
+      let innerText = element.innerText;
+      element.innerHTML = '';
+
+      let textContainer = document.createElement('div');
+      textContainer.classList.add('block');
+
+      for (let letter of innerText) {
+        let span = document.createElement('span');
+        span.innerText = letter.trim() === '' ? '\xa0': letter;
+        span.classList.add('letter');
+        textContainer.appendChild(span);
+      }
+
+      element.appendChild(textContainer);
+      element.appendChild(textContainer.cloneNode(true));
+    });
+
+
+
+
+
+// for presentation purpose
+    setTimeout(() => {
+      elements.forEach(element => {
+        element.classList.add('play');
+      })
+    }, 600);
+
+    elements.forEach(element => {
+      element.addEventListener('mouseover', () => {
+        element.classList.remove('play');
+      });
+    });
+
+
+
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+
+.hero {
+  position: relative;
+
+  @media (min-width: 576px) and (max-width:1521.98px) {
+    .hero {
+      &-text {
+        width: 100%;
+        span {
+          &.mobile-rolling {
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width:575.98px) {
+    .hero {
+      &-text {
+        width: 100%;
+        span {
+          &.mobile-rolling {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(10, 37, 64, 0.55);
+    transition: all .3s ease;
+    height: 99%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &-text {
+    z-index: 2;
+  }
+
+}
+
+
+
+
 
 </style>

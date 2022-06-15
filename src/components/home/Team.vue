@@ -10,7 +10,7 @@
               paragraph='Şirket, profesyonel kurumsal yapılarını sürdürürken, çalışanlarına da herkesin takdir edildiği, insan dokunuşu ile hoşgörülü bir çalışma ortamı sunmaktadır.
                     EKSEN LOJİSTİK’deki kariyer olanakları hakkında daha fazlasını okuyun.'
           ></Title>
-          <a href="#!" className="btn btn-main mt-3">kariyer</a>
+          <router-link to="/contact" className="btn btn-main mt-3">kariyer</router-link>
         </div>
         <div class="col-xl-7 text-xl-end order-1 order-xl-2">
           <img src="../../assets/image/home/eksen_team.png" alt="">

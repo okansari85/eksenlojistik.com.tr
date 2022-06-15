@@ -1,10 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index'
-import Services from "@/views/Services";
-import About from "@/views/About";
-import Contact from '@/views/Contact'
-import Ik from '@/views/Ik'
-import News from "@/views/News";
+
 
 const routes = [
   {
@@ -16,30 +12,35 @@ const routes = [
   {
     path: '/services',
     name: 'services',
-    component: Services,
+    component: () => import('../views/Services'),
   },
   {
     path: '/about',
     name: 'about',
-    component: About
+    component: () => import('../views/About'),
   },
   {
     path: '/news',
     name: 'news',
-    component: News
+    component: () => import('../views/News'),
   },
   {
 
     path: '/contact',
     name: 'contact',
-    component: Contact
+    component: () => import('../views/Contact'),
   },
   {
 
-    path: '/Ik',
+    path: '/ik',
     name: 'ik',
-    component: Ik
+    component: () => import('../views/Ik'),
   },
+  {
+    path: '/news-detail',
+    name: 'news-detail',
+    component: () => import('../views/NewsDetail'),
+  }
 ]
 
 const router = createRouter({

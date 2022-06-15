@@ -7,7 +7,7 @@
 
           <div class="py-5 my-md-5">
 
-            <b-tabs pills class="sub-tab justify-content-center ">
+            <b-tabs pills class="sub-tab justify-content-center">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"
               >

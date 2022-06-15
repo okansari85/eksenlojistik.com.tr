@@ -34,7 +34,11 @@
         </div>
         <div class="col-lg-4 pt-4 pt-md-0">
           <label For="" class="d-block">Bültenimize kayıt olun</label>
-          <input type="text" placeholder="E-mail Adresi" class="py-3 my-3 form-control"/>
+<!--          <input type="text" placeholder="E-mail Adresi" class="py-3 my-3 form-control"/>-->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="E-mail Adresi">
+            <button class="btn btn-outline-secondary bg-dark text-white" type="submit" id="button-addon2">Gönder</button>
+          </div>
           <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
         </div>
       </div>
@@ -52,6 +56,13 @@
       </div>
     </div>
   </footer>
+
+
+
+
+  <!--  Modal  -->
+
+
 </template>
 
 <script>

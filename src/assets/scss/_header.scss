@@ -17,6 +17,9 @@ header {
             &-link {
                 font-size: 1rem;
                 color: #010101;
+                &.active, &:hover, &:focus {
+                    color: v.$orange;
+                }
             }
         }
     }

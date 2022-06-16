@@ -1,6 +1,6 @@
 <template>
 
-  <router-link to="/news-detail" class="news-item col-md-6 col-lg-4">
+  <router-link :to="'/news-detail/' + id" class="news-item col-md-6 col-lg-4">
       <div class="news-top">
         <img :src="img" alt="">
       </div>

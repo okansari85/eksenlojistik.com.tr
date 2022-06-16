@@ -14,15 +14,20 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // Import Swiper styles
 
-
+import 'animate.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '@/assets/css/style.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-const app = createApp(App)
+AOS.init();
+const app = createApp(App);
 app.use(BootstrapVue3)
+app.use(AOS);
 app.use(VueAwesomeSwiper)
 app.use(store)
 app.use(router)
 app.mount('#app')
 // createApp(App).use(store).use(router).mount('#app')
+

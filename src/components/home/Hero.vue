@@ -1,7 +1,7 @@
 <template>
-  <section class="hero w-100">
+  <section class="hero w-100 vh-100 ">
     <div class="overlay"></div>
-    <video src="/image/home/eksen_hero_video2.mp4" class="vh-100 w-100" style="object-fit: cover" autoplay loop
+    <video src="/image/home/eksen_hero_video2.mp4" class=" vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
     <div class="position-absolute hero-content hero-text text-center top-50 start-50 translate-middle">
       <h1 class="text-white text-uppercase">
@@ -119,7 +119,7 @@ export default {
     content: '';
     background-color: rgba(10, 37, 64, 0.55);
     transition: all .3s ease;
-    height: 99%;
+    height: 100%;
     width: 100%;
     z-index: 1;
   }

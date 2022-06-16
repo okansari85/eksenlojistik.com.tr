@@ -4,7 +4,7 @@
   <Header/>
   <div id="app">
     <router-view v-slot="{Component, route}">
-      <transition name="scale" mode="out-in">
+      <transition name="fade">
         <component :is="Component" :key="route.path"/>
       </transition>
     </router-view>
@@ -16,20 +16,25 @@
 import Header from '@/layout/Header'
 import Footer from '@/layout/Footer'
 export default {
-  components:{Header, Footer}
+  components:{Header, Footer},
+    computed() {
+      AOS.init();
+    }
 }
 </script>
 
+
+
 <style lang="css">
-.scale-enter-active,
-.scale-leave-active {
-  transition: all 0.5s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
 
-
-.scale-enter-from,
-.scale-leave-to {
-  opacity: 0;
-  transform: scale(0.9);
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

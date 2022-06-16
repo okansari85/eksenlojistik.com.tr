@@ -3,15 +3,15 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div>
-        <strong class="fw-bold fs-5">
+        <h5 class="display-6 fw-500">
           <p class="py-3">
             FTL, taşınacak yükü, herhangi bir aktarma yapılmadan, yükleme noktasından alıcıya doğrudan ulaştırmanın en
             hızlı nakliyat seçeneğini oluşturur
           </p>
-        </strong>
+        </h5>
       </div>
       <div>
-        <strong class="fs-5 fw-bold"></strong>
+        <h5 class="display-6 fw-500"></h5>
         <p>
           Parsiyel, kelime anlamıyla tüm olmayan, parça anlamına gelmektedir. Nakliye sektöründe komple, parsiyel, proje
           ve ağır nakliyat gibi taşımacılık hizmetleri sunulur. Aynı güzergâhta bulunan birbirinden farklı müşterilerin

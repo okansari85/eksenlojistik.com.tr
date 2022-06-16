@@ -3,7 +3,7 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div class="py-3">
-        <strong class="fw-bold fs-5">Proje Taşımacılığı</strong>
+        <h5 class="display-6 fw-500">Proje Taşımacılığı</h5>
         <p class="py-3">Özellikle taşımacılık sektörüne girmek isteyen insanların ilgisini çekmektedir. Proje
           taşımacılığı, standart dışı yükleri olan yüklerin, bir yerden başka bir yere standart dışı olarak taşınmasına
           verilen addır. </p>
@@ -15,9 +15,9 @@
         </p>
       </div>
       <div class="py-3">
-        <strong class="fw-bold fs-5">
+        <h5 class="display-6 fw-500">
           Üretim Lojistiği
-        </strong>
+        </h5>
         <p class="py-3">
           Üretim ve lojistiğin bir parçası olarak üretim lojistiği terimi, işletme yönetiminde dahili nakliye, aktarma ve depolama süreçlerinin planlanması, yönetimi ve kontrolünü tanımlar.
         </p>

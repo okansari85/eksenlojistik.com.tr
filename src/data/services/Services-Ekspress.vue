@@ -3,7 +3,7 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div class="py-3">
-        <strong class="fw-bold fs-5">Fark yaratan; fayda sağlayan çözümlerimiz var</strong>
+        <h5 class="display-6 fw-500">Fark yaratan; fayda sağlayan çözümlerimiz var</h5>
         <p class="py-3">1,3 tona kadar olan kargolarınız express kargo olarak değerlendirilebilmektedir.
           Sevkiyatlarızı, Avrupa -Türkiye arasında kısa sürede yerine ulaştırıyoruz. </p>
         <p>

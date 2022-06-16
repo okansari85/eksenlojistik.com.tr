@@ -3,7 +3,7 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div class="py-3">
-        <strong class="fw-bold fs-5">Gümrükleme Kılavuzu</strong>
+        <h5 class="display-6 fw-500">Gümrükleme Kılavuzu</h5>
         <p class="py-3">Gönderici, çeşitli malları göndermeden önce, gümrükten çekmenin ne anlama geldiğini ve nakliye
           seçenekleriyle ne kadar alakalı olduğunu merak edebilir. Her uluslararası deniz taşımacılığı gönderisi, her
           ülkedeki gümrükleme kotasını karşılamalıdır. </p>
@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="py-3">
-        <strong class="fw-bold fs-5">Gümrükleme Sizin İçin Uygun mu?</strong>
+        <h5 class="display-6 fw-500">Gümrükleme Sizin İçin Uygun mu?</h5>
         <p class="py-3">Eksen, lojistik gereksinimleri sağlayan bir ithalat programı oluşturmaya kendini adamıştır.
           Şirketimiz, uluslararası tedarik zinciriniz için gümrükleme ve mevzuata uygunluk sunan kargo taşımacılığı ve
           katma değerli hizmetler sunmaktadır. Eksen'in Gümrük müşavirliği uzmanlarıyla hızlı kargoya sahip olduğunuzdan

@@ -1,9 +1,9 @@
 <template>
   <div class="row justify-content-between my-5 pb-5 align-items-center">
     <div class="col-lg-6">
-      <strong class="fs-5">
+      <h5 class="display-6 fw-500">
         Fark yaratmak ve kurumumuza değer katmak istiyorsanız bize katılın.
-      </strong>
+      </h5>
       <p class="py-3">Eksen Lojistik , vizyonu ve stratejisiyle , taşımacılık ve lojistik hizmetlerinde müşteri
         ihtiyaçlarını
         karşılayan, kapsamlı büyümeye odaklanan ve sektörümüzde en karlı şirketler arasında yer alan lider bir küresel
@@ -48,7 +48,7 @@
         <img src="/image/services/about-team-truck.png" alt="">
       </div>
       <div class="col-lg-5">
-        <strong class="fs-5">Kariyerinizi Eksen'de ileriye taşıyın</strong>
+        <h5 class="display-6 fw-500">Kariyerinizi Eksen'de ileriye taşıyın</h5>
         <p class="py-3">Sunduğumuz farklı işler ve bizle çalışmak için daha fazla bilgi edinin.</p>
         <p class="pb-3">Eksen'de, çalışanların farklı bireysel geçmişlerine ve düşünce çeşitliliğine dayalı olarak potansiyellerini
           gerçekleştirebilecekleri, çeşitlilik içeren bir iş gücüne sahip olmanın, şirket olarak yararlanabileceğimiz

@@ -3,7 +3,7 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div class="py-3">
-        <strong class="fw-bold fs-5">Hız ve rahatlıkla depolama ve dağıtımı keşfedin</strong>
+        <h5 class="display-6 fw-500">Hız ve rahatlıkla depolama ve dağıtımı keşfedin</h5>
         <p class="py-3">Kapsamlı depolama ve dağıtım merkezleri ağı, sınıfının en iyisi teknolojiyi kullanan ve tedarik zinciri
           boyunca
           pazara giderken kargonuz için en yüksek düzeyde hizmet ve güvenlik sunan deneyimli profesyonellerden

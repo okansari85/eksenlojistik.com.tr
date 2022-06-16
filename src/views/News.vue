@@ -9,7 +9,7 @@
 
             <b-tabs pills class="sub-tab justify-content-center">
               <b-tab v-for="(navs, index) in navsItem"
-                     :title="navs.title" :key="index"
+                     :title="navs.title" :key="index" :slug="navs.slug"
               >
                 <b-card-text class="py-md-5 px-3">
                   <component class="pt-5" :is="navs.content" :navs="navs"></component>
@@ -40,15 +40,18 @@ export default {
     return {
       navsItem: [
         {
+          slug: "calisma-prensipleri",
           title: "Çalışma Prensipleri",
           content: "NewsAndAnnouncement"
         },
         {
+          slug: "egitim-ve-gelisim",
           title: "Eğitim ve Gelişim",
           content: "NewsOnly"
 
         },
         {
+          slug: "basvuru",
           title: "Başvuru",
           content: 'AnnouncementOnly'
 

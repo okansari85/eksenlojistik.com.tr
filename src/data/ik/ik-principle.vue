@@ -2,13 +2,13 @@
 
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <strong class="fs-5 fw-bold">Dürüstlük</strong>
+      <h5 class="display-6 fw-500">Dürüstlük</h5>
       <p class="py-3">
         Eksen Lojistik, tüm faaliyetlerinde doğruluk, şeffaflık ve yüksek iş ahlakı değerlerini her şeyin üzerinde
         görür; birlikte iş yaptığı tüm taraflarımızdan aynı değerlere uygun olarak hareket etmelerini bekleriz.
       </p>
 
-      <strong class="fs-5 fw-bold">Gizlilik</strong>
+      <h5 class="display-6 fw-500">Gizlilik</h5>
       <p class="py-3">
         Eksen Lojistik’e ve tüm paydaşlarına ait bilgilerin korunmasına özen gösteririz. Bu bilgileri sadece belirlenmiş
         olan yetkiler dahilinde ilgili kişilerle paylaşırız. <br>

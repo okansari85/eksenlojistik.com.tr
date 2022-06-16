@@ -3,9 +3,9 @@
   <div class="row justify-content-between">
     <div class="col-lg-6">
       <div class="">
-        <strong class="fs-5">
+        <h5 class="display-6 fw-500">
           Eksen Lojistik için sürdürülebilirlik bir zorunluluktur
-        </strong>
+        </h5>
         <p class="py-3">
           Eksen Lojistik bağlılık ve sorumluluklarının bilinciyle izlediği sürdürülebilir kurumsal politikalara
           bağlıdır.
@@ -16,9 +16,9 @@
       </div>
 
       <div class="py-3">
-        <strong class="fs-5">
+        <h5 class="display-6 fw-500">
           Sürdürülebilirliği teşvik etme hedefi
-        </strong>
+        </h5>
         <p class="py-3"><strong>Ekonomi: </strong> Büyüme ve başarıya odaklı iş modelleri ile EKSEN, hem şirketin hem de
           çalışanların
           geleceğini garanti altına almaktadır. Kurumsal liderlikte sürdürülebilirlik, şirketin stratejik ve operasyonel

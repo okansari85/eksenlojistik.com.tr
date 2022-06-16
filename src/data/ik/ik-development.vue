@@ -2,7 +2,7 @@
 
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <strong class="fs-5 fw-bold">Gelişiminize Önem Veriyoruz</strong>
+      <h5 class="display-6 fw-500">Gelişiminize Önem Veriyoruz</h5>
       <p class="py-3">
         Sürekli gelişim ve verimlilik hedefi doğrultusunda çalışanlarımızın gelişimlerine büyük önem veriyoruz.
         Çalışanlarımıza yüksek lisans ve doktora programlarına katılmalarını cesaretlendirmek amacıyla destek oluyoruz.
@@ -15,7 +15,7 @@
         online olarak çeşitli eğitimler düzenliyoruz.
       </p>
 
-      <strong class="fs-5 fw-bold">Yetenek ve Performans</strong>
+      <h5 class="display-6 fw-500">Yetenek ve Performans</h5>
       <p class="py-3">
         Her bir çalışanımızı birer yetenek olarak görüp, potansiyellerini performansa dönüştürmeleri için teşvik
         ediyoruz. Bu doğrultuda çalışanlarımızın bireysel gelişim planlarını oluşturup, güçlü yön ve gelişim alanlarına

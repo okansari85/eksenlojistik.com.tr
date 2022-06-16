@@ -3,6 +3,8 @@
 
 
 section.numbers {
+    //background-image: url("/public/image/home/back.jpg");
+    //background-size: cover;
     .swiper-slide {
         &-inner {
             overflow: hidden;
@@ -81,6 +83,8 @@ section.news {
         justify-content: center;
         align-items: center;
         width: 500px;
+        max-width: 100%;
+        margin: 0 auto!important;
         height: 250px;
         background-color: transparent!important;
         padding: 25px;
@@ -100,19 +104,7 @@ section.news {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }
-    .news-slide-btn {
-        width: 120px;
-        z-index: 2;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 15px;
-        border-radius: 40px;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        background-color: white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
+
     .news-content-wrap {
         z-index: 2;
         text-align: start;

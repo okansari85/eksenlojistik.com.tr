@@ -242,3 +242,9 @@ select, input, textarea {
         font-size: 13px;
     }
 }
+
+@media(min-width:991px) and (max-width: 1200px) {
+    .display-4 {
+        font-size: calc(1.475rem + 2vw)!important;
+    }
+}

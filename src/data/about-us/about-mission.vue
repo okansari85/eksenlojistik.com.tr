@@ -13,7 +13,7 @@
         yeteneğimiz, şirketimizi değerli bir ortak haline getirmektedir.</p>
 
       <div class="py-5">
-        <h2 class="fw-bold">Misyon & Vizyon</h2>
+        <h5 class="display-6 fw-500">Misyon & Vizyon</h5>
         <strong class="fs-5">Güven ve ortaklık üzerine kurulmuştur.</strong>
         <p class="pt-3">Kendisi için yüksek bir etik çıta oluşturan Eksen Lojistik, çalışanlar, müşteriler ve ortaklar için
           güvenilir bir sabit olmaya çalışıyoruz.
@@ -72,7 +72,7 @@
     </div>
   </div>
   <div class="inner-data-team text-start my-5">
-    <h3 class="fw-bold">Yönetim Kurulumuz</h3>
+    <h2 class="display-6 fw-500">Yönetim Kurulumuz</h2>
     <p class="py-3 pe-5">Geçtiğimiz on yıllar boyunca Eksen Lojistik dünyanın önde gelen lojistik şirketlerinden biri olmasına
       yardımcı olan yenilikçi, ileriye dönük iş konseptleri uygulamıştır. Şirketteki bu dinamik, yenilikçi
       enerjinin arkasındaki itici güç, paylaşılan temel değerler ve hedefler konusunda ortak bir anlayışa sahip

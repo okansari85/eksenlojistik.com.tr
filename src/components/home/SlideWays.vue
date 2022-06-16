@@ -6,7 +6,8 @@
         <div class="col-lg-4 paragraph-margin order-2 order-lg-1">
           <h1 class="display-4 fw-bold text-uppercase">daha iyi bir yol bulmak için kararlıyız</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab laborum fugit totam ipsa nostrum, mollitia eos ex consequuntur accusamus dignissimos magnam impedit architecto modi nobis, sit nisi optio odio dolores.
+            İşinize değer katmak, verimli lojistik çözümler sağlamak için sürekli olarak daha akıcı ve sürdürülebilir yollar geliştiriyoruz.
+            Hedeflerinize ulaşmanıza nasıl yardımcı olabiliriz?
           </p>
         </div>
         <div class="col-lg-7 text-end order-1 order-lg-2">
@@ -19,10 +20,10 @@
               @slideChange="onSlideChange"
           >
             <swiper-slide>
-                <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
+              <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <swiper-slide>
-                <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
+              <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <slider-navigation/>
           </swiper>
@@ -35,7 +36,7 @@
 </template>
 
 <script>
-import {Swiper, SwiperSlide } from 'swiper/vue'
+import {Swiper, SwiperSlide} from 'swiper/vue'
 import {Navigation} from 'swiper'
 import SliderNavigation from "@/components/global/SliderNavigation";
 
@@ -55,6 +56,7 @@ export default {
       modules: [Navigation],
     };
   },
+
 
 }
 </script>

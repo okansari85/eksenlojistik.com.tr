@@ -3,7 +3,7 @@
   <div class="row justify-content-between">
     <div class="col-lg-6">
       <div class="py-3">
-        <strong class="fs-5">Hakkımızda</strong>
+        <h5 class="display-6 fw-500">Hakkımızda</h5>
         <p class="py-3">EKSEN ULUSLARARASI LOJİSTİK VE TAŞIMACILIK LTD. ŞTİ. olarak uluslararası karayolu taşımacılığı
           sektöründe 16 yıl boyunca istikrarlı şekilde büyümemizi sürdürerek Romanya hattında marka olma hedefimizi
           gerçekleştirdik.
@@ -15,7 +15,7 @@
 
 
       <div class="py-3">
-        <strong class="fs-5">Uluslararası Karayolu Taşımacılığı</strong>
+        <h5 class="display-6 fw-500">Uluslararası Karayolu Taşımacılığı</h5>
         <p class="py-3">Uluslararası taşımacılıkta başarı, dinamik operasyon kadrosu, global pazara hakimiyet, tecrübeli
           şoför ekibi,
           hatasız depo organizasyonu ve modern ekipmanlar gerektirmektedir.
@@ -35,7 +35,7 @@
           teslimatlarını rekabetçi fiyatlarla sağlamaya devam ettirmektir.</p>
       </div>
       <div class="py-3">
-        <strong class="fs-5">Proje Yükü Taşımacılığı</strong>
+        <h5 class="display-6 fw-500">Proje Yükü Taşımacılığı</h5>
         <p class="py-3">
           Tenteli tırlara yüklemesi mümkün olmayan gabari dışı veya ağır yüklerin sevkiyatı salkasa ve lowbed treylerler
           gibi özel ekipmanlarla yapılmaktadır.
@@ -45,7 +45,7 @@
         </p>
       </div>
       <div class="py-3">
-        <strong class="fs-5">Depolama Gümrükleme</strong>
+        <h5 class="display-6 fw-500">Depolama Gümrükleme</h5>
         <p class="py-3">Bükreş ve Çatalca’daki 1000 metrekarelik üstü kapalı alanlarımızda depolama ve dağıtım hizmeti
           vermekteyiz.
           Yükler modern ekipman ve tecrübeli çalışanlarla elleçlenmekte, ihtiyaca ve yük tipine göre gerekli hassasiyet

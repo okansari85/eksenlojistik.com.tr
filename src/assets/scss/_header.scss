@@ -13,15 +13,47 @@ header {
         .nav {
             &-item {
                 padding: 0px 10px;
-            }
-            &-link {
-                font-size: 1rem;
-                color: #010101;
-                &.active, &:hover, &:focus {
-                    color: v.$orange;
+                &:hover {
+                    a {
+                        color: v.$orange;
+                    }
                 }
             }
+            &-link {
+                transition: 0.3s;
+                position: relative;
+                &.active, &:focus {
+                    color: v.$orange;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    bottom: -6px;
+                    background-color: v.$orange;
+                    visibility: hidden;
+                    width: 0;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+                font-size: 1rem;
+                color: #010101;
+                &:hover:before,
+                &.active:before,
+                &:focus:before{
+                    visibility: visible;
+                    width: 85%;
+                }
+
+            }
+
         }
+        .navbar a:hover:before,
+        .navbar li:hover > a:before,
+        .navbar .active:before {
+            visibility: visible;
+            width: 100%;
+        }
+
     }
 }
 

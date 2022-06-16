@@ -1,5 +1,5 @@
 <template>
-
+  {{ $route.params.id }}
   <section class="news-detail py-5">
       <div class="news-detail-top">
         <div class="container py-5">
@@ -72,7 +72,8 @@ export default {
   name: "NewsDetail",
   components: {
     Blog
-  }
+  },
+
 }
 </script>
 

@@ -34,7 +34,8 @@ export default {
   name: "Safely",
   components: {
     Modal,
-  }
+  },
+
 }
 </script>
 

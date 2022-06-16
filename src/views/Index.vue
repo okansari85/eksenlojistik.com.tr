@@ -2,13 +2,15 @@
   <div>
     <main>
       <Hero/>
-      <Number/>
-      <Solutions/>
-      <Cost/>
-      <HeroSlide1/>
-      <Safely/>
-      <Team/>
-      <Country/>
+      <Number />
+      <Solutions />
+      <Cost  />
+      <HeroSlide1  />
+      <Safely  />
+      <Team  />
+      <NewsHome  />
+      <Country  />
+
 
     </main>
   </div>
@@ -26,11 +28,13 @@ import HeroSlide1 from "@/components/home/SlideWays";
 import Safely from "@/components/home/Safely";
 import Team from "@/components/home/Team";
 import Country from "@/components/home/Country";
+import NewsHome from "@/views/NewsHome";
 
 
 
 export default {
   name: 'Index',
-  components: {HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
+  components: {NewsHome, HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
 }
 </script>
+

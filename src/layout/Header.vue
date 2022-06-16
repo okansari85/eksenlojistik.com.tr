@@ -25,7 +25,7 @@
             <li class="nav-item">
               <router-link to="/contact" class="nav-link">İletişim</router-link>
             </li>
-
+            <li class="dot"></li>
           </ul>
         </div>
         </nav>
@@ -82,4 +82,6 @@
         name: 'Nav',
     }
 </script>
+
+
 

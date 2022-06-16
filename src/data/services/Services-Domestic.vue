@@ -3,7 +3,7 @@
   <div class="row justify-content-between align-items-center">
     <div class="col-md-6">
       <div class="py-3">
-        <strong class="fw-bold fs-5">Yerel, uzun mesafe, ulusal veya uluslararası</strong>
+        <h5 class="display-6 fw-500">Yerel, uzun mesafe, ulusal veya uluslararası</h5>
         <p class="py-3">Tüm Avrupa'da bulunan merkezleri ve dünyanın her yerindeki ofislerimizle, kargonuzun gitmesi
           gereken her yere güvenli ve verimli bir şekilde teslim edilmesini sağlıyoruz. </p>
         <p>
@@ -12,8 +12,8 @@
         </p>
       </div>
       <div class="py-3">
-        <strong class="fw-bold fs-5">Avrupa'daki tüm ülkelerden ve bu ülkelere karayolu taşımacılığı hizmetleri
-          sunmaktadır.</strong>
+        <h5 class="display-6 fw-500">Avrupa'daki tüm ülkelerden ve bu ülkelere karayolu taşımacılığı hizmetleri
+          sunmaktadır.</h5>
         <p class="py-3">İster tek bir gönderi, ister birkaç palet veya her hafta birden fazla tam yükünüz olsun,
           yükünüzü karayolu taşımacılığı ihtiyaçlarınız için size en iyi çözümü verebiliriz.</p>
       </div>

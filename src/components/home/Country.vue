@@ -10,7 +10,7 @@
             <div class="position-absolute top-50 start-50 translate-middle text-white text-center country-item-absolute">
               <img src="/image/home/romania_png.png" alt="" class="country-item-img2">
               <h3 class="text-uppercase fw-bold py-md-4 display-5">Romania</h3>
-              <p class="text-white">
+              <p class="text-white fs-08">
                 Latilokum Sokak Fidan Apt.No.7 D.1 Şişli <br />
                 Romanya - Bükreş
               </p>
@@ -29,7 +29,7 @@
               <h3 class="text-uppercase fw-bold py-md-4 display-5">
                 Romania
               </h3>
-              <p class="text-white">
+              <p class="text-white fs-08">
                 Latilokum Sokak Fidan Apt.No.7 D.1 Şişli <br />
                 Romanya - Bükreş
               </p>

@@ -49,28 +49,28 @@ export default {
     return {
       slides: [
         {
-          img1: ('./image/home/eksen_country1.png'),
-          country: "Almanya",
+          img1: ('./image/home/m1.jpg'),
+          country: "Sırbistan",
         },
         {
-          img1: ('/image/home/eksen_country2.png'),
-          country: "Norveç",
+          img1: ('/image/home/m2.jpg'),
+          country: "Romanya",
         },
         {
-          img1: ('/image/home/eksen_country3.png'),
-          country: "Finlandiya",
+          img1: ('/image/home/m3.jpg'),
+          country: "Çekya",
         },
         {
-          img1: ('/image/home/eksen_country4.png'),
-          country: "Yunanistan",
+          img1: ('/image/home/m4.jpg'),
+          country: "Polonya",
         },
         {
-          img1: ('/image/home/eksen_country5.png'),
-          country: "Rusya",
+          img1: ('/image/home/m5.jpg'),
+          country: "Macaristan",
         },
         {
-          img1: ('/image/home/eksen_country6.png'),
-          country: "Hindistan",
+          img1: ('/image/home/m6.jpg'),
+          country: "Slovakya",
         }
 
       ],

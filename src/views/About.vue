@@ -70,7 +70,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Misyon & Vizyon",
-          heroImg: ('/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/ab1.jpg'),
           title: "Misyon & Vizyon",
           content: 'AboutMission'
 
@@ -78,7 +78,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Takım Üyeleri",
-          heroImg: ('/image/services/about-sub-page-hero4.png'),
+          heroImg: ('/image/services/ab2.jpg'),
           title: "Takım Üyeleri",
           content: 'AboutTeam'
 

@@ -62,7 +62,7 @@ export default {
         {
           heroTitle: "IK",
           heroMiniTitle: "Başvuru",
-          heroImg: ('/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/ik1.jpg'),
           title: "Başvuru",
           content: 'IkPrinciple'
 
@@ -70,7 +70,7 @@ export default {
       ],
       heroTitle: "IK",
       heroMiniTitle: "Çalışma Prensipleri",
-      heroImg: ('/image/services/about-sub-page-hero1.png'),
+      heroImg: ('/image/services/ik2.jpg'),
     }
   },
   methods: {

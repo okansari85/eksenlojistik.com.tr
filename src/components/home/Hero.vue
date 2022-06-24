@@ -117,7 +117,7 @@ export default {
     top: 0;
     left: 0;
     content: '';
-    background-color: rgba(10, 37, 64, 0.55);
+    background-color: rgba(0, 26, 40, 0.75);
     transition: all .3s ease;
     height: 100%;
     width: 100%;

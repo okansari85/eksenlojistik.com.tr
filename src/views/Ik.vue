@@ -46,15 +46,15 @@ export default {
       navsItem: [
         {
           heroTitle: "IK",
-          heroMiniTitle: "Çalışma Prensipleri",
+          heroMiniTitle: "Çalışma Prensibi",
           heroImg: ('/image/services/about-sub-page-hero1.png'),
-          title: "Çalışma Prensipleri",
+          title: "Çalışma Prensibi",
           content: "IkPrinciple"
         },
         {
           heroTitle: "IK",
           heroMiniTitle: "Eğitim ve Gelişim",
-          heroImg: ('/image/services/about-sub-page-hero2.png'),
+          heroImg: ('/image/services/egitimvegelisim.jpg'),
           title: "Eğitim ve Gelişim",
           content: "IkDevelopment"
 
@@ -62,14 +62,14 @@ export default {
         {
           heroTitle: "IK",
           heroMiniTitle: "Başvuru",
-          heroImg: ('/image/services/ik1.jpg'),
+          heroImg: ('/image/services/basvuru.jpg'),
           title: "Başvuru",
           content: 'IkPrinciple'
 
         },
       ],
       heroTitle: "IK",
-      heroMiniTitle: "Çalışma Prensipleri",
+      heroMiniTitle: "Çalışma Prensibi",
       heroImg: ('/image/services/ik2.jpg'),
     }
   },
@@ -84,6 +84,9 @@ export default {
       });
     }
   },
+  mounted () {
+    window.scrollTo(0, 0)
+  }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white fixed-top">
+    <header class="fixed-top" style="z-index: 99999;">
       <div class="container-fluid px-md-5 ">
         <nav class="navbar navbar-expand-lg d-none d-lg-flex">
           <router-link to="/" class="navbar-brand">
@@ -45,22 +45,22 @@
               <nav>
                 <ul>
                   <li>
-                    <router-link to="/" aria-current="page">Anasayfa</router-link>
+                    <router-link to="/" aria-current="page" class="mobile-nav-item">Anasayfa</router-link>
                   </li>
                   <li>
-                    <router-link to="/services">Servisler</router-link>
+                    <router-link to="/services" class="mobile-nav-item">Servisler</router-link>
                   </li>
                   <li>
-                    <router-link to="/about">Hakkımızda</router-link>
+                    <router-link to="/about" class="mobile-nav-item">Hakkımızda</router-link>
                   </li>
                   <li>
-                    <router-link to="/news">Haberler</router-link>
+                    <router-link to="/news" class="mobile-nav-item">Haberler</router-link>
                   </li>
                   <li>
-                    <router-link to="/ik">IK</router-link>
+                    <router-link to="/ik" class="mobile-nav-item">IK</router-link>
                   </li>
                   <li>
-                    <router-link to="/contact">İletişim</router-link>
+                    <router-link to="/contact" class="mobile-nav-item">İletişim</router-link>
                   </li>
                 </ul>
               </nav>

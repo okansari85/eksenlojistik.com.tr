@@ -5,7 +5,7 @@
       <section>
         <div class="container">
 
-          <div class="py-5 my-md-5">
+          <div class="pt-2 my-md-5">
 
             <b-tabs pills class="sub-tab justify-content-center">
               <b-tab v-for="(navs, index) in navsItem"
@@ -41,7 +41,7 @@ export default {
       navsItem: [
         {
           slug: "calisma-prensipleri",
-          title: "Çalışma Prensipleri",
+          title: "Çalışma Prensibi",
           content: "NewsAndAnnouncement"
         },
         {
@@ -59,6 +59,9 @@ export default {
       ],
     }
   },
+  mounted () {
+    window.scrollTo(0, 0)
+  }
 }
 </script>
 

@@ -1,10 +1,14 @@
 @use 'global' as g;
 @use 'veriables' as v;
+@use 'mixin' as m;
 
 .news-item {
   padding: 25px 0;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  @include m.responsive(992) {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   max-width: 400px;
   margin: 15px 0;
   .news-top {
@@ -24,4 +28,11 @@
     }
   }
 
+}
+
+@media (max-width:1366.98px) {
+  .news-item {
+    padding: 25px 10px;
+    margin: auto;
+  }
 }

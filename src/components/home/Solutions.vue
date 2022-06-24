@@ -1,6 +1,6 @@
 <template>
 
-  <section class="solutions px-3 py-5 px-lg-0">
+  <section class="solutions px-3 py-5 px-lg-0" id="solutions">
     <div class="container-fluid gx-0 overflow-hidden">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-6 position-relative">
@@ -14,36 +14,14 @@
           </div>
         </div>
         <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2">
-          <Title
+          <Title class="pb-4"
               title='büyük sevkiyatlar için premium çözümler'
               subtitle='size özel'
               paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
           <router-link to="/contact" class="btn btn-main my-2 my-md-0">iletişime geç</router-link>
           <router-link to="/services" class="btn btn-main active ms-2 my-2 my-md-0">daha fazla</router-link>
-          <div class="solutions-icon py-5">
-            <div class="row pt-md-5">
-              <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="/image/global/icon/icon1.png" alt=""/>
-                <span class="fs-09 text-uppercase"> Tır <br/> Filosu </span>
-              </div>
-              <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="/image/global/icon/icon2.png" alt=""/>
-                <span class="fs-09 text-uppercase"> Güvenlik <br/> Sözleşmesi </span>
-              </div>
-              <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="/image/global/icon/icon3.png" alt=""/>
-                <span class="fs-09 text-uppercase"> Anında <br/> Çözümler </span>
-              </div>
-              <div class="col-6 col-md-3 solutions-icon-item">
-                <img src="/image/global/icon/icon4.png" alt=""/>
-                <span class="fs-09 text-uppercase"> Zamanında <br/> Teslimat </span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-
+        </div>
     </div>
 
     <Modal video-id="solutions-video"/>

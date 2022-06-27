@@ -11,6 +11,22 @@
         <span class="d-block fw-bold lastchild">istediğin yere</span>
       </h1>
     </div>
+    <a class="wrapper-down-icon" href="#numberSection">
+      <div class="circle">
+      </div>
+      <div class="circle circle-2">
+      </div>
+      <div class="arrow">
+        <div class="arrow_line">
+        </div>
+        <div class="arrow_tip-wrapper">
+          <div class="arrow_tip left">
+          </div>
+          <div class="arrow_tip right">
+          </div>
+        </div>
+      </div>
+    </a>
   </section>
 </template>
 
@@ -37,6 +53,9 @@ export default {
       element.appendChild(textContainer);
       element.appendChild(textContainer.cloneNode(true));
     });
+
+
+
 
 
 // for presentation purpose
@@ -98,7 +117,7 @@ export default {
     top: 0;
     left: 0;
     content: '';
-    background-color: rgba(0, 26, 40, 0.75);
+    background-color: rgba(10, 37, 64, 0.55);
     transition: all .3s ease;
     height: 100%;
     width: 100%;

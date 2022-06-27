@@ -55,14 +55,14 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Gümrükleme",
-          heroImg: ('/image/services/_gumrukleme.jpg'),
+          heroImg: ('/image/services/gumruk3.jpg'),
           title: "Gümrükleme",
           content: 'ServicesCustom'
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
-          heroImg: ('/image/services/_karayolu.jpg'),
+          heroImg: ('/image/services/kara-tasimaciligi.jpg'),
           title: "Kara Taşımacılığı",
           content: 'ServicesDomestic'
 
@@ -113,9 +113,6 @@ export default {
         }
       });
     }
-  },
-  mounted () {
-    window.scrollTo(0, 0)
   }
 }
 </script>

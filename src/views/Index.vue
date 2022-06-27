@@ -9,7 +9,6 @@
       <Safely  />
       <Team  />
       <NewsHome  />
-      <SlideCountry/>
       <Country  />
 
 
@@ -30,16 +29,12 @@ import Safely from "@/components/home/Safely";
 import Team from "@/components/home/Team";
 import Country from "@/components/home/Country";
 import NewsHome from "@/views/NewsHome";
-import SlideCountry from "@/components/home/SlideCountry";
 
 
 
 export default {
   name: 'Index',
-  components: {SlideCountry, NewsHome, HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country },
-  mounted () {
-    window.scrollTo(0, 0)
-  }
+  components: {NewsHome, HeroSlide1, Hero, Solutions, Number, Cost, Safely, Team, Country }
 }
 </script>
 

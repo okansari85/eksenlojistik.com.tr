@@ -27,7 +27,7 @@
             <div class="position-absolute top-50 start-50 translate-middle text-white text-center country-item-absolute">
               <img src="/image/home/turkey_png.png" alt="" class="country-item-img2">
               <h3 class="text-uppercase fw-bold py-md-4 display-5">
-                Turkey
+                Romania
               </h3>
               <p class="text-white fs-08">
                 Latilokum Sokak Fidan Apt.No.7 D.1 Şişli <br />
@@ -59,7 +59,7 @@ section.country {
     top: 0;
     left: 0;
     content: '';
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(10, 37, 64, 0.55);
     transition: all .3s ease;
     height: 100%;
     width: 100%;

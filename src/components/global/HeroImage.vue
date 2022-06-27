@@ -7,7 +7,7 @@
         </h1>
       </div>
       <div class="col-lg-10 global-hero-img">
-        <img :src="img" alt=""/>
+        <img :src="img" alt="" />
         <div class="global-hero-bottom-btn">{{ miniTitle }}</div>
       </div>
     </div>
@@ -25,15 +25,6 @@ export default {
 }
 </script>
 
+<style scoped>
 
-<style scoped lang="scss">
-  .global-hero-img {
-    img {
-      height: 400px;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
 </style>
-
-

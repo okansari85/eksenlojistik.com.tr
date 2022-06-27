@@ -82,10 +82,7 @@ import Form from "@/components/global/Form";
 
 export default {
   name: "Contact",
-  components: { Form, HeroImage},
-  mounted () {
-    window.scrollTo(0, 0)
-  }
+  components: { Form, HeroImage}
 }
 </script>
 

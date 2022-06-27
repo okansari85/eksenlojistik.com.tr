@@ -10,8 +10,8 @@
           <p class="news-text fw-bold">{{ textNav }}</p>
           <button class="btn text-uppercase fs-07 px-4">{{ country }}</button>
           <div class="news-tag fs-07 pt-4">
-            <span class="text-decoration-underline me-3 text-uppercase">{{ tag1 }}</span>
-            <span class="text-decoration-underline text-uppercase">{{ tag2 }}</span>
+            <span class="text-decoration-underline me-3 text-black-50 text-uppercase">{{ tag1 }}</span>
+            <span class="text-decoration-underline text-black-50 text-uppercase">{{ tag2 }}</span>
           </div>
         </div>
       </div>

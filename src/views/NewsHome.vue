@@ -1,46 +1,45 @@
 <template>
 
-  <section class="news py-5">
+  <section class="news my-5 py-5"  style="background: #f8f8f8">
     <div class="container-fluid">
-      <div class="news-title-top text-center py-4">
-        <h1 class="fw-bold text-uppercase">son haber & duyurular</h1>
-        <p class="pt-3">Taşımacılıktan teknolojiye ve sürdürülebilirliğe kadar lojistik dünyasıyla ilgili en son bilgilere sahip olun.</p>
-      </div>
-
       <div class="row justify-content-between py-5 align-items-center">
         <div class="col-lg-5 col-xl-4 paragraph-margin order-2 order-lg-1">
-          <div class="nav flex-column nav-pills me-xl-3 " id="v-pills-tab" role="tablist">
+          <div class="news-title-top py-4">
+            <h1 class="fw-bold text-uppercase">son haber</h1>
+            <p class="pt-3">Taşımacılıktan teknolojiye ve sürdürülebilirliğe kadar lojistik dünyasıyla ilgili en son bilgilere sahip olun.</p>
+          </div>
+          <div class="nav nav-pills me-xl-3 " id="v-pills-tab" role="tablist" style="height: 500px; overflow-y: scroll">
             <NewsNav
-             :class="'active'"
-             id=1
-             date-number=07
-             date-month="subat"
-             text-nav="Transit Ambargo: Paris ve Frankfurt taki mevcut taşıma durumu"
-             country="belcika"
-             tag1="haber"
-             tag2="avrupa taşımacılığı"
+                :class="'active'"
+                id=1
+                date-number=07
+                date-month="subat"
+                text-nav="Transit Ambargo: Paris ve Frankfurt taki mevcut taşıma durumu"
+                country="belcika"
+                tag1="haber"
+                tag2="avrupa taşımacılığı"
             />
             <NewsNav
 
-             id=2
-             date-number=22
-             date-month="subat"
-             text-nav="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
-             country="belcika"
-             tag1="haber"
-             tag2="avrupa taşımacılığı"
-            />
-            <NewsNav
-             id=3
-             date-number=02
-             date-month="mar"
-             text-nav="Transit Ambargo: Paris ve Frankfurt taki mevcut taşıma durumu"
-             country="belcika"
-             tag1="haber"
-             tag2="avrupa taşımacılığı"
-            />
+                id=2
+                date-number=22
+                date-month="subat"
+                text-nav="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
+                country="belcika"
+                tag1="haber"
+                tag2="avrupa taşımacılığı"
+            />            <NewsNav
+
+              id=2
+              date-number=22
+              date-month="subat"
+              text-nav="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
+              country="belcika"
+              tag1="haber"
+              tag2="avrupa taşımacılığı"
+          />
           </div>
-          <div class="mt-5 pt-3 m-auto text-center">
+          <div class="mt-5 pt-3">
             <router-link to="/news" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
           </div>
         </div>
@@ -80,6 +79,9 @@ import NewsContent from "@/components/home/news/NewsContent";
 export default {
   name: "NewsHome",
   components: {NewsNav, NewsContent},
+  mounted () {
+    window.scrollTo(0, 0)
+  }
 
 }
 </script>

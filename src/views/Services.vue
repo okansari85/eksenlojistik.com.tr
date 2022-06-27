@@ -10,16 +10,16 @@
         />
 
         <div class="py-5 my-md-5 d-md-flex justify-content-around">
-            <b-tabs pills class="sub-tab">
-              <b-tab v-for="(navs, index) in navsItem"
-                     :title="navs.title" :key="index"
-                     @click="Changer(index)"
-              >
-                <b-card-text class="py-5 px-3">
-                  <component class="pt-5" :is="navs.content" :navs="navs"></component>
-                </b-card-text>
-              </b-tab>
-            </b-tabs>
+          <b-tabs pills class="sub-tab">
+            <b-tab v-for="(navs, index) in navsItem"
+                   :title="navs.title" :key="index"
+                   @click="Changer(index)"
+            >
+              <b-card-text class="py-5 px-3">
+                <component class="pt-5" :is="navs.content" :navs="navs"></component>
+              </b-card-text>
+            </b-tab>
+          </b-tabs>
 
 
         </div>
@@ -55,14 +55,14 @@ export default {
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Gümrükleme",
-          heroImg: ('/image/services/gumruk3.jpg'),
+          heroImg: ('/image/services/_gumrukleme.jpg'),
           title: "Gümrükleme",
           content: 'ServicesCustom'
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
-          heroImg: ('/image/services/kara-tasimaciligi.jpg'),
+          heroImg: ('/image/services/_karayolu.jpg'),
           title: "Kara Taşımacılığı",
           content: 'ServicesDomestic'
 
@@ -113,6 +113,9 @@ export default {
         }
       });
     }
+  },
+  mounted () {
+    window.scrollTo(0, 0)
   }
 }
 </script>

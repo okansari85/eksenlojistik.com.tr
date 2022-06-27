@@ -16,5 +16,38 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script>
+    $(window).scroll(function () {
+        var objectt = $('.hero-bottom-map');
+        var obj_height = objectt.height();
+        var windows_height = $(window).height();
+
+        var obj_pos_top = objectt.position().top - (windows_height / 2);
+        var obj_pos_bottom = obj_pos_top + obj_height - (windows_height / 4);
+
+        var scroll_top = $(window).scrollTop();
+        var scroll_bottom = scroll_top + windows_height;
+
+
+        console.log('offset top : ', obj_pos_top);
+        console.log('offset bottom : ', obj_pos_bottom);
+        console.log('offset : ', scroll_bottom);
+
+        if (  (scroll_top >= obj_pos_top  && scroll_top <= obj_pos_bottom)){
+            objectt.addClass("dark-map");
+
+        } else {
+            objectt.removeClass("dark-map");
+
+        }
+    });
+    $(document).ready(function () {
+        $(".mobile-nav-item").click(function () {
+            $(".toggle-btn__cross").click();
+        });
+    });
+
+</script>
+
 </body>
 </html>

@@ -5,9 +5,9 @@
       <div class="row align-items-center py-5 justify-content-between">
         <div class="col-xl-5  paragraph-margin order-2 order-xl-1">
           <Title class=" pt-5 pt-xl-0"
-              title='EKSEN, dünya çapında faaliyet gösteren lojistik endüstrisinde özel bir konuma sahiptir.'
-              subtitle='biz bir aileyiz '
-              paragraph='Şirket, profesyonel kurumsal yapılarını sürdürürken, çalışanlarına da herkesin takdir edildiği, insan dokunuşu ile hoşgörülü bir çalışma ortamı sunmaktadır.
+                 title='EKSEN, dünya çapında faaliyet göstermektedir.'
+                 subtitle='biz bir aileyiz '
+                 paragraph='Şirket, profesyonel kurumsal yapılarını sürdürürken, çalışanlarına da herkesin takdir edildiği, insan dokunuşu ile hoşgörülü bir çalışma ortamı sunmaktadır.
                     EKSEN LOJİSTİK’deki kariyer olanakları hakkında daha fazlasını okuyun.'
           ></Title>
           <router-link to="/contact" className="btn btn-main mt-3">kariyer</router-link>

@@ -54,7 +54,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Eksen Lojistik",
-          heroImg: ('/image/services/about-sub-page-hero1.png'),
+          heroImg: ('/image/services/hakkimizda.jpg'),
           title: "Hakkımızda",
           content: "AboutContent"
 
@@ -62,7 +62,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Sürdürülebilirlik",
-          heroImg: ('/image/services/about-sub-page-hero2.png'),
+          heroImg: ('/image/services/surdurulebilirlik.jpg'),
           title: "Sürdürülebilirlik",
           content: "AboutSustainability"
 
@@ -70,7 +70,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Misyon & Vizyon",
-          heroImg: ('/image/services/ab1.jpg'),
+          heroImg: ('/image/services/misyon_vizyon.jpg'),
           title: "Misyon & Vizyon",
           content: 'AboutMission'
 
@@ -78,7 +78,7 @@ export default {
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Takım Üyeleri",
-          heroImg: ('/image/services/ab2.jpg'),
+          heroImg: ('/image/services/takimuyeleri1.jpg'),
           title: "Takım Üyeleri",
           content: 'AboutTeam'
 
@@ -86,7 +86,7 @@ export default {
       ],
       heroTitle: "Hakkımızda",
       heroMiniTitle: "Eksen Lojistik",
-      heroImg: ('/image/services/about-sub-page-hero1.png'),
+      heroImg: ('/image/services/hakkimizda.jpg'),
     }
   },
   methods: {
@@ -100,6 +100,9 @@ export default {
       });
     }
   },
+  mounted () {
+    window.scrollTo(0, 0)
+  }
 }
 </script>
 

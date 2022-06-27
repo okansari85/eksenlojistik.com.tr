@@ -1,6 +1,6 @@
 // Hero
 @use 'mixin' as m;
-
+@use 'veriables' as v;
 
 section.numbers {
     //background-image: url("/public/image/home/back.jpg");
@@ -54,27 +54,27 @@ section.solutions {
             padding: 15px 0;
         }
     }
-    
+
 }
 
 .way-slide-btn {
-        cursor: pointer;
-        width: 120px;
-        z-index: 2;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 15px;
-        border-radius: 40px;
-        margin: 30px auto;
-        @include m.responsive(992) {
+    cursor: pointer;
+    width: 120px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 40px;
+    margin: 30px auto;
+    @include m.responsive(992) {
         position: absolute;
-            margin-left: 50px;
-            top: 50%;
-        }
-
-        background-color: white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        margin-left: 50px;
+        top: 50%;
     }
+
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 
 
 section.news {
@@ -86,7 +86,7 @@ section.news {
         max-width: 100%;
         margin: 0 auto!important;
         height: 250px;
-        background-color: transparent!important;
+        //background-color: transparent!important;
         padding: 25px;
         .news-date {
             padding: 0 20px;
@@ -94,14 +94,19 @@ section.news {
             font-weight: bold;
         }
         .news-tag {
-            color: #e6e6e6;
+            color: #d1d1d1;
         }
         button {
             background-color: #e6e6e6;
             font-weight: bold;
         }
         &.active {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: v.$darkOrange;
+            .news-date, .news-date, .news-text {
+                color: white!important;
+            }
+
         }
     }
 
@@ -183,117 +188,7 @@ $easing: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 
-.wrapper-down-icon {
-    display: flex;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%);
 
-    .circle {
-        width: 100px;
-        height: 100px;
-        transform: scale(0);
-        opacity: 1;
-        border: 1px solid white;
-        border-radius: 100%;
-        animation: grow 2.5s linear infinite;
-        position: absolute;
-        animation-delay: 1.2s
-    }
-
-    .circle-2 {
-        animation-delay: 1.4s;
-    }
-
-    .arrow {
-        position: relative;
-        top: -40px;
-        width: 10px;
-        height: 82px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-
-    .arrow_line {
-        width: 2px;
-        height: 80px;
-        background: white;
-        animation: height 2.5s ease-in infinite;
-    }
-
-    .arrow_tip-wrapper {
-        position: relative;
-        top: 77px;
-        left: -1px;
-        animation: arrow-tip 2.5s ease-in infinite;
-    }
-
-    .arrow_tip {
-        width: 1px;
-        height: 6px;
-        background: white;
-        transform: rotate(45deg);
-        position: absolute;
-        left: 2px;
-    }
-
-    .arrow_tip.left {
-        transform: rotate(-45deg);
-        left: -2px;
-    }
-}
-
-@keyframes grow {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1.0);
-        opacity: 0;
-    }
-}
-
-@keyframes height {
-    0% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    60% {
-        transform: translateY(0);
-    }
-    90% {
-        transform: translateY(110%);
-    }
-    100% {
-        transform: translateY(110%);
-    }
-}
-
-@keyframes arrow-tip {
-    0% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(-1px);
-    }
-    85% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+.hero-bottom-map {
+    transition: all .3s ease-in-out;
 }

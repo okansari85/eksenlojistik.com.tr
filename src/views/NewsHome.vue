@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="row justify-content-between py-5 align-items-center">
         <div class="col-lg-5 col-xl-4 paragraph-margin order-2 order-lg-1">
-          <div class="news-title-top py-4">
+          <div class="news-title-top py-4 text-center text-lg-start">
             <h1 class="fw-bold text-uppercase">son haber</h1>
             <p class="pt-3">Taşımacılıktan teknolojiye ve sürdürülebilirliğe kadar lojistik dünyasıyla ilgili en son bilgilere sahip olun.</p>
           </div>
@@ -39,7 +39,7 @@
               tag2="avrupa taşımacılığı"
           />
           </div>
-          <div class="mt-5 pt-3">
+          <div class="mt-5 pt-3 text-center text-lg-start">
             <router-link to="/news" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
           </div>
         </div>

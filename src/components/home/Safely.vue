@@ -8,7 +8,7 @@
             <img src="/image/home/eksen_videoo.png" alt="">
           </a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 text-center text-lg-start">
           <h1 class='display-4 fw-bold text-uppercase'>
             güvenilir ve hızlı hizmet anlayışı
           </h1>

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row justify-content-between align-items-center">
+  <div class="row justify-content-between">
     <div class="col-md-6">
       <div class="py-3">
         <h5 class="display-6 fw-500">Yerel, uzun mesafe, ulusal veya uluslararası</h5>

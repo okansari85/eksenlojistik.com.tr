@@ -1,11 +1,11 @@
 <template>
 
   <div>
-    <main class="global-sub-page mt-md-5">
+    <main class="global-sub-page">
       <section>
         <div class="container">
 
-          <div class="pt-2 my-md-5">
+          <div class="pt-5">
 
             <b-tabs pills class="sub-tab justify-content-center">
               <b-tab v-for="(navs, index) in navsItem"

@@ -9,7 +9,7 @@
               :img="heroImg"
           />
 
-          <div class="py-5 my-md-5">
+          <div class="py-5">
 
             <b-tabs pills class="sub-tab justify-content-center ">
               <b-tab v-for="(navs, index) in navsItem"

@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="global-sub-page">
-      <div class="container pt-5 mt-md-5">
+      <div class="container pt-5">
 
         <HeroImage
             :title="heroTitle"
@@ -9,7 +9,7 @@
             :img="heroImg"
         />
 
-        <div class="py-5 my-md-5 d-md-flex justify-content-around">
+        <div class="py-5 d-md-flex justify-content-around">
           <b-tabs pills class="sub-tab">
             <b-tab v-for="(navs, index) in navsItem"
                    :title="navs.title" :key="index"
@@ -57,14 +57,16 @@ export default {
           heroMiniTitle: "Gümrükleme",
           heroImg: ('/image/services/_gumrukleme.jpg'),
           title: "Gümrükleme",
-          content: 'ServicesCustom'
+          content: 'ServicesCustom',
+          // id:'gumruk'
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
           heroImg: ('/image/services/_karayolu.jpg'),
           title: "Kara Taşımacılığı",
-          content: 'ServicesDomestic'
+          content: 'ServicesDomestic',
+          // id:'kara-tasimacilgi',
 
         },
         {
@@ -72,7 +74,8 @@ export default {
           heroMiniTitle: "Parsiyel & LFT",
           heroImg: ('/image/services/parsiyel.jpg'),
           title: "Parsiyel & LFT",
-          content: 'ServicesLFT'
+          content: 'ServicesLFT',
+          // id:'parsiyel-lft',
 
         },
         {
@@ -80,27 +83,29 @@ export default {
           heroMiniTitle: "Depo Yönetimi",
           heroImg: ('/image/services/depo.jpg'),
           title: "Depo Yönetimi",
-          content: 'ServicesManagement'
-
+          content: 'ServicesManagement',
+          // id:'depo-yonetimi',
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Ekspress & Minivan",
           heroImg: ('/image/services/ekspress.jpg'),
           title: "Ekspres & Minivan",
-          content: 'ServicesEkspress'
+          content: 'ServicesEkspress',
+          // id:'ekspress-minivan',
         },
         {
           heroTitle: "Servisler",
           heroMiniTitle: "Proje Taşımacılığı",
           heroImg: ('/image/services/proje-hero.jpg'),
           title: "Proje Taşımacılığı",
-          content: 'ServicesProject'
+          content: 'ServicesProject',
+          // id:'proje-tasimaciligi',
         },
       ],
       heroTitle: "Servisler",
       heroMiniTitle: "Gümrükleme",
-      heroImg: ('/image/services/gumruk3.jpg'),
+      heroImg: ('/image/services/_gumrukleme.jpg'),
     }
   },
   methods: {

@@ -3,7 +3,7 @@
   <section class="team">
     <div class="container-fluid">
       <div class="row align-items-center py-5 justify-content-between">
-        <div class="col-xl-5  paragraph-margin order-2 order-xl-1">
+        <div class="col-xl-5  paragraph-margin order-2 order-xl-1 text-center text-lg-start">
           <Title class=" pt-5 pt-xl-0"
                  title='EKSEN, dünya çapında faaliyet göstermektedir.'
                  subtitle='biz bir aileyiz '

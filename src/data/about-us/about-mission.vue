@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row justify-content-between align-items-center">
+  <div class="row justify-content-between">
     <div class="col-lg-6 text-start">
       <p><strong class="fs-5">Eksen Lojistik her zaman yanınızda. </strong> Benzersiz bir kombinasyon ve lojistik ağ ile
         küresel

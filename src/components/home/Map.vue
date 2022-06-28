@@ -8,7 +8,7 @@
             <h3 class="fw-bold">Kara yolu</h3>
             <span>taşımacılığı</span>
             <div class="my-3">
-              <router-link to="/services" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
+              <router-link to="/services/karayolu" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
             </div>
           </div>
         </div>

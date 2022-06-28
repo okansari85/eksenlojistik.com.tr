@@ -1,7 +1,7 @@
 <template>
   <div class="global-hero-top">
     <div class="row">
-      <div class="col-lg-2">
+      <div class="col-lg-2 ps-lg-5">
         <h1>
           {{ title }} <br/> <span>{{ miniTitle }}</span>
         </h1>

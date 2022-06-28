@@ -2,7 +2,7 @@
 
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <div class="py-3">
+      <div class="">
         <h5 class="display-6 fw-500">Hakkımızda</h5>
         <p class="py-3">EKSEN ULUSLARARASI LOJİSTİK VE TAŞIMACILIK LTD. ŞTİ. olarak uluslararası karayolu taşımacılığı
           sektöründe 16 yıl boyunca istikrarlı şekilde büyümemizi sürdürerek Romanya hattında marka olma hedefimizi

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row justify-content-between align-items-center">
+  <div class="row justify-content-between">
     <div class="col-md-6">
       <div>
         <h5 class="display-6 fw-500">

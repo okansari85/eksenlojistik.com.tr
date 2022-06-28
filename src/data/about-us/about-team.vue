@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-between my-5 pb-5 align-items-center">
+  <div class="row justify-content-between">
     <div class="col-lg-6">
       <h5 class="display-6 fw-500">
         Fark yaratmak ve kurumumuza değer katmak istiyorsanız bize katılın.

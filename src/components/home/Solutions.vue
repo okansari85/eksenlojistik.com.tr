@@ -13,7 +13,7 @@
             <img src="/image/home/k2.png" alt="" width="100" height="auto" style="z-index: 99;">
           </div>
         </div>
-        <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2">
+        <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2 text-center text-lg-start">
           <Title class="pb-4"
                  title='büyük sevkiyatlar için premium çözümler'
                  subtitle='size özel'

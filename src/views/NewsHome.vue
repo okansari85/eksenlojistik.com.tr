@@ -2,11 +2,11 @@
 
   <section class="news my-5 py-5"  style="background: #f8f8f8">
     <div class="container-fluid">
-      <div class="row justify-content-between py-5 align-items-center">
+      <div class="row py-5 align-items-center">
         <div class="col-lg-5 col-xl-4 paragraph-margin order-2 order-lg-1">
           <div class="news-title-top py-4 text-center text-lg-start">
             <h1 class="fw-bold text-uppercase">son haber</h1>
-            <p class="pt-3">Taşımacılıktan teknolojiye ve sürdürülebilirliğe kadar lojistik dünyasıyla ilgili en son bilgilere sahip olun.</p>
+            <p class="pt-3">Eksen Lojistik için son gelişmeler.</p>
           </div>
           <div class="nav nav-pills me-xl-3 " id="v-pills-tab" role="tablist" style="height: 500px; overflow-y: scroll">
             <NewsNav

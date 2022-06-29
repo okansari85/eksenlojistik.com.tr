@@ -122,7 +122,8 @@ section.news {
 
 @media(min-width:991px) {
     .swiper-img {
-        clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(17% 0%, 100% 0, 100% 100%, 0% 100%);
+        height: 850px!important;
     }
 }
 

@@ -20,3 +20,26 @@ $minWidt1600 : "min-width:1600px" ;
 $minWidt1900 : "min-width:1900px" ;
 
 
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+div.counter-wrap {
+  animation: counter 12s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+}
+div.counter-wrap::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 52311;
+  }
+  to {
+    --num: 55000;
+  }
+}

@@ -252,19 +252,19 @@ select, input, textarea {
 
 .dark-map {
     background-color: #001a28!important;
-    color: #ffffff!important;
+    color: #fff!important;
     transition: all .3s ease-in-out;
     p {
-        color: #ffffff!important;
+        color: #fff!important;
     }
     .circle {
-        border-color: #ffffff!important;
+        border-color: #fff!important;
     }
     .arrow_line {
-        background-color: #ffffff!important;
+        background-color: #fff!important;
     }
     .arrow_tip {
-        background-color: #ffffff!important;
+        background-color: #fff!important;
     }
 }
 
@@ -382,4 +382,8 @@ select, input, textarea {
     100% {
         opacity: 0;
     }
+}
+
+.bg-custom-dark {
+    background-color: #001a28;
 }

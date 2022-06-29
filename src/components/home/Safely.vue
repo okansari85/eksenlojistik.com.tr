@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#home-video">
-            <img src="/image/home/eksen_videoo.png" alt="">
+            <img src="/image/home/eksen_videoo.png" alt="" class="eksen_video_img">
           </a>
         </div>
         <div class="col-lg-4 text-center text-lg-start">
@@ -41,5 +41,12 @@ export default {
 </script>
 
 <style scoped>
+
+
+@media (min-width:992px ) {
+.eksen_video_img {
+  height: 850px;
+}
+}
 
 </style>

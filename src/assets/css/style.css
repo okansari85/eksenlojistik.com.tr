@@ -1,3 +1,25 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+div.counter-wrap {
+  animation: counter 12s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+}
+
+div.counter-wrap::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 52311;
+  }
+  to {
+    --num: 55000;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
@@ -228,20 +250,20 @@ select::placeholder, input::placeholder, textarea::placeholder {
 }
 .dark-map {
   background-color: #001a28 !important;
-  color: #ffffff !important;
+  color: #fff !important;
   transition: all 0.3s ease-in-out;
 }
 .dark-map p {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 .dark-map .circle {
-  border-color: #ffffff !important;
+  border-color: #fff !important;
 }
 .dark-map .arrow_line {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
 }
 .dark-map .arrow_tip {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
 }
 
 .wrapper-down-icon {
@@ -349,6 +371,10 @@ select::placeholder, input::placeholder, textarea::placeholder {
     opacity: 0;
   }
 }
+.bg-custom-dark {
+  background-color: #001a28;
+}
+
 .fs-10 {
   font-size: 10px;
 }
@@ -643,7 +669,8 @@ section.news .news-content-wrap {
 
 @media (min-width: 991px) {
   .swiper-img {
-    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(17% 0%, 100% 0, 100% 100%, 0% 100%);
+    height: 850px !important;
   }
 }
 @media (min-width: 768px) {

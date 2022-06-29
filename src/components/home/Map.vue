@@ -54,13 +54,14 @@
       <img src="/image/home/maps_.svg" alt="" class="py-3">
       <div class="row justify-content-center align-items-center py-5 content-text">
         <div class="numbers-top col-lg-5 text-center pb-5">
-          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda 52.311km yol yaptık</div>
+          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="counter-wrap display-3 fw-bold"></div> KM yol yaptık</div>
           <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>
       </div>
     </div>
   </section>
+  <div class="fake-div"></div> 
 </template>
 
 <script>
@@ -98,9 +99,11 @@ export default {
 
 .hero-item {
   .btn-main {
-    border: 1px solid white;
     color: white;
     font-size: .8rem;
+    &:hover {
+      border: 1px solid #fff;
+    }
   }
 }
 

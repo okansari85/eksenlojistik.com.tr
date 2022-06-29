@@ -33,11 +33,13 @@
         console.log('offset bottom : ', obj_pos_bottom);
         console.log('offset : ', scroll_bottom);
 
-        if (  (scroll_top >= obj_pos_top  && scroll_top <= obj_pos_bottom)){
+        objectt.addClass("dark-map");
+        if (  ( scroll_top <= obj_pos_bottom)){
             objectt.addClass("dark-map");
 
         } else {
             objectt.removeClass("dark-map");
+            objectt.removeClass("bg-custom-dark");
 
         }
     });

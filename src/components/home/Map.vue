@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero" style="z-index: 10000;">
         <div class="col-6 col-lg-4 text-center hero-item">
-          <img src="/image/home/hero-bottom-item1.png" alt="">
+          <div class="hero-item-image position-relative">
+                <img src="/image/home/hero-bottom-item1.png" alt="" class="w-100"/>
+          </div>
           <div class=" text-uppercase fw-bold mt-3">
             <h3 class="fw-bold">Kara yolu</h3>
             <span>taşımacılığı</span>
@@ -13,7 +15,9 @@
           </div>
         </div>
         <div class="col-6 col-lg-4 text-center hero-item">
-          <img src="/image/home/hero-bottom-item2.png" alt="">
+          <div class="hero-item-image active">
+          <img src="/image/home/hero-bottom-item2.png" alt="" class="w-100"/>
+          </div>
           <div class="text-uppercase fw-bold mt-3">
             <h3 class="fw-bold">gümrükleme</h3>
             <span>hizmeti</span>
@@ -23,7 +27,9 @@
           </div>
         </div>
         <div class="col-6 col-lg-4 text-center hero-item">
-          <img src="/image/home/hero-bottom-item3.png" alt="">
+          <div class="hero-item-image">
+                <img src="/image/home/hero-bottom-item3.png" alt="" class="w-100"/>
+          </div>
           <div class=" text-uppercase fw-bold mt-3">
             <h3 class="fw-bold">proje</h3>
             <span>taşımacılığı</span>
@@ -54,14 +60,13 @@
       <img src="/image/home/maps_.svg" alt="" class="py-3">
       <div class="row justify-content-center align-items-center py-5 content-text">
         <div class="numbers-top col-lg-5 text-center pb-5">
-          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="counter-wrap display-3 fw-bold"></div> KM yol yaptık</div>
+          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold counter"></div> KM yol yaptık</div>
           <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>
       </div>
     </div>
   </section>
-  <div class="fake-div"></div> 
 </template>
 
 <script>
@@ -69,7 +74,7 @@
 
 
 export default {
-  name: "Map",
+  name: "Map",  
 }
 </script>
 
@@ -93,7 +98,7 @@ export default {
     margin: auto;
   }
   .services-item-hero {
-    margin-top: -150px;
+   top: -150px;
   }
 }
 
@@ -105,6 +110,34 @@ export default {
       border: 1px solid #fff;
     }
   }
+
+}
+
+
+.hero-item-image {
+  position: relative;
+  cursor: pointer;
+  transition: all .3s ease;
+  &::after  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .6);
+    z-index: 3;
+    content: '';
+    transition: all .3s ease;
+  }
+
+&:hover {
+    transition: all .3s ease;
+  &::after {
+    background-color: rgba($color: #000000, $alpha: 0);
+  }
+}
+
+
 }
 
 

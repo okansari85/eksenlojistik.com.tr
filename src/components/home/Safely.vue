@@ -4,7 +4,7 @@
     <div class="container-fluid gx-0 overflow-hidden py-5">
       <div class="row align-items-center">
         <div class="col-lg-7">
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#home-video">
+          <a href="javascript:void(0)">
             <img src="/image/home/eksen_videoo.png" alt="" class="eksen_video_img">
           </a>
         </div>
@@ -22,7 +22,7 @@
     </div>
   </section>
 
-  <Modal video-id="home-video"></Modal>
+  <!-- <Modal video-id="home-video"></Modal> -->
 
 
 </template>

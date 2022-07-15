@@ -244,7 +244,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
   background-color: #fff !important;
 }
 
-.wrapper-down-icon {
+.wrapper-down-icon, .wrapper-down-icon8, .wrapper-down-icon7, .wrapper-down-icon6, .wrapper-down-icon5, .wrapper-down-icon4, .wrapper-down-icon3, .wrapper-down-icon2 {
   display: flex;
   z-index: 2;
   justify-content: center;
@@ -254,7 +254,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
   left: 50%;
   transform: translate(-50%);
 }
-.wrapper-down-icon .circle {
+.wrapper-down-icon .circle, .wrapper-down-icon8 .circle, .wrapper-down-icon7 .circle, .wrapper-down-icon6 .circle, .wrapper-down-icon5 .circle, .wrapper-down-icon4 .circle, .wrapper-down-icon3 .circle, .wrapper-down-icon2 .circle {
   width: 100px;
   height: 100px;
   transform: scale(0);
@@ -265,10 +265,10 @@ select::placeholder, input::placeholder, textarea::placeholder {
   position: absolute;
   animation-delay: 1.2s;
 }
-.wrapper-down-icon .circle-2 {
+.wrapper-down-icon .circle-2, .wrapper-down-icon8 .circle-2, .wrapper-down-icon7 .circle-2, .wrapper-down-icon6 .circle-2, .wrapper-down-icon5 .circle-2, .wrapper-down-icon4 .circle-2, .wrapper-down-icon3 .circle-2, .wrapper-down-icon2 .circle-2 {
   animation-delay: 1.4s;
 }
-.wrapper-down-icon .arrow {
+.wrapper-down-icon .arrow, .wrapper-down-icon8 .arrow, .wrapper-down-icon7 .arrow, .wrapper-down-icon6 .arrow, .wrapper-down-icon5 .arrow, .wrapper-down-icon4 .arrow, .wrapper-down-icon3 .arrow, .wrapper-down-icon2 .arrow {
   position: relative;
   top: -40px;
   width: 10px;
@@ -277,19 +277,19 @@ select::placeholder, input::placeholder, textarea::placeholder {
   display: flex;
   justify-content: center;
 }
-.wrapper-down-icon .arrow_line {
+.wrapper-down-icon .arrow_line, .wrapper-down-icon8 .arrow_line, .wrapper-down-icon7 .arrow_line, .wrapper-down-icon6 .arrow_line, .wrapper-down-icon5 .arrow_line, .wrapper-down-icon4 .arrow_line, .wrapper-down-icon3 .arrow_line, .wrapper-down-icon2 .arrow_line {
   width: 2px;
   height: 80px;
   background: #001a28;
   animation: height 2.5s ease-in infinite;
 }
-.wrapper-down-icon .arrow_tip-wrapper {
+.wrapper-down-icon .arrow_tip-wrapper, .wrapper-down-icon8 .arrow_tip-wrapper, .wrapper-down-icon7 .arrow_tip-wrapper, .wrapper-down-icon6 .arrow_tip-wrapper, .wrapper-down-icon5 .arrow_tip-wrapper, .wrapper-down-icon4 .arrow_tip-wrapper, .wrapper-down-icon3 .arrow_tip-wrapper, .wrapper-down-icon2 .arrow_tip-wrapper {
   position: relative;
   top: 77px;
   left: -1px;
   animation: arrow-tip 2.5s ease-in infinite;
 }
-.wrapper-down-icon .arrow_tip {
+.wrapper-down-icon .arrow_tip, .wrapper-down-icon8 .arrow_tip, .wrapper-down-icon7 .arrow_tip, .wrapper-down-icon6 .arrow_tip, .wrapper-down-icon5 .arrow_tip, .wrapper-down-icon4 .arrow_tip, .wrapper-down-icon3 .arrow_tip, .wrapper-down-icon2 .arrow_tip {
   width: 1px;
   height: 6px;
   background: #001a28;
@@ -297,7 +297,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
   position: absolute;
   left: 2px;
 }
-.wrapper-down-icon .arrow_tip.left {
+.wrapper-down-icon .arrow_tip.left, .wrapper-down-icon8 .arrow_tip.left, .wrapper-down-icon7 .arrow_tip.left, .wrapper-down-icon6 .arrow_tip.left, .wrapper-down-icon5 .arrow_tip.left, .wrapper-down-icon4 .arrow_tip.left, .wrapper-down-icon3 .arrow_tip.left, .wrapper-down-icon2 .arrow_tip.left {
   transform: rotate(-45deg);
   left: -2px;
 }
@@ -355,6 +355,55 @@ select::placeholder, input::placeholder, textarea::placeholder {
 
 .text-orange {
   color: #ffa10e;
+}
+
+.wrapper-down-icon2 .circle {
+  animation-delay: 0.4s;
+}
+.wrapper-down-icon2 .circle-2 {
+  animation-delay: 0.6s;
+}
+
+.wrapper-down-icon3 .circle {
+  animation-delay: 0.6s;
+}
+.wrapper-down-icon3 .circle-2 {
+  animation-delay: 0.8s;
+}
+
+.wrapper-down-icon4 .circle {
+  animation-delay: 0.8s;
+}
+.wrapper-down-icon4 .circle-2 {
+  animation-delay: 1s;
+}
+
+.wrapper-down-icon5 .circle {
+  animation-delay: 1s;
+}
+.wrapper-down-icon5 .circle-2 {
+  animation-delay: 1.2s;
+}
+
+.wrapper-down-icon6 .circle {
+  animation-delay: 1.2s;
+}
+.wrapper-down-icon6 .circle-2 {
+  animation-delay: 1.4s;
+}
+
+.wrapper-down-icon7 .circle {
+  animation-delay: 1.4s;
+}
+.wrapper-down-icon7 .circle-2 {
+  animation-delay: 1.6s;
+}
+
+.wrapper-down-icon8 .circle {
+  animation-delay: 1.6s;
+}
+.wrapper-down-icon8 .circle-2 {
+  animation-delay: 1.8s;
 }
 
 .fs-10 {

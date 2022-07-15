@@ -391,3 +391,76 @@ select, input, textarea {
 .text-orange {
     color: v.$orange;
 }
+
+
+.wrapper-down-icon2 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: .4s;
+    }
+
+    .circle-2 {
+        animation-delay: .6s;
+    }
+}
+.wrapper-down-icon3 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: .6s;
+    }
+
+    .circle-2 {
+        animation-delay: .8s;
+    }
+}
+.wrapper-down-icon4 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: .8s;
+    }
+
+    .circle-2 {
+        animation-delay: 1s;
+    }
+}
+.wrapper-down-icon5 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: 1s;
+    }
+
+    .circle-2 {
+        animation-delay: 1.2s;
+    }
+}
+
+.wrapper-down-icon6 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: 1.2s;
+    }
+
+    .circle-2 {
+        animation-delay: 1.4s;
+    }
+}
+.wrapper-down-icon7 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: 1.4s;
+    }
+
+    .circle-2 {
+        animation-delay: 1.6s;
+    }
+}
+.wrapper-down-icon8 {
+    @extend .wrapper-down-icon;
+    .circle {
+        animation-delay: 1.6s;
+    }
+
+    .circle-2 {
+        animation-delay: 1.8s;
+    }
+}

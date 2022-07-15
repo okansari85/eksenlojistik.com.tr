@@ -6,7 +6,7 @@
           <div class="hero-item-image position-relative">
                 <img src="/image/home/j1.jpg" alt="" class="w-100"/>
           </div>
-          <div class=" text-uppercase fw-bold mt-3">
+          <div class=" text-uppercase fw-bold mt-5">
             <h3 class="fw-bold">Kara yolu</h3>
             <span>taşımacılığı</span>
             <div class="my-3">
@@ -18,7 +18,7 @@
           <div class="hero-item-image active">
           <img src="/image/home/h1.jpg" alt="" class="w-100"/>
           </div>
-          <div class="text-uppercase fw-bold mt-3">
+          <div class="text-uppercase fw-bold mt-5">
             <h3 class="fw-bold">gümrükleme</h3>
             <span>hizmeti</span>
             <div class="my-3">
@@ -32,7 +32,7 @@
           <div class="hero-item-image">
                 <img src="/image/home/g1.jpg" alt="" class="w-100"/>
           </div>
-          <div class=" text-uppercase fw-bold mt-3">
+          <div class=" text-uppercase fw-bold mt-5">
             <h3 class="fw-bold">depolama</h3>
             <span>hizmeti</span>
             <div class="my-3">
@@ -40,8 +40,9 @@
             </div>
           </div>
         </div>
-
       </div>
+
+
       <a class="wrapper-down-icon" href="#solutions">
         <div class="circle">
         </div>
@@ -59,11 +60,42 @@
         </div>
       </a>
     </div>
-    <div class="container-fluid text-center pb-5 gx-0 overflow-hidden">
+    <div class="container-fluid text-center pb-5 gx-0 overflow-hidden position-relative">
       <img src="/image/home/maps_.svg" alt="" class="maps-svg">
+      <div class="wrapper-down-icon2 position-absolute" style="top: -350px;">
+        <div class="circle"></div>
+        <div class="circle circle-2"></div>
+      </div>
+
+      <div class="wrapper-down-icon3" style="top: -700px; left: 30%;">
+        <div class="circle"></div>  
+        <div class="circle circle-2"></div>
+      </div>
+      <div class="wrapper-down-icon4" style="top: -850px; left: 20%;">
+        <div class="circle"></div>  
+        <div class="circle circle-2"></div>
+      </div>
+      <div class="wrapper-down-icon5" style="top: -700px; left: 70%;">
+        <div class="circle"></div>  
+        <div class="circle circle-2"></div>
+      </div>
+
+      <div class="wrapper-down-icon6" style="top: -600px; left: 80%;">
+        <div class="circle"></div>
+        <div class="circle circle-2"></div>
+      </div>
+      <div class="wrapper-down-icon7" style="top: -900px; left: 65%;">
+        <div class="circle"></div>
+        <div class="circle circle-2"></div>
+      </div>
+      <div class="wrapper-down-icon8" style="top: -950px; left: 42%;">
+        <div class="circle"></div>
+        <div class="circle circle-2"></div>
+      </div>
+
       <div class="row justify-content-center align-items-center py-5 content-text">
         <div class="numbers-top col-lg-7 text-center pb-5">
-          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold counter"></div> KM yol yaptık</div>
+          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold"><span class="counter"></span> KM</div> yol yaptık</div>
           <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>
@@ -108,6 +140,8 @@ export default {
 }
 
 .hero-item {
+    transition: all .3s ease;
+    overflow: hidden;
   .btn-main {
     color: white;
     font-size: .8rem;
@@ -122,23 +156,37 @@ export default {
 .hero-item-image {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   transition: all .3s ease;
-  &::after  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    content: '';
+  img {
     transition: all .3s ease;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
   }
+
+  // &::after  {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 3;
+  //   content: '';
+  //   transition: all .3s ease;
+  // }
 
 &:hover {
     transition: all .3s ease;
-  &::after {
-    background-color: rgba($color: #000000, $alpha: .6);
-  }
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    img {
+          transform: scale(1.3);
+    }
+  // &::after {
+  //   background-color: rgba(#ff8105, $alpha: .6);
+  // }
 }
 
 
@@ -150,5 +198,11 @@ export default {
   }
 }
 
-
+@media(min-width:768px) {
+  .hero-item-image {
+    img {
+      height: 416px;
+    }
+  }
+}
 </style>

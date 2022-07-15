@@ -56,8 +56,7 @@ export default {
       modules: [Navigation],
     };
   },
-
-
 }
+
 </script>
 

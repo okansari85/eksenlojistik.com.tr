@@ -4,17 +4,29 @@
     <div class="col-lg-6">
       <div class="">
         <h5 class="display-6 fw-500">Hakkımızda</h5>
-        <p class="py-3">EKSEN ULUSLARARASI LOJİSTİK VE TAŞIMACILIK LTD. ŞTİ. olarak uluslararası karayolu taşımacılığı
+        <!-- <p class="py-3 d-none">EKSEN ULUSLARARASI LOJİSTİK VE TAŞIMACILIK LTD. ŞTİ. olarak uluslararası karayolu taşımacılığı
           sektöründe 16 yıl boyunca istikrarlı şekilde büyümemizi sürdürerek Romanya hattında marka olma hedefimizi
           gerçekleştirdik.
           Yenilenen araç filomuz, depolama ve gümrükleme hizmetlerimizle beraber parsiyel, komple ve transit tüm
           taşımalarda aynı güven anlayışı ve müşteri odaklı hizmet prensibini devam ettirmekteyiz.
           Her geçen gün nakliye ağımızı tüm Balkan ülkelerine planlı şekilde genişleterek yeni misyonumuz doğrultusunda
-          desteklerinizle beraber ilerlemekteyiz.</p>
+          desteklerinizle beraber ilerlemekteyiz.</p> -->
+
+
+      <p class="pb-3">
+        Eksen Lojistik  , kuruluşundan bu yana  uluslararası karayolu taşımacılığı sektöründe istikrarlı şekilde büyümesini sürdürerek Romanya hattında marka olma hedefini gerçekleştiren bir lojistik şirketidir. 
+        Sürekli yenilenen araç filosu, depolama ve gümrükleme Hizmetleri ile  beraber parsiyel, komple ve transit tüm taşımalarda aynı güven anlayışı ve müşteri odaklı hizmet prensibini devam ettirmekteyiz
+        Taşımacılık, gümrük , depolama ve tedarik zinciri yönetimi alanında 10 ülkede en iyi hizmet anlayışı ile faaliyet göstermeye ve büyümeye devam eden Eksen Lojistik her zaman müşterilerine entegre, akılcı ve en etkin çözümleri sunar. 
+      </p>
+
+      <p class="pb-3">
+        Türkiye, Romanya Macaristan, slovakya, Çekya, Polonya Sısbirtan ,Hırvatistan Bulgaristan  ve Slovenya ‘da olmak üzere kapalı alanı 500.000 m’ye ulaşan dağıtım merkezleri yanı sıra , rulo sac , sal kasa , minivan ve liftli araç tesllimatları ile hatlarında önde gelen lojistik firmalarından biridir.
+      </p>
+
       </div>
 
 
-      <div class="py-3">
+      <!-- <div class="py-3 d-none">
         <h5 class="display-6 fw-500">Uluslararası Karayolu Taşımacılığı</h5>
         <p class="py-3">Uluslararası taşımacılıkta başarı, dinamik operasyon kadrosu, global pazara hakimiyet, tecrübeli
           şoför ekibi,
@@ -33,8 +45,8 @@
           Romanya ve Balkanlar denilince ilk akla gelen lojistik firmalarından biri olmanın sorumluluğunu taşıyarak her
           zamanki hedefimiz, yenilenen ve büyüyen araç filosu ve depomuzla, yüklerinizin zamanında ve hasarsız
           teslimatlarını rekabetçi fiyatlarla sağlamaya devam ettirmektir.</p>
-      </div>
-      <div class="py-3">
+      </div> -->
+      <!-- <div class="py-3 d-none">
         <h5 class="display-6 fw-500">Proje Yükü Taşımacılığı</h5>
         <p class="py-3">
           Tenteli tırlara yüklemesi mümkün olmayan gabari dışı veya ağır yüklerin sevkiyatı salkasa ve lowbed treylerler
@@ -44,7 +56,7 @@
           yükü taşımacılığı hizmetimize devam etmekteyiz.
         </p>
       </div>
-      <div class="py-3">
+      <div class="py-3 d-none">
         <h5 class="display-6 fw-500">Depolama Gümrükleme</h5>
         <p class="py-3">Bükreş ve Çatalca’daki 1000 metrekarelik üstü kapalı alanlarımızda depolama ve dağıtım hizmeti
           vermekteyiz.
@@ -52,10 +64,11 @@
           gözetilerek istif yapılmaktadır.
           İstanbul - Muratbey & Erenköy, Bükreş - Expoziti gümrüklerinde ithalat, ihracat veya transit işlemlerle ilgili
           gümrükleme servisimiz mevcuttur.</p>
-      </div>
+      </div> -->
     </div>
     <div class="col-lg-5">
-      <Form/>
+      <img src="/image/home/eksen_hakkimda_ekle.png" alt="" class="pb-5">
+      <!-- <Form class="mt-3"/> -->
     </div>
   </div>
 

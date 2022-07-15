@@ -2,7 +2,7 @@
   <div class="row justify-content-between">
     <div class="col-lg-6">
       <h5 class="display-6 fw-500">
-        Fark yaratmak ve kurumumuza değer katmak istiyorsanız bize katılın.
+        Kalite Politikamız
       </h5>
       <p class="py-3">Eksen Lojistik , vizyonu ve stratejisiyle , taşımacılık ve lojistik hizmetlerinde müşteri
         ihtiyaçlarını

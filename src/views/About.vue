@@ -1,8 +1,8 @@
 <template>
   <div>
-    <main class="global-sub-page mt-5">
+    <main class="global-sub-page">
       <section>
-        <div class="container">
+        <div class="container mt-5 pt-5">
           <HeroImage
               :title="heroTitle"
               :miniTitle="heroMiniTitle"
@@ -77,9 +77,9 @@ export default {
         },
         {
           heroTitle: "Hakkımızda",
-          heroMiniTitle: "Takım Üyeleri",
+          heroMiniTitle: "Kalite Politikamız",
           heroImg: ('/image/services/takimuyeleri1.jpg'),
-          title: "Takım Üyeleri",
+          title: "Kalite Politikamız",
           content: 'AboutTeam'
 
         },

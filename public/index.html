@@ -15,6 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
 
 <script>
     $(window).scroll(function () {
@@ -60,8 +61,28 @@
 counterAnim(".counter", 52000, 55000, 200000);
     });
 
+
 </script>
 
+
+<script>
+        $(document).ready(function () {
+    var cookie_wrapper = $('#custom-cookie-wrapper');
+    var temp_cookie = Cookies.get('cookie');
+
+    if (temp_cookie !== 'true') {
+        cookie_wrapper.removeClass('d-none');
+    }
+
+    $('#btn-cookie-accept').click(function () {
+        cookie_wrapper.addClass('d-none');
+        var date = new Date();
+        var m = 1000000;
+        date.setTime(date.getTime() + (m * 60 * 1000));
+        Cookies.set('cookie', 'true', {expires: date});
+    });
+});
+</script>
 
 </body>
 </html>

@@ -144,7 +144,7 @@ h1 {
 }
 .global-hero-top::after {
   position: absolute;
-  right: 0px;
+  right: -20px;
   content: "";
   background-color: #ffa10e;
   padding: 20px;
@@ -351,6 +351,10 @@ select::placeholder, input::placeholder, textarea::placeholder {
 }
 .bg-custom-dark {
   background-color: #001a28;
+}
+
+.text-orange {
+  color: #ffa10e;
 }
 
 .fs-10 {

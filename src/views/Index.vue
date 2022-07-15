@@ -11,7 +11,23 @@
       <NewsHome  />
       <Numbers />
       <Country  />
-
+      <div id="custom-cookie-wrapper" class="cookie-wrapper position-fixed bottom-0 shadow bg-white w-100 d-none" style="z-index: 999999">
+      <div class="cookie-container container py-3">
+          <div class="cookie-content d-flex flex-wrap justify-content-evenly align-items-center text-center text-lg-start">
+              <div class="cookie-text">
+                  <p>
+                      Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.
+                  </p>
+                  <p>
+                      Indem Sie diese Website weiterhin nutzen, akzeptieren Sie unsere Verwendung von Cookies.
+                  </p>
+              </div>
+              <div class="cookie-buttons">
+                  <button id="btn-cookie-accept" class="cookie-button-accept btn btn-success py-2 fw-semibold rounded-0" style="width: 250px; max-width:100%;">Annehmen</button>
+              </div>
+          </div>
+        </div>
+      </div>
 
     </main>
   </div>
@@ -37,7 +53,7 @@ import NewsHome from "@/views/NewsHome";
 
 export default {
   name: 'Index',
-  components: {NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers }
+  components: {NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers },
 }
 </script>
 

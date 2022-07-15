@@ -1,13 +1,14 @@
 <template>
   <div>
     <main class="global-sub-page">
-      <div class="container pt-5">
+      <div class="container pt-5 mt-5">
 
         <HeroImage
-            :title="heroTitle"
             :miniTitle="heroMiniTitle"
             :img="heroImg"
         />
+
+<!--        :title="heroTitle"-->
 
         <div class="py-5 d-md-flex justify-content-around">
           <b-tabs pills class="sub-tab">
@@ -39,21 +40,21 @@
 import Title from "@/components/global/Title";
 import HeroImage from "@/components/global/HeroImage";
 import ServicesCustom from "@/data/services/Services-Custom";
-import ServicesDomestic from "@/data/services/Services-Domestic";
-import ServicesLFT from "@/data/services/Services-LFT";
-import ServicesManagement from "@/data/services/Services-Management";
-import ServicesEkspress from "@/data/services/Services-Ekspress";
-import ServicesProject from "@/data/services/Services-Project";
+import ServicesHighway from "@/data/services/Services-Highway";
+import ServicesStore from "@/data/services/Services-Store";
+import ServicesFTLandLTL from "@/data/services/Services-FTL-LTL";
+import ServicesMinivan from "@/data/services/Services-Minivan";
+import ServicesRulo from "@/data/services/Services-Rulo";
 
 
 export default {
   name: 'Services',
-  components: {HeroImage, Title, ServicesCustom, ServicesDomestic, ServicesLFT, ServicesManagement, ServicesEkspress, ServicesProject},
+  components: {HeroImage, Title, ServicesCustom, ServicesHighway, ServicesStore, ServicesRulo, ServicesMinivan, ServicesFTLandLTL},
   data() {
     return {
       navsItem: [
         {
-          heroTitle: "Servisler",
+          // heroTitle: "Servisler",
           heroMiniTitle: "Gümrükleme",
           heroImg: ('/image/services/_gumrukleme.jpg'),
           title: "Gümrükleme",
@@ -61,49 +62,49 @@ export default {
           // id:'gumruk'
         },
         {
-          heroTitle: "Servisler",
+          // heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
           heroImg: ('/image/services/_karayolu.jpg'),
-          title: "Kara Taşımacılığı",
-          content: 'ServicesDomestic',
+          title: "Karayolu Taşımacılığı",
+          content: 'ServicesHighway',
           // id:'kara-tasimacilgi',
 
         },
         {
-          heroTitle: "Servisler",
-          heroMiniTitle: "Parsiyel & LFT",
+          // heroTitle: "Servisler",
+          heroMiniTitle: "FTL & LTL",
           heroImg: ('/image/services/parsiyel.jpg'),
-          title: "Parsiyel & LFT",
-          content: 'ServicesLFT',
+          title: "FTL & LTL",
+          content: 'ServicesFTLandLTL',
           // id:'parsiyel-lft',
 
         },
         {
-          heroTitle: "Servisler",
-          heroMiniTitle: "Depo Yönetimi",
+          // heroTitle: "Servisler",
+          heroMiniTitle: "Depolama Hizmeti",
           heroImg: ('/image/services/depo.jpg'),
-          title: "Depo Yönetimi",
-          content: 'ServicesManagement',
+          title: "Depolama Hizmeti",
+          content: 'ServicesStore',
           // id:'depo-yonetimi',
         },
         {
-          heroTitle: "Servisler",
-          heroMiniTitle: "Ekspress & Minivan",
+          // heroTitle: "Servisler",
+          heroMiniTitle: "Minivan Taşımacılık",
           heroImg: ('/image/services/ekspress.jpg'),
-          title: "Ekspres & Minivan",
-          content: 'ServicesEkspress',
+          title: "Minivan Taşımacılık",
+          content: 'ServicesMinivan',
           // id:'ekspress-minivan',
         },
         {
-          heroTitle: "Servisler",
-          heroMiniTitle: "Proje Taşımacılığı",
+          // heroTitle: "Servisler",
+          heroMiniTitle: "Rulo Sac Taşımacılığı",
           heroImg: ('/image/services/proje-hero.jpg'),
-          title: "Proje Taşımacılığı",
-          content: 'ServicesProject',
+          title: "Rulo Sac Taşımacılığı",
+          content: 'ServicesRulo',
           // id:'proje-tasimaciligi',
         },
       ],
-      heroTitle: "Servisler",
+      // heroTitle: "Servisler",
       heroMiniTitle: "Gümrükleme",
       heroImg: ('/image/services/_gumrukleme.jpg'),
     }
@@ -112,7 +113,7 @@ export default {
     Changer(index) {
       this.navsItem.forEach((value, key) => {
         if(key == index ) {
-          this.heroTitle = value.heroTitle
+          // this.heroTitle = value.heroTitle
           this.heroMiniTitle = value.heroMiniTitle
           this.heroImg = value.heroImg
         }

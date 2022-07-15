@@ -4,7 +4,7 @@
     <div class="col-lg-6">
       <div class="">
         <h5 class="display-6 fw-500">
-          Eksen Lojistik için sürdürülebilirlik bir zorunluluktur
+          Sürdürülebilirlik
         </h5>
         <p class="py-3">
           Eksen Lojistik bağlılık ve sorumluluklarının bilinciyle izlediği sürdürülebilir kurumsal politikalara

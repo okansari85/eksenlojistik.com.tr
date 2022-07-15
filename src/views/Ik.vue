@@ -1,8 +1,8 @@
 <template>
   <div>
-    <main class="global-sub-page mt-md-5">
+    <main class="global-sub-page">
       <section>
-        <div class="container">
+        <div class="container mt-5 pt-5">
           <HeroImage
               :title="heroTitle"
               :miniTitle="heroMiniTitle"

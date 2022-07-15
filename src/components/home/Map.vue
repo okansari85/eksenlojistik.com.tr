@@ -4,7 +4,7 @@
       <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero" style="z-index: 10000;">
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image position-relative">
-                <img src="/image/home/hero-bottom-item1.png" alt="" class="w-100"/>
+                <img src="/image/home/j1.jpg" alt="" class="w-100"/>
           </div>
           <div class=" text-uppercase fw-bold mt-3">
             <h3 class="fw-bold">Kara yolu</h3>
@@ -16,7 +16,7 @@
         </div>
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image active">
-          <img src="/image/home/hero-bottom-item2.png" alt="" class="w-100"/>
+          <img src="/image/home/h1.jpg" alt="" class="w-100"/>
           </div>
           <div class="text-uppercase fw-bold mt-3">
             <h3 class="fw-bold">gümrükleme</h3>
@@ -26,18 +26,21 @@
             </div>
           </div>
         </div>
+
+
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image">
-                <img src="/image/home/hero-bottom-item3.png" alt="" class="w-100"/>
+                <img src="/image/home/g1.jpg" alt="" class="w-100"/>
           </div>
           <div class=" text-uppercase fw-bold mt-3">
-            <h3 class="fw-bold">proje</h3>
-            <span>taşımacılığı</span>
+            <h3 class="fw-bold">depolama</h3>
+            <span>hizmeti</span>
             <div class="my-3">
               <router-link to="/services" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
             </div>
           </div>
         </div>
+
       </div>
       <a class="wrapper-down-icon" href="#solutions">
         <div class="circle">
@@ -56,10 +59,10 @@
         </div>
       </a>
     </div>
-    <div class="container-fluid text-center py-5 gx-0 overflow-hidden">
-      <img src="/image/home/maps_.svg" alt="" class="py-3">
+    <div class="container-fluid text-center pb-5 gx-0 overflow-hidden">
+      <img src="/image/home/maps_.svg" alt="" class="maps-svg">
       <div class="row justify-content-center align-items-center py-5 content-text">
-        <div class="numbers-top col-lg-5 text-center pb-5">
+        <div class="numbers-top col-lg-7 text-center pb-5">
           <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold counter"></div> KM yol yaptık</div>
           <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
@@ -95,7 +98,9 @@ export default {
     left: 50%;
     right: 0;
     transform: translate(-50%, -50%);
-    margin: auto;
+    // margin: auto;
+    width:900px;
+    max-width: 100%;
   }
   .services-item-hero {
    top: -150px;
@@ -124,7 +129,6 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: .6);
     z-index: 3;
     content: '';
     transition: all .3s ease;
@@ -133,11 +137,17 @@ export default {
 &:hover {
     transition: all .3s ease;
   &::after {
-    background-color: rgba($color: #000000, $alpha: 0);
+    background-color: rgba($color: #000000, $alpha: .6);
   }
 }
 
 
+}
+
+@media(min-width:1199px) {
+  .maps-svg {
+    margin-top: -50px;
+  }
 }
 
 

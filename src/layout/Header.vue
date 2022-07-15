@@ -3,7 +3,7 @@
     <div class="container-fluid px-md-5 ">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
-          <img src="/image/global/eksen_logo.png" alt="">
+          <img src="/image/global/eksen_logo.png" alt="" style="width: 220px;">
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -11,7 +11,7 @@
               <router-link to="/" class="nav-link">Anasayfa</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/services" class="nav-link">Servisler</router-link>
+              <router-link to="/services" class="nav-link">Hizmetler</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">Hakkımızda</router-link>
@@ -48,7 +48,7 @@
                   <router-link to="/" aria-current="page" class="mobile-nav-item">Anasayfa</router-link>
                 </li>
                 <li>
-                  <router-link to="/services" class="mobile-nav-item">Servisler</router-link>
+                  <router-link to="/services" class="mobile-nav-item">Hizmetler</router-link>
                 </li>
                 <li>
                   <router-link to="/about" class="mobile-nav-item">Hakkımızda</router-link>

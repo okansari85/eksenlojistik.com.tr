@@ -154,7 +154,7 @@ h1 {
     }
     &::after {
         position: absolute;
-        right: 0px;
+        right: -20px;
         content: '';
         background-color: v.$orange;
         padding: 20px;
@@ -386,4 +386,8 @@ select, input, textarea {
 
 .bg-custom-dark {
     background-color: #001a28;
+}
+
+.text-orange {
+    color: v.$orange;
 }

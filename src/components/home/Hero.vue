@@ -1,5 +1,5 @@
 <template>
-  <section class="hero w-100 vh-100 ">
+  <section class="hero w-100 vh-100">
     <div class="overlay"></div>
     <video src="/image/home/eksen_hero_video2.mp4" class=" vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
@@ -11,6 +11,7 @@
         <span class="d-block fw-bold lastchild">istediğin yere</span>
       </h1>
     </div>
+        <img src="image/home/g1.png" alt="" class="position-absolute bottom-0 start-0" style="z-index: 999;">
   </section>
 </template>
 

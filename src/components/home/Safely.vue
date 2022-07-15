@@ -5,7 +5,7 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <a href="javascript:void(0)">
-            <img src="/image/home/eksen_videoo.png" alt="" class="eksen_video_img">
+            <img src="/image/home/eksen_videoo2.jpg" alt="" class="eksen_video_img">
           </a>
         </div>
         <div class="col-lg-4 text-center text-lg-start">

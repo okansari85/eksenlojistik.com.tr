@@ -20,10 +20,17 @@
               @slideChange="onSlideChange"
           >
             <swiper-slide>
-              <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
+              <img src="/image/home/eksen_way_slide3.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <swiper-slide>
               <img src="/image/home/eksen_way_slide2.jpg" alt="" class="swiper-img"/>
+            </swiper-slide>
+
+            <swiper-slide>
+              <img src="/image/home/eksen_way_slide4.jpg" alt="" class="swiper-img"/>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="/image/home/eksen_way_slide5.jpg" alt="" class="swiper-img"/>
             </swiper-slide>
             <slider-navigation/>
           </swiper>

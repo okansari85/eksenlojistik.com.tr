@@ -1,6 +1,6 @@
 <template>
 
-  <section class="country">
+  <section class="country d-none">
     <div class="container-fluid gx-0 overflow-hidden">
       <div class="d-md-flex py-5">
         <div class="col-md-6 country-item active">

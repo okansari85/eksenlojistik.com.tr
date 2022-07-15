@@ -5,10 +5,6 @@
         <div class="col-lg-3">
           <img src="/image/global/eksen_logo.png" alt="" />
         </div>
-        <div class="col-md-3 pt-3 pt-lg-0">
-          <i class='bi bi-instagram'></i>
-          <i class='bi bi-linkedin ms-2'></i>
-        </div>
       </div>
       <div class="row pb-3 py-md-4">
         <div class="col-lg-3">
@@ -17,19 +13,25 @@
             çevresel etki ve maliyet odaklı tüm işletmeler için
             verimli çözümler üretiyoruz.
           </p>
+          <div class="col-md-3 pt-3 pt-lg-0">
+          <i class='bi bi-instagram'></i>
+          <i class='bi bi-linkedin ms-2'></i>
+        </div>
         </div>
         <div class="col-sm-6 col-lg-2">
           <ul class="list-unstyled fs-08">
             <li>Büyükdere Cad. No.62</li>
-            <li>Kat.5 Fulya Mah.</li>
+            <li>Kat2 Fulya Mah.</li>
             <li>Mecidiyeköy Şişli</li>
             <li><strong>İstanbul</strong></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 pt-4 pt-sm-0">
           <ul class="list-unstyled">
-            <li class="fs-08"><a href="tel:092122670721"><i class="bi bi-telephone-fill pe-2"></i> +90 212 267 07 21</a></li>
-            <li class="fs-08"><a href="mailto:info@eksenlojistik.com.tr"><i class="bi bi-envelope-fill pe-2"></i> info@eksenlojistik.com.tr</a></li>
+            <li class="fs-08"><a href="tel:902122122849"><i class="bi bi-telephone-fill pe-2"></i> +90 212 212 28 49</a></li>
+            <li class="fs-08"><a href="tel:902122122515"><i class="bi bi-telephone-fill pe-2"></i> +90 212 212 25 15</a></li>
+            <li class="fs-08"><a href="tel:908508116404"><i class="bi bi-telephone-fill pe-2"></i> +90 850 811 64 04</a></li>
+            <li class="fs-08 pt-2"><a href="mailto:info@eksenlojistik.com.tr"><i class="bi bi-envelope-fill pe-2"></i> info@eksenlojistik.com.tr</a></li>
           </ul>
         </div>
         <div class="col-lg-4 pt-4 pt-md-0">

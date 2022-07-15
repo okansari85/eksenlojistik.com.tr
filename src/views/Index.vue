@@ -16,10 +16,10 @@
           <div class="cookie-content d-flex flex-wrap justify-content-evenly align-items-center text-center text-lg-start">
               <div class="cookie-text">
                   <p>
-                      Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.
+                      Bu web sitesi, web sitemizde en iyi deneyimi yaşamanızı sağlamak için çerezleri kullanır.
                   </p>
                   <p>
-                      Indem Sie diese Website weiterhin nutzen, akzeptieren Sie unsere Verwendung von Cookies.
+                      Bu sitede gezinmeye devam ederek çerez kullanımımızı kabul etmiş olursunuz.
                   </p>
               </div>
               <div class="cookie-buttons">

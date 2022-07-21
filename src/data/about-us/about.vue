@@ -67,7 +67,7 @@
       </div> -->
     </div>
     <div class="col-lg-5">
-      <img src="/image/home/eksen_hakkimda_ekle.png" alt="" class="pb-5">
+      <img src="/image/services/eksen_dd.jpg" alt="" class="pb-5">
       <!-- <Form class="mt-3"/> -->
     </div>
   </div>

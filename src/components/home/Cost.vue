@@ -1,12 +1,17 @@
 <template>
 
-  <section class='cost px-3 px-xl-5 py-lg-5' style="background-image: url('../image/home/albana.png'); background-size: cover; min-height: 900px">
+  <section class='cost px-3 px-xl-5 py-lg-5 position-relative' 
+  style="
+  background-image: url('../image/home/truck.png'); 
+  background-size: cover;
+  background-position: center; 
+  min-height: 1850px;">
     <!--    <img src="/image/home/albana.png" alt="" class="position-absolute top-0 end-0 w-100" style="z-index: -1;">-->
     <div class="container-fluid p-xl-5">
       <div class="row justify-content-between align-items-center py-5">
         <div class="col-12 order-2 order-lg-1 cost-form-wrapper text-center pt-5">
-          <div class="section-title">
-            <span class="text-uppercase fs-4 fw-500" style="color: #ba7d1e;">ortalama</span>
+          <div class="section-title pt-5">
+            <span class="text-uppercase fs-4 fw-500" style="color: #1d5699;">ortalama</span>
             <h1 class='display-4 text-uppercase fw-bold pb-4'>maaliyet hesapla</h1>
             <p>
               Yükü göndermek istediğin yer,  teslim edeceğin yeri ve ortalama ağırlığını seç ortalama maaliyetini kısa sürede hesaplayıp sana dönüş yapalım.
@@ -76,6 +81,15 @@
             />
           </div>
         </div>
+      
+      </div>
+      <div class="py-5 text-center cards-cost-bottom">
+        <div class="cards-cost pb-3 pt-5 px-4 bg-white m-auto shadow-lg mb-5">
+          <h2 class="text-uppercase fw-bold display-6 px-4">daha iyi bir yol bulmak için kararlıyız</h2>
+          <p class="py-4 fs-09 px-4">
+            İşinize değer katmak, verimli lojistik çözümler sağlamak için sürekli olarak daha akıcı ve sürdürülebilir yollar geliştiriyoruz.  Hedeflerinize ulaşmanıza nasıl yardımcı olabiliriz?
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -101,5 +115,24 @@ input, select {
 /*section.cost {*/
 /*  background-image: url("/image/home/albana.png");*/
 /*}*/
+
+
+
+
+
+@media (min-width:768px) {
+.cards-cost-bottom {
+position: absolute;
+margin: auto;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%) !important;
+}
+
+.cards-cost {
+  width: 700px;
+  max-width: 100%;
+}
+}
 
 </style>

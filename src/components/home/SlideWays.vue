@@ -1,6 +1,6 @@
 <template>
 
-  <section class="way-slide px-3 px-lg-0">
+  <section class="way-slide px-3 px-lg-0 d-none">
     <div class="container-fluid gx-0 overflow-hidden py-5">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-4 paragraph-margin order-2 order-lg-1 text-center text-lg-start">

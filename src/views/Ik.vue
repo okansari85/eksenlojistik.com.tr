@@ -36,11 +36,12 @@ import HeroImage from "@/components/global/HeroImage";
 import Title from "@/components/global/Title";
 import IkPrinciple from "@/data/ik/ik-principle";
 import IkDevelopment from "@/data/ik/ik-development";
+import ikApplication from "@/data/ik/ik-application.vue";
 
 
 export default {
   name: 'Ik',
-  components: {HeroImage, Title, IkPrinciple, IkDevelopment},
+  components: {HeroImage, Title, IkPrinciple, IkDevelopment, ikApplication},
   data() {
     return {
       navsItem: [
@@ -64,7 +65,7 @@ export default {
           heroMiniTitle: "Başvuru",
           heroImg: ('/image/services/basvuru.jpg'),
           title: "Başvuru",
-          content: 'IkPrinciple'
+          content: 'ikApplication'
 
         },
       ],

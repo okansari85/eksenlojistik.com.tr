@@ -15,9 +15,8 @@
         İnsan Hakları – Fırsat Eşitliği: Hiçbir hal ve koşulda, kişilerin etnik kökenine, cinsiyetine, rengine, ırkına,
         milliyetine, ekonomik durumuna, dinine ve diğer inanışlarına bağlı olarak ayrımcılık yapmayız.
       </p>
-
     </div>
-
+    
     <div class="col-lg-5">
       <Form/>
     </div>

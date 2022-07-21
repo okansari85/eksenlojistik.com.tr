@@ -53,15 +53,7 @@ export default {
   data() {
     return {
       navsItem: [
-        {
-          // heroTitle: "Servisler",
-          heroMiniTitle: "Gümrükleme",
-          heroImg: ('/image/services/_gumrukleme.jpg'),
-          title: "Gümrükleme",
-          content: 'ServicesCustom',
-          // id:'gumruk'
-        },
-        {
+            {
           // heroTitle: "Servisler",
           heroMiniTitle: "Kara Taşımacılığı",
           heroImg: ('/image/services/_karayolu.jpg'),
@@ -70,6 +62,15 @@ export default {
           // id:'kara-tasimacilgi',
 
         },
+        {
+          // heroTitle: "Servisler",
+          heroMiniTitle: "Gümrükleme",
+          heroImg: ('/image/services/_gumrukleme.jpg'),
+          title: "Gümrükleme",
+          content: 'ServicesCustom',
+          // id:'gumruk'
+        },
+
         {
           // heroTitle: "Servisler",
           heroMiniTitle: "FTL & LTL",
@@ -105,8 +106,8 @@ export default {
         },
       ],
       // heroTitle: "Servisler",
-      heroMiniTitle: "Gümrükleme",
-      heroImg: ('/image/services/_gumrukleme.jpg'),
+      heroMiniTitle: "Karayolu Taşımacılığı",
+      heroImg: ('/image/services/_karayolu.jpg'),
     }
   },
   methods: {

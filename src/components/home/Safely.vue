@@ -1,6 +1,6 @@
 <template>
 
-  <section class="safely px-3 px-lg-0">
+  <section class="safely px-3 px-lg-0 pt-5">
     <div class="container-fluid gx-0 overflow-hidden py-5">
       <div class="row align-items-center">
         <div class="col-lg-7">
@@ -16,7 +16,7 @@
             Eksen Lojistik, markanızı korumak ve sadakat oluşturmak için, tüketici memnuniyetine öncelik vererek
             perakende tedarik zincirinizin son kilometre parçasını yani lojistik ve tedarik sorununu çözer.
           </p>
-          <router-link to="/services" class="btn btn-main2 mt-3">servislerimiz</router-link>
+          <router-link to="/services" class="btn btn-main mt-3">servislerimiz</router-link>
         </div>
       </div>
     </div>

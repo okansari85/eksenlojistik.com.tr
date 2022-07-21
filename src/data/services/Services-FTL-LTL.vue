@@ -11,7 +11,7 @@
       
       <div class="py-3">
         <h5 class="display-6 fw-500">LTL</h5>
-        <p>Çatalca’daki ihracat depose ve direk adreslerden alım hizmeti ile haftanın her günü parsiyel sevkiyat gerçekleştiriyoruz. İhtiyaca yönelik depomuz , güvenilir ve profesyonel  ekibimiz  ile sağladığımız yükleri zamanında, ve eksiksiz   şekilde yerlerine ulaştırıyor ve  müşteri temsilcilerimiz ilei kesintisiz olarak erişim imkanı sağlıyoruz.</p>
+        <p>Çatalca’daki ihracat deposu ve direk adreslerden alım hizmeti ile haftanın her günü parsiyel sevkiyat gerçekleştiriyoruz. İhtiyaca yönelik depomuz , güvenilir ve profesyonel  ekibimiz  ile sağladığımız yükleri zamanında, ve eksiksiz   şekilde yerlerine ulaştırıyor ve  müşteri temsilcilerimiz ilei kesintisiz olarak erişim imkanı sağlıyoruz.</p>
       </div>
 
     </div>

@@ -107,13 +107,14 @@ h1 {
 }
 
 .btn-main {
-  background-color: #ba7d1e;
-  border: 1px solid #ba7d1e;
+  background-color: #1d5699;
+  border: 1px solid #1d5699;
   width: 200px;
   max-width: 100%;
   text-transform: uppercase;
   color: #fff;
   padding: 15px;
+  border-radius: 0;
 }
 .btn-main:hover, .btn-main.active {
   background-color: transparent;
@@ -146,7 +147,7 @@ h1 {
   position: absolute;
   right: -20px;
   content: "";
-  background-color: #ffa10e;
+  background-color: #1d5699;
   padding: 20px;
   height: 100%;
   z-index: -1;
@@ -155,7 +156,7 @@ h1 {
   font-weight: bold;
 }
 .global-hero-top h1 span {
-  color: #ffa10e;
+  color: #1d5699;
 }
 .global-hero-top .global-hero-img {
   position: relative;
@@ -354,7 +355,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
 }
 
 .text-orange {
-  color: #ffa10e;
+  color: #1d5699;
 }
 
 .wrapper-down-icon2 .circle {
@@ -466,7 +467,7 @@ header nav .nav-item {
   padding: 0px 10px;
 }
 header nav .nav-item:hover a {
-  color: #ffa10e;
+  color: #1d5699;
 }
 header nav .nav-link {
   transition: 0.3s;
@@ -475,14 +476,14 @@ header nav .nav-link {
   color: #010101;
 }
 header nav .nav-link.active, header nav .nav-link:focus {
-  color: #ffa10e;
+  color: #1d5699;
 }
 header nav .nav-link:before {
   content: "";
   position: absolute;
   height: 3px;
   bottom: -6px;
-  background-color: #ffa10e;
+  background-color: #1d5699;
   visibility: hidden;
   width: 0;
   transition: all 0.3s ease-in-out 0s;
@@ -536,7 +537,7 @@ header nav .navbar .active:before {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
   header nav ul li a:hover {
-    color: #ffa10e;
+    color: #1d5699;
   }
 
   .toggle-btn {
@@ -676,7 +677,7 @@ section.news .nav-link {
 }
 section.news .nav-link .news-date {
   padding: 0 20px;
-  color: #ba7d1e;
+  color: #1d5699;
   font-weight: bold;
 }
 section.news .nav-link .news-tag {
@@ -687,7 +688,7 @@ section.news .nav-link button {
   font-weight: bold;
 }
 section.news .nav-link.active {
-  background-color: #ba7d1e;
+  background-color: #1d5699;
 }
 section.news .nav-link.active .news-date, section.news .nav-link.active .news-date, section.news .nav-link.active .news-text {
   color: white !important;
@@ -843,7 +844,7 @@ main.global-sub-page .sub-tab .nav-item .nav-link {
   cursor: pointer;
 }
 main.global-sub-page .sub-tab .nav-item .nav-link.active {
-  color: #ffa10e;
+  color: #1d5699;
   background-color: transparent;
 }
 main.global-sub-page .about-us-table td {

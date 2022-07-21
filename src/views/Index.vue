@@ -19,7 +19,7 @@
                     Yasal düzenlemelere uygun çerezler kullanıyoruz. Detaylı bilgi için Çerez (Cookie) Aydınlatma Metnimizi inceleyebilir, çerez izinlerinizi Çerez Ayarları üzerinden güncelleyebilirsiniz.
                   </p>
               <div class="cookie-buttons py-2">
-                  <button id="btn-cookie-accept" class="cookie-button-accept btn py-2 fw-semibold rounded-0 fs-08 text-white" style="width: 170px; max-width:100%; background-color: #ba7d1e;">Kabul Et</button>
+                  <button id="btn-cookie-accept" class="cookie-button-accept btn py-2 fw-semibold rounded-0 fs-08 text-white" style="width: 170px; max-width:100%; background-color: #1d5699;">Kabul Et</button>
               </div>
           </div>
         </div>

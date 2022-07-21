@@ -124,6 +124,7 @@ h1 {
     text-transform: uppercase;
     color: v.$white;
     padding: 15px;
+    border-radius: 0;
     &:hover, &.active {
         background-color: transparent;
         color: v.$black;

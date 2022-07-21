@@ -7,7 +7,7 @@
     <div class="about-form-center p-3">
       <strong>İletişim Formu</strong>
       <p class="py-3">Size ulaşabilmek ve irtibata geçebilmek için <br>
-        lütfen alağıdaki formu doldurun.</p>
+        lütfen aşağıdaki formu doldurun.</p>
     </div>
     <div class="about-form-bottom p-3">
       <form action="">

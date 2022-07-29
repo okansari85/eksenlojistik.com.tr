@@ -41,18 +41,18 @@ export default {
       navsItem: [
         {
           slug: "calisma-prensipleri",
-          title: "Çalışma Prensibi",
+          title: "Haber",
           content: "NewsAndAnnouncement"
         },
         {
           slug: "egitim-ve-gelisim",
-          title: "Eğitim ve Gelişim",
+          title: "Duyuru",
           content: "NewsOnly"
 
         },
         {
           slug: "basvuru",
-          title: "Başvuru",
+          title: "Basın",
           content: 'AnnouncementOnly'
 
         },

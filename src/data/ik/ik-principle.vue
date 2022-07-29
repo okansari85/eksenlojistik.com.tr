@@ -18,7 +18,7 @@
     </div>
     
     <div class="col-lg-5">
-      <Form/>
+      <img src="/image/services/ik-new.png" alt="">
     </div>
 
   </div>

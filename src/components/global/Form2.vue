@@ -1,13 +1,7 @@
 <template>
-
   <div class="about-form shadow bg-white">
     <div class="about-form-top">
       <h2 class="text-uppercase bg-dark text-white fw-bold p-3">bize yazın</h2>
-    </div>
-    <div class="about-form-center p-3">
-      <strong>İletişim Formu</strong>
-      <p class="py-3">Size ulaşabilmek ve irtibata geçebilmek için <br>
-        lütfen aşağıdaki formu doldurun.</p>
     </div>
     <div class="about-form-bottom p-3">
       <form action="">
@@ -38,18 +32,11 @@
 
     </div>
   </div>
-
 </template>
 
 <script>
 export default {
-  name: "Form",
-  props: {
-    subjectAndCv: {
-      type:String,
-      default: "Konu",
-},
-  }
+  name: "Form2"
 }
 </script>
 

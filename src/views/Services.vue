@@ -55,9 +55,9 @@ export default {
       navsItem: [
             {
           // heroTitle: "Servisler",
-          heroMiniTitle: "Kara Taşımacılığı",
+          heroMiniTitle: "Karayolu",
           heroImg: ('/image/services/_karayolu.jpg'),
-          title: "Karayolu Taşımacılığı",
+          title: "Karayolu",
           content: 'ServicesHighway',
           // id:'kara-tasimacilgi',
 
@@ -73,40 +73,40 @@ export default {
 
         {
           // heroTitle: "Servisler",
-          heroMiniTitle: "FTL & LTL",
+          heroMiniTitle: "Komple & Parsiyel",
           heroImg: ('/image/services/parsiyel.jpg'),
-          title: "FTL & LTL",
+          title: "Komple & Parsiyel",
           content: 'ServicesFTLandLTL',
           // id:'parsiyel-lft',
 
         },
         {
           // heroTitle: "Servisler",
-          heroMiniTitle: "Depolama Hizmeti",
+          heroMiniTitle: "Depolama",
           heroImg: ('/image/services/depo.jpg'),
-          title: "Depolama Hizmeti",
+          title: "Depolama",
           content: 'ServicesStore',
           // id:'depo-yonetimi',
         },
         {
           // heroTitle: "Servisler",
-          heroMiniTitle: "Minivan Taşımacılık",
+          heroMiniTitle: "Minivan",
           heroImg: ('/image/services/ekspress.jpg'),
-          title: "Minivan Taşımacılık",
+          title: "Minivan",
           content: 'ServicesMinivan',
           // id:'ekspress-minivan',
         },
         {
           // heroTitle: "Servisler",
-          heroMiniTitle: "Rulo Sac Taşımacılığı",
+          heroMiniTitle: "Rulo Sac",
           heroImg: ('/image/services/proje-hero.jpg'),
-          title: "Rulo Sac Taşımacılığı",
+          title: "Rulo Sac",
           content: 'ServicesRulo',
           // id:'proje-tasimaciligi',
         },
       ],
       // heroTitle: "Servisler",
-      heroMiniTitle: "Karayolu Taşımacılığı",
+      heroMiniTitle: "Karayolu",
       heroImg: ('/image/services/_karayolu.jpg'),
     }
   },

@@ -2,8 +2,8 @@
 
   <div>
     <span class="text-uppercase text-black-50">{{ subtitle }}</span>
-    <h1 class="display-4 text-uppercase fw-bold py-4">{{ title }}</h1>
-    <p> {{paragraph}} </p>
+    <h1 class="display-6 text-capitalize fw-bold py-4">{{ title }}</h1>
+    <p class="fs-09 col-lg-9"> {{paragraph}} </p>
   </div>
 
 </template>

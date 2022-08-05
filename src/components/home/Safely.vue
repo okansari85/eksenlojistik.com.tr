@@ -9,10 +9,10 @@
           </a>
         </div>
         <div class="col-lg-4 text-center text-lg-start">
-          <h1 class='display-4 fw-bold text-uppercase'>
-            güvenilir ve hızlı hizmet anlayışı
+          <h1 class='display-6 fw-bold text-capitalize'>
+            güvenilir ve hızlı <br> hizmet anlayışı
           </h1>
-          <p class="pt-4">
+          <p class="pt-4 col-xl-10">
             Eksen Lojistik, markanızı korumak ve sadakat oluşturmak için, tüketici memnuniyetine öncelik vererek
             perakende tedarik zincirinizin son kilometre parçasını yani lojistik ve tedarik sorununu çözer.
           </p>

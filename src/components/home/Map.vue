@@ -6,8 +6,8 @@
           <div class="hero-item-image position-relative">
                 <img src="/image/home/j1.jpg" alt="" class="w-100"/>
           </div>
-          <div class=" text-uppercase fw-bold mt-5">
-            <h3 class="fw-bold">Kara yolu</h3>
+          <div class=" text-capitalize fw-bold mt-5">
+            <h3 class="fw-bold">Karayolu</h3>
             <span>taşımacılığı</span>
             <div class="my-3">
               <router-link to="/services/karayolu" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
@@ -18,7 +18,7 @@
           <div class="hero-item-image active">
           <img src="/image/home/h1.jpg" alt="" class="w-100"/>
           </div>
-          <div class="text-uppercase fw-bold mt-5">
+          <div class="text-capitalize fw-bold mt-5">
             <h3 class="fw-bold">gümrükleme</h3>
             <span>hizmeti</span>
             <div class="my-3">
@@ -32,7 +32,7 @@
           <div class="hero-item-image">
                 <img src="/image/home/g1.jpg" alt="" class="w-100"/>
           </div>
-          <div class=" text-uppercase fw-bold mt-5">
+          <div class=" text-capitalize fw-bold mt-5">
             <h3 class="fw-bold">depolama</h3>
             <span>hizmeti</span>
             <div class="my-3">
@@ -95,7 +95,7 @@
 
       <div class="row justify-content-center align-items-center py-5 content-text">
         <div class="numbers-top col-lg-7 text-center pb-5">
-          <div class="title text-uppercase display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold"><span class="counter"></span> KM</div> yol yaptık</div>
+          <div class="title text-capitalize display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold"><span class="counter"></span> Km</div> yol yaptık</div>
           <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL, tüm  sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>

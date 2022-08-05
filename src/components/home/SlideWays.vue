@@ -4,7 +4,7 @@
     <div class="container-fluid gx-0 overflow-hidden py-5">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-4 paragraph-margin order-2 order-lg-1 text-center text-lg-start">
-          <h1 class="display-4 fw-bold text-uppercase">daha iyi bir yol bulmak için kararlıyız</h1>
+          <h1 class="display-6 fw-bold text-capitalize">daha iyi bir yol bulmak için kararlıyız</h1>
           <p>
             İşinize değer katmak, verimli lojistik çözümler sağlamak için sürekli olarak daha akıcı ve sürdürülebilir yollar geliştiriyoruz.
             Hedeflerinize ulaşmanıza nasıl yardımcı olabiliriz?

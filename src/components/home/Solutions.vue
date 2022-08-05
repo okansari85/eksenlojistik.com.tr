@@ -18,8 +18,7 @@
                  title='büyük sevkiyatlar için premium çözümler'
                  subtitle='size özel'
                  paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
-          <router-link to="/contact" class="btn btn-main my-2 my-md-0 fs-09 py-2" style="width: 165px;">iletişime geç</router-link>
-          <router-link to="/services" class="btn btn-main active ms-2 my-2 my-md-0 py-2 fs-09" style="width:165px;">daha fazla</router-link>
+          <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px;">daha fazla</router-link>
         </div>
       </div>
     </div>

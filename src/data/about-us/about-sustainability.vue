@@ -3,7 +3,7 @@
   <div class="row justify-content-between">
     <div class="col-lg-6">
       <div class="">
-        <h5 class="display-6 fw-500">
+        <h5 class="fs-3 fw-500">
           Sürdürülebilirlik
         </h5>
         <p class="py-3">
@@ -16,7 +16,7 @@
       </div>
 
       <div class="py-3">
-        <h5 class="display-6 fw-500">
+        <h5 class="fs-3 fw-500">
           Sürdürülebilirliği teşvik etme hedefi
         </h5>
         <p class="py-3"><strong>Ekonomi: </strong> Büyüme ve başarıya odaklı iş modelleri ile EKSEN, hem şirketin hem de

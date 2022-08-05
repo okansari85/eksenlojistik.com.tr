@@ -11,8 +11,8 @@
       <div class="row justify-content-between align-items-center py-5">
         <div class="col-12 order-2 order-lg-1 cost-form-wrapper text-center pt-5">
           <div class="section-title pt-5">
-            <span class="text-uppercase fs-4 fw-500" style="color: #1d5699;">ortalama</span>
-            <h1 class='display-4 text-uppercase fw-bold pb-4'>maaliyet hesapla</h1>
+            <span class="text-uppercase fs-6 fw-500" style="color: #1d5699;">ortalama</span>
+            <h1 class='display-6 text-capitalize fw-bold pb-4'>maaliyet hesapla</h1>
             <p>
               Yükü göndermek istediğin yer,  teslim edeceğin yeri ve ortalama ağırlığını seç ortalama maaliyetini kısa sürede hesaplayıp sana dönüş yapalım.
             </p>
@@ -85,7 +85,7 @@
       </div>
       <div class="py-5 text-center cards-cost-bottom">
         <div class="cards-cost pb-3 pt-5 px-4 bg-white m-auto shadow-lg mb-5">
-          <h2 class="text-uppercase fw-bold display-6 px-4">daha iyi bir yol bulmak için kararlıyız</h2>
+          <h2 class="text-capitalize fw-bold display-6 px-4">daha iyi bir yol bulmak için kararlıyız</h2>
           <p class="py-4 fs-09 px-4">
             İşinize değer katmak, verimli lojistik çözümler sağlamak için sürekli olarak daha akıcı ve sürdürülebilir yollar geliştiriyoruz.  Hedeflerinize ulaşmanıza nasıl yardımcı olabiliriz?
           </p>

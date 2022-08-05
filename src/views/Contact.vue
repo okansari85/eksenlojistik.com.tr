@@ -8,10 +8,11 @@
               <h1>İletişim <br> <span> Bize ulaşmak için</span></h1>
             </div> -->
             <div class="col-md-12 global-hero-img">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24018.686126265402!2d28.75478155!3d41.1926528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff0319cf7b%3A0x8445e5c3855a9ede!2zTWVya2V6LCBCw7x5w7xrZGVyZSBDZC4gTm86NjIgRDpLYXQuNSwgMzQ0MDYgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1653990597972!5m2!1str!2str"
-                  width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--              <iframe-->
+<!--                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24018.686126265402!2d28.75478155!3d41.1926528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff0319cf7b%3A0x8445e5c3855a9ede!2zTWVya2V6LCBCw7x5w7xrZGVyZSBDZC4gTm86NjIgRDpLYXQuNSwgMzQ0MDYgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1653990597972!5m2!1str!2str"-->
+<!--                  width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"-->
+<!--                  referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+              <Form2 style="z-index: 9999;"/>
             </div>
           </div>
         </div>
@@ -20,58 +21,91 @@
       <section>
         <div class="container py-5">
           <div class="row justify-content-between">
-            <div class="col-md-6 py-5">
+            <div class="col-md-12 py-5">
               <h5 class="fw-500 display-6">İletişim</h5>
               <div class="contact-first py-4">
-                <strong class="fw-bold fs-5">İstanbul Merkez Ofis</strong>
-                <ul class="pt-4">
-                  <li class="pb-2">
-                    <a href="https://goo.gl/maps/j2A1NvGLQvKG1PMu5"> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                      Şişli / Istanbul</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
-                  </li>
-                </ul>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <strong class="fw-bold fs-5">İstanbul Merkez Ofis</strong>
+                    <ul class="pt-4">
+                      <li class="pb-2">
+                        <a href="https://goo.gl/maps/j2A1NvGLQvKG1PMu5"> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
+                          Şişli / Istanbul</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24018.686126265402!2d28.75478155!3d41.1926528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff0319cf7b%3A0x8445e5c3855a9ede!2zTWVya2V6LCBCw7x5w7xrZGVyZSBDZC4gTm86NjIgRDpLYXQuNSwgMzQ0MDYgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1653990597972!5m2!1str!2str"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
               </div>
               <div class="contact-second py-4">
-                <strong class="fw-bold fs-5">Çatalca Depo</strong>
-                <ul class="pt-4">
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                      Şişli / Istanbul</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
-                  </li>
-                </ul>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <strong class="fw-bold fs-5">Çatalca Depo</strong>
+                    <ul class="pt-4">
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
+                          Şişli / Istanbul</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24018.686126265402!2d28.75478155!3d41.1926528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff0319cf7b%3A0x8445e5c3855a9ede!2zTWVya2V6LCBCw7x5w7xrZGVyZSBDZC4gTm86NjIgRDpLYXQuNSwgMzQ0MDYgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1653990597972!5m2!1str!2str"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
               </div>
-              <div class="contact-second py-4">
-                <strong class="fw-bold fs-5">Romanya Ofis</strong>
-                <ul class="pt-4">
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                      Şişli / Istanbul</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
-                  </li>
-                  <li class="pb-2">
-                    <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
-                  </li>
-                </ul>
+              <div class="contact-third py-4">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <strong class="fw-bold fs-5">Romanya Ofis</strong>
+                    <ul class="pt-4">
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
+                          Şişli / Istanbul</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
+                      </li>
+                      <li class="pb-2">
+                        <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24018.686126265402!2d28.75478155!3d41.1926528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ff0319cf7b%3A0x8445e5c3855a9ede!2zTWVya2V6LCBCw7x5w7xrZGVyZSBDZC4gTm86NjIgRDpLYXQuNSwgMzQ0MDYgxZ5pxZ9saS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1653990597972!5m2!1str!2str"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
               </div>
 
             </div>
-            <div class="col-md-5">
-              <Form id="formClass"/>
-            </div>
+<!--            <div class="col-md-5">-->
+<!--              <Form id="formClass"/>-->
+<!--            </div>-->
           </div>
         </div>
       </section>
@@ -94,11 +128,11 @@
 
 <script>
 import HeroImage from "@/components/global/HeroImage";
-import Form from "@/components/global/Form";
+import Form2 from "@/components/global/Form2";
 
 export default {
   name: "Contact",
-  components: { Form, HeroImage},
+  components: { Form2, HeroImage},
   mounted () {
     window.scrollTo(0, 0)
   }

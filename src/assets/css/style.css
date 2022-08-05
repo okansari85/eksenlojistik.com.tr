@@ -28,7 +28,7 @@ ul {
 }
 
 p {
-  font-size: 16px;
+  font-size: 0.9rem;
   word-wrap: break-word;
   line-height: 1.6;
   letter-spacing: 0px;
@@ -106,15 +106,19 @@ h1 {
   color: #25273d;
 }
 
+.text-uppercase {
+  text-transform: capitalize !important;
+}
+
 .btn-main {
   background-color: #1d5699;
   border: 1px solid #1d5699;
   width: 200px;
   max-width: 100%;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
   padding: 15px;
-  border-radius: 0;
+  border-radius: 20px;
 }
 .btn-main:hover, .btn-main.active {
   background-color: transparent;
@@ -454,7 +458,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
 header {
   padding: 10px;
   background: white;
-  background: rgba(255, 255, 255, 0.95);
+  background: #e5e5e5;
   backdrop-filter: blur(3px);
 }
 header nav {

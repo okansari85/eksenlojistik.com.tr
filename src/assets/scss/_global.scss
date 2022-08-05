@@ -35,7 +35,7 @@ ul {
 }
 
 p {
-    font-size: 16px;
+    font-size: .9rem;
     word-wrap: break-word;
     line-height: 1.6;
     letter-spacing: 0px;
@@ -114,6 +114,10 @@ h1 {
     color: #25273d;
 }
 
+.text-uppercase {
+    text-transform: capitalize!important;
+}
+
 // Main Button
 
 .btn-main {
@@ -121,10 +125,10 @@ h1 {
     border: 1px solid v.$darkOrange;
     width: 200px;
     max-width: 100%;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: v.$white;
     padding: 15px;
-    border-radius: 0;
+    border-radius: 20px;
     &:hover, &.active {
         background-color: transparent;
         color: v.$black;

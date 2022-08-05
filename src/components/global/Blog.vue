@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="d-none">
     <div class="container text-center pb-5">
       <span class="text-uppercase text-black-50">blog</span>
       <h1>Size daha iyi hizmet sunduğumuzda <br/> bunun karşılığını ödül olarak aldık</h1>

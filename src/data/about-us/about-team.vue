@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <h5 class="display-6 fw-500">
+      <h5 class="fs-3 fw-500">
         Kalite Politikamız
       </h5>
       <p class="py-3">Eksen Lojistik , vizyonu ve stratejisiyle , taşımacılık ve lojistik hizmetlerinde müşteri
@@ -48,7 +48,7 @@
         <img src="/image/services/about-team-truck.png" alt="">
       </div>
       <div class="col-lg-5">
-        <h5 class="display-6 fw-500">Kariyerinizi Eksen'de ileriye taşıyın</h5>
+        <h5 class="fs-3 fw-500">Kariyerinizi Eksen'de ileriye taşıyın</h5>
         <p class="py-3">Sunduğumuz farklı işler ve bizle çalışmak için daha fazla bilgi edinin.</p>
         <p class="pb-3">Eksen'de, çalışanların farklı bireysel geçmişlerine ve düşünce çeşitliliğine dayalı olarak potansiyellerini
           gerçekleştirebilecekleri, çeşitlilik içeren bir iş gücüne sahip olmanın, şirket olarak yararlanabileceğimiz

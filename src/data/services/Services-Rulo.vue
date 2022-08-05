@@ -3,7 +3,7 @@
   <div class="row justify-content-between">
     <div class="col-md-6">
       <div>
-        <h5 class="display-6 fw-500">Rulo Sac Taşımacılığı</h5>
+        <h5 class="fs-3 fw-500">Rulo Sac Taşımacılığı</h5>
         <p class="py-3">Filomuzda bulunan; özel olarak tasarlanmis rulo havuzlu ve özel ekipmanli dorseleriyle, rulo sac malzemelerinizin en güvenli sekilde musterilerimize teslim etmekteyiz..</p>
 
       </div>

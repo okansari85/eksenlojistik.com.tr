@@ -3,7 +3,7 @@
   <div class="row justify-content-between">
     <div class="col-md-6">
       <div>
-        <h5 class="display-6 fw-500">Depolama Hizmeti </h5>
+        <h5 class="fs-3 fw-500">Depolama Hizmeti </h5>
         <p class="py-3">Eksen  Lojistik olarak, gümrüksüz, sahamızda müşteriye özel lojistik alanı  ve aktarma araçlarımız  ile çok yönlü ve entegre depolama hizmetleri veriyoruz.</p>
         <p>Ürünün depoya ilk girişinden sevkiyata kadar olan tüm aşamaların elektronik ortamda takip edilmesi ve  ürünlerin özelliklerine göre uygun koşullarda depolanmasını sağlıyoruz. </p>
         <p>

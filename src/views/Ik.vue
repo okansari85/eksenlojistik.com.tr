@@ -71,7 +71,7 @@ export default {
       ],
       heroTitle: "IK",
       heroMiniTitle: "Çalışma Prensibi",
-      heroImg: ('/image/services/ik2.jpg'),
+      heroImg: ('/image/services/about-sub-page-hero1.png'),
     }
   },
   methods: {

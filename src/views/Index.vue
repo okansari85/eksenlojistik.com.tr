@@ -11,6 +11,7 @@
       <NewsHome  />
       <Numbers />
       <Country  />
+      <Kur/>
       <div id="custom-cookie-wrapper" class="cookie-wrapper position-fixed bottom-0 shadow bg-white w-100 d-none" style="z-index: 999999">
       <div class="cookie-container py-3">
           <div class="cookie-content d-flex flex-wrap px-3 justify-content-evenly align-items-center text-center text-lg-start">
@@ -43,13 +44,14 @@ import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";
 import Country from "@/components/home/Country";
 import NewsHome from "@/views/NewsHome";
+import Kur from "@/components/home/Kur";
 
 
 
 
 export default {
   name: 'Index',
-  components: {NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers },
+  components: {NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers, Kur },
 }
 </script>
 

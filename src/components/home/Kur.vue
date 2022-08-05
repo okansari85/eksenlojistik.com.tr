@@ -48,76 +48,23 @@
             </div>
 
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mt-3">
             <div class="card px-4 py-5 bg-white shadow border-0" style="height: 330px;">
               <div class="row">
                 <div class="col-12">
                   <div class="kurlar-wrapper">
-                    <h6 class="fw-500 fs-3 text-center">Döviz Kurları</h6>
-                    <table class="table my-4 table-responsive">
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
+                    <h6 class="fw-500 fs-3 text-center mb-3">Döviz Kurları</h6>
+                        <div class="row justify-content-between">
 
-                          </td>
-                          <td>
+                          <div class="col-sm-6" v-for="kur of kurlar" :key="kur.id">
                             <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
+                              <span class="text-uppercase fw-500 me-md-3 col-8">{{ kur.doviz }}</span>
+                              <span class="text-uppercase col-4"> {{ kur.price }}</span>
                             </div>
-                          </td>
-                        </tr>                        <tr>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
+                          </div>
 
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
-                          </td>
-                        </tr>                        <tr>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
-
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
-
-                          </td>
-                          <td>
-                            <div class="d-flex justify-content-between">
-                              <span class="text-uppercase fw-500 me-3 col-8">Dolar:</span>
-                              <span class="text-uppercase col-4">17.99 TL</span>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -134,6 +81,7 @@ import { ref } from 'vue';
 import { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import SlideNavigation2 from "@/components/global/SlideNavigation2";
+import axios from "axios";
 
 export default {
   name: "Kur",
@@ -153,11 +101,117 @@ export default {
       setControlledSwiper,
     };
   },
+  data() {
+    return {
 
+      kurlar: [
+        {
+          id: 1,
+          doviz: "USD",
+          price: "1.00",
+        },
+        {
+          id: 2,
+          doviz: "EUR",
+          price: "1.00",
+        },
+        {
+          id: 3,
+          doviz: "GBP",
+          price: "1.00",
+        },
+        {
+          id: 4,
+          doviz: "CHF",
+          price: "1.00",
+        },
+        {
+          id: 5,
+          doviz: "JPY",
+          price: "1.00",
+        },
+        {
+          id: 6,
+          doviz: "CNY",
+          price: "1.00",
+        },
+        {
+          id: 7,
+          doviz: "RUB",
+          price: "1.00",
+        },
+        {
+          id: 8,
+          doviz: "INR",
+          price: "1.00",
+        },
+        {
+          id: 9,
+          doviz: "KZT",
+          price: "1.00",
+        },
+        {
+          id: 10,
+          doviz: "UZS",
+          price: "1.00",
+        },
+        {
+          id: 11,
+          doviz: "KGS",
+          price: "1.00",
+        },
+        {
+          id: 12,
+          doviz: "TJS",
+          price: "1.00",
+        },
+        {
+          id: 13,
+          doviz: "BRL",
+          price: "1.00",
+        },
+        {
+          id: 14,
+          doviz: "CAD",
+          price: "1.00",
+        },
+        {
+          id: 15,
+          doviz: "AUD",
+          price: "1.00",
+        },
+        {
+          id: 16,
+          doviz: "NZD",
+          price: "1.00",
+        },
+      ],
+      errors: [],
+      getKur: null
+    };
+  },
 
+  methods: {
+    getKur() {
+      axios.get("/api/kurlar")
+        .then(response => {
+          this.kurlar = response.data;
+        })
+        .catch(error => {
+          this.errors = error.response.data.errors;
+        });
+    },
 
+  },
+
+  mounted() {
+    window.addEventListener("load", this.getKur);
+  }
 }
 </script>
+
+
+
 
 <style scoped lang="scss">
 .card {

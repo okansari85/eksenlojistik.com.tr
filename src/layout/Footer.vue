@@ -3,7 +3,7 @@
     <div class="container-fluid px-3 px-lg-5 py-3">
       <div class="row justify-content-between align-items-center pb-4">
         <div class="col-lg-3">
-          <img src="/image/global/eksen_logo.png" alt="" />
+          <img src="/image/global/eksen_logo.png" alt=""/>
         </div>
       </div>
       <div class="row pb-3 py-md-4">

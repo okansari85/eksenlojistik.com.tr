@@ -33,7 +33,7 @@
       <div class="d-lg-none">
         <div class="d-flex justify-content-between align-items-center">
           <a href="" class="navbar-brand">
-            <img src="/image/global/eksen_logo.png" alt="">
+            <img src="/image/global/eksen_logo.png" alt="" style="width: 200px">
           </a>
           <div>
             <input type='checkbox' id='toggle' style='display:none;' />

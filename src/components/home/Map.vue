@@ -67,28 +67,28 @@
         <div class="circle circle-2"></div>
       </div>
 
-      <div class="wrapper-down-icon3" style="top: -700px; left: 30%;">
+      <div class="wrapper-down-icon3" style="top: -700px; left: 80%;">
         <div class="circle"></div>  
         <div class="circle circle-2"></div>
       </div>
-      <div class="wrapper-down-icon4" style="top: -850px; left: 20%;">
+      <div class="wrapper-down-icon4" style="top: -100px; left: 72%">
         <div class="circle"></div>  
         <div class="circle circle-2"></div>
       </div>
-      <div class="wrapper-down-icon5" style="top: -700px; left: 70%;">
+      <div class="wrapper-down-icon5" style="top: -500px; left: 50%;">
         <div class="circle"></div>  
         <div class="circle circle-2"></div>
       </div>
 
-      <div class="wrapper-down-icon6" style="top: -600px; left: 80%;">
+      <div class="wrapper-down-icon6" style="top: -300px; left: 60%;">
         <div class="circle"></div>
         <div class="circle circle-2"></div>
       </div>
-      <div class="wrapper-down-icon7" style="top: -900px; left: 65%;">
+      <div class="wrapper-down-icon7" style="top: -500px; left: 65%;">
         <div class="circle"></div>
         <div class="circle circle-2"></div>
       </div>
-      <div class="wrapper-down-icon8" style="top: -950px; left: 42%;">
+      <div class="wrapper-down-icon8" style="top: -100px; left: 78%;">
         <div class="circle"></div>
         <div class="circle circle-2"></div>
       </div>

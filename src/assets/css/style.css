@@ -458,7 +458,7 @@ select::placeholder, input::placeholder, textarea::placeholder {
 header {
   padding: 10px;
   background: white;
-  background: #e5e5e5;
+  background: #ebebeb;
   backdrop-filter: blur(3px);
 }
 header nav {

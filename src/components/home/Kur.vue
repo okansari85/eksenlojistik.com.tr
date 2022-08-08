@@ -211,13 +211,13 @@ export default {
 </script>
 
 
-
-
 <style scoped lang="scss">
+
 .card {
   td {
     border: 0!important;
     padding: 10px;
   }
 }
+
 </style>

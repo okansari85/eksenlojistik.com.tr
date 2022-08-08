@@ -27,7 +27,7 @@
         </div>
       </form>
       <div class="text-end">
-        <a href="#!" class='btn btn-main mt-3'>Gönder</a>
+        <a href="#!" class='btn btn-main'>Gönder</a>
       </div>
 
     </div>

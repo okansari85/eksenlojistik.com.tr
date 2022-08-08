@@ -3,27 +3,27 @@
     <div class="container-fluid px-md-5 ">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
-          <img src="/image/global/eksen_logo.png" alt="" style="width: 220px;">
+          <img src="/image/global/eksen_logo.png" alt="" style="width: 250px;">
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Anasayfa</router-link>
+              <router-link to="/" class="nav-link" style="font-weight: 600">Anasayfa</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/services" class="nav-link">Hizmetler</router-link>
+              <router-link to="/services" class="nav-link" style="font-weight: 600">Hizmetler</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">Hakkımızda</router-link>
+              <router-link to="/about" class="nav-link" style="font-weight: 600">Hakkımızda</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/news" class="nav-link">Haberler</router-link>
+              <router-link to="/news" class="nav-link" style="font-weight: 600">Haberler</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/ik" class="nav-link">IK</router-link>
+              <router-link to="/ik" class="nav-link" style="font-weight: 600">IK</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">İletişim</router-link>
+              <router-link to="/contact" class="nav-link" style="font-weight: 600">İletişim</router-link>
             </li>
             <li class="dot"></li>
           </ul>

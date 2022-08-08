@@ -14,7 +14,7 @@
 
       <div class="row mb-2">
         <div class="col-md-12">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative align-items-center">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative align-items-center" style="background: #f8f8f8">
             <div class="col-auto d-none d-lg-block">
               <img src="/image/services/m1.png" class="h-100" style="width: 150px;"/>
             </div>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="col-md-12">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative align-items-center">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative align-items-center" style="background: #f8f8f8">
             <div class="col-auto d-none d-lg-block">
               <img src="/image/services/m2.png" class="h-100" style="width: 150px; object-fit: cover"/>
             </div>

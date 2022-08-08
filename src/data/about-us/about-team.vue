@@ -1,6 +1,7 @@
 <template>
   <div class="row justify-content-between">
-    <div class="col-lg-6">
+    <div class="col-lg-6 position-relative">
+      <img src="/image/global/eksen_logo1.png" alt="" class="position-absolute d-none d-lg-block" style=" top: 16%; z-index: -1; filter: opacity(0.3); transform: rotate(-10deg)">
       <h5 class="fs-3 fw-500">
         Kalite Politikamız
       </h5>

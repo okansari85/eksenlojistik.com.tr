@@ -16,7 +16,7 @@
         güncellemeler için sosyal medyamızı takip ettiğinizden emin olun .</p>
     </div>
     <div class="col-lg-5">
-      <Form/>
+      <img src="/image/services/eksen_dd.jpg" alt="">
     </div>
   </div>
 

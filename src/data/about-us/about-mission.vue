@@ -41,7 +41,7 @@
 
     </div>
     <div class="col-lg-5">
-      <img src="/image/services/about-team-photo.png" alt="Eksen Services"/>
+      <img src="/image/services/about-team-photo2.jpg" alt="Eksen Services"/>
     </div>
   </div>
 

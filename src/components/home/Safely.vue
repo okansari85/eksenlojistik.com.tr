@@ -22,21 +22,15 @@
     </div>
   </section>
 
-  <!-- <Modal video-id="home-video"></Modal> -->
 
 
 </template>
 
 <script>
 
-import Modal from '@/components/global/Modal';
 
 export default {
   name: "Safely",
-  components: {
-    Modal,
-  },
-
 }
 </script>
 

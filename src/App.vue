@@ -22,7 +22,7 @@ export default {
 
 
 
-<style lang="css">
+<style>
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.3s;

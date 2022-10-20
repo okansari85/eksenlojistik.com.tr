@@ -1,6 +1,6 @@
 <template>
 
-  <section class="news my-5 py-5"  style="background: #f8f8f8">
+  <section class="news my-5 py-5">
     <div class="container-fluid">
       <div class="row py-5 align-items-center">
         <div class="col-lg-5 col-xl-4 paragraph-margin order-2 order-lg-1">

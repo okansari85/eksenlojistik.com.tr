@@ -8,22 +8,22 @@
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link" style="font-weight: 600">Anasayfa</router-link>
+              <router-link to="/" class="nav-link">Anasayfa</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/services" class="nav-link" style="font-weight: 600">Hizmetler</router-link>
+              <router-link to="/services" class="nav-link">Hizmetler</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link" style="font-weight: 600">Hakkımızda</router-link>
+              <router-link to="/about" class="nav-link">Hakkımızda</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/news" class="nav-link" style="font-weight: 600">Haberler</router-link>
+              <router-link to="/news" class="nav-link">Haberler</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/ik" class="nav-link" style="font-weight: 600">IK</router-link>
+              <router-link to="/ik" class="nav-link">IK</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link" style="font-weight: 600">İletişim</router-link>
+              <router-link to="/contact" class="nav-link">İletişim</router-link>
             </li>
             <li class="dot"></li>
           </ul>
@@ -80,5 +80,14 @@ export default {
 }
 </script>
 
+
+<style scoped>
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+</style>
 
 

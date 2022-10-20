@@ -194,10 +194,12 @@ export default {
 </script>
 
 <style scoped>
+
 .modal-dialog-scrollable .modal-content {
     height: 650px;
 }
 .modal {
     z-index: 9999999;
 }
+
 </style>

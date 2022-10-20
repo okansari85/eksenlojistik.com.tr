@@ -11,8 +11,9 @@
         <span class="d-block fw-bold lastchild">istediğin yere</span>
       </h1>
     </div>
-        <img src="image/home/g1.png" alt="" class="position-absolute bottom-0 start-0" style="z-index: 999;">
-  </section>
+        <!-- <img src="image/home/g1.png" alt="" class="position-absolute start-0 bottom-0" style="z-index: 999;"> -->
+        <img src="image/home/g1.png" alt="" class="position-absolute start-0" style="z-index: 999; bottom: -90px;">
+  </section> 
 </template>
 
 <script>

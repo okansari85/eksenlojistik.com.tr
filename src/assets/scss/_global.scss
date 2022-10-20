@@ -469,3 +469,67 @@ select, input, textarea {
         animation-delay: 1.8s;
     }
 }
+
+
+.calculate-button {
+    height: 50px;
+    bottom: 0%;
+    right: 0%;
+    padding: 0px 20px;
+    border-top-left-radius: 20px;
+    background-color: #1d5699;
+    color: white;
+    z-index: 999999;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    font-weight: 400!important;
+    div {
+        @media(min-width:991px) {
+            writing-mode: vertical-rl;
+            line-height: 200px;
+            transform: rotate(-180deg);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    @media(min-width:991px) {
+        border: 1px solid #fff;
+        transform: translate(100%, 50%);
+        bottom: 50%;
+        right: 100%;
+        width: 60px;
+        height: 200px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+
+.close-contact {
+    cursor: pointer;
+}
+
+.calculate-form {
+    width: 400px;
+    z-index: 9898449;
+    max-width: 90%;
+    transition: all 0.8s;
+    transform: translateX(-150%) translateY(-45%);
+    top: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &.active {
+        transform: translateX(0%) translateY(-45%)!important;
+    }
+    input, select {
+        border: 0;
+        border-bottom: 1px solid #c2c2c2!important;
+        font-size: 0.8rem;
+        padding: 1.2rem 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}

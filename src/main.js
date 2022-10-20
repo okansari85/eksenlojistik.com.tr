@@ -18,13 +18,10 @@ import 'animate.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '@/assets/css/style.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-AOS.init();
+
 const app = createApp(App);
 app.use(BootstrapVue3)
-app.use(AOS);
 app.use(VueAwesomeSwiper)
 app.use(store)
 app.use(router)

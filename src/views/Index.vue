@@ -4,14 +4,16 @@
       <Hero/>
       <Map/>
       <Solutions />
-      <Cost  />
+      <!-- <Cost  /> -->
+      <CalculateForm />
       <SlideWays  />
-      <Safely  />
+      <!-- <Safely  /> -->
       <Team  />
+      <ServicesText/>
       <NewsHome  />
       <Numbers />
       <Country  />
-      <Kur/>
+      <!-- <Kur/> -->
       <div id="custom-cookie-wrapper" class="cookie-wrapper position-fixed bottom-0 shadow bg-white w-100 d-none" style="z-index: 999999">
       <div class="cookie-container py-3">
           <div class="cookie-content d-flex flex-wrap px-3 justify-content-evenly align-items-center text-center text-lg-start">
@@ -44,14 +46,16 @@ import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";
 import Country from "@/components/home/Country";
 import NewsHome from "@/views/NewsHome";
-import Kur from "@/components/home/Kur";
+// import Kur from "@/components/home/Kur";
+import CalculateForm from "@/components/global/CalculateForm";
+import ServicesText from "@/components/home/ServicesText.vue";
 
 
 
 
 export default {
   name: 'Index',
-  components: {NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers, Kur },
+  components: { NewsHome, SlideWays, Hero, Solutions, Map, Cost, Safely, Team, Country, Numbers, CalculateForm, ServicesText },
 }
 </script>
 

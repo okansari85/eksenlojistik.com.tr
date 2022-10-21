@@ -12,7 +12,7 @@
       </h1>
     </div>
         <!-- <img src="image/home/g1.png" alt="" class="position-absolute start-0 bottom-0" style="z-index: 999;"> -->
-        <img src="image/home/g1.png" alt="" class="position-absolute start-0" style="z-index: 999; bottom: -90px;">
+        <img src="image/home/g1.png" alt="Hero Bottom" class="position-absolute start-0" style="z-index: 999; bottom: -90px;">
   </section> 
 </template>
 
@@ -21,7 +21,6 @@ export default {
   name: "Hero",
   mounted() {
     let elements = document.querySelectorAll('.rolling-text');
-
     elements.forEach(element => {
       let innerText = element.innerText;
       element.innerHTML = '';
@@ -35,7 +34,7 @@ export default {
         span.classList.add('letter');
         textContainer.appendChild(span);
       }
-
+      
       element.appendChild(textContainer);
       element.appendChild(textContainer.cloneNode(true));
     });
@@ -53,9 +52,6 @@ export default {
         element.classList.remove('play');
       });
     });
-
-
-
   }
 }
 </script>

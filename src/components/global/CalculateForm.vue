@@ -80,7 +80,16 @@
 
 <script>
 export default {
-    
+    mounted() {
+        // Calculate FORM
+        $('.calculate-button').click(function (){
+        $('.calculate-form').toggleClass('active');
+        });
+
+        $('.close-contact').click(function (){
+        $(".calculate-form").toggleClass('active');
+        });
+    }
 }
 </script>
 

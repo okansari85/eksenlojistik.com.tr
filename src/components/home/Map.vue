@@ -4,7 +4,7 @@
       <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero" style="z-index: 10000;">
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image position-relative">
-                <img src="/image/home/j1.jpg" alt="" class="w-100"/>
+                <img src="/image/home/j1.jpg" alt="Services Item" class="w-100"/>
           </div>
           <div class=" text-capitalize fw-bold mt-5">
             <h3 class="fw-bold">Karayolu</h3>
@@ -16,7 +16,7 @@
         </div>
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image active">
-          <img src="/image/home/h1.jpg" alt="" class="w-100"/>
+          <img src="/image/home/h1.jpg" alt="Services Item" class="w-100"/>
           </div>
           <div class="text-capitalize fw-bold mt-5">
             <h3 class="fw-bold">gümrükleme</h3>
@@ -30,7 +30,7 @@
 
         <div class="col-6 col-lg-4 text-center hero-item">
           <div class="hero-item-image">
-                <img src="/image/home/g1.jpg" alt="" class="w-100"/>
+                <img src="/image/home/g1.jpg" alt="Services Item" class="w-100"/>
           </div>
           <div class=" text-capitalize fw-bold mt-5">
             <h3 class="fw-bold">depolama</h3>
@@ -61,7 +61,7 @@
       </a>
     </div>
     <div class="container-fluid text-center pb-5 gx-0 overflow-hidden position-relative">
-      <img src="/image/home/maps_.svg" alt="" class="maps-svg">
+      <img src="/image/home/maps_.svg" alt="Map Svg" class="maps-svg">
       <div class="wrapper-down-icon2 position-absolute" style="top: -350px;">
         <div class="circle"></div>
         <div class="circle circle-2"></div>
@@ -110,6 +110,46 @@
 
 export default {
   name: "Map",  
+  mounted () {
+
+    // Scroll Animation
+    $(window).scroll(function () {
+        var objectt = $('.hero-bottom-map');
+        var obj_height = objectt.height();
+        var windows_height = $(window).height();
+        var obj_pos_top = objectt.position().top - (windows_height / 2); 
+        var obj_pos_bottom = obj_pos_top + obj_height - (windows_height / 120);
+        // Scroll Window Animation  
+        var scroll_top = $(window).scrollTop();
+        objectt.addClass("dark-map");
+        if (( scroll_top <= obj_pos_bottom)){
+            objectt.addClass("dark-map");
+        } else {
+            objectt.removeClass("dark-map");
+            objectt.removeClass("bg-custom-dark");
+        }
+    });
+
+    // Counter Animation
+    const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+
+        const target = document.querySelector(qSelector);
+        let startTimestamp = null;
+        // Times Tamp
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            target.innerText = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        // Request Animation Frame
+        window.requestAnimationFrame(step);
+        };
+        // Use Counter Animation
+        counterAnim(".counter", 52000, 55000, 200000);
+    },
 }
 </script>
 
@@ -120,7 +160,6 @@ export default {
     position: relative;
   }
 }
-
 
 @media(min-width:992px) {
   .content-text {
@@ -171,9 +210,7 @@ export default {
     img {
           transform: scale(1.3);
     }
-  // &::after {
-  //   background-color: rgba(#ff8105, $alpha: .6);
-  // }
+
 }
 
 

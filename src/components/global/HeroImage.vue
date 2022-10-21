@@ -7,7 +7,7 @@
 <!--        </h1>-->
 <!--      </div>-->
       <div class="col-lg-12 global-hero-img">
-        <img :src="img" alt=""/>
+        <img :src="img" alt="Hero Image"/>
         <div class="global-hero-bottom-btn">{{ miniTitle }}</div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 <template>
+  
   <section class="numbers">
     <div class="numbers-slide pb-5">
       <swiper
@@ -10,7 +11,7 @@
       >
         <swiper-slide v-for="(slide, idx) in slides" :key="idx" @click="ChangerMap(idx)">
           <div class="swiper-slide-inner position-relative" style="cursor: pointer">
-            <img :src=slide.img1 alt=""/>
+            <img :src=slide.img1 alt="Slide Image"/>
             <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
                 <span class="fs-3 text-uppercase">{{slide.country}}</span>
                     <br />
@@ -20,7 +21,6 @@
       </swiper>
     </div>
   </section>
-
 
 </template>
 

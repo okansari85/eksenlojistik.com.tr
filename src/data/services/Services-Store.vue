@@ -16,7 +16,7 @@ Hasarlı- kayıp malzemeler için prosedürler, raporlamalar, bloke işlemleri y
       </div>
     </div>
     <div class="col-md-5">
-      <img src="/image/services/about-sub-page-photo.png" alt="">
+      <img src="/image/services/depoalt.jpg" alt="Depo Alt">
     </div>
   </div>
 

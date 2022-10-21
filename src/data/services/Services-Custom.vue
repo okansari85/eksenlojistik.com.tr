@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="col-md-5">
-      <img src="/image/services/services-custom-botton.png" alt="">
+      <img src="/image/services/services-custom-botton.png" alt="Services Custom">
     </div>
   </div>
 

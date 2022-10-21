@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="col-md-5">
-      <img src="/image/services/services-parsiyel-bottom1.png" alt="">
+      <img src="/image/services/services-parsiyel-bottom1.png" alt="Services Parsiyel">
     </div>
   </div>
 

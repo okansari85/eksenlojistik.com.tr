@@ -6,9 +6,9 @@
         <div class="col-md-6 country-item active">
           <div class="overlay"></div>
           <div class="position-relative">
-            <img src="/image/home/romania.png" alt="" class="w-100 country-item-img">
+            <img src="/image/home/romania.png" alt="Romania" class="w-100 country-item-img">
             <div class="position-absolute top-50 start-50 translate-middle text-white text-center country-item-absolute">
-              <img src="/image/home/romania_png.png" alt="" class="country-item-img2">
+              <img src="/image/home/romania_png.png" alt="Romania" class="country-item-img2">
               <h3 class="text-uppercase fw-bold py-md-4 display-5">Romania</h3>
               <p class="text-white fs-08">
                 Latilokum Sokak Fidan Apt.No.7 D.1 Şişli <br />
@@ -23,9 +23,9 @@
         <div class="col-md-6 country-item active">
           <div class="overlay"></div>
           <div class="position-relative">
-            <img src="/image/home/turkey.png" alt="" class="w-100 country-item-img">
+            <img src="/image/home/turkey.png" alt="Turkey" class="w-100 country-item-img">
             <div class="position-absolute top-50 start-50 translate-middle text-white text-center country-item-absolute">
-              <img src="/image/home/turkey_png.png" alt="" class="country-item-img2">
+              <img src="/image/home/turkey_png.png" alt="Turkey" class="country-item-img2">
               <h3 class="text-uppercase fw-bold py-md-4 display-5">
                 Turkey
               </h3>

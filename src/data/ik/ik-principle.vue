@@ -18,7 +18,7 @@
     </div>
     
     <div class="col-lg-5">
-      <img src="/image/services/ik-new.png" alt="">
+      <img src="/image/services/ik-new.png" alt="IK Image">
     </div>
 
   </div>

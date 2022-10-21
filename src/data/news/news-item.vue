@@ -2,7 +2,7 @@
 
   <router-link :to="'/news-detail/' + id" class="news-item col-md-6 col-lg-4">
       <div class="news-top">
-        <img :src="img" alt="">
+        <img :src="img" alt="News Detail Image">
       </div>
       <div class="news-bottom pt-3">
         <div class="news-tag text-black-50 fs-08">

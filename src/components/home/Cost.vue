@@ -77,7 +77,7 @@
           <div>
             <img
                 src="/image/home/cost_maps_new.png"
-                usemap="#usa" style="max-width: 100%;"
+                usemap="#usa" alt="Cost Map" style="max-width: 100%;"
             />
           </div>
         </div>

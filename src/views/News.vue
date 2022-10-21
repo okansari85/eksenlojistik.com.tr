@@ -18,6 +18,9 @@
             </b-tabs>
 
           </div>
+          <div class="py-5">
+                <Kur/>
+          </div>
         </div>
       </section>
     </main>
@@ -32,10 +35,11 @@
 import NewsAndAnnouncement from "@/data/news/news-and-announcement";
 import NewsOnly from "@/data/news/news-only";
 import AnnouncementOnly from "@/data/news/announcement-only";
+import Kur from "@/components/home/Kur";
 
 export default {
   name: 'News',
-  components: {NewsAndAnnouncement, NewsOnly, AnnouncementOnly},
+  components: {NewsAndAnnouncement, NewsOnly, AnnouncementOnly, Kur},
   data() {
     return {
       navsItem: [

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="tr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,96 +15,12 @@
 
 <div id="app"></div>
 
+<!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jQuery Cookie -->
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
-
-<script>
-    $(window).scroll(function () {
-        var objectt = $('.hero-bottom-map');
-        var obj_height = objectt.height();
-        var windows_height = $(window).height();
-
-        var obj_pos_top = objectt.position().top - (windows_height / 2); 
-        var obj_pos_bottom = obj_pos_top + obj_height - (windows_height / 120);
-
-        var scroll_top = $(window).scrollTop();
-        var scroll_bottom = scroll_top + windows_height;
-
-
-        objectt.addClass("dark-map");
-        if (  ( scroll_top <= obj_pos_bottom)){
-            objectt.addClass("dark-map");
-
-        } else {
-            objectt.removeClass("dark-map");
-            objectt.removeClass("bg-custom-dark");
-
-        }
-    });
-
-    $(document).ready(function () {
-        $(".mobile-nav-item").click(function () {
-            $(".toggle-btn__cross").click();
-        });
-        const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
-        const target = document.querySelector(qSelector);
-        let startTimestamp = null;
-        const step = (timestamp) => {
-            if (!startTimestamp) startTimestamp = timestamp;
-            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            target.innerText = Math.floor(progress * (end - start) + start);
-            if (progress < 1) {
-                window.requestAnimationFrame(step);
-            }
-        };
-        window.requestAnimationFrame(step);
-};
-
-counterAnim(".counter", 52000, 55000, 200000);
-    });
-
-
-</script>
-
-
-<script>
-    $(document).ready(function () {
-    
-    // Cookie
-    var cookie_wrapper = $('#custom-cookie-wrapper');
-    var temp_cookie = Cookies.get('cookie');
-
-    if (temp_cookie !== 'true') {
-        cookie_wrapper.removeClass('d-none');
-    }
-    
-    $('#btn-cookie-accept').click(function () {
-        cookie_wrapper.addClass('d-none');
-        var date = new Date();
-        var m = 1000000;
-        date.setTime(date.getTime() + (m * 60 * 1000));
-        Cookies.set('cookie', 'true', {expires: date});
-    });
-
-        // Calculate FORM
-    
-        $('.calculate-button').click(function (){
-        $('.calculate-form').toggleClass('active');
-        });
-
-        $('.close-contact').click(function (){
-        $(".calculate-form").toggleClass('active');
-        });
-
-});
-
-
-
-
-</script>
-
 
 
 </body>

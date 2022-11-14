@@ -48,7 +48,7 @@
                   <router-link to="/" aria-current="page" class="mobile-nav-item">Anasayfa</router-link>
                 </li>
                 <li>
-                  <router-link to="/services" class="mobile-nav-item">Hizmetler</router-link>
+                  <router-link to="/services" class="mobile-nav-item services-menu-item">Hizmetler</router-link>
                 </li>
                 <li>
                   <router-link to="/about" class="mobile-nav-item">Hakkımızda</router-link>

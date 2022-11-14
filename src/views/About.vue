@@ -15,6 +15,7 @@
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"
                      @click="Changer(index)"
+                      :active="$route.params.slug == navs.slug ? '' : 'active'"
               >
                 <b-card-text class="py-5 px-3">
                   <component class="pt-5" :is="navs.content" :navs="navs"></component>
@@ -56,7 +57,8 @@ export default {
           heroMiniTitle: "Eksen Lojistik",
           heroImg: ('/image/services/hakkimizda.jpg'),
           title: "Hakkımızda",
-          content: "AboutContent"
+          content: "AboutContent",
+          slug: 'hakkimizda'
 
         },
         {
@@ -64,7 +66,8 @@ export default {
           heroMiniTitle: "Sürdürülebilirlik",
           heroImg: ('/image/services/surdurulebilirlik.jpg'),
           title: "Sürdürülebilirlik",
-          content: "AboutSustainability"
+          content: "AboutSustainability",
+          slug: 'surdurulebilirlik'
 
         },
         {
@@ -73,6 +76,7 @@ export default {
           heroImg: ('/image/services/misyon_vizyon.jpg'),
           title: "Misyon & Vizyon",
           content: 'AboutMission'
+          , slug: 'misyon-vizyon'
 
         },
         {
@@ -80,7 +84,8 @@ export default {
           heroMiniTitle: "Kalite Politikamız",
           heroImg: ('/image/services/takimuyeleri1.jpg'),
           title: "Kalite Politikamız",
-          content: 'AboutTeam'
+          content: 'AboutTeam',
+          slug: 'kalite-politikamiz'
 
         },
       ],
@@ -96,6 +101,7 @@ export default {
           this.heroTitle = value.heroTitle
           this.heroMiniTitle = value.heroMiniTitle
           this.heroImg = value.heroImg
+          this.slug = value.slug;
         }
       });
     }

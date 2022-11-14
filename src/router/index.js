@@ -15,12 +15,12 @@ const routes = [
 
   },
   {
-    path: '/services',
+    path: '/services/:slug?',
     name: 'services',
     component: Services,
   },
   {
-    path: '/about',
+    path: '/about/:slug?',
     name: 'about',
     component: About,
   },
@@ -45,7 +45,7 @@ const routes = [
   },
   {
 
-    path: '/ik',
+    path: '/ik/:slug?',
     name: 'ik',
     component: Ik,
   },

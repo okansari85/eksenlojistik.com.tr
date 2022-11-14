@@ -9,9 +9,12 @@
         <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2 text-center text-lg-start">
 
           <Title class="pb-4"
-                 title='büyük sevkiyatlar için premium çözümler'
+                 title='Karayolu taşımacılığında çözüm ortağı'
                  subtitle='size özel'
-                 paragraph='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corporis, numquam quam, aspernatur dicta aut nam inventore maxime unde dolorem consequatur. Rerum, cum velit atque ea quia accusamus magnam minus?'/>
+                 paragraph='
+                  Eksen, 2005 yılından bu yana karayolu taşımacılığında çözüm ortağı olmaya devam ediyor.
+                  Uzman kadromuzla, etkin çözümlerimizle ve çalışma prensiplerimizle Eksen Lojistik olarak karayolu taşımacılığı ile siz değerli müşterilerimizin yanındayız.
+                 '/>
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
 
             <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">daha fazla</router-link>

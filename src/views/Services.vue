@@ -1,24 +1,37 @@
 <template>
   <div>
     <main class="global-sub-page">
-      <div class="container pt-5 mt-5">
+      <div class="mobile-services py-3 px-3">
+        
+        <!-- <select name="" id="mobile-services-selected" 
+                class="form-select d-md-none" 
+                @change="Changer(index)">
+                <option :value="index" v-for="(navs, index) in navsItem">
+                  {{ navs.heroMiniTitle }}
+                </option>
+        </select> -->
 
+      
+      </div>
+      <div class="container pt-md-5 mt-md-5">
         <HeroImage
             :miniTitle="heroMiniTitle"
             :img="heroImg"
         />
+        <div class="py-md-5 d-md-flex justify-content-around">
 
-<!--        :title="heroTitle"-->
 
-        <div class="py-5 d-md-flex justify-content-around">
           <b-tabs pills class="sub-tab">
-            <b-tab v-for="(navs, index) in navsItem"
-                   :title="navs.title" :key="index"
-                   @click="Changer(index)"
-            >
-              <b-card-text class="py-5 px-3">
-                <component class="pt-5" :is="navs.content" :navs="navs"></component>
-              </b-card-text>
+            <b-tab v-for="
+                  (navs, index) in navsItem"
+                  :title="navs.title" :key="index"
+                  @click="Changer(index)"
+                  :active="$route.params.slug == navs.slug ? '' : 'active'"
+                  >
+              
+                <b-card-text class="py-5 px-3">
+                  <component class="pt-2 pt-md-5" :is="navs.content" :navs="navs"></component>
+                </b-card-text> 
             </b-tab>
           </b-tabs>
 
@@ -53,59 +66,55 @@ export default {
   data() {
     return {
       navsItem: [
-            {
-          // heroTitle: "Servisler",
+        {
           heroMiniTitle: "Karayolu",
           heroImg: ('/image/services/_karayolu.jpg'),
           title: "Karayolu",
           content: 'ServicesHighway',
-          // id:'kara-tasimacilgi',
-
+          slug: 'karayolu-tasimaciligi',
         },
         {
-          // heroTitle: "Servisler",
           heroMiniTitle: "Gümrükleme",
           heroImg: ('/image/services/_gumrukleme.jpg'),
           title: "Gümrükleme",
           content: 'ServicesCustom',
-          // id:'gumruk'
+          slug: 'gumrukleme',
         },
 
         {
-          // heroTitle: "Servisler",
           heroMiniTitle: "Komple & Parsiyel",
           heroImg: ('/image/services/parsiyel.jpg'),
           title: "Komple & Parsiyel",
           content: 'ServicesFTLandLTL',
-          // id:'parsiyel-lft',
+          slug: 'komple-parsiyel-tasimaciligi'
 
         },
         {
-          // heroTitle: "Servisler",
           heroMiniTitle: "Depolama",
           heroImg: ('/image/services/depo.jpg'),
           title: "Depolama",
           content: 'ServicesStore',
-          // id:'depo-yonetimi',
+          slug: 'depolama-hizmeti'
+
         },
         {
-          // heroTitle: "Servisler",
           heroMiniTitle: "Minivan",
           heroImg: ('/image/services/ekspress.jpg'),
           title: "Minivan",
           content: 'ServicesMinivan',
-          // id:'ekspress-minivan',
+          slug: 'minivan-tasimacilik'
+
         },
         {
-          // heroTitle: "Servisler",
           heroMiniTitle: "Rulo Sac",
           heroImg: ('/image/services/proje-hero.jpg'),
           title: "Rulo Sac",
           content: 'ServicesRulo',
-          // id:'proje-tasimaciligi',
+          slug: 'rulo-sac-tasimaciligi'
+
         },
       ],
-      // heroTitle: "Servisler",
+
       heroMiniTitle: "Karayolu",
       heroImg: ('/image/services/_karayolu.jpg'),
     }
@@ -114,12 +123,12 @@ export default {
     Changer(index) {
       this.navsItem.forEach((value, key) => {
         if(key == index ) {
-          // this.heroTitle = value.heroTitle
           this.heroMiniTitle = value.heroMiniTitle
           this.heroImg = value.heroImg
+          this.slug = value.slug;
         }
       });
-    }
+    },
   },
   mounted () {
     window.scrollTo(0, 0)

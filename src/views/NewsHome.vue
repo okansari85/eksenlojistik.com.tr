@@ -3,7 +3,7 @@
   <section class="news my-5 py-5">
     <div class="container-fluid">
       <div class="row py-5 align-items-center">
-        <div class="col-lg-5 col-xl-4 paragraph-margin order-2 order-lg-1">
+        <div class="col-lg-5 col-xl-4 paragraph-margin ">
           <div class="news-title-top py-4 text-center text-lg-start">
             <h1 class="fw-bold text-capitalize">son haber</h1>
             <p class="pt-3">Eksen Lojistik için son gelişmeler.</p>
@@ -29,7 +29,6 @@
                 tag1="haber"
                 tag2="avrupa taşımacılığı"
             />            <NewsNav
-
               id=2
               date-number=22
               date-month="subat"
@@ -39,11 +38,11 @@
               tag2="avrupa taşımacılığı"
           />
           </div>
-          <div class="mt-5 pt-3 text-center text-lg-start">
+          <div class="my-5 pt-3 text-center text-lg-start">
             <router-link to="/news" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-7 order-1 order-lg-2 px-4 px-lg-0">
+        <div class="col-lg-6 col-xl-7  px-4 px-lg-0">
           <div class="tab-content" id="v-pills-tabContent">
             <NewsContent
                 :class="'show active'"

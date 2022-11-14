@@ -1,43 +1,41 @@
 <template>
-  <section class="hero-bottom-map px-3 px-lg-0 pt-0 position-relative bg-custom-dark" id="numberSection">
+  <section class="hero-bottom-map px-3 px-lg-0 pt-5 pt-md-0 position-relative bg-custom-dark" id="numberSection">
     <div class="container">
-      <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero" style="z-index: 10000;">
-        <div class="col-6 col-lg-4 text-center hero-item">
+      <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero" style="z-index: 555;">
+        <div class="col-6 col-lg-3 py-3 text-center hero-item">
           <div class="hero-item-image position-relative">
                 <img src="/image/home/j1.jpg" alt="Services Item" class="w-100"/>
           </div>
-          <div class=" text-capitalize fw-bold mt-5">
+          <div class=" text-capitalize fw-bold mt-3">
             <h3 class="fw-bold">Karayolu</h3>
             <span>taşımacılığı</span>
-            <div class="my-3">
-              <router-link to="/services/karayolu" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
-            </div>
           </div>
         </div>
-        <div class="col-6 col-lg-4 text-center hero-item">
+        <div class="col-6 col-lg-3 py-3 text-center hero-item">
           <div class="hero-item-image active">
           <img src="/image/home/h1.jpg" alt="Services Item" class="w-100"/>
           </div>
-          <div class="text-capitalize fw-bold mt-5">
+          <div class="text-capitalize fw-bold mt-3">
             <h3 class="fw-bold">gümrükleme</h3>
             <span>hizmeti</span>
-            <div class="my-3">
-              <router-link to="/services" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
-            </div>
           </div>
         </div>
-
-
-        <div class="col-6 col-lg-4 text-center hero-item">
+        <div class="col-6 col-lg-3 py-3 text-center hero-item">
           <div class="hero-item-image">
                 <img src="/image/home/g1.jpg" alt="Services Item" class="w-100"/>
           </div>
-          <div class=" text-capitalize fw-bold mt-5">
+          <div class=" text-capitalize fw-bold mt-3">
             <h3 class="fw-bold">depolama</h3>
             <span>hizmeti</span>
-            <div class="my-3">
-              <router-link to="/services" class="btn btn-main my-2 my-md-0 mx-auto d-block">detaylı bilgi</router-link>
-            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 py-3 text-center hero-item">
+          <div class="hero-item-image">
+                <img src="/image/home/minivan_homew.jpg" alt="Services Item" class="w-100"/>
+          </div>
+          <div class=" text-capitalize fw-bold mt-3">
+            <h3 class="fw-bold">Minivan</h3>
+            <span>taşımacılık</span>
           </div>
         </div>
       </div>
@@ -200,6 +198,7 @@ export default {
     width: 100%;
     overflow: hidden;
     max-width: 100%;
+    object-fit: cover;
   }
 
 &:hover {
@@ -225,7 +224,7 @@ export default {
 @media(min-width:768px) {
   .hero-item-image {
     img {
-      height: 416px;
+      height: 350px;
     }
   }
 }

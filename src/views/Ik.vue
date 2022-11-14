@@ -15,6 +15,7 @@
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"
                      @click="Changer(index)"
+                      :active="$route.params.slug == navs.slug ? '' : 'active'"
               >
                 <b-card-text class="py-5 px-3">
                   <component class="pt-5" :is="navs.content" :navs="navs"></component>
@@ -47,27 +48,30 @@ export default {
       navsItem: [
         {
           heroTitle: "IK",
+          heroMiniTitle: "Başvuru",
+          heroImg: ('/image/services/basvuru.jpg'),
+          title: "Başvuru",
+          content: 'ikApplication',
+          slug: 'basvuru'
+        },
+        {
+          heroTitle: "IK",
           heroMiniTitle: "Çalışma Prensibi",
           heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Çalışma Prensibi",
-          content: "IkPrinciple"
+          content: "IkPrinciple",
+          slug: 'calisma-prensibi'
         },
         {
           heroTitle: "IK",
           heroMiniTitle: "Eğitim ve Gelişim",
           heroImg: ('/image/services/egitimvegelisim.jpg'),
           title: "Eğitim ve Gelişim",
-          content: "IkDevelopment"
+          content: "IkDevelopment",
+          slug: 'egitim-ve-gelisim'
 
         },
-        {
-          heroTitle: "IK",
-          heroMiniTitle: "Başvuru",
-          heroImg: ('/image/services/basvuru.jpg'),
-          title: "Başvuru",
-          content: 'ikApplication'
 
-        },
       ],
       heroTitle: "IK",
       heroMiniTitle: "Çalışma Prensibi",
@@ -81,6 +85,7 @@ export default {
           this.heroTitle = value.heroTitle
           this.heroMiniTitle = value.heroMiniTitle
           this.heroImg = value.heroImg
+          this.slug = value.slug;
         }
       });
     }

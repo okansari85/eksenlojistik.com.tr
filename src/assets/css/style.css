@@ -419,9 +419,13 @@ select::placeholder, input::placeholder, textarea::placeholder {
   background-color: #1d5699;
   color: white;
   z-index: 999999;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
   font-weight: 400 !important;
+}
+@media (max-width: 991px) {
+  .calculate-button {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
 }
 .calculate-button div {
   display: flex;
@@ -438,7 +442,6 @@ select::placeholder, input::placeholder, textarea::placeholder {
 }
 @media (min-width: 991px) {
   .calculate-button {
-    border: 1px solid #fff;
     transform: translate(100%, 50%);
     bottom: 50%;
     right: 100%;

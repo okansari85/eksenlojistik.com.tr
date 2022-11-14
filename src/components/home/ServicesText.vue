@@ -1,12 +1,12 @@
 <template>
     <div class="d-flex flex-wrap justify-content-evenly align-items-center pt-5">
 
-        <router-link to="/services" class="services-btn">Karayolu <br> Taşımacılığı</router-link>
-        <router-link to="/services" class="services-btn">Gümrükleme</router-link>
-        <router-link to="/services" class="services-btn">Komple & Parsiyel <br> Taşımacılığı</router-link>
-        <router-link to="/services" class="services-btn">Depolama <br> Hizmeti</router-link>
-        <router-link to="/services" class="services-btn">Minivan <br> Taşımacılık</router-link>
-        <router-link to="/services" class="services-btn">Rulo Sac <br> Taşımacılığı</router-link>
+        <router-link to="/services/karayolu-tasimaciligi" class="services-btn">Karayolu <br> Taşımacılığı</router-link>
+        <router-link to="/services/gumrukleme" class="services-btn">Gümrükleme</router-link>
+        <router-link to="/services/komple-parsiyel-tasimaciligi" class="services-btn">Komple & Parsiyel <br> Taşımacılığı</router-link>
+        <router-link to="/services/depolama-hizmeti" class="services-btn">Depolama <br> Hizmeti</router-link>
+        <router-link to="/services/minivan-tasimacilik" class="services-btn">Minivan <br> Taşımacılık</router-link>
+        <router-link to="/services/rulo-sac-tasimaciligi" class="services-btn">Rulo Sac <br> Taşımacılığı</router-link>
         
     </div>
 </template>

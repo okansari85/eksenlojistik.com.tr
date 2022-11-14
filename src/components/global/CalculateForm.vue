@@ -17,6 +17,7 @@
                 </span>
 
                 <h3 class="fw-bold pt-3 mb-4 ps-3" style="color: rgb(58, 58, 58);">Maaliyet Hesapla</h3>
+                <p class="ps-3">Aşşağıda ki bilgileri doldurduktan sonra size dönüş yapılacaktır.</p>
                 <form id="contact-form-left" action="https://sternenloscher.de/contact" method="POST"
                     class="tw-ge pb-4">
                     <form action="" >

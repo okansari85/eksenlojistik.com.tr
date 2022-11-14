@@ -3,16 +3,32 @@
     <div class="overlay"></div>
     <video src="/image/home/eksen_hero_video2.mp4" class=" vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
-    <div class="position-absolute hero-content hero-text text-center top-50 start-50 translate-middle">
+    <div class="position-absolute hero-content hero-text text-center top-50 start-50 translate-middle px-2 px-lg-0">
       <h1 class="text-white text-uppercase">
         <span class="d-block fw-bold firstchild">sadece bir çağrıda</span>
         <span class="fw-bold rolling-text">en kısa sürede</span>
         <span class="d-block fw-bold mobile-rolling">en kısa sürede</span>
         <span class="d-block fw-bold lastchild">istediğin yere</span>
       </h1>
+      <a data-bs-toggle="modal" data-bs-target="#heroVideos" class="playBtn" style="cursor: pointer; z-index: 200000;">
+          <img src="/image/home/k2.png" alt="" width="60" height="auto"  class="mt-4">
+      </a>
     </div>
-        <!-- <img src="image/home/g1.png" alt="" class="position-absolute start-0 bottom-0" style="z-index: 999;"> -->
-        <img src="image/home/g1.png" alt="Hero Bottom" class="position-absolute start-0" style="z-index: 999; bottom: -90px;">
+
+    <!-- Modal Solutions -->
+    <div class="modal fade" id="heroVideos" tabindex="-1" style="z-index: 20000;">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content py-3 bg-transparent border-0">
+          <a href="" class="bi bi-x-circle-fill text-danger position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
+          <div class="modal-body p-0 border-0 bg-transparent">
+            <div class="modal-video-inner bg-transparent p-0">
+              <video src="/image/home/eksen_hero_video2.mp4" autoplay loop muted style="max-width: 100%;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section> 
 </template>
 
@@ -82,21 +98,19 @@ export default {
         span {
           &.mobile-rolling {
             font-size: 4rem;
+            line-height: 1;
           }
         }
       }
     }
   }
 
-
-
-
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     content: '';
-    background-color: rgba(0, 26, 40, 0.75);
+    background-color: rgba(0, 26, 40, 0.35);
     transition: all .3s ease;
     height: 100%;
     width: 100%;

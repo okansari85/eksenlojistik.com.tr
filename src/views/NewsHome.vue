@@ -11,7 +11,7 @@
           <div class="nav nav-pills me-xl-3 " id="v-pills-tab" role="tablist" style="height: 500px; overflow-y: scroll">
             <NewsNav
                 :class="'active'"
-                id=1
+                id="1"
                 date-number=07
                 date-month="subat"
                 text-nav="Transit Ambargo: Paris ve Frankfurt taki mevcut taşıma durumu"
@@ -21,15 +21,16 @@
             />
             <NewsNav
 
-                id=2
+                id="2"
                 date-number=22
                 date-month="subat"
                 text-nav="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
                 country="belcika"
                 tag1="haber"
                 tag2="avrupa taşımacılığı"
-            />            <NewsNav
-              id=2
+            />            
+            <NewsNav
+              id="2"
               date-number=22
               date-month="subat"
               text-nav="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
@@ -46,7 +47,7 @@
           <div class="tab-content" id="v-pills-tabContent">
             <NewsContent
                 :class="'show active'"
-                id=1
+                id="1"
                 :img="('image/home/eksen_news_slide1.png')"
                 text-content="eksen lojistik yeni ekibiyle belçika da faaliyete geçti"
                 country="belcika"
@@ -55,7 +56,7 @@
                 date="22 subat 2022"
             />
             <NewsContent
-                id=2
+                id="2"
                 :img="('image/home/k1.jpg')"
                 text-content="Eksen Lojistik artık yeni ekibiyle Belçika'da faaliyete geçti"
                 country="belcika"

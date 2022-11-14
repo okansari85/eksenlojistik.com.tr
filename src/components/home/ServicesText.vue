@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex flex-wrap justify-content-evenly align-items-center pt-5">
+    <div class="d-none d-xxl-flex flex-wrap justify-content-evenly align-items-center pt-5 ">
 
         <router-link to="/services/karayolu-tasimaciligi" class="services-btn">Karayolu <br> Taşımacılığı</router-link>
         <router-link to="/services/gumrukleme" class="services-btn">Gümrükleme</router-link>

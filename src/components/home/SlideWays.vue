@@ -15,7 +15,6 @@
               :modules="modules"
               :slides-per-view="1"
               :space-between="50"
-
               @swiper="onSwiper"
               @slideChange="onSlideChange"
           >
@@ -43,7 +42,7 @@
 </template>
 
 <script>
-import {Swiper, SwiperSlide} from 'swiper/vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import {Navigation} from 'swiper'
 import SliderNavigation from "@/components/global/SliderNavigation";
 
@@ -52,10 +51,10 @@ export default {
   components: {SliderNavigation, Swiper, SwiperSlide},
   setup() {
     const onSwiper = (swiper) => {
-      console.log(swiper);
+      // console.log(swiper);
     };
     const onSlideChange = () => {
-      console.log('slide change');
+      // console.log('slide change');
     };
     return {
       onSwiper,

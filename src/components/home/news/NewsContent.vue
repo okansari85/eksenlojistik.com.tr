@@ -27,7 +27,7 @@ export default {
       default: '',
       type:String,
     },
-    id:Number,
+    id:String,
     img:String,
     tag1: {
       default: 'Haber',
@@ -77,7 +77,7 @@ export default {
 .overlay {
   position: absolute;
   content: '';
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .2);
   top: 0;
   left: 0;
   width: 100%;

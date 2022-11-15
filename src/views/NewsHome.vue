@@ -1,13 +1,12 @@
 <template>
 
-  <section class="news my-5 py-5">
+  <section class="news my-lg-5 py-5">
     <div class="container-fluid">
-      <div class="row py-5 align-items-center">
-        <div class="col-lg-5 col-xl-4 paragraph-margin ">
+      <div class="row py-5 align-items-center justify-content-xl-center">
+        <div class="col-lg-5 col-xl-4 paragraph-margin">
           <div class="news-title-top py-4 text-center text-lg-start">
             <h1 class="fw-bold text-capitalize">son haber</h1>
-            <p class="pt-3">Eksen Lojistik için son gelişmeler.</p>
-          </div>
+            </div>
           <div class="nav nav-pills me-xl-3 " id="v-pills-tab" role="tablist" style="height: 500px; overflow-y: scroll">
             <NewsNav
                 :class="'active'"
@@ -43,7 +42,7 @@
             <router-link to="/news" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-7  px-4 px-lg-0">
+        <div class="col-lg-6 px-4 px-lg-0">
           <div class="tab-content" id="v-pills-tabContent">
             <NewsContent
                 :class="'show active'"

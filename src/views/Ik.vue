@@ -2,7 +2,7 @@
   <div>
     <main class="global-sub-page">
       <section>
-        <div class="container mt-5 pt-5">
+        <div class="container mt-5 pt-4">
           <HeroImage
               :title="heroTitle"
               :miniTitle="heroMiniTitle"
@@ -28,8 +28,6 @@
       </section>
     </main>
   </div>
-
-
 </template>
 
 <script>
@@ -74,8 +72,8 @@ export default {
 
       ],
       heroTitle: "IK",
-      heroMiniTitle: "Çalışma Prensibi",
-      heroImg: ('/image/services/about-sub-page-hero1.png'),
+      heroMiniTitle: "Başvuru",
+      heroImg: ('/image/services/basvuru.jpg'),
     }
   },
   methods: {

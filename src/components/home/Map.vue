@@ -204,6 +204,11 @@ export default {
       border: 1px solid #fff;
     }
   }
+  &:hover {
+    h3, span {
+      color: rgb(209, 8, 8)!important;
+    }
+  }
 
 }
 

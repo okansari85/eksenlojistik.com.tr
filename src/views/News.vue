@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <main class="global-sub-page mt-5">
+    <main class="global-sub-page mt-4">
       <section>
         <div class="container">
 
@@ -19,7 +19,7 @@
 
           </div>
           <div class="py-5">
-                <Kur/>
+            <Kur/>
           </div>
         </div>
       </section>
@@ -52,13 +52,11 @@ export default {
           slug: "egitim-ve-gelisim",
           title: "Duyuru",
           content: "NewsOnly"
-
         },
         {
           slug: "basvuru",
           title: "Basın",
           content: 'AnnouncementOnly'
-
         },
       ],
     }

@@ -1,18 +1,16 @@
 <template>
-  <footer class='px-lg-5'>
+  <footer class='px-lg-5 pt-4'>
     <div class="container-fluid px-3 px-lg-5 py-3">
-      <div class="row justify-content-between align-items-center pb-4">
+      <!-- <div class="row justify-content-between align-items-center pb-4">
         <div class="col-lg-3">
-          <img src="/image/global/eksen_logo.png" alt="Footer Logo"/>
+          
         </div>
-      </div>
-      <div class="row pb-3 py-md-4">
+      </div> -->
+      <div class="row pb-3 pt-md-4">
         <div class="col-lg-3">
-          <p>
-            Sektör ve büyüklükten bağımsız olarak güvenilirlik,
-            çevresel etki ve maliyet odaklı tüm işletmeler için
-            verimli çözümler üretiyoruz.
-          </p>
+          <div class="pb-4">
+              <img src="/image/global/eksen_logo.png" alt="Footer Logo" width="300" class="d-none d-lg-block"/>
+          </div>
           <div class="col-md-3 pt-3 pt-lg-0">
           <i class='bi bi-instagram'></i>
           <i class='bi bi-linkedin ms-2'></i>
@@ -44,17 +42,17 @@
           <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
         </div>
       </div>
-      <div class="d-flex justify-content-between align-items-center pt-4">
+      <div class="d-flex justify-content-between align-items-center">
         <div class="col-lg-4">
           <ul class="d-sm-flex justify-content-between justify-content-sm-start pb-3 fs-08">
-            <li class="me-sm-4 "><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar" class="fw-bold">Şartlar ve Koşullar</a></li>
-            <li class="me-sm-4 py-2 py-sm-0"><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari" class="fw-bold">Yasal Uyarı</a></li>
-            <li class="me-sm-4"><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi" class="fw-bold">Veri Gizliliği</a></li>
+            <li class="me-sm-4 "><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar" class="fw-500">Şartlar ve Koşullar</a></li>
+            <li class="me-sm-4 py-2 py-sm-0"><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari" class="fw-500">Yasal Uyarı</a></li>
+            <li class="me-sm-4"><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi" class="fw-500">Veri Gizliliği</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <img src="/image/global/icon/iso-9001.png" alt="ISO icon" />
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>

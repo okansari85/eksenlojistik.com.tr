@@ -31,7 +31,7 @@ const routes = [
   },
 
   {
-    path: '/news-detail/:id',
+    path: '/news-detail/:id?',
     name: 'news-detail',
     component: NewsDetail,
 

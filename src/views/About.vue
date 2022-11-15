@@ -2,7 +2,7 @@
   <div>
     <main class="global-sub-page">
       <section>
-        <div class="container mt-5 pt-5">
+        <div class="container mt-5 pt-4">
           <HeroImage
               :title="heroTitle"
               :miniTitle="heroMiniTitle"
@@ -63,13 +63,14 @@ export default {
         },
         {
           heroTitle: "Hakkımızda",
-          heroMiniTitle: "Sürdürülebilirlik",
-          heroImg: ('/image/services/surdurulebilirlik.jpg'),
-          title: "Sürdürülebilirlik",
-          content: "AboutSustainability",
-          slug: 'surdurulebilirlik'
+          heroMiniTitle: "Kalite Politikamız",
+          heroImg: ('/image/services/takimuyeleri1.jpg'),
+          title: "Kalite Politikamız",
+          content: 'AboutTeam',
+          slug: 'kalite-politikamiz'
 
         },
+
         {
           heroTitle: "Hakkımızda",
           heroMiniTitle: "Misyon & Vizyon",
@@ -79,13 +80,14 @@ export default {
           , slug: 'misyon-vizyon'
 
         },
+
         {
           heroTitle: "Hakkımızda",
-          heroMiniTitle: "Kalite Politikamız",
-          heroImg: ('/image/services/takimuyeleri1.jpg'),
-          title: "Kalite Politikamız",
-          content: 'AboutTeam',
-          slug: 'kalite-politikamiz'
+          heroMiniTitle: "Sürdürülebilirlik",
+          heroImg: ('/image/services/surdurulebilirlik.jpg'),
+          title: "Sürdürülebilirlik",
+          content: "AboutSustainability",
+          slug: 'surdurulebilirlik'
 
         },
       ],

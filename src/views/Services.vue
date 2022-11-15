@@ -1,19 +1,7 @@
 <template>
   <div>
     <main class="global-sub-page">
-      <div class="mobile-services py-3 px-3">
-        
-        <!-- <select name="" id="mobile-services-selected" 
-                class="form-select d-md-none" 
-                @change="Changer(index)">
-                <option :value="index" v-for="(navs, index) in navsItem">
-                  {{ navs.heroMiniTitle }}
-                </option>
-        </select> -->
-
-      
-      </div>
-      <div class="container pt-md-5 mt-md-5">
+      <div class="container pt-md-4 mt-md-5">
         <HeroImage
             :miniTitle="heroMiniTitle"
             :img="heroImg"
@@ -25,7 +13,7 @@
             <b-tab v-for="
                   (navs, index) in navsItem"
                   :title="navs.title" :key="index"
-                  @click="Changer(index)"
+                  @click="Changer(navs.slug)"
                   :active="$route.params.slug == navs.slug ? '' : 'active'"
                   >
               
@@ -34,11 +22,7 @@
                 </b-card-text> 
             </b-tab>
           </b-tabs>
-
-
         </div>
-
-
       </div>
     </main>
 
@@ -121,8 +105,8 @@ export default {
   },
   methods: {
     Changer(index) {
-      this.navsItem.forEach((value, key) => {
-        if(key == index ) {
+      this.navsItem.forEach((value) => {
+        if(value.slug == index ) {
           this.heroMiniTitle = value.heroMiniTitle
           this.heroImg = value.heroImg
           this.slug = value.slug;
@@ -131,6 +115,7 @@ export default {
     },
   },
   mounted () {
+    this.Changer(this.$route.params.slug)
     window.scrollTo(0, 0)
   }
 }

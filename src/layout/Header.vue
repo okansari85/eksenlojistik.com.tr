@@ -3,7 +3,7 @@
     <div class="container-fluid px-md-5 ">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
-          <img src="/image/global/eksen_logo.png" alt="Eksen Logo" style="width: 250px;">
+          <img src="/image/global/eksen_logo.png" alt="Eksen Logo" style="width: 230px;">
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">

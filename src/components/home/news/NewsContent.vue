@@ -1,7 +1,8 @@
 <template>
+  
 
   <div :class="'tab-pane fade' +state" :id="'v-pills-'+id" role="tabpanel" tabindex="0">
-    <div class="position-relative news-relative-wrap ms-auto">
+    <div class="position-relative news-relative-wrap ms-auto d-none d-lg-block">
       <div class="overlay"></div>
       <img :src="img" class="news-content-image" alt="content image">
       <div class="position-absolute top-0 p-3 news-content-wrap">
@@ -11,6 +12,7 @@
           <span class="text-decoration-underline text-uppercase">{{ tag2 }}</span>
           <h2 class="text-uppercase py-3 display-5 fw-bold">{{ textContent }}</h2>
           <span class="news1-date text-uppercase">{{ date }}</span>
+          <router-link :to="'/news-detail/'+slug" class="btn btn-main btn-main-news text-uppercase fs-07 px-4 d-block mt-4">Devamını Oku</router-link>
         </div>
       </div>
     </div>
@@ -46,6 +48,7 @@ export default {
       default: '22 subat 2022',
       type:String,
     },
+    slug:String,
   }
 }
 </script>
@@ -59,9 +62,10 @@ export default {
 
 @media(min-width:767.98px) {
   .news-relative-wrap, .news-content-image {
-    height: 800px;
+    height: 700px;
     width: 1000px;
     max-width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -94,5 +98,20 @@ export default {
   }
 }
 
+.btn-main-news {
+  &:hover {
+    background-color: #1d5699;
+    color: white;
+  }
+}
+
+
+@media (max-width:576.98px) {
+  .news1-tag {
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
 
 </style>

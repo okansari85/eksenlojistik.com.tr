@@ -10,11 +10,13 @@
               <div class="contact-first py-4">
                 <div class="row align-items-center">
                   <div class="col-md-6">
-                    <strong class="fw-bold fs-5">İstanbul Merkez Ofis</strong>
+                    <div class="d-flex align-items-center">
+                      <img src="image/global/turkey.png" alt="" width="30">
+                      <strong class="fw-bold fs-5 ps-2">İstanbul Merkez Ofis </strong>
+                    </div>
                     <ul class="pt-4">
                       <li class="pb-2">
-                        <a href="https://goo.gl/maps/j2A1NvGLQvKG1PMu5"> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                          Şişli / Istanbul</a>
+                        <a href="https://goo.gl/maps/j2A1NvGLQvKG1PMu5"> <i class="bi bi-geo-alt-fill"></i> Fulya Mahallesi, Büyükdere Caddesi No.62 Şişli - İstanbul</a>
                       </li>
                       <li class="pb-2">
                         <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
@@ -36,11 +38,13 @@
               <div class="contact-second py-4">
                 <div class="row align-items-center">
                   <div class="col-md-6">
-                    <strong class="fw-bold fs-5">Çatalca Depo</strong>
+                    <div class="d-flex align-items-center">
+                      <img src="image/global/turkey.png" alt="" width="30">
+                      <strong class="fw-bold fs-5 ps-2">Çatalca Depo </strong>
+                    </div>
                     <ul class="pt-4">
                       <li class="pb-2">
-                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                          Şişli / Istanbul</a>
+                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Muratbey Merkez Mahallesi , Fabrikalar Caddesi No.29 Çatalca - İSTANBUL</a>
                       </li>
                       <li class="pb-2">
                         <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
@@ -62,11 +66,13 @@
               <div class="contact-third py-4">
                 <div class="row align-items-center">
                   <div class="col-md-6">
-                    <strong class="fw-bold fs-5">Romanya Ofis</strong>
+                    <div class="d-flex align-items-center">
+                      <img src="image/global/romania.png" alt="" width="30">
+                      <strong class="fw-bold fs-5 ps-2">Romanya Ofis </strong>
+                    </div>
                     <ul class="pt-4">
                       <li class="pb-2">
-                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Büyükdere Cad. No.62 Kat2 Fulya Mah. Mecidiyeköy,
-                          Şişli / Istanbul</a>
+                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Muratbey Merkez Mahallesi , Fabrikalar Caddesi No.29 Çatalca - İSTANBUL</a>
                       </li>
                       <li class="pb-2">
                         <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>

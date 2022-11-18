@@ -106,11 +106,11 @@
         <div class="circle circle-2"></div>
       </div>
 
-      <div class="row justify-content-center align-items-center py-5 content-text">
-        <div class="numbers-top col-lg-7 text-center pb-5">
-          <div class="title text-capitalize display-4 fw-bold pb-3">bir yılda <div class="display-3 fw-bold"><span
-                class="counter"></span> Km</div> yol yaptık</div>
-          <p class="">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL,
+      <div class="row align-items-center py-5 content-text">
+        <div class="numbers-top col-lg-7 pb-5">
+          <div class="title text-start text-capitalize display-4 fw-bold pb-3 text-white">bir yılda <div class="display-3 fw-bold text-white">
+            <span class="counter"></span> Km</div> yol yaptık</div>
+          <p class="text-start text-white">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL,
             tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>
@@ -138,9 +138,8 @@ export default {
         target.innerText = Math.floor(progress * (end - start) + start);
         if (progress < 1) {
             window.requestAnimationFrame(step);
-        }
+            }
         };
-        // Request Animation Frame
         window.requestAnimationFrame(step);
     }
       },
@@ -183,17 +182,17 @@ export default {
 @media(min-width:992px) {
   .content-text {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: 10%;
+    left: 8%;
     right: 0;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     // margin: auto;
     width: 900px;
     max-width: 100%;
   }
 
   .services-item-hero {
-    top: -100px;
+    padding-top: 20px;
   }
 }
 
@@ -248,7 +247,7 @@ export default {
 
 @media(min-width:1199px) {
   .maps-svg {
-    margin-top: -50px;
+    margin-top: -75px;
   }
 }
 

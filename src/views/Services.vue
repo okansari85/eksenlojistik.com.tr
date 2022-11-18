@@ -45,7 +45,7 @@
                 <div class="row">
                   <div class="col-6">
                     <img src="/image/services/servicess-2.png" alt="Services" class="img-fluid">
-                    <video src="/image/about/word-globe.mp4" style="height:300px; width: 100%; max-width: 100%;"></video>
+                    <video src="/image/video/1.m4v" loop muted autoplay style="height:320px; width: 100%; max-width: 100%; object-fit: cover;"></video>
                   </div>
                   <div class="col-6">
                     <img src="/image/services/servicess-1.png" alt="Services" class="img-fluid">
@@ -65,7 +65,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="pb-3">
-                <h2 class="custom-sub-title pb-2">Depolama Hizmeti</h2>
+                <h2 class="custom-sub-title pb-2 fw-bold">Depolama Hizmeti</h2>
                 <div class="description col-lg-11">
                     <p>
                       Eksen Lojistik olarak, gümrüksüz, sahamızda müşteriye özel lojistik alanı ve aktarma araçlarımız ile çok yönlü ve entegre depolama hizmetleri veriyoruz.
@@ -95,7 +95,7 @@
       <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-md-6"></div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-5 offset-md-1">
                 <div class="pb-3">
                 <h2 class="display-4 fw-500 pb-2 lh-1 text-white">Güvenilir ve Hızlı Sevkiyat</h2>
                 <div class="description col-lg-11 py-3 text-white">
@@ -143,6 +143,21 @@
 
               </div>
 
+          </div>
+
+          <div class="alternative-transport-video text-center">
+            <video src="/image/video/2.mp4" autoplay loop muted style="width: 836px; height: 413px; max-width: 100%; margin: auto; object-fit: cover;"></video>
+          </div>
+          <div class="row py-5">
+              <div class="col-12 text-center py-5">
+                  <div class="custom-sub-title-span">
+                      <span>eksen lojistik</span>
+                  </div>
+                  <div>
+                      <h2 class="display-4 fw-bold text-white">Özel Taşımacılık</h2>
+                      <p class="pt-2">Size özel hazırlanmış Lojistik seçeneklerimizi incelemek için bizimle irtibata geçin.</p>
+                  </div>
+              </div>
           </div>
       </div>
     </section>

@@ -72,7 +72,7 @@
                     <div class="row pt-5">
                         <div class="col-12 text-center">
                             <div class="custom-sub-title-span">
-                                <span>eksen lojistik</span>
+                                <span style="background-color:#f8fafa!important;">eksen lojistik</span>
                             </div>
                             <div>
                                 <h2 class="display-4 fw-bold">Geleceği ile tanış</h2>
@@ -114,7 +114,7 @@
                     <div class="row py-md-5">
                         <div class="col-12 text-center">
                             <div class="custom-sub-title-span">
-                                <span class="bg-white">Çevre için</span>
+                                <span style="background-color:white!important;">Çevre için</span>
                             </div>
                             <div>
                                 <h2 class="display-4 fw-bold">Sürdürülebilirlik</h2>
@@ -147,8 +147,7 @@
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 24px;
-                            letter-spacing: 0.19em;
-                            ">hizmetlerimiz</a>
+                            letter-spacing: 0.19em;">hizmetlerimiz</a>
                         </div>
                     </div>
                 </div>
@@ -172,8 +171,6 @@ export default {
     mixins: [counterFunction],
 
 }
-
-
 
 </script>
 

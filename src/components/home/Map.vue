@@ -125,8 +125,30 @@
 
 export default {
   name: "Map",
-  mounted() {
+  mixins: [
+    {
+      methods: {
+        counterAnim: function(qSelector, start = 0, end, duration = 1000) {
+        const target = document.querySelector(qSelector);
+        let startTimestamp = null;
+        // Times Tamp
+        const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        target.innerText = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+        };
+        // Request Animation Frame
+        window.requestAnimationFrame(step);
+    }
+      },
 
+    }
+  ],
+  
+  mounted() {
     // Scroll Animation
     $(window).scroll(function () {
       var objectt = $('.hero-bottom-map');
@@ -145,25 +167,8 @@ export default {
       }
     });
 
-    // Counter Animation
-    const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
-
-      const target = document.querySelector(qSelector);
-      let startTimestamp = null;
-      // Times Tamp
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        target.innerText = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      };
-      // Request Animation Frame
-      window.requestAnimationFrame(step);
-    };
     // Use Counter Animation
-    counterAnim(".counter", 52000, 55000, 200000);
+    this.counterAnim(".counter", 52000, 55000, 200000);
   },
 }
 </script>

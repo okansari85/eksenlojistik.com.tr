@@ -3,14 +3,13 @@
     <main>
       <Hero/>
       <Map/>
-      <Solutions />
-      <CalculateForm />
-      <SlideWays  />
-      <Team  />
-      <ServicesText/>
-      <NewsHome  />
-      <Numbers />
-      <Country  />
+      <Solutions/>
+      <CalculateForm/>
+      <SlideWays/>
+      <Team/>
+      <NewsHome/>
+      <Numbers/>
+      <Country/>
     </main>
   </div>
 

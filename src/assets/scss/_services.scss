@@ -1,5 +1,5 @@
 @use 'global' as g;
-@use 'veriables' as v;
+@use 'variables' as v;
 
 main.global-sub-page {
     padding-top: 80px;
@@ -52,4 +52,44 @@ background-color: #f3f3f3;
         font-size: 2.5rem;
 
     }
+}
+
+
+.services-banner {
+    height: 450px;
+    position: relative;
+    z-index: 1;
+    img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        filter: brightness(60%);
+    }
+    &-content {
+        position: absolute;
+        z-index: 33;
+        bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        h1 {
+            line-height: 1;
+        }
+        span {
+        color: #FAFFC0;
+        text-transform: uppercase!important;
+        font-weight: bold;
+        }
+    }
+
+
+}
+
+
+.ik-banner {
+    @extend .services-banner;
 }

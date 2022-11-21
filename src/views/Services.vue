@@ -43,11 +43,11 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="/image/services/servicess-2.png" alt="Services" class="img-fluid">
-                    <video src="/image/video/1.m4v" loop muted autoplay style="height:320px; width: 100%; max-width: 100%; object-fit: cover;"></video>
+                  <div class="col-lg-6">
+                    <img src="/image/services/servicess-2.png" alt="Services" class="img-fluid d-none d-lg-block">
+                    <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video" loop muted autoplay></video>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6 d-none d-lg-block">
                     <img src="/image/services/servicess-1.png" alt="Services" class="img-fluid">
                   </div>
                 </div>
@@ -61,7 +61,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between py-5 px-3 px-lg-0">
               <div class="col-lg-5">
-                  <video src="/image/about/word-globe.mp4" style="width: 100%; max-width: 100%;"></video>
+                  <video src="/image/about/word-globe.mp4" class="w-100 mw-100"></video>
               </div>
               <div class="col-lg-6">
                 <div class="pb-3">
@@ -85,15 +85,11 @@
 
     <section class="services-safely min-vh-100 vh-100 "
       style="
-      background-color: #0A0A0A;
       background-image: url(/image/services/safely-servicesss.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       "
     >
       <div class="container h-100">
-          <div class="row h-100 align-items-center">
+          <div class="row h-100 align-items-center px-3 px-lg-0">
             <div class="col-md-6"></div>
             <div class="col-lg-5 offset-md-1">
                 <div class="pb-3">
@@ -102,7 +98,6 @@
                     <p class="text-white">
                       Tüm Avrupa ülkelerine daha hızlı Sevkiyat imkanı ile Avrupa’nın tüm bölgelerine en hızlı şekilde teslimat yapmaktayız. Express taşıma hizmetimiz, müşterilerimize 1.3 ton ağırlığa kadar olan taşımalarında kapıdan kapıya teslimat hizmeti sunmaktayız.
                     </p>
-
                 </div>
               </div>
             </div>
@@ -111,8 +106,8 @@
     </section>
 
     <section class="alternative-transport">
-      <div class="container py-5">
-          <div class="row pt-5">
+      <div class="container pt-lg-5 pb-5">
+          <div class="row pt-lg-5">
               <div class="col-12 text-center">
                   <div class="custom-sub-title-span">
                       <span>eksen lojistik</span>
@@ -186,39 +181,7 @@ export default {
 
 <style lang="scss" scope>
 
-.services-banner {
-    height: 450px;
-    position: relative;
-    z-index: 1;
-    img {
-        height: 450px;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-        filter: brightness(60%);
-    }
-    &-content {
-        position: absolute;
-        z-index: 33;
-        bottom: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-        h1 {
-            line-height: 1;
-        }
-        span {
-        color: #FAFFC0;
-        text-transform: uppercase!important;
-        font-weight: bold;
-        }
-    }
 
-
-}
 
 
 .custom-sub-title-span {
@@ -231,6 +194,25 @@ export default {
   background-color: #070707;
   p {
     color: #D0D0D0!important;
+  }
+}
+
+.services-safely {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0A0A0A;
+  @media(min-width:992px) {
+    background-position: center;
+  }
+}
+
+.services-hero-video {
+  object-fit: cover;
+  @media(min-width:992px) and (max-width: 1399.98px) {
+    height: 270px;
+  }
+  @media(min-width:1400px) {
+    height:320px;
   }
 }
 

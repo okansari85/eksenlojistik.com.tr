@@ -1,13 +1,22 @@
 @use 'global' as g;
-@use 'veriables' as v;
+@use 'variables' as v;
 @use 'mixin' as m;
 
 
 header {
     padding: 10px;
-    background:white;
-    background: rgba(247, 247, 247, .7);
-    backdrop-filter: blur(3px);
+
+    &.header-inactive {
+        background:white!important;
+        background: rgba(247, 247, 247, .7)!important;
+        backdrop-filter: blur(3px)!important;
+        .nav-link {
+            color: black!important;
+        }
+    }
+    &.header-active {
+        
+    }
     nav {
         display: flex;
         justify-content: center;

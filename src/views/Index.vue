@@ -2,39 +2,40 @@
   <div>
     <main>
       <Hero/>
+      <HomeServices/>
       <Map/>
       <Solutions/>
       <CalculateForm/>
       <SlideWays/>
       <Team/>
-      <NewsHome/>
+      <CountryGif/>
+      <News2/>
       <Numbers/>
-      <Country/>
     </main>
   </div>
 
 </template>
 
 <script>
-// @ is an alias to /src
+
 
 import Hero from "@/components/home/Hero";
+import HomeServices from "@/components/home/HomeServices";
 import Map from "@/components/home/Map";
 import Solutions from "@/components/home/Solutions";
+import CalculateForm from "@/components/global/CalculateForm";
 import SlideWays from "@/components/home/SlideWays";
 import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";
-import Country from "@/components/home/Country";
-import NewsHome from "@/views/NewsHome";
-import CalculateForm from "@/components/global/CalculateForm";
-import ServicesText from "@/components/home/ServicesText.vue";
+import News2 from "@/components/home/news/News-2.vue";
+import CountryGif from "@/components/home/Country-Gif.vue";
 
 
 
 
 export default {
   name: 'Index',
-  components: { NewsHome, SlideWays, Hero, Solutions, Map, Team, Country, Numbers, CalculateForm, ServicesText },
+  components: { Hero, HomeServices, Map, Solutions, CalculateForm, SlideWays, Team, News2, CountryGif, Numbers },
 }
 </script>
 

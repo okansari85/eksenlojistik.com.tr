@@ -18,10 +18,6 @@
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
 
             <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">daha fazla</router-link>
-            <!-- Modal Trigger -->
-            <a data-bs-toggle="modal" data-bs-target="#solutionsVideo" class="playBtn ms-4" style="cursor: pointer">
-              <img src="/image/home/k2.png" alt="" width="60" height="auto" style="z-index: 99;">
-            </a>
           </div>
 
         </div>
@@ -29,18 +25,7 @@
     </div>
 
     <!-- Modal Solutions -->
-    <div class="modal fade" id="solutionsVideo" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content py-3 bg-transparent border-0">
-          <a href="" class="bi bi-x-circle-fill text-danger position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
-          <div class="modal-body p-0 border-0 bg-transparent">
-            <div class="modal-video-inner bg-transparent p-0">
-              <video src="/image/home/eksen_hero_video2.mp4" autoplay loop muted style="max-width: 100%;"></video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
 
   </section>

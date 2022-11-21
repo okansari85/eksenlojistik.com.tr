@@ -3,7 +3,7 @@
   <section class="team">
     <div class="container-fluid">
       <div class="row align-items-center py-5 justify-content-evenly">
-        <div class="col-xl-5  paragraph-margin order-2 order-xl-1 text-center text-lg-start">
+        <div class="col-lg-5  paragraph-margin order-2 order-lg-1 text-center text-lg-start">
           <Title class=" pt-5 pt-xl-0"
                  title='EKSEN, dünya çapında faaliyet göstermektedir.'
                  subtitle='biz bir aileyiz '
@@ -12,7 +12,7 @@
           ></Title>
           <router-link to="/ik" className="btn btn-main mt-3">kariyer</router-link>
         </div>
-        <div class="col-xl-6 order-1 order-xl-2 text-xl-center">
+        <div class="col-lg-6 order-1 order-lg-2 text-xl-center">
           <img src="/image/home/eksen_team.png" alt="" class="col-lg-10 m-lg-auto">
         </div>
       </div>

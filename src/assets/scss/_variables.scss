@@ -1,0 +1,45 @@
+$black : #202020;
+$darkPurple : #3d415d;
+$green : #67c176;
+$white : #fff;
+$orange : #1d5699;
+$purple : #7a81b9;
+$gray : #ededed;
+$blue : #1d5699;
+$darkOrange : #1d5699;
+
+
+$minWidth576 : "min-width:576px";
+$maxWidt992  : "max-width:992px" ;
+$minWidt768  : "min-width:768px" ;
+$minWidt992  : "min-width:992px" ;
+$minWidt1200 : "min-width:1200px" ;
+$minWidt1366 : "min-width:1366px" ;
+$minWidt1500 : "min-width:1500px" ;
+$minWidt1600 : "min-width:1600px" ;
+$minWidt1900 : "min-width:1900px" ;
+
+
+
+// @property --num {
+//   syntax: "<integer>";
+//   initial-value: 0;
+//   inherits: false;
+// }
+
+// div.counter-wrap {
+//   animation: counter 12s infinite alternate ease-in-out;
+//   counter-reset: num var(--num);
+// }
+// div.counter-wrap::after {
+//   content: counter(num);
+// }
+
+// @keyframes counter {
+//   from {
+//     --num: 52311;
+//   }
+//   to {
+//     --num: 55000;
+//   }
+// }

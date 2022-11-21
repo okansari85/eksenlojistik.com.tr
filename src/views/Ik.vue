@@ -1,14 +1,14 @@
 <template>
   <div>
-    <main class="global-sub-page">
-      <section>
-        <div class="container mt-5 pt-4">
-          <HeroImage
+    <main class="global-sub-page pt-0">
+      <HeroImage2
               :title="heroTitle"
               :miniTitle="heroMiniTitle"
               :img="heroImg"
           />
 
+      <section>
+        <div class="container mt-5 pt-4">
           <div class="py-5">
 
             <b-tabs pills class="sub-tab justify-content-center ">
@@ -26,12 +26,12 @@
           </div>
         </div>
       </section>
-    </main>
+    </main>   
   </div>
 </template>
 
 <script>
-import HeroImage from "@/components/global/HeroImage";
+import HeroImage2 from "@/components/global/HeroImage2";
 import Title from "@/components/global/Title";
 import IkPrinciple from "@/data/ik/ik-principle";
 import IkDevelopment from "@/data/ik/ik-development";
@@ -40,7 +40,7 @@ import ikApplication from "@/data/ik/ik-application.vue";
 
 export default {
   name: 'Ik',
-  components: {HeroImage, Title, IkPrinciple, IkDevelopment, ikApplication},
+  components: {HeroImage2, Title, IkPrinciple, IkDevelopment, ikApplication},
   data() {
     return {
       navsItem: [

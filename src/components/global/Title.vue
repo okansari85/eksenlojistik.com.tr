@@ -1,14 +1,15 @@
 <template>
 
-  <div>
-    <span class="text-uppercase text-black-50">{{ subtitle }}</span>
-    <h1 class="display-6 text-capitalize fw-bold py-4">{{ title }}</h1>
+  <div class="globals-title">
+    <span class="text-uppercase fs-6">{{ subtitle }}</span>
+    <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold ">{{ title }}</h1>
     <p class="fs-09 col-lg-9"> {{paragraph}} </p>
   </div>
 
 </template>
 
 <script>
+
 export default {
   name: "Title",
   props: {
@@ -17,8 +18,17 @@ export default {
     paragraph: String
   }
 }
+
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+.globals-title {
+  span {
+    color: #3175f3;
+    text-transform: uppercase!important;
+    font-weight: 600;
+  }
+}
 
 </style>

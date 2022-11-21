@@ -1,5 +1,5 @@
 @use 'global' as g;
-@use 'veriables' as v;
+@use 'variables' as v;
 
 @mixin responsive($val, $val2 : null){
     @if ($val == 576) {

@@ -1,78 +1,6 @@
 <template>
   <section class="hero-bottom-map px-3 px-lg-0 pt-5 pt-md-0 position-relative bg-custom-dark" id="numberSection">
-    <div class="container">
-      <div
-        class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero"
-        style="z-index: 555;">
 
-        <div class="col-6 col-lg-3 py-3 text-center hero-item">
-          <router-link to="/services/karayolu-tasimaciligi">
-            <div class="hero-item-image position-relative">
-              <img src="/image/home/j1.jpg" alt="Services Item" class="w-100" />
-            </div>
-            <div class=" text-capitalize fw-bold mt-3">
-              <h3 class="fw-bold lh-1 fs-4">Karayolu</h3>
-              <span>taşımacılığı</span>
-            </div>
-          </router-link>
-        </div>
-
-        <div class="col-6 col-lg-3 py-3 text-center hero-item">
-          <router-link to="/services/gumrukleme">
-            <div class="hero-item-image active">
-              <img src="/image/home/h1.jpg" alt="Services Item" class="w-100" />
-            </div>
-            <div class="text-capitalize fw-bold mt-3">
-              <h3 class="fw-bold lh-1 fs-4">gümrükleme</h3>
-              <span>hizmeti</span>
-            </div>
-          </router-link>
-        </div>
-
-        <div class="col-6 col-lg-3 py-3 text-center hero-item">
-          <router-link to="/services/depolama-hizmeti">
-            <div class="hero-item-image">
-              <img src="/image/home/g1.jpg" alt="Services Item" class="w-100" />
-            </div>
-            <div class=" text-capitalize fw-bold mt-3">
-              <h3 class="fw-bold lh-1 fs-4">depolama</h3>
-              <span>hizmeti</span>
-            </div>
-          </router-link>
-        </div>
-        
-        <div class="col-6 col-lg-3 py-3 text-center hero-item">
-          <router-link to="/services/minivan-tasimacilik">
-            <div class="hero-item-image">
-              <img src="/image/home/minivan_homew.jpg" alt="Services Item" class="w-100" />
-            </div>
-            <div class=" text-capitalize fw-bold mt-3">
-              <h3 class="fw-bold lh-1 fs-4">Minivan</h3>
-              <span>taşımacılık</span>
-            </div>
-          </router-link>
-
-        </div>
-      </div>
-
-
-      <a class="wrapper-down-icon" href="#solutions">
-        <div class="circle">
-        </div>
-        <div class="circle circle-2">
-        </div>
-        <div class="arrow">
-          <div class="arrow_line">
-          </div>
-          <div class="arrow_tip-wrapper">
-            <div class="arrow_tip left">
-            </div>
-            <div class="arrow_tip right">
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
     <div class="container-fluid text-center pb-5 gx-0 overflow-hidden position-relative">
       <img src="/image/home/maps_.svg" alt="Map Svg" class="maps-svg">
       <div class="wrapper-down-icon2 position-absolute" style="top: -350px;">
@@ -196,54 +124,6 @@ export default {
   }
 }
 
-.hero-item {
-  transition: all .3s ease;
-  overflow: hidden;
-
-  .btn-main {
-    color: white;
-    font-size: .8rem;
-
-    &:hover {
-      border: 1px solid #fff;
-    }
-  }
-  &:hover {
-    h3, span {
-      color: #fff!important;
-    }
-  }
-
-}
-
-.hero-item-image {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all .3s ease;
-
-  img {
-    transition: all .3s ease;
-    width: 100%;
-    overflow: hidden;
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  &:hover {
-    transition: all .3s ease;
-    max-width: 100%;
-    width: 100%;
-    overflow: hidden;
-
-    img {
-      transform: scale(1.3);
-    }
-
-  }
-
-
-}
 
 @media(min-width:1199px) {
   .maps-svg {
@@ -251,11 +131,5 @@ export default {
   }
 }
 
-@media(min-width:768px) {
-  .hero-item-image {
-    img {
-      height: 320px;
-    }
-  }
-}
+
 </style>

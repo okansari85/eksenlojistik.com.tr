@@ -1,9 +1,9 @@
 <template>
-  <header class="fixed-top" style="z-index: 99999;">
+  <header class="fixed-top header-active">
     <div class="container-fluid px-md-5 ">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
-          <img src="/image/global/eksen_logo.png" alt="Eksen Logo" style="width: 260px;">
+          <img src="/image/global/logowhite.png" alt="Eksen Logo" style="width: 260px;">
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -68,30 +68,79 @@
         </div>
       </div>
     </div>
-
-
-
   </header>
 </template>
 
 <script>
+
+
+
 export default {
   name: 'Nav',
   mounted() {
       $(".mobile-nav-item").click(function () {
           $(".toggle-btn__cross").click();
       });
+
+
+        const servicesRoute = this.$router.resolve({ name: 'services' }).href;
+        const header = $("header");
+
+
+
+        if(servicesRoute) {
+            $("header").removeClass("header-active");
+        }
+        else {
+          $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+
+              if (scrollTop > 34) {
+                header.addClass("header-inactive");
+                header.removeClass("header-active");
+                $(".navbar-brand img").attr("src", "/image/global/eksen_logo.png");
+                
+              }
+                else {
+                header.addClass("header-active");
+                header.removeClass("header-inactive");
+                $(".navbar-brand img").attr("src", "/image/global/logowhite.png");
+                }
+
+          });
+        }
+
+
+  },
+
   }
-}
+  
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 
+header {
+  z-index: 99999;
+}
 .nav-link {
   font-weight: 500;
   font-size: 14px;
 }
+
+.header-active {
+  background: transparent!important;
+  filter: none;
+  backdrop-filter: none;
+  .nav-link {
+    color: white!important;
+    &.active {
+      color: #f9a825!important;
+    }
+  }
+}
+
+
 
 </style>
 

@@ -33,7 +33,7 @@
 
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2">
-                            <video src="/image/about/word-globe.mp4" loop muted autoplay style="width:100%; max-width:100%;"></video>
+                            <video src="/image/about/word-globe.mp4" class="mw-100 w-100" loop muted autoplay></video>
                         </div>
                     </div>    
                 </div>
@@ -109,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="sustainability py-5">
+            <section class="sustainability pt-lg-5 pb-5">
                 <div class="container py-md-5">
                     <div class="row py-md-5">
                         <div class="col-12 text-center">

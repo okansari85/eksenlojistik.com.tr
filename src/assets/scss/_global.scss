@@ -1,4 +1,4 @@
-@use 'veriables' as v;
+@use 'variables' as v;
 
 
 * {
@@ -190,6 +190,9 @@ h1 {
     }
 }
 
+.bg-light2  {
+    background-color: #f7f7f7;
+}
 
 select, input, textarea {
     padding: 20px 10px!important;
@@ -266,12 +269,6 @@ select, input, textarea {
     .circle {
         border-color: #fff!important;
     }
-    .arrow_line {
-        background-color: #fff!important;
-    }
-    .arrow_tip {
-        background-color: #fff!important;
-    }
 }
 
 
@@ -290,7 +287,7 @@ select, input, textarea {
         height: 100px;
         transform: scale(0);
         opacity: 1;
-        border: 1px solid #001a28;
+        border: 1px solid #fff;
         border-radius: 100%;
         animation: grow 2.5s linear infinite;
         position: absolute;
@@ -314,7 +311,7 @@ select, input, textarea {
     .arrow_line {
         width: 2px;
         height: 80px;
-        background: #001a28;
+        background: #fff;
         animation: height 2.5s ease-in infinite;
     }
 
@@ -328,7 +325,7 @@ select, input, textarea {
     .arrow_tip {
         width: 1px;
         height: 6px;
-        background: #001a28;
+        background: #fff;
         transform: rotate(45deg);
         position: absolute;
         left: 2px;
@@ -619,4 +616,8 @@ select, input, textarea {
     }
 }
 
+
+.fw-600 {
+    font-weight: 700;
+}
 

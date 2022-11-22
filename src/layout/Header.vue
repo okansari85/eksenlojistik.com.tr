@@ -1,6 +1,6 @@
 <template>
-  <header class="fixed-top header-active">
-    <div class="container-fluid px-md-5 ">
+  <header class="fixed-top">
+    <div class="container-fluid px-md-5">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
           <img src="/image/global/logowhite.png" alt="Eksen Logo" style="width: 260px;">
@@ -73,74 +73,60 @@
 
 <script>
 
-
-
 export default {
   name: 'Nav',
   mounted() {
-      $(".mobile-nav-item").click(function () {
-          $(".toggle-btn__cross").click();
-      });
-
-
-        const servicesRoute = this.$router.resolve({ name: 'services' }).href;
-        const header = $("header");
+    $(".mobile-nav-item").click(function () {
+      $(".toggle-btn__cross").click();
+    });
 
 
 
-        if(servicesRoute) {
-            $("header").removeClass("header-active");
-        }
-        else {
-          $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop();
+    const header = $("header");
+    this.$router.afterEach((to) => {
+      window.scrollTo(0, 0)
+      if (to.path == '/news-detail' || to.path == '/contact' || to.path == '/news') {
+        header.addClass("header-inactive");
+        $(".navbar-brand img").attr("src", "/image/global/eksen_logo.png");
 
-              if (scrollTop > 34) {
-                header.addClass("header-inactive");
-                header.removeClass("header-active");
-                $(".navbar-brand img").attr("src", "/image/global/eksen_logo.png");
-                
-              }
-                else {
-                header.addClass("header-active");
-                header.removeClass("header-inactive");
-                $(".navbar-brand img").attr("src", "/image/global/logowhite.png");
-                }
+      } else {
+        header.removeClass("header-inactive");
+        $(window).scroll(function () {
+          var scrollTop = $(window).scrollTop();
+          if (scrollTop > 34) {
+            header.addClass("header-inactive");
+            $(".navbar-brand img").attr("src", "/image/global/eksen_logo.png");
+          }
+          else {
+            header.removeClass("header-inactive");
+            $(".navbar-brand img").attr("src", "/image/global/logowhite.png");
+          }
 
-          });
-        }
+        });
+      }
+    });
+    $("#navbarNavDropdown .nav-item .nav-link").click(function (e) {
+      $("#navbarNavDropdown .nav-item .nav-link").not(this).removeClass("active");
+      $(this).addClass("active");
 
-
+    });
   },
-
-  }
   
+
+}
+
 </script>
 
 
 <style scoped lang="scss">
-
 header {
   z-index: 99999;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
 }
-
-.header-active {
-  background: transparent!important;
-  filter: none;
-  backdrop-filter: none;
-  .nav-link {
-    color: white!important;
-    &.active {
-      color: #f9a825!important;
-    }
-  }
-}
-
-
 
 </style>
 

@@ -608,6 +608,9 @@ header.header-inactive {
 header.header-inactive .nav-link {
   color: black !important;
 }
+header.header-inactive .nav-link.active, header.header-inactive .nav-link:focus {
+  color: #1d5699 !important;
+}
 header nav {
   display: flex;
   justify-content: center;
@@ -615,7 +618,7 @@ header nav {
   width: 100%;
 }
 header nav .nav-item {
-  font-weight: bold;
+  font-weight: 500;
   padding: 0px 10px;
 }
 header nav .nav-item:hover a {
@@ -624,11 +627,12 @@ header nav .nav-item:hover a {
 header nav .nav-link {
   transition: 0.3s;
   position: relative;
+  font-weight: 300 !important;
   font-size: 1rem;
-  color: #010101;
+  color: white;
 }
 header nav .nav-link.active, header nav .nav-link:focus {
-  color: #1d5699;
+  color: white !important;
 }
 header nav .nav-link:before {
   content: "";

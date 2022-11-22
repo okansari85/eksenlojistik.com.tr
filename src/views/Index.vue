@@ -5,7 +5,7 @@
       <HomeServices/>
       <Map/>
       <Solutions/>
-      <CalculateForm/>
+      <!-- <CalculateForm/> -->
       <SlideWays/>
       <Team/>
       <CountryGif/>
@@ -23,7 +23,7 @@ import Hero from "@/components/home/Hero";
 import HomeServices from "@/components/home/HomeServices";
 import Map from "@/components/home/Map";
 import Solutions from "@/components/home/Solutions";
-import CalculateForm from "@/components/global/CalculateForm";
+// import CalculateForm from "@/components/global/CalculateForm";
 import SlideWays from "@/components/home/SlideWays";
 import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";
@@ -35,7 +35,7 @@ import CountryGif from "@/components/home/Country-Gif.vue";
 
 export default {
   name: 'Index',
-  components: { Hero, HomeServices, Map, Solutions, CalculateForm, SlideWays, Team, News2, CountryGif, Numbers },
+  components: { Hero, HomeServices, Map, Solutions, SlideWays, Team, News2, CountryGif, Numbers },
 }
 </script>
 

@@ -36,8 +36,8 @@
 
       <div class="row align-items-center py-5 content-text">
         <div class="numbers-top col-lg-7 pb-5">
-          <div class="title text-start text-capitalize display-4 fw-bold pb-3 text-white">bir yılda <div class="display-3 fw-bold text-white">
-            <span class="counter"></span> Km</div> yol yaptık</div>
+          <div class="title text-start text-capitalize display-2 fw-500 pb-3 text-white">bir yılda <div class="display-2 fw-500 text-white">
+            <span class="counter fw-500"></span> Km</div> yol yaptık</div>
           <p class="text-start text-white">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL,
             tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 

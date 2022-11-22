@@ -78,9 +78,6 @@ import NewsContent from "@/components/home/news/NewsContent";
 export default {
   name: "NewsHome",
   components: {NewsNav, NewsContent},
-  mounted () {
-    window.scrollTo(0, 0)
-  }
 
 }
 </script>

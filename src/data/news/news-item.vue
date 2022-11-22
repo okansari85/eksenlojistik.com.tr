@@ -27,6 +27,9 @@
 export default {
   name: "news-item",
   props: {
+    id: {
+      type: String,
+    },
     img: {
       type:String,
       default:('/image/services/news-img.png')

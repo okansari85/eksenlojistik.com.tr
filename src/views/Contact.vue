@@ -126,9 +126,6 @@ import Form2 from "@/components/global/Form2";
 export default {
   name: "Contact",
   components: { Form2, HeroImage},
-  mounted () {
-    window.scrollTo(0, 0);
-  }
 }
 </script>
 

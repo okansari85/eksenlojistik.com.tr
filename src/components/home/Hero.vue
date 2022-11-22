@@ -4,14 +4,14 @@
     <video src="/image/home/eksen.mp4" class="vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
     <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
-        <span>kurumsal</span>
-        <h1 class="display-1 fw-500 text-white">Lojistik <br> Çözümleri</h1>
-        <p class="description col-lg-4 offset-md-1 text-white py-3 fs-5">
+        <span>en hızlı</span>
+        <h1 class="display-1 text-white">Lojistik <br> <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;">Çözümleri</div></h1>
+        <p class="description col-lg-4 offset-md-1 text-white py-3 py-md-5 fs-6">
           Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz.
         </p>
       <!-- <a data-bs-toggle="modal" data-bs-target="#heroVideos" class="playBtn" style="cursor: pointer; z-index: 200000;">
           <img src="/image/home/k2.png" alt="" width="60" height="auto"  class="mt-4">
-      </a> -->
+          </a> -->
       
     </div>
     <a class="wrapper-down-icon" href="#">
@@ -47,6 +47,43 @@
 
   </section> 
 </template>
+
+
+<script>
+
+export default {
+  mounted() {
+    document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('#typed', {
+      strings: ["Hizmetleri", "Desteği", "Çözümleri"],
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 60,
+      // time before typing starts
+      startDelay: 600,
+      // backspacing speed
+      backSpeed: 20,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 5,
+      // show cursor
+      showCursor: false,
+      // character for cursor
+      cursorChar: "|",
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+    });
+});
+  }
+}
+
+
+</script>
 
 
 

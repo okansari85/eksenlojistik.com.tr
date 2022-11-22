@@ -170,9 +170,6 @@
 
 export default {
   name: 'Services',
-  mounted () {
-    window.scrollTo(0, 0)
-  }
 }
 
 

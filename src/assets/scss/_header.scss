@@ -12,10 +12,10 @@ header {
         backdrop-filter: blur(3px)!important;
         .nav-link {
             color: black!important;
+            &.active, &:focus {
+                color: v.$orange!important;
+            }
         }
-    }
-    &.header-active {
-        
     }
     nav {
         display: flex;
@@ -24,7 +24,7 @@ header {
         width: 100%;
         .nav {
             &-item {
-                font-weight: bold;
+                font-weight: 500;
                 padding: 0px 10px;
                 &:hover {
                     a {
@@ -35,8 +35,11 @@ header {
             &-link {
                 transition: 0.3s;
                 position: relative;
+                font-weight: 300!important;
                 &.active, &:focus {
-                    color: v.$orange;
+                    // color: v.$orange;
+                    color: white!important;
+
                 }
                 &:before {
                     content: "";
@@ -49,7 +52,7 @@ header {
                     transition: all 0.3s ease-in-out 0s;
                 }
                 font-size: 1rem;
-                color: #010101;
+                color: white;
                 &:hover:before,
                 &.active:before,
                 &:focus:before{

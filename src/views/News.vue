@@ -10,13 +10,12 @@
             <b-tabs pills class="sub-tab">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index" :slug="navs.slug"
-              >
+                >
                 <b-card-text class="pb-5 px-3">
                   <component class="pt-2 pt-md-5" :is="navs.content" :navs="navs"></component>
                 </b-card-text>
               </b-tab>
             </b-tabs>
-
           </div>
           <div class="py-5">
             <Kur/>
@@ -44,16 +43,19 @@ export default {
     return {
       navsItem: [
         {
+          id: 1,
           slug: "calisma-prensipleri",
           title: "Haber",
           content: "NewsAndAnnouncement"
         },
         {
+          id: 2,
           slug: "egitim-ve-gelisim",
           title: "Duyuru",
           content: "NewsOnly"
         },
         {
+          id: 3,
           slug: "basvuru",
           title: "Basın",
           content: 'AnnouncementOnly'
@@ -61,9 +63,6 @@ export default {
       ],
     }
   },
-  mounted () {
-    window.scrollTo(0, 0)
-  }
 }
 </script>
 

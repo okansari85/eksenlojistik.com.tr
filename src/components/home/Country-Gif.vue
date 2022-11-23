@@ -1,7 +1,7 @@
 <template>
 
-    <section class="country-gif py-5">
-        <div class="container py-5">
+    <section class="country-gif pt-5 pb-md-5">
+        <div class="container pt-5 pb-md-5">
             <div class="row justify-content-evenly align-items-center">
                 <div class="col-lg-6 position-relative text-lg-center">
                     <img src="/image/news/26623-map-navigation.gif" alt="Eksen Gif" class=" m-lg-auto">

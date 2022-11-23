@@ -72,10 +72,10 @@
                     </div>
                     <ul class="pt-4">
                       <li class="pb-2">
-                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Muratbey Merkez Mahallesi , Fabrikalar Caddesi No.29 Çatalca - İSTANBUL</a>
+                        <a href=""> <i class="bi bi-geo-alt-fill"></i> Lt. Av. Radu Beller Nr.25 Apt.4 Sector 1 Bucharest</a>
                       </li>
                       <li class="pb-2">
-                        <a href=""> <i class="bi bi-telephone-fill"></i> +90 212 267 07 21</a>
+                        <a href=""> <i class="bi bi-telephone-fill"></i> 0040 21 290 01 05</a>
                       </li>
                       <li class="pb-2">
                         <a href=""> <i class="bi bi-envelope-fill"></i> info@eksenlojistik.com.tr</a>

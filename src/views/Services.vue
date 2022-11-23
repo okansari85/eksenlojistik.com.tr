@@ -15,7 +15,7 @@
     </section>
 
     <section class="services-hero">
-      <img src="/image/about/about-new-bg-2.png" alt="" class="position-absolute top-0 start-0">
+      <img src="/image/about/about-new-bg-2.png" alt="" class="position-absolute top-0 start-0" style="z-index: -1;">
       <div class="container py-5">
         <div class="row justify-content-between py-5 px-3 px-lg-0">
             <div class="col-lg-5 order-2 order-lg-1 pt-4">
@@ -29,6 +29,7 @@
                       Kısa transit süreleri belirleyerek güzergah oluşturup hızlı ve akılcı çözümler ile müşterilerimize en iyi hizmet kalitesini veriyoruz.
                     </p>
                 </div>
+                <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video d-lg-none" loop muted autoplay></video>
               </div>
               <div>
                 <h2 class="custom-sub-title pb-2">gümrükleme</h2>
@@ -41,7 +42,7 @@
 
 
             </div>
-            <div class="col-lg-6 order-1 order-lg-2">
+            <div class="col-lg-6 order-1 order-lg-2 d-none d-lg-block">
                 <div class="row">
                   <div class="col-lg-6">
                     <img src="/image/services/servicess-2.png" alt="Services" class="img-fluid d-none d-lg-block">
@@ -58,12 +59,12 @@
 
 
     <section class="services-stock">
-        <div class="container">
+        <div class="container pb-5">
             <div class="row align-items-center justify-content-between py-5 px-3 px-lg-0">
-              <div class="col-lg-5">
-                  <video src="/image/about/word-globe.mp4" class="w-100 mw-100"></video>
-              </div>
               <div class="col-lg-6">
+                  <video src="/image/video/4.mp4" class="w-100 mw-100" autoplay loop muted></video>
+              </div>
+              <div class="col-lg-5 pt-3 pt-lg-0">
                 <div class="pb-3">
                 <h2 class="custom-sub-title pb-2 fw-bold">Depolama Hizmeti</h2>
                 <div class="description col-lg-11">
@@ -177,9 +178,6 @@ export default {
 
 
 <style lang="scss" scope>
-
-
-
 
 .custom-sub-title-span {
   span {

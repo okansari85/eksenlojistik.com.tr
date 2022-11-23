@@ -1,7 +1,7 @@
 <template>
 
     <section class="home-services py-5">
-        <div class="container py-5">
+        <div class="container py-md-5">
             <div class="globals-title text-center pt-5 pb-3">
                 <span class="text-uppercase fs-6">neler yaparız?</span>
                 <h1 class="fs-1 text-capitalize pt-1 fw-semibold ">Hizmetlerimiz</h1>
@@ -12,15 +12,15 @@
             <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero pb-5"
                 style="z-index: 555;">
 
-                <div class="col-6 col-lg-3 py-3 text-center hero-item" v-for="(item, index) in heroData" :key="index">
-                    <router-link to="/services">
+                <div class="col-6 col-lg-3 py-md-3 text-center hero-item" v-for="(item, index) in heroData" :key="index">
+                    <!-- <router-link to="/services"> -->
                         <div class="hero-item-image position-relative">
                             <img :src="item.image" alt="Services Item" class="w-100" />
                         </div>
                         <div class="text-capitalize fw-bold mt-3 hero-item-description">
                             <h3 class="fw-500 fs-6">{{ item.title }} <br> {{ item.subtitle }} </h3>
                         </div>
-                    </router-link>
+                    <!-- </router-link> -->
                 </div>
 
             </div>

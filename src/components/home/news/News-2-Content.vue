@@ -1,6 +1,6 @@
 <template>
 
-    <div class="col-md-6 col-lg-4" v-for="(item, index) in newsData" :key="index">
+    <div class="col-md-6 col-lg-4 py-3 py-lg-0" v-for="(item, index) in newsData" :key="index">
         <div class="news2-image">
             <img :src="item.image" alt="News">
             <div class="news-2-date py-2"><span class="text-muted fs-08"> {{ item.date }}</span></div>

@@ -5,15 +5,17 @@
 
 header {
     padding: 10px;
-
     &.header-inactive {
         background:white!important;
-        background: rgba(247, 247, 247, .7)!important;
-        backdrop-filter: blur(3px)!important;
         .nav-link {
             color: black!important;
             &.active, &:focus {
                 color: v.$orange!important;
+            }
+        }
+        .toggle-btn {
+            .bar {
+                background-color: #000;
             }
         }
     }
@@ -28,7 +30,7 @@ header {
                 padding: 0px 10px;
                 &:hover {
                     a {
-                        color: v.$orange;
+                        color: #97c1ff!important;
                     }
                 }
             }
@@ -38,7 +40,7 @@ header {
                 font-weight: 300!important;
                 &.active, &:focus {
                     // color: v.$orange;
-                    color: white!important;
+                    color: #97c1ff!important;
 
                 }
                 &:before {
@@ -46,7 +48,7 @@ header {
                     position: absolute;
                     height: 3px;
                     bottom: -6px;
-                    background-color: v.$orange;
+                    background-color: #97c1ff;
                     visibility: hidden;
                     width: 0;
                     transition: all 0.3s ease-in-out 0s;
@@ -134,9 +136,9 @@ header {
             width:30px;
             height:2px;
             margin:7px auto;
-            background-color:#000;
+            background-color:#fff;
             transition:all 0.3s ease-in-out;
-            box-shadow:0 0 3px 1px rgba(0,0,0,.3);
+            // box-shadow:0 0 3px 1px rgba(0,0,0,.3);
 
             &:nth-child(2) {
                 width:20px;

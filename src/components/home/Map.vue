@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-bottom-map px-3 px-lg-0 pt-5 pt-md-0 position-relative bg-custom-dark" id="numberSection">
+  <section class="hero-bottom-map px-3 px-lg-0 pt-5 pt-md-0 position-relative" id="numberSection">
 
     <div class="container-fluid text-center pb-5 gx-0 overflow-hidden position-relative">
       <img src="/image/home/maps_.svg" alt="Map Svg" class="maps-svg">
@@ -35,10 +35,10 @@
       </div>
 
       <div class="row align-items-center py-5 content-text">
-        <div class="numbers-top col-lg-7 pb-5">
-          <div class="title text-start text-capitalize display-2 fw-500 pb-3 text-white">bir yılda <div class="display-2 fw-500 text-white">
-            <span class="counter fw-500"></span> Km</div> yol yaptık</div>
-          <p class="text-start text-white">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL,
+        <div class="numbers-top col-lg-7 pb-5 px-3 px-lg-0">
+          <div class="title text-lg-start text-capitalize display-2 pb-3 text-white">bir yılda <div class="display-2 text-white">
+            <span class="counter"></span> Km</div> yol yaptık</div>
+          <p class="text-lg-start text-white">Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Araç veya yük, LTL veya FTL,
             tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz</p>
 
         </div>
@@ -90,7 +90,6 @@ export default {
         objectt.addClass("dark-map");
       } else {
         objectt.removeClass("dark-map");
-        objectt.removeClass("bg-custom-dark");
       }
     });
 

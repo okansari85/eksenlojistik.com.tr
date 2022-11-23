@@ -8,8 +8,8 @@
           />
 
       <section>
-        <div class="container mt-5 pt-4">
-          <div class="py-5">
+        <div class="container mt-md-5 pt-4">
+          <div class="py-md-5">
 
             <b-tabs pills class="sub-tab justify-content-center ">
               <b-tab v-for="(navs, index) in navsItem"
@@ -18,7 +18,7 @@
                       :active="$route.params.slug == navs.slug ? '' : 'active'"
               >
                 <b-card-text class="py-5 px-3">
-                  <component class="pt-5" :is="navs.content" :navs="navs"></component>
+                  <component class="pt-md-5" :is="navs.content" :navs="navs"></component>
                 </b-card-text>
               </b-tab>
             </b-tabs>

@@ -26,13 +26,16 @@
                                 Eksen Lojistik , kuruluşundan bu yana uluslararası karayolu taşımacılığı sektöründe istikrarlı şekilde büyümesini sürdürerek Romanya hattında marka olma hedefini gerçekleştiren bir lojistik şirketidir.
                                 Sürekli yenilenen araç filosu, depolama ve gümrükleme Hizmetleri ile beraber parsiyel, komple ve transit tüm taşımalarda aynı güven anlayışı ve müşteri odaklı hizmet prensibini devam ettirmekteyiz.
                                 </p>
+
+                                <video src="/image/about/word-globe.mp4" class="mw-100 w-100 d-lg-none" loop muted autoplay></video>
+
                                 <p>
                                     Taşımacılık, gümrük , depolama ve tedarik zinciri yönetimi alanında bir çok ülkede en iyi hizmet anlayışı ile faaliyet göstermeye ve büyümeye devam eden Eksen Lojistik her zaman müşterilerine entegre, akılcı ve en etkin çözümleri sunar.
                                 </p>
                             </div>
 
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="col-lg-6 order-1 order-lg-2 d-none d-lg-block">
                             <video src="/image/about/word-globe.mp4" class="mw-100 w-100" loop muted autoplay></video>
                         </div>
                     </div>    
@@ -69,7 +72,7 @@
                     background-size: cover; 
                     background-position: center;">
                 <div class="container py-5">
-                    <div class="row pt-5">
+                    <div class="row pt-md-5">
                         <div class="col-12 text-center">
                             <div class="custom-sub-title-span">
                                 <span style="background-color:#f8fafa!important;">eksen lojistik</span>
@@ -140,7 +143,7 @@
                             </div>
 
                         </div>
-                        <div class="col-12 text-center py-5 my-lg-5 ">
+                        <div class="col-12 text-center pt-5 pb-md-5 my-lg-5 ">
                             <a href="" class="text-uppercase text-decoration-underline" 
                             style="
                             color: #7762F5;
@@ -214,6 +217,13 @@ p {
         transform: translate(0, 0);
         text-align: center;
         margin: auto;
+    }
+}
+
+
+@media(max-width:768px) {
+    .future {
+        height: 200vh!important;
     }
 }
 

@@ -602,14 +602,15 @@ header {
 }
 header.header-inactive {
   background: white !important;
-  background: rgba(247, 247, 247, 0.7) !important;
-  backdrop-filter: blur(3px) !important;
 }
 header.header-inactive .nav-link {
   color: black !important;
 }
 header.header-inactive .nav-link.active, header.header-inactive .nav-link:focus {
   color: #1d5699 !important;
+}
+header.header-inactive .toggle-btn .bar {
+  background-color: #000;
 }
 header nav {
   display: flex;
@@ -622,7 +623,7 @@ header nav .nav-item {
   padding: 0px 10px;
 }
 header nav .nav-item:hover a {
-  color: #1d5699;
+  color: #97c1ff !important;
 }
 header nav .nav-link {
   transition: 0.3s;
@@ -632,14 +633,14 @@ header nav .nav-link {
   color: white;
 }
 header nav .nav-link.active, header nav .nav-link:focus {
-  color: white !important;
+  color: #97c1ff !important;
 }
 header nav .nav-link:before {
   content: "";
   position: absolute;
   height: 3px;
   bottom: -6px;
-  background-color: #1d5699;
+  background-color: #97c1ff;
   visibility: hidden;
   width: 0;
   transition: all 0.3s ease-in-out 0s;
@@ -707,9 +708,8 @@ header nav .navbar .active:before {
     width: 30px;
     height: 2px;
     margin: 7px auto;
-    background-color: #000;
+    background-color: #fff;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
   }
   .toggle-btn .bar:nth-child(2) {
     width: 20px;

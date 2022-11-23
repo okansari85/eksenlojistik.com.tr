@@ -2,8 +2,8 @@
 
 
 <section class="news-2 py-5">
-    <div class="container py-5">
-        <Title class="pt-5 pt-xl-0 text-center"
+    <div class="container py-5 px-3 px-lg-0">
+        <Title class="pt-md-5 pt-xl-0 text-center"
                title='Son Haberler'
                subtitle='bizden haberler'
                >

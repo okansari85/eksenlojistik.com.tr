@@ -8,10 +8,10 @@
           />
 
       <section>
-        <div class="container mt-md-5 pt-4">
+        <div class="container pt-4">
           <div class="py-md-5">
 
-            <b-tabs pills class="sub-tab justify-content-center ">
+            <b-tabs pills class="sub-tab justify-content-center">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index"
                      @click="Changer(index)"
@@ -28,6 +28,7 @@
       </section>
     </main>   
   </div>
+  <Socialbar/>
 </template>
 
 <script>
@@ -36,17 +37,18 @@ import Title from "@/components/global/Title";
 import IkPrinciple from "@/data/ik/ik-principle";
 import IkDevelopment from "@/data/ik/ik-development";
 import ikApplication from "@/data/ik/ik-application.vue";
+import Socialbar from "@/components/global/Socialbar.vue";
 
 
 export default {
   name: 'Ik',
-  components: {HeroImage2, Title, IkPrinciple, IkDevelopment, ikApplication},
+  components: {HeroImage2, Title, IkPrinciple, IkDevelopment, ikApplication, Socialbar},
   data() {
     return {
       navsItem: [
         {
           heroTitle: "IK",
-          heroMiniTitle: "Başvuru",
+          // heroMiniTitle: "Başvuru",
           heroImg: ('/image/services/basvuru.jpg'),
           title: "Başvuru",
           content: 'ikApplication',
@@ -54,7 +56,7 @@ export default {
         },
         {
           heroTitle: "IK",
-          heroMiniTitle: "Çalışma Prensibi",
+          // heroMiniTitle: "Çalışma Prensibi",
           heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Çalışma Prensibi",
           content: "IkPrinciple",
@@ -62,7 +64,7 @@ export default {
         },
         {
           heroTitle: "IK",
-          heroMiniTitle: "Eğitim ve Gelişim",
+          // heroMiniTitle: "Eğitim ve Gelişim",
           heroImg: ('/image/services/egitimvegelisim.jpg'),
           title: "Eğitim ve Gelişim",
           content: "IkDevelopment",
@@ -72,7 +74,7 @@ export default {
 
       ],
       heroTitle: "IK",
-      heroMiniTitle: "Başvuru",
+      // heroMiniTitle: "Başvuru",
       heroImg: ('/image/services/basvuru.jpg'),
     }
   },

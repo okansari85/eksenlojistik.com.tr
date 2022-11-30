@@ -7,14 +7,14 @@
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/" class="nav-link">Anasayfa</router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link to="/services" class="nav-link">Hizmetler</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">Hakkımızda</router-link>
+              <router-link to="/about" class="nav-link">Kurumsal</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/news" class="nav-link">Haberler</router-link>
@@ -79,7 +79,7 @@ export default {
     $route (to, from){
       const header = $("header");
       window.scrollTo(0, 0)
-      if (to.path == '/news-detail' || to.path == '/contact' || to.path == '/news' ) {
+      if (to.path == '/news-detail' || to.path == '/news' ) {
 
         header.addClass("header-inactive");
         $(".navbar-brand img").attr("src", "/image/global/eksen2-01.svg");

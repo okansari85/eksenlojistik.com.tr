@@ -6,12 +6,12 @@
             <section class="about-banner banner">
                 <img src="/image/about/about-new-banner-2.png" alt="About Banner">
                 <div class="banner-content">
-                    <div class="container">
+                    <!-- <div class="container">
                           <div class="row">
                             <span class="text-uppercase">eksen lojistik</span>
                             <h1 class="display-2 fw-bold text-white">Kurumsal</h1>
                           </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -143,7 +143,7 @@
                             </div>
 
                         </div>
-                        <div class="col-12 text-center pt-5 pb-md-5 my-lg-5 ">
+                        <!-- <div class="col-12 text-center pt-5 pb-md-5 my-lg-5 ">
                             <a href="" class="text-uppercase text-decoration-underline" 
                             style="
                             color: #7762F5;
@@ -151,7 +151,7 @@
                             font-size: 16px;
                             line-height: 24px;
                             letter-spacing: 0.19em;">hizmetlerimiz</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -159,20 +159,20 @@
         </main>
     </div>
 
-
+    <Socialbar/>
 </template>
 
 
 <script>
 
 
+import Socialbar from "@/components/global/Socialbar.vue";
 import counterFunction from "@/components/home/Map";
 
 export default {
-
-    name: 'About',
+    name: "About",
     mixins: [counterFunction],
-
+    components: { Socialbar }
 }
 
 </script>

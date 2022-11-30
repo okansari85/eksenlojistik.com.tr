@@ -62,17 +62,19 @@
   </section>
 
   <Blog/>
-
+  <Socialbar/>
 </template>
 
 <script>
 import Blog from '@/components/global/Blog';
+import Socialbar from '@/components/global/Socialbar.vue';
 
 export default {
   name: "NewsDetail",
   components: {
-    Blog
-  },
+    Blog,
+    Socialbar
+},
 
 }
 </script>

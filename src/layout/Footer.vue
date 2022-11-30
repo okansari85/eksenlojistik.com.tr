@@ -1,11 +1,6 @@
 <template>
-  <footer class='px-lg-5 pt-4'>
+  <footer class='px-lg-5 pt-4 d-none'>
     <div class="container-fluid px-3 px-lg-5 py-3">
-      <!-- <div class="row justify-content-between align-items-center pb-4">
-        <div class="col-lg-3">
-          
-        </div>
-      </div> -->
       <div class="row pb-3 pt-md-4">
         <div class="col-lg-3">
           <div class="pb-4">
@@ -34,7 +29,6 @@
         </div>
         <div class="col-lg-4 pt-4 pt-md-0">
           <label For="" class="d-block">Bültenimize kayıt olun</label>
-<!--          <input type="text" placeholder="E-mail Adresi" class="py-3 my-3 form-control"/>-->
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="E-mail Adresi">
             <button class="btn btn-outline-secondary bg-dark text-white" type="submit" id="button-addon2">Gönder</button>
@@ -55,6 +49,59 @@
         </div> -->
       </div>
     </div>
+  </footer>
+
+  <footer class="footer-area px-lg-5">
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="footer-top-wrap py-5">
+            <div class="row justify-content-between py-4">
+                <div class="col-xl-3 col-lg-4 col-sm-6 pt-3 pt-lg-0">
+                    <div class="footer-widget">
+                        <div class="footer-contact-info">
+                            <h6 class="number m-0 pb-2"> <i class="bi bi-telephone-fill pe-1"></i> +90 212 212 28 49</h6>
+                            <h6 class="email m-0 pb-3"><i class="bi bi-envelope-fill pe-2"></i>info@eksenlojistik.com.tr</h6>
+                            <p>Büyükdere Cad. Fulya Mah. Lale İş Mrkz. <br> No.62 K.2 D.15 <br>Mecidiyeköy - Şişli </p>
+                            <ul class="footer-social list-wrap d-flex gap-3">
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4 column-2 pt-3 pt-lg-0">
+                    <div class="footer-widget">
+                        <h4 class="fw-title">Linkler</h4>
+                        <ul class="footer-link">
+                            <li><router-link to="/services">Hizmetler</router-link></li>
+                            <li><router-link to="/about">Kurumsal</router-link></li>
+                            <li><router-link to="/news">Haberler</router-link></li>
+                            <li><router-link to="/ik">IK</router-link></li>
+                            <li><router-link to="/contact">İletişim</router-link></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4 column-3 pt-3 pt-lg-0">
+                    <div class="footer-widget">
+                        <h4 class="fw-title">KVKK</h4>
+                        <ul class="footer-link">
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar">Şartlar ve Koşullar</a></li>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari">Yasal Uyarı</a></li>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi">Veri Gizliliği</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 pt-4 pt-md-0">
+                  <label For="" class="d-block">Bültenimize kayıt olun</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="E-mail Adresi">
+                    <button class="btn btn-outline-secondary bg-dark text-white" type="submit" id="button-addon2">Gönder</button>
+                  </div>
+                  <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
+                </div>
+            </div>
+        </div>
+      </div>
   </footer>
 
 
@@ -191,7 +238,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .modal-dialog-scrollable .modal-content {
     height: 650px;

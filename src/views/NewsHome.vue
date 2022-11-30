@@ -70,14 +70,17 @@
   </section>
 
 
+  <Socialbar/>
+
 </template>
 
 <script>
 import NewsNav from "@/components/home/news/NewsNav";
 import NewsContent from "@/components/home/news/NewsContent";
+import Socialbar from "@/components/global/Socialbar.vue";
 export default {
   name: "NewsHome",
-  components: {NewsNav, NewsContent},
+  components: { NewsNav, NewsContent, Socialbar },
 
 }
 </script>

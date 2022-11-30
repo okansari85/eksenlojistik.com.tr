@@ -14,13 +14,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // Import Swiper styles
 import 'animate.css';
-import '@/assets/css/style.css'
-
+import '@/assets/css/style.css';
 
 const app = createApp(App);
 app.use(BootstrapVue3)
 app.use(VueAwesomeSwiper)
-// app.use(store)
 app.use(router)
 app.mount('#app')
 // createApp(App).use(store).use(router).mount('#app')

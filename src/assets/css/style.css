@@ -760,6 +760,21 @@ header nav .navbar .active:before {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+footer h4 {
+  padding-bottom: 10px;
+}
+footer ul li {
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.social-media-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: red;
+}
+
 .news-item {
   padding: 25px 0;
   max-width: 400px;

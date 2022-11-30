@@ -6,7 +6,7 @@
     <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
         <span>en hızlı</span>
         <h1 class="display-1 text-white">Lojistik <br> <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;">Çözümleri</div></h1>
-        <p class="description col-lg-4 offset-md-1 text-white py-3 py-md-5 fs-6">
+        <p class="description col-lg-4 text-white py-3 py-md-5 fs-6">
           Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz.
         </p>
       <!-- <a data-bs-toggle="modal" data-bs-target="#heroVideos" class="playBtn" style="cursor: pointer; z-index: 200000;">

@@ -5,12 +5,12 @@
     <section class="services-banner">
         <img src="/image/services/services-banner-1.png" alt="Services Banner">
         <div class="services-banner-content">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                   <span class="text-uppercase">eksen lojistik</span>
                   <h1 class="display-2 fw-bold text-white">Hizmetlerimiz</h1>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -162,15 +162,21 @@
 
   </main>
 
+
+  <Socialbar/>
+
 </template>
 
 
 
 <script>
+import Socialbar from '@/components/global/Socialbar.vue';
+
 
 
 export default {
-  name: 'Services',
+    name: "Services",
+    components: { Socialbar }
 }
 
 

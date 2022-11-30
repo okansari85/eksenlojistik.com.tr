@@ -26,6 +26,7 @@
 
 
   </div>
+  <Socialbar/>
 
 </template>
 
@@ -35,10 +36,11 @@ import NewsAndAnnouncement from "@/data/news/news-and-announcement";
 import NewsOnly from "@/data/news/news-only";
 import AnnouncementOnly from "@/data/news/announcement-only";
 import Kur from "@/components/home/Kur";
+import Socialbar from "@/components/global/Socialbar.vue";
 
 export default {
   name: 'News',
-  components: {NewsAndAnnouncement, NewsOnly, AnnouncementOnly, Kur},
+  components: {NewsAndAnnouncement, NewsOnly, AnnouncementOnly, Kur, Socialbar},
   data() {
     return {
       navsItem: [

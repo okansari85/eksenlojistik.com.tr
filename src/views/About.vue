@@ -36,7 +36,8 @@
 
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 d-none d-lg-block">
-                            <video src="/image/about/word-globe.mp4" class="mw-100 w-100" loop muted autoplay></video>
+                            <img src="/image/about/oguzbey.jpg" alt="" class="mw-100">
+                            <!-- <video src="/image/about/word-globe.mp4" class="mw-100 w-100" loop muted autoplay></video> -->
                         </div>
                     </div>    
                 </div>
@@ -66,19 +67,37 @@
                 </div>
             </section>
 
+            <section class="about-middle-video pb-5">
+                <div class="container">
+                    <!-- <iframe width="100%" height="500" 
+                    src="https://www.youtube-nocookie.com/embed/VTrhNmHUiDY?controls=0&amp;start=4" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    style="width:100%; max-width:100%; object-position: bottom;"></iframe> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <video src="/image/video/eksenrender.mp4" loop muted autoplay style="height:50vh; object-fit: cover; width: 100%; object-position: center;"></video>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
             <section class="future position-relative" 
             style="background-image: url('image/about/about-new-middle.png'); 
                     height: 145vh; 
                     background-size: cover; 
                     background-position: center;">
-                <div class="container py-5">
-                    <div class="row pt-md-5">
+                <div class="container pt-3 pb-5">
+                    <div class="row">
                         <div class="col-12 text-center">
                             <div class="custom-sub-title-span">
-                                <span style="background-color:#f8fafa!important;">eksen lojistik</span>
+                                <span style="background-color:#fcfdfd!important;">eksen lojistik</span>
                             </div>
                             <div>
-                                <h2 class="display-4 fw-bold">Geleceği ile tanış</h2>
+                                <h2 class="display-4 fw-bold">Eksen Vizyonu</h2>
                                 <p class="pt-2">Gelecek için yatırımlarımızı en doğru şekilde  yapıp tüm hizmetlerimizi bu doğrultuda ilerletiyoruz.</p>
                             </div>
                         </div>
@@ -172,8 +191,9 @@ import counterFunction from "@/components/home/Map";
 export default {
     name: "About",
     mixins: [counterFunction],
-    components: { Socialbar }
+    components: { Socialbar },
 }
+
 
 </script>
 
@@ -224,6 +244,17 @@ p {
 @media(max-width:768px) {
     .future {
         height: 200vh!important;
+    }
+}
+
+.html5-video-container {
+    video {
+        width: 100%!important;
+        left: 0!important;
+        right: 0!important;
+        top: 0!important;
+        bottom: 0!important;
+        margin: auto!important;
     }
 }
 

@@ -14,7 +14,7 @@
                         <p class="fs-09"> Şirket, profesyonel kurumsal yapılarını sürdürürken, çalışanlarına da herkesin takdir edildiği, insan dokunuşu ile hoşgörülü bir çalışma ortamı sunmaktadır. EKSEN LOJİSTİK’deki kariyer olanakları hakkında daha fazlasını okuyun. </p>
                     </div>
                     <div class="d-flex justify-content-center justify-content-lg-start align-items-center py-2">
-                        <a href="" class="news-2-link fw-600 text-decoration-underline text-dark text-uppercase" data-bs-toggle="modal" data-bs-target="#tanitimVideo">
+                        <a href="" class="news-2-link fw-500 text-decoration-underline text-dark text-uppercase" data-bs-toggle="modal" data-bs-target="#tanitimVideo">
                             tanıtım videosu
                         </a>
                         <!-- <router-link to="/news" class=""></router-link> -->
@@ -30,10 +30,10 @@
     <div class="modal fade" id="tanitimVideo" tabindex="-1" style="z-index: 20000;">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content py-3 bg-transparent border-0">
-          <a href="" class="bi bi-x-circle-fill text-danger position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
+          <a href="" class="bi bi-x-circle position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
           <div class="modal-body p-0 border-0 bg-transparent">
             <div class="modal-video-inner bg-transparent p-0">
-              <video src="/image/home/eksen_hero_video2.mp4" autoplay loop muted style="max-width: 100%;"></video>
+              <video src="/image/video/eksenrender.mp4" class="mw-100" loop controls></video>
             </div>
           </div>
         </div>

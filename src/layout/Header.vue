@@ -7,14 +7,14 @@
         </router-link>
         <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- <li class="nav-item">
-              <router-link to="/" class="nav-link">Anasayfa</router-link>
-            </li> -->
             <li class="nav-item">
-              <router-link to="/services" class="nav-link">Hizmetler</router-link>
+              <router-link to="/" class="nav-link">Anasayfa</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">Kurumsal</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/services" class="nav-link">Hizmetler</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/news" class="nav-link">Haberler</router-link>
@@ -51,7 +51,7 @@
                   <router-link to="/services" class="mobile-nav-item services-menu-item">Hizmetler</router-link>
                 </li>
                 <li>
-                  <router-link to="/about" class="mobile-nav-item">Hakkımızda</router-link>
+                  <router-link to="/about" class="mobile-nav-item">Kurumsal</router-link>
                 </li>
                 <li>
                   <router-link to="/news" class="mobile-nav-item">Haberler</router-link>

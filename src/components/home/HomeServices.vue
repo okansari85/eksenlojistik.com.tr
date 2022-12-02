@@ -1,6 +1,6 @@
 <template>
 
-    <section class="home-services py-5">
+    <section class="home-services py-5" id="home-services">
         <div class="container py-md-5">
             <div class="globals-title text-center pt-5 pb-3">
                 <span class="text-uppercase fs-6">neler yaparız?</span>

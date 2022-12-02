@@ -1,7 +1,7 @@
 <template>
   <section class="hero w-100 vh-100">
     <div class="overlay"></div>
-    <video src="/image/home/eksen.mp4" class="vh-100  w-100" style="object-fit: cover" autoplay loop
+    <video src="/image/video/Ust2.mp4" class="vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
     <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
         <span>en hızlı</span>
@@ -14,7 +14,7 @@
           </a> -->
       
     </div>
-    <a class="wrapper-down-icon" href="#">
+    <a class="wrapper-down-icon" href="#home-services">
         <div class="circle">
         </div>
         <div class="circle circle-2">

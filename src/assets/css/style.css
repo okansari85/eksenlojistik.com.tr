@@ -1014,6 +1014,13 @@ section.news .news-content-wrap {
   transition: all 0.3s ease-in-out;
 }
 
+.sub-tab button.nav-link {
+  font-size: 2rem !important;
+  color: black !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
 main.global-sub-page {
   padding-top: 80px;
 }

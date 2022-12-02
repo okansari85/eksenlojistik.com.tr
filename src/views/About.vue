@@ -78,7 +78,7 @@
                     style="width:100%; max-width:100%; object-position: bottom;"></iframe> -->
                     <div class="row">
                         <div class="col-12">
-                            <video src="/image/video/eksenrender.mp4" loop muted autoplay style="height:50vh; object-fit: cover; width: 100%; object-position: center;"></video>
+                            <video src="/image/video/eksenrender.mp4" loop muted autoplay style="height:70vh; object-fit: cover; width: 100%; object-position: center;"></video>
                         </div>
                     </div>
                     
@@ -92,7 +92,7 @@
                     background-position: center;">
                 <div class="container pt-3 pb-5">
                     <div class="row">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center d-none">
                             <div class="custom-sub-title-span">
                                 <span style="background-color:#fcfdfd!important;">eksen lojistik</span>
                             </div>
@@ -104,17 +104,17 @@
                     </div>
 
                     <div class="row justify-content-between py-5 px-4 px-lg-0">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 pt-lg-5 ">
                             <div class="col-sm-10">
-                                <h5 class="custom-sub-title">EKSEN GELECEK MİSYONU</h5>
+                                <h5 class="custom-sub-title fs-5">EKSEN GELECEK MİSYONU</h5>
                                 <p>
                                     Sunmuş olduğumuz tüm hizmetlerde hizmet kalitesinden ödün vermeyerek müşteri memnuniyeti odaklılığı devam ettirerek sektördeki liderliğini sürdürebilmektir.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 pt-lg-5">
                             <div class="col-sm-10">
-                                <h5 class="custom-sub-title">EKSEN SÜRDÜRÜLEBİLİR VİZYONU</h5>
+                                <h5 class="custom-sub-title fs-5">EKSEN SÜRDÜRÜLEBİLİR VİZYONU</h5>
                                 <p>
                                     Sektöründe fark yaratarak , yenilikçi ve sürekli büyümeye devam ederek en iyi marka olma yolunda ilerlemek !
                                 </p>

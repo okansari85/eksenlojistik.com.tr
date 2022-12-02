@@ -33,7 +33,7 @@
           <a href="" class="bi bi-x-circle position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
           <div class="modal-body p-0 border-0 bg-transparent">
             <div class="modal-video-inner bg-transparent p-0">
-              <video src="/image/video/eksenrender.mp4" class="mw-100" loop controls></video>
+              <video src="/image/video/12.m4v" class="mw-100" loop controls></video>
             </div>
           </div>
         </div>

@@ -103,8 +103,7 @@
         <div class="container main-footer">
           <div class="row">
             <div class="col-12">
-              <p class="lead lh-0 m-0"><span class="fw-500" style="color:#7ca7f6;">Bulunduğumuz Konumlar</span></p>
-              <h2 class="text-white pb-3">Ofislerimiz</h2>
+              <h2 class="text-white pb-5">Ofislerimiz</h2>
             </div>
             <div class="col-md-6 col-lg-4 office">
               <h3>İstanbul, Türkiye</h3>
@@ -127,7 +126,7 @@
             </div>
             <div class="col-md-6 col-lg-4 office">
               <h3>Bucharest, Romanya</h3>
-              <p class="smallText">Romanya Genel Merkez</p>
+              <p class="smallText">Romanya Ofisi</p>
               <p>Lt. Av. Radu Beller Nr.25<br> Apt.4 Sector 1 <br>  Bucharest </p>
               <p>Tel: 0040 21 290 01 05<br>
                 info@eksenlojistik.com.tr</p>

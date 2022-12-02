@@ -144,17 +144,6 @@
           <div class="alternative-transport-video text-center">
             <video src="/image/video/2.mp4" autoplay loop muted style="width: 836px; height: 413px; max-width: 100%; margin: auto; object-fit: cover;"></video>
           </div>
-          <div class="row py-5">
-              <div class="col-12 text-center py-5">
-                  <div class="custom-sub-title-span">
-                      <span>eksen lojistik</span>
-                  </div>
-                  <div>
-                      <h2 class="display-4 fw-bold text-white">Özel Taşımacılık</h2>
-                      <p class="pt-2">Size özel hazırlanmış Lojistik seçeneklerimizi incelemek için bizimle irtibata geçin.</p>
-                  </div>
-              </div>
-          </div>
       </div>
     </section>
 

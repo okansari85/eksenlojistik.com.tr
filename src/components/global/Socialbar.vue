@@ -3,6 +3,7 @@
         <a class="socialIcon" href="" title="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
         <a class="socialIcon" href="" title="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
         <a class="socialIcon" href="" title="LinkedIn" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a class="socialIcon" href="" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
     </div>
 </template>
 

@@ -194,17 +194,13 @@ $easing: cubic-bezier(0.76, 0, 0.24, 1);
     }
 }
 
-
-
 .hero-bottom-map {
     transition: all .3s ease-in-out;
 }
 
-
-
-.sub-tab button.nav-link {
+.news-tabs button.nav-link {
     font-size: 2rem!important;
     color: black!important;
     text-transform: capitalize;
     font-weight: 600;
-  }
+}

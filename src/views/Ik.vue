@@ -16,7 +16,7 @@
                      :title="navs.title" :key="index"
                      @click="Changer(index)"
                       :active="$route.params.slug == navs.slug ? '' : 'active'"
-              >
+                      >
                 <b-card-text class="py-5 px-3">
                   <component class="pt-md-5" :is="navs.content" :navs="navs"></component>
                 </b-card-text>

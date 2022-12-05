@@ -5,7 +5,7 @@
       <section>
         <div class="container">
           <div class="pt-2 pt-md-5">
-            <b-tabs pills class="sub-tab">
+            <b-tabs pills class="sub-tab news-tabs">
               <b-tab v-for="(navs, index) in navsItem"
                      :title="navs.title" :key="index" :slug="navs.slug"
                 >

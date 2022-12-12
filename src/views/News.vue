@@ -1,29 +1,39 @@
 <template>
 
-  <div>
-    <main class="global-sub-page mt-md-4">
-      <section>
-        <div class="container">
-          <div class="pt-2 pt-md-5">
-            <b-tabs pills class="sub-tab news-tabs">
-              <b-tab v-for="(navs, index) in navsItem"
-                     :title="navs.title" :key="index" :slug="navs.slug"
-                >
-                <b-card-text class="pb-5 px-3">
-                  <component class="pt-3" :is="navs.content" :navs="navs"></component>
-                </b-card-text>
-              </b-tab>
-            </b-tabs>
-          </div>
-          <div class="py-5">
-            <Kur/>
-          </div>
+  <main class="global-sub-page mt-md-4">
+    <section class="news-content">
+      <div class="container py-5">
+        <h1 class="text-center fw-500">Haberler</h1>
+        <div class="row justify-content-between pt-4">
+
+            <router-link :to="{ name: 'news-detail', params: { slug: item.slug } }"
+              v-for="item in navsItem" :key="item.slug" 
+              class="news-item col-md-6 col-lg-4 border-0">
+              <div class="news-top">
+                <img :src="item.img" alt="News Detail Image">
+              </div>
+              <div class="news-bottom pt-3">
+                <!-- <div class="news-tag text-black-50 fs-08">
+                  <a href="#!"><span>{{ item.tag1 }}</span></a>
+                  <a href="#!"><span>{{ item.tag2 }}</span></a>
+                  <a href="#!"><span>{{ item.tag3 }}</span></a>
+                </div> -->
+                <div class="news-item-text pb-3 col-11 col-md-10">
+                  <p class="news-item-date fs-08 text-muted fw-500"> <i class="bi bi-calendar-week"></i> {{ item.date }} </p>
+                  <h6 class="news-item-text-title fw-bold">{{ item.title }}</h6>
+                  <p class="fs-09 text-muted news-item-paragraph"> {{ item.paragraph }} </p>
+                </div>
+
+              </div>
+          </router-link>
         </div>
-      </section>
-    </main>
+        <div class="cour-wrapper py-5">
+          <Kur/>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-  </div>
   <Socialbar/>
 
 </template>
@@ -31,41 +41,34 @@
 <script>
 
 import NewsAndAnnouncement from "@/data/news/news-and-announcement";
-import NewsOnly from "@/data/news/news-only";
-import AnnouncementOnly from "@/data/news/announcement-only";
+import newsItem from "@/data/news/news.json";
 import Kur from "@/components/home/Kur";
 import Socialbar from "@/components/global/Socialbar.vue";
 
 export default {
   name: 'News',
-  components: {NewsAndAnnouncement, NewsOnly, AnnouncementOnly, Kur, Socialbar},
+  components: {NewsAndAnnouncement, Kur, Socialbar},
   data() {
     return {
-      navsItem: [
-        {
-          id: 1,
-          slug: "calisma-prensipleri",
-          title: "Haberler",
-          content: "NewsAndAnnouncement"
-        },
-        {
-          id: 2,
-          slug: "egitim-ve-gelisim",
-          title: "",
-          content: "NewsOnly"
-        },
-        {
-          id: 3,
-          slug: "basvuru",
-          title: "",
-          content: 'AnnouncementOnly'
-        },
-      ],
+        navsItem: newsItem.navItems
     }
+  },
+  mounted() {
+    console.log(this.navsItem);
   },
 }
 </script>
 
 <style scoped lang="scss">
+
+
+.news-item-paragraph {
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
 </style>

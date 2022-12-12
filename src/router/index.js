@@ -23,10 +23,9 @@ const routes = [
     component: () => import('@/views/News'),
   },
   {
-    path: '/news-detail/:id?',
+    path: '/news/news-detail/:slug?',
     name: 'news-detail',
     component: () => import('@/views/NewsDetail'),
-
   },
   {
     path: '/services',
@@ -50,6 +49,6 @@ const router = createRouter({
   routes
 })
 
-export default router
+export default router;
 
 

@@ -1,6 +1,12 @@
 <template>
 
-  <router-link :to="'/news-detail/' + id" class="news-item col-md-6 col-lg-4 border-0">
+  <router-link :to="{
+    name: 'news-detail',
+    params: { 
+      slug: slug,
+    }
+    }" 
+  class="news-item col-md-6 col-lg-4 border-0">
       <div class="news-top">
         <img :src="img" alt="News Detail Image">
       </div>
@@ -19,17 +25,13 @@
       </div>
   </router-link>
 
-
-
 </template>
 
 <script>
 export default {
   name: "news-item",
   props: {
-    id: {
-      type: String,
-    },
+    id:String,
     img: {
       type:String,
       default:('/image/services/news-img.png')

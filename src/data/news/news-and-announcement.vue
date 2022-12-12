@@ -2,8 +2,7 @@
 <div class="row justify-content-between">
   <news-item/>
   <news-item
-  :img="('/image/services/about-sub-page-hero1.png')"
-  />
+  :img="('/image/services/about-sub-page-hero1.png')"/>
   <news-item/>
   <news-item/>
   <news-item/>

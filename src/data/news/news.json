@@ -1,26 +1,45 @@
 {
-    "newsData": [
+      "navItems": [
         {
-            "id": "1",
-            "date": "Aralık 19, 2022",
-            "title": "News 1",
-            "description": "News 1 description",
-            "image": "http://www.example.com/image1.jpg"
+          "slug": 1,
+          "title": "Yeni yatırımlarla gücünüzü sizlerle paylaşmaya devam ediyoruz.",
+          "img": "/image/news/news-1.jpg",
+          "tag1": "Event1",
+          "tag2": "Event22",
+          "tag3": "Event33",
+          "paragraph": "Eksen Lojistik'in yeni 'Lojistik Merkezi' Haziran 2023' de hizmete giriyor.",
+          "date": "10.12.2020"
         },
         {
-            "id": "2",
-            "date": "Aralık 19, 2022",
-            "title": "News 2",
-            "description": "News 2 description",
-            "image": "http://www.example.com/image2.jpg"
+          "slug": 2,
+          "title": "Eksen Lojistik Çek Cumhuriyeti'nde ...",
+          "img": "/image/news/news-2.jpg",
+          "tag1": "Event1",
+          "tag2": "Event22",
+          "tag3": "Event33",
+          "paragraph": "Uluslararası yatırımlarına 2022 yılında da devam eden Eksen Lojistik Sırbistan‘ın ardından son yurt dışı yatırımı Çek Cumhuriyeti‘ne oldu.",
+          "date": "09.12.2020"
         },
         {
-            "id": "3",
-            "date": "Aralık 19, 2022",
-            "title": "News 3",
-            "description": "News 3 description",
-            "image": "http://www.example.com/image3.jpg"
+          "slug": 3,
+          "title": "Eksen Lojistik Genç Kadrosu ile Dikkat Çekiyor. ",
+          "img": "/image/news/news-3.jpg",
+          "tag1": "Event1",
+          "tag2": "Event22",
+          "tag3": "Event33",
+          "paragraph": "Müşteri memnuniyeti odaklı entegre lojistik hizmetleri veren Eksen  Lojistik kısa sürede ciddi ciro 'ya ulaşmasını ve ürün çeşitliliğinin  büyük çoğunluğunu genç bir ekip ile sağlamıştır.",
+          "date": "07.12.2020"
+        },
+        {
+          "slug": 4,
+          "title": "Eksen Lojistik Balkan Ülkelerinde'de Markalaşma Yolunda ilerliyor ..",
+          "img": "/image/news/news-4.jpg",
+          "tag1": "Event1",
+          "tag2": "Event22",
+          "tag3": "Event33",
+          "paragraph": "Eksen  Sırbistan hattındaki yerini verdiği hizmet kalitesi ve çabası ile belirledi.",
+          "date": "18.10.2020"
         }
-    ]
+      ]
         
 }

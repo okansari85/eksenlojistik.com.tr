@@ -7,8 +7,9 @@
           "tag1": "Event1",
           "tag2": "Event22",
           "tag3": "Event33",
-          "paragraph": "Eksen Lojistik'in yeni 'Lojistik Merkezi' Haziran 2023' de hizmete giriyor.",
-          "date": "10.12.2020"
+          "subTitle": "Eksen Lojistik'in yeni 'Lojistik Merkezi' Haziran 2023' de hizmete giriyor.",
+          "date": "10.12.2020",
+          "paragraph": "<ul class='list-unstyled py-3'>\n<li class='pb-2 fs-6'><span class='fw-500 fs-09'>Yer: </span>Çatalca</li>\n<li class='pb-2 fs-09'><span class='fw-500 fs-6'>Hizmet Giriş Tarihi : </span>Haziran 2023</li>\n<li class='pb-2 fs-09'><span class='fw-500 fs-6'>Toplam Alan :</span></li>\n<li class='pb-2 fs-09'><span class='fw-500 fs-6'>Kapalı Alanlar: </span> Modern tesisimiz kapalı alan içinde 12 m tavan yüksekliği 6 adet otomatik rampa kapısı, ….... m2 gümrüksüz deposu, ….. m2 merkez ofis binasıyla hizmetinizde olacaktır.</li>\n</ul>\n"
         },
         {
           "slug": 2,
@@ -17,8 +18,9 @@
           "tag1": "Event1",
           "tag2": "Event22",
           "tag3": "Event33",
-          "paragraph": "Uluslararası yatırımlarına 2022 yılında da devam eden Eksen Lojistik Sırbistan‘ın ardından son yurt dışı yatırımı Çek Cumhuriyeti‘ne oldu.",
-          "date": "09.12.2020"
+          "subTitle": "Uluslararası yatırımlarına 2022 yılında da devam eden Eksen Lojistik Sırbistan‘ın ardından son yurt dışı yatırımı Çek Cumhuriyeti‘ne oldu.",
+          "date": "09.12.2020",
+          "paragraph": "<p class='pt-3'>Eksen , Çek Cumhuriyeti’nde karayolu taşımacılığı, intermodal taşımacılık, depolama ve gümrükleme hizmetlerinin tamamı verilecek.</p>\n\n<p class='pt-3'>Eksen Lojistik \" <strong>Yönetim Kurulu Başkanı Oğuz KURT </strong> \"2021 yılındaki  girişimleri  ile  ağını genişletmeye hızla devam ettiklerini belirtti.\t\nSırbistan ardından, planlarımız arasında yer alan Çek Cumhuriyeti, ve Slovakya  ayağını hayata geçirmiş bulunuyoruz\t\nMayıs  2021 itibarıyla kurulan Eksen Çek Cumhuriyeti operasyonlarımız hıza devam etmektedir. </p>\n\n<p class='pt-3'>Prag  Brno ve Ostrava 'da bulunan acenta ağımız ile hedeflerimizi kısa sürede yakalamış bulunmaktayız. . </p>\n\n<p class='pt-3'>Müşterilerimizin beklentilerini hızlı , güvenilir teslimat politiakası ile karşılamaktayız.  İşinde profesyonel ekibimiz ile 2023 yılı ortalarına kadar parisyel çıkış sayılarımızda beklenen hedefi yakalayacağımıza inanıyoruz.</p>\n"
         },
         {
           "slug": 3,
@@ -27,8 +29,10 @@
           "tag1": "Event1",
           "tag2": "Event22",
           "tag3": "Event33",
-          "paragraph": "Müşteri memnuniyeti odaklı entegre lojistik hizmetleri veren Eksen  Lojistik kısa sürede ciddi ciro 'ya ulaşmasını ve ürün çeşitliliğinin  büyük çoğunluğunu genç bir ekip ile sağlamıştır.",
-          "date": "07.12.2020"
+          "subTitle": "Müşteri memnuniyeti odaklı entegre lojistik hizmetleri veren Eksen  Lojistik kısa sürede ciddi ciro 'ya ulaşmasını ve ürün çeşitliliğinin  büyük çoğunluğunu genç bir ekip ile sağlamıştır.",
+          "date": "07.12.2020",
+          "paragraph": "<p class='pt-3'> Eksen Lojistik 'Genel Müdürü Tuğba GÜL'  kuruluşlarından bu yana bir çok başarıya imza attıklarını ve şirket yapısının en önemli parçalarından birinin samimiyet ve bilgi paylaşımı olduğunu belirtti. </p>\n          <p class='pt-3'>Deneyimli çalışma arkadaşlarımızın, aramıza yeni katılan genç arkadaşlarımıza bilgi ve deneyimlerini paylaşmaları onlara yol gösterici olmaları başarımızın  bütünlüğünü göstermektedir. Ayrıca  Uluslararası Lojistik okuyan öğrenci arkadaşlara staj imkanı sağlamaktayız. </p>\n          <p>Hem staj hem ekibimizdeki tüm çalışanlarımıza sektörel bilgi ve tecrübelerin okul niteliğinde öğretildiği bir kurum olmaktan mutlu duyduklarını dile getirdi. \t</p>\n          <p class='fst-italic py-3 fw-500'>Öğrenme tutkusu geliştirin. Eğer yaparsan, büyümeyi asla bırakmayacaksın.  Anthony J. D’Angelo</p>"
+
         },
         {
           "slug": 4,
@@ -37,8 +41,9 @@
           "tag1": "Event1",
           "tag2": "Event22",
           "tag3": "Event33",
-          "paragraph": "Eksen  Sırbistan hattındaki yerini verdiği hizmet kalitesi ve çabası ile belirledi.",
-          "date": "18.10.2020"
+          "subTitle": "Eksen  Sırbistan hattındaki yerini verdiği hizmet kalitesi ve çabası ile belirledi.",
+          "date": "18.10.2020",
+          "paragraph": "<p class='pt-3'>Balkan Ülkeleri Departman Şefi Alma Bajrovic; kapıdan kapıya hizmet, düzenli çıkışları ve ekspres alternatifleri gibi her ihtiyaca uygun çözümler ile Eksen’in  kısa sürede bu hattada kendini kanıtladığını ifade edebilirim” dedi.\t\n</p>\n\n<p class='pt-3'>2020 yılında haftalık 2  parsiyel 15 komple çıkış ile başladığımız bu süreci dinamik ve genç ekibimiz ile bu sayıyı 4-5katına- çıkarttık.  </p>\n\n<p class='pt-3'>Hedefimiz buradaki yerimizi çok iyi iş partnerlerimiz ve acentalarımız ile müşterilerimizin bize duydugu güveni bozmadan yolumuza devam etmektir. \t\n</p>\n\n<p class='pt-3'>Eksen Lojistik olarak 2023 yılında Eksen Sırbistan şubemizi açmak planlarımız arasındadır.</p>\n\n\n"
         }
       ]
         

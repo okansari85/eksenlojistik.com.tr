@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed-top">
+  <header class="fixed-top header">
     <div class="container-fluid px-md-5">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
@@ -75,44 +75,28 @@
 
 export default {
   name: 'Nav',
-  watch: {
-    $route (to, from){
-      const header = $("header");
-      window.scrollTo(0, 0)
-      if (to.path == '/news-detail' || to.path == '/news' ) {
-
-        header.addClass("header-inactive");
-        $(".navbar-brand img").attr("src", "/image/global/eksen2-01.svg");
-
-      } else {
-        header.removeClass("header-inactive");
-        $(window).scroll(function (e) {
-          header.removeClass("header-inactive");
-          // console.log(to.path); 
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > 34) {
-            header.addClass("header-inactive");
-            $(".navbar-brand img").attr("src", "/image/global/eksen2-01.svg");
-          }
-          else {
-            header.removeClass("header-inactive");
-            $(".navbar-brand img").attr("src", "/image/global/eksen-01.svg");
-          }
-        });
-      }
-     }
-},
-
   mounted() {
+    // window.scrollTo(0, 0);
     $(".mobile-nav-item").click(function () {
       $(".toggle-btn__cross").click();
     });
-
     $("#navbarNavDropdown .nav-item .nav-link").click(function (e) {
       $("#navbarNavDropdown .nav-item .nav-link").not(this).removeClass("active");
       $(this).addClass("active");
-
     });
+    const header = $(".header");
+      $(window).scroll(function (e) {
+        header.removeClass("header-inactive");
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 34) {
+          header.addClass("header-inactive");
+          $(".header .navbar-brand img").attr("src", "/image/global/eksen2-01.svg");
+        }
+        else {
+          header.removeClass("header-inactive");
+          $(".header .navbar-brand img").attr("src", "/image/global/eksen-01.svg");
+        }
+      });
   },
 }
 

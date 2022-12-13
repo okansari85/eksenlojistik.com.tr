@@ -16,12 +16,8 @@
       <div class="container py-5">
         <div class="row justify-content-between">
           <div class="col-md-6 news-detail-middle-text">
-            <h2 class="fs-5 fw-500">{{ news.paragraph }}</h2>
-            <p class="pt-3"> Eksen Lojistik "Genel Müdürü Tuğba GÜL"  kuruluşlarından bu yana bir çok başarıya imza attıklarını ve şirket yapısının en önemli parçalarından birinin samimiyet ve bilgi paylaşımı olduğunu belirtti. </p>
-            <p class="pt-3">Deneyimli çalışma arkadaşlarımızın  , aramıza yeni katılan genç arkadaşlarımıza bilgi ve deneyimlerini paylaşmaları 	
-            onlara yol gösterici olmaları başarımızın  bütünlüğünü göstermektedir. Ayrıca  Uluslararası Lojistik okuyan öğrenci arkadaşlara staj imkanı sağlamaktayız. </p>
-            <p>Hem staj hem ekibimizdeki tüm çalışanlarımıza sektörel bilgi ve tecrübelerin okul niteliğinde öğretildiği bir kurum olmaktan mutlu duyduklarını dile getirdi. 	</p>
-            <p class="fst-italic py-3 fw-500">Öğrenme tutkusu geliştirin. Eğer yaparsan, büyümeyi asla bırakmayacaksın.  Anthony J. D’Angelo</p>
+            <h2 class="fs-5 fw-500">{{ news.subTitle }}</h2>
+            <div v-html="news.paragraph"></div> 
           </div>
           <div class="col-md-5 news-detail-middle-image">
             <img :src="news.img" alt="News Detail">
@@ -31,7 +27,6 @@
     </section>
   </section>
 
-  <Blog/>
   <Socialbar/>
 </template>
 

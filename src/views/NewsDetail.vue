@@ -20,14 +20,13 @@
             <h2 class="fs-5 fw-500">{{ news.subTitle }}</h2>
             <div v-html="news.paragraph"></div> 
           </div>
-          <div class="col-md-5 news-detail-middle-image">
-            <img :src="news.img" alt="News Detail">
+          <div class="col-md-5 news-detail-middle-image text-center">
+            <img :src="news.imgInner" alt="News Detail" style="height:600px; object-fit: cover;">
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <Socialbar/>
 </template>
 

@@ -18,12 +18,14 @@
 </template>
 
 <script>
-import Header from '@/layout/Header'
-import Header2 from '@/layout/Header2';
-import Footer from '@/layout/Footer'
-export default {
-  components:{Header, Header2, Footer},
-}
+
+  import Header from '@/layout/Header'
+  import Header2 from '@/layout/Header2';
+  import Footer from '@/layout/Footer'
+  export default {
+    components:{Header, Header2, Footer},
+  }
+
 </script>
 
 

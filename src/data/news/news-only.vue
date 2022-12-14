@@ -17,7 +17,5 @@ export default {
   components: {NewsItem}
 }
 </script>
-
 <style scoped>
-
 </style>

@@ -99,7 +99,8 @@
       </section>
 
       <section class="contact-address position-relative">
-        <img src="image/services/_gumrukleme.jpg" alt="" class="w-100 position-absolute top-0 start-0 d-none d-lg-block" style="z-index:-1; filter: brightness(18%); height: 650px; object-fit: cover;">
+        <img src="image/services/_gumrukleme.jpg" alt="" class="w-100 position-absolute contact-address-banner top-0 start-0 d-none d-lg-block" 
+        style="z-index:-1; height: 650px; object-fit: cover; filter: brightness(40%);">
         <div class="container main-footer">
           <div class="row">
             <div class="col-12">

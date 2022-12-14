@@ -1,18 +1,19 @@
 <template>
-  <!-- {{ $route.params.id }} -->
   <section class="news-detail py-5">
+    <!-- Banner -->
     <div class="news-detail-top pt-5">
-      <div class="container pb-3 pt-5">
+      <div class="container pb-3 pt-md-5">
         <div class="d-md-flex justify-content-between">
-          <div class="col-md-10">
-            <p class="fw-500 fs-6"><i class="bi bi-calendar pe-1"></i>{{ news.date }}</p>
-            <h1 class="text-capitalize fw-500">{{ news.title }}</h1>
+          <div class="w-100 pt-5 pb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <h1 class="text-capitalize fs-2 fw-500 col-md-8">{{ news.title }}</h1>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <section class="news-detail-middle bg-light">
+    <!-- Content -->
+    <div class="news-detail-middle bg-light">
       <div class="container py-5">
         <div class="row justify-content-between">
           <div class="col-md-6 news-detail-middle-text">
@@ -24,7 +25,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 
   <Socialbar/>
@@ -55,15 +56,12 @@ export default {
     ];
     this.news = this.news[0][0];
   },
-
+ 
 }
 </script>
 
 <style scoped>
-
 .text-orange {
   color: #ffa10e;
 }
-
-
 </style>

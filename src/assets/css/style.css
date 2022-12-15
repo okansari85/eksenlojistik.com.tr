@@ -540,10 +540,10 @@ select::placeholder, input::placeholder, textarea::placeholder {
 }
 .banner-content span {
   text-transform: uppercase !important;
-  font-weight: bold;
+  font-weight: 600;
 }
 .banner.about-banner .banner-content span {
-  color: #4bffc2;
+  color: #FAFFC0;
 }
 .banner.services-banner .banner-content span, .banner.ik-banner .banner-content span {
   color: #ff4b4b;
@@ -787,7 +787,6 @@ footer ul li {
   }
 }
 .news-item .news-top img {
-  height: 400px;
   width: 100%;
   max-width: 100%;
   object-fit: cover;

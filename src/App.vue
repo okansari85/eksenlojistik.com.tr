@@ -1,7 +1,7 @@
 
 
 <template>
- <div v-if="$route.path.includes('/news') || $route.path.includes('/news/news-detail/')">
+ <div v-if="$route.path.includes('/news/news-detail/')">
   <Header2/>
 </div>
 <div v-else>

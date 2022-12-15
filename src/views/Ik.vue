@@ -48,7 +48,7 @@ export default {
       navsItem: [
         {
           heroTitle: "IK",
-          // heroMiniTitle: "Başvuru",
+          heroMiniTitle: "İnsan Kaynakları",
           heroImg: ('/image/services/basvuru.jpg'),
           title: "Başvuru",
           content: 'ikApplication',
@@ -56,7 +56,7 @@ export default {
         },
         {
           heroTitle: "IK",
-          // heroMiniTitle: "Çalışma Prensibi",
+          heroMiniTitle: "İnsan Kaynakları",
           heroImg: ('/image/services/about-sub-page-hero1.png'),
           title: "Çalışma Prensibi",
           content: "IkPrinciple",
@@ -64,7 +64,7 @@ export default {
         },
         {
           heroTitle: "IK",
-          // heroMiniTitle: "Eğitim ve Gelişim",
+          heroMiniTitle: "İnsan Kaynakları",
           heroImg: ('/image/services/egitimvegelisim.jpg'),
           title: "Eğitim ve Gelişim",
           content: "IkDevelopment",
@@ -74,7 +74,7 @@ export default {
 
       ],
       heroTitle: "IK",
-      // heroMiniTitle: "Başvuru",
+      heroMiniTitle: "İnsan Kaynakları",
       heroImg: ('/image/services/basvuru.jpg'),
     }
   },

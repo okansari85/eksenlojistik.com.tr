@@ -6,12 +6,12 @@
             <section class="about-banner banner">
                 <img src="/image/about/about-new-banner-2.png" alt="About Banner">
                 <div class="banner-content">
-                    <!-- <div class="container">
+                    <div class="container">
                           <div class="row">
                             <span class="text-uppercase">eksen lojistik</span>
-                            <h1 class="display-2 fw-bold text-white">Kurumsal</h1>
+                            <h1 class="display-2 fw-semibold text-white">Kurumsal</h1>
                           </div>
-                    </div> -->
+                    </div>
                 </div>
             </section>
 

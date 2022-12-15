@@ -5,8 +5,8 @@
         <div class="services-banner-content">
             <div class="container">
                 <div class="row">
-                    <!-- <span class="text-uppercase">eksen lojistik</span> -->
-                    <h1 class="display-2 fw-bold text-white"> {{ miniTitle }} </h1>
+                    <span class="text-uppercase">eksen lojistik</span>
+                    <h1 class="display-2 fw-semibold text-white"> {{ miniTitle }} </h1>
                 </div>
             </div>
         </div>

@@ -5,12 +5,12 @@
     <section class="services-banner">
         <img src="/image/services/services-banner-1.png" alt="Services Banner">
         <div class="services-banner-content">
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row">
                   <span class="text-uppercase">eksen lojistik</span>
-                  <h1 class="display-2 fw-bold text-white">Hizmetlerimiz</h1>
+                  <h1 class="display-2 fw-semibold text-white">Hizmetlerimiz</h1>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 

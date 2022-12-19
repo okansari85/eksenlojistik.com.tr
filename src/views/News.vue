@@ -30,7 +30,7 @@
                 </div> -->
                 <div class="news-item-text pb-3 col-11 col-md-10">
                   <h6 class="news-item-text-title fw-500">{{ item.title }}</h6>
-                  <p class="news-item-date fs-08 text-muted fw-500 pt-3"> <i class="bi bi-calendar-week"></i> {{ item.date }} </p>
+                  <!-- <p class="news-item-date fs-08 text-muted fw-500 pt-3"> <i class="bi bi-calendar-week"></i> {{ item.date }} </p> -->
                 </div>
 
               </div>

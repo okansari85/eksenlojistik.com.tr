@@ -7,13 +7,13 @@
 <div v-else>
   <Header/>
 </div>
-  <div id="app">
+ <div class="content-wrapper">
     <router-view v-slot="{Component, route}">
-      <transition name="fade">
-        <component :is="Component" :key="route.path"/>
-      </transition>
-    </router-view>
-  </div>
+     <transition name="fade">
+       <component :is="Component" :key="route.path"/>
+     </transition>
+   </router-view>
+ </div>
   <Footer/>
 </template>
 

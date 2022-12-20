@@ -64,6 +64,7 @@ export default {
   },
   mounted() {
     console.log(this.navsItem);
+    window.scrollTo(0, 0)
   },
 }
 </script>

@@ -54,6 +54,7 @@ export default {
       this.navsItem.filter(item => item.slug == slugParams)
     ];
     this.news = this.news[0][0];
+    window.scrollTo(0, 0);
   },
  
 }

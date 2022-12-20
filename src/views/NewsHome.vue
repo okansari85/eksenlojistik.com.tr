@@ -81,6 +81,9 @@ import Socialbar from "@/components/global/Socialbar.vue";
 export default {
   name: "NewsHome",
   components: { NewsNav, NewsContent, Socialbar },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 
 }
 </script>

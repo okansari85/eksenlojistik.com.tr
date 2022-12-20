@@ -24,12 +24,12 @@
   import Footer from '@/layout/Footer'
   export default {
     components:{Header, Header2, Footer},
+    mounted() {
+      window.scrollTo(0, 0)
+    }
   }
 
 </script>
-
-
-
 
 
 <style>

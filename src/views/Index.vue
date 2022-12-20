@@ -36,6 +36,9 @@ import Socialbar from "@/components/global/Socialbar.vue";
 export default {
   name: 'Index',
   components: { Hero, HomeServices, Map, Solutions, SlideWays, Team, CountryGif, Numbers, Socialbar },
+  mounted() {
+      window.scrollTo(0, 0)
+  }
 }
 </script>
 

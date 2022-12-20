@@ -131,7 +131,9 @@
                 </div>
             </section>
 
-            <section class="sustainability pt-lg-5 pb-5">
+
+
+            <section class="sustainability pt-lg-5">
                 <div class="container py-md-5">
                     <div class="row py-md-5">
                         <div class="col-12 text-center">
@@ -175,6 +177,12 @@
                 </div>
             </section>
 
+            <section class="eksen-images pb-5">
+               <div class="container text-center mx-auto">
+                <img src="../../public/image/home/eksen5.png" class="mw-100" alt="" style="width:350px; height: auto;">
+               </div>
+            </section>
+
         </main>
     </div>
 
@@ -192,6 +200,9 @@ export default {
     name: "About",
     mixins: [counterFunction],
     components: { Socialbar },
+    mounted() {
+      window.scrollTo(0, 0)
+    }
 }
 
 

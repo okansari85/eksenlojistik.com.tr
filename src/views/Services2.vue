@@ -25,11 +25,7 @@
         </div>
       </div>
     </main>
-
-
   </div>
-
-
 </template>
 
 <script>
@@ -116,6 +112,7 @@ export default {
   },
   mounted () {
     this.Changer(this.$route.params.slug)
+    window.scrollTo(0, 0)
   }
 }
 

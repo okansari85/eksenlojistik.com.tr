@@ -164,6 +164,9 @@ import Socialbar from "@/components/global/Socialbar.vue";
 export default {
   name: "Contact",
   components: { Form2, HeroImage, Socialbar },
+  mounted() {
+      window.scrollTo(0, 0)
+    }
 }
 </script>
 

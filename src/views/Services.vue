@@ -57,7 +57,6 @@
     </div>
     </section>
 
-
     <section class="services-stock">
         <div class="container pb-5">
             <div class="row align-items-center justify-content-between py-5 px-3 px-lg-0">
@@ -82,7 +81,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="services-safely min-vh-100 vh-100 "
       style="
@@ -147,31 +145,23 @@
       </div>
     </section>
 
-
-
   </main>
 
-
   <Socialbar/>
-
 </template>
 
 
 
 <script>
 import Socialbar from '@/components/global/Socialbar.vue';
-
-
-
 export default {
     name: "Services",
-    components: { Socialbar }
-}
-
-
+    components: { Socialbar },
+    mounted() {
+      window.scrollTo(0, 0);
+    }
+ }
 </script>
-
-
 <style lang="scss" scope>
 
 .custom-sub-title-span {

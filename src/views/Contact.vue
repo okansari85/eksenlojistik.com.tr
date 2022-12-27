@@ -141,7 +141,7 @@
       <section class="contact-hero py-5 mb-5">
         <div class="container global-hero-top">
           <div class="row">
-            <div class="col-md-12 global-hero-img">
+            <div class="col-md-8 global-hero-img mx-auto">
               <Form2 style="z-index: 9999;" />
             </div>
           </div>

@@ -6,6 +6,9 @@
       <p class="py-3">
         Doğru yetenekleri doğru işlere yerleştiriyoruz ve yüksek çalışan bağlılığı yaratan performans yönetimimiz ile çalışanlarımızdan güç alarak hayata yön veren çözümler üretiyoruz.
       </p>
+      <div class="mx-auto">
+                <img src="../../../public/image/home/eksen5.png" class="mw-100" alt="" style="width:350px; height: auto;">
+        </div>
 
     </div>
     

@@ -9,7 +9,7 @@
                     <div class="container">
                           <div class="row">
                             <span class="text-uppercase">eksen lojistik</span>
-                            <h1 class="display-2 fw-semibold text-white">Kurumsal</h1>
+                            <h1 class="display-6 fw-semibold text-white">Kurumsal</h1>
                           </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                                 <span style="background-color:white!important;">Çevre için</span>
                             </div>
                             <div>
-                                <h2 class="display-4 fw-bold">Sürdürülebilirlik</h2>
+                                <h2 class="display-6 pt-2 fw-bold">Sürdürülebilirlik</h2>
                                 <p class="pt-2">Eksen Lojistik bağlılık ve sorumluluklarının bilinciyle izlediği sürdürülebilir kurumsal politikalara bağlıdır. EKSEN’in kurumsal felsefesinin ve değer sisteminin merkezi bir direği olarak, bu politikalar hem içeride hem dışarıda oryantasyon, kimlik ve istikrar sağlar. Şirketin sürdürülebilir yönetimi, birçok yönden EKSEN'in iş stratejisine bağlıdır. Ekolojik yönünün yanı sıra ekonomik ve sosyal boyutları da vardır.</p>
                             </div>
                         </div>
@@ -177,11 +177,9 @@
                 </div>
             </section>
 
-            <section class="eksen-images pb-5">
-               <div class="container text-center mx-auto">
-                <img src="../../public/image/home/eksen5.png" class="mw-100" alt="" style="width:350px; height: auto;">
-               </div>
-            </section>
+            <!-- <section class="eksen-images pb-5">
+
+            </section> -->
 
         </main>
     </div>

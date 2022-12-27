@@ -33,14 +33,14 @@ export default {
                 date: "Aralık 19, 2022",
                 title: "News 2",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ",
-                image: "image/news/haber2.png"
+                image: "image/news/cekya_1.jpg"
             },
             {
                 id: "3",
                 date: "Aralık 19, 20232",
                 title: "News 2",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ",
-                image: "image/news/haber3.png"
+                image: "image/news/balkan_1.png"
             },
 
         ]

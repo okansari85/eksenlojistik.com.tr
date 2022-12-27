@@ -19,17 +19,16 @@
             <input type="text" class="form-control" :placeholder="subjectAndCv">
           </div>
           <div class="col-12">
-            <textarea name="" id="" cols="5" rows="5" placeholder="Mesajınız" class="form-control"></textarea>
+            <textarea name="" id="" cols="3" rows="3" placeholder="Mesajınız" class="form-control"></textarea>
           </div>
         </div>
         <div class="col-12">
-          <input type="file" class="form-control border-0">
+          <div class="d-flex justify-content-between align-items-center pt-4 pb-4">
+            <input type="file" class="form-control border-0">
+            <a href="#!" class='btn btn-main'>Gönder</a>
+          </div>
         </div>
       </form>
-      <div class="text-end">
-        <a href="#!" class='btn btn-main'>Gönder</a>
-      </div>
-
     </div>
   </div>
 </template>

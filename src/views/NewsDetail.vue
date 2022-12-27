@@ -21,7 +21,7 @@
             <div v-html="news.paragraph"></div> 
           </div>
           <div class="col-md-5 news-detail-middle-image text-center">
-            <img :src="news.imgInner" alt="News Detail" style="height:600px; object-fit: cover;">
+            <img :src="news.imgInner" alt="News Detail" style="height:500px; object-fit: cover;">
           </div>
         </div>
       </div>

@@ -2,12 +2,12 @@
 
   <main>
     <section class="news-news banner">
-        <img src="/image/news/haber.jpg" alt="News Banner" style="filter:brightness(50%)">
+        <img src="/image/news/road.jpg" alt="News Banner" style="filter:brightness(70%)">
         <div class="services-banner-content">
             <div class="container">
                 <div class="row">
                   <span class="text-uppercase fw-semibold">eksen lojistik</span>
-                  <h1 class="display-2 fw-semibold text-white">Haberler</h1>
+                  <h1 class="display-6 fw-semibold text-white">Haberler</h1>
                 </div>
             </div>
         </div>

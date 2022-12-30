@@ -146,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-between py-5 px-4 px-lg-0">
+                    <div class="row justify-content-between align-items-center py-5 px-4 px-lg-0">
                         <div class="col-lg-5">
                             <div class="col-sm-11 col-lg-10">
                                 <h5 class="custom-sub-title">SÜRDÜRÜLEBİLİRLİĞİ TEŞVİK ETME</h5>
@@ -154,16 +154,17 @@
                                     Ekonomi: Büyüme ve başarıya odaklı iş modelleri ile EKSEN, hem şirketin hem de çalışanların geleceğini garanti altına almaktadır. Kurumsal liderlikte sürdürülebilirlik, şirketin stratejik ve operasyonel işlerini, varlığını ve uzun vadede daha da gelişmesini garanti edecek şekilde yönetmek anlamına gelir.
                                 </p>
                             </div>
-                        </div>
-                        <div class="col-lg-5 pt-3 pt-lg-0">
-                            <div class="col-sm-11 col-lg-10">
+                            <div class="col-sm-11 col-lg-10 pt-3">
                                 <h5 class="custom-sub-title">EKOLOJİYE VERDİĞİMİZ ÖNEM</h5>
                                 <p>
                                     Ekoloji: Ürün akışlarını birleştirmek ve gereksiz taşımalardan kaçınmak için tüm süreç zincirlerinin verimli organizasyonunun yanı sıra akıllı BT yönlendirme kontrolünün yanı sıra, EKSEN çevreyi korumak için tasarlanmış çok sayıda proje başlatmıştır. Ayrıca, lojistikle ilgili alanlara odaklanarak sürdürülebilirliğe ilişkin bilimsel araştırmaları teşvik eder.
                                 </p>
                             </div>
-
+                        </div> 
+                        <div class="col-lg-6">
+                            <img src="/image/global/oguzkurt-1.jpg" alt="">
                         </div>
+
                         <!-- <div class="col-12 text-center pt-5 pb-md-5 my-lg-5 ">
                             <a href="" class="text-uppercase text-decoration-underline" 
                             style="

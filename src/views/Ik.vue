@@ -38,14 +38,23 @@ import IkPrinciple from "@/data/ik/ik-principle";
 import IkDevelopment from "@/data/ik/ik-development";
 import ikApplication from "@/data/ik/ik-application.vue";
 import Socialbar from "@/components/global/Socialbar.vue";
+import IKPolicy from "@/data/ik/ik-policy.vue";
 
 
 export default {
   name: 'Ik',
-  components: {HeroImage2, Title, IkPrinciple, IkDevelopment, ikApplication, Socialbar},
+  components: {HeroImage2, Title, IkPrinciple, IkDevelopment, ikApplication, IKPolicy, Socialbar},
   data() {
     return {
       navsItem: [
+        {
+          heroTitle: "IK",
+          heroMiniTitle: "İnsan Kaynakları",
+          heroImg: ('/image/services/IKust.jpg'),
+          title: "IK Politikamız",
+          content: "IKPolicy",
+          slug: 'ik-politikamiz'
+        },
         {
           heroTitle: "IK",
           heroMiniTitle: "İnsan Kaynakları",
@@ -69,13 +78,13 @@ export default {
           title: "Eğitim ve Gelişim",
           content: "IkDevelopment",
           slug: 'egitim-ve-gelisim'
-
         },
+
 
       ],
       heroTitle: "IK",
       heroMiniTitle: "İnsan Kaynakları",
-      heroImg: ('/image/services/basvuru.jpg'),
+      heroImg: ('/image/services/IKust.jpg'),
     }
   },
   methods: {

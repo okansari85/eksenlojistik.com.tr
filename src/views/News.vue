@@ -2,7 +2,7 @@
 
   <main>
     <section class="news-news banner">
-        <img src="/image/news/road.jpg" alt="News Banner" style="filter:brightness(70%)">
+        <img src="/image/services/news.jpg" alt="News Banner" style="filter:brightness(60%)">
         <div class="services-banner-content">
             <div class="container">
                 <div class="row">

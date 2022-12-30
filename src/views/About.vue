@@ -14,7 +14,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="about-globe">
                 <img src="/image/about/about-new-bg-2.png" alt="" class="position-absolute top-0 start-0">
                 <div class="container">
@@ -26,9 +25,7 @@
                                 Eksen Lojistik , kuruluşundan bu yana uluslararası karayolu taşımacılığı sektöründe istikrarlı şekilde büyümesini sürdürerek Romanya hattında marka olma hedefini gerçekleştiren bir lojistik şirketidir.
                                 Sürekli yenilenen araç filosu, depolama ve gümrükleme Hizmetleri ile beraber parsiyel, komple ve transit tüm taşımalarda aynı güven anlayışı ve müşteri odaklı hizmet prensibini devam ettirmekteyiz.
                                 </p>
-
                                 <video src="/image/about/word-globe.mp4" class="mw-100 w-100 d-lg-none" loop muted autoplay></video>
-
                                 <p>
                                     Taşımacılık, gümrük , depolama ve tedarik zinciri yönetimi alanında bir çok ülkede en iyi hizmet anlayışı ile faaliyet göstermeye ve büyümeye devam eden Eksen Lojistik her zaman müşterilerine entegre, akılcı ve en etkin çözümleri sunar.
                                 </p>
@@ -146,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-center py-5 px-4 px-lg-0">
+                    <div class="row justify-content-between py-5 px-4 px-lg-0">
                         <div class="col-lg-5">
                             <div class="col-sm-11 col-lg-10">
                                 <h5 class="custom-sub-title">SÜRDÜRÜLEBİLİRLİĞİ TEŞVİK ETME</h5>
@@ -154,17 +151,16 @@
                                     Ekonomi: Büyüme ve başarıya odaklı iş modelleri ile EKSEN, hem şirketin hem de çalışanların geleceğini garanti altına almaktadır. Kurumsal liderlikte sürdürülebilirlik, şirketin stratejik ve operasyonel işlerini, varlığını ve uzun vadede daha da gelişmesini garanti edecek şekilde yönetmek anlamına gelir.
                                 </p>
                             </div>
-                            <div class="col-sm-11 col-lg-10 pt-3">
+                        </div>
+                        <div class="col-lg-5 pt-3 pt-lg-0">
+                            <div class="col-sm-11 col-lg-10">
                                 <h5 class="custom-sub-title">EKOLOJİYE VERDİĞİMİZ ÖNEM</h5>
                                 <p>
                                     Ekoloji: Ürün akışlarını birleştirmek ve gereksiz taşımalardan kaçınmak için tüm süreç zincirlerinin verimli organizasyonunun yanı sıra akıllı BT yönlendirme kontrolünün yanı sıra, EKSEN çevreyi korumak için tasarlanmış çok sayıda proje başlatmıştır. Ayrıca, lojistikle ilgili alanlara odaklanarak sürdürülebilirliğe ilişkin bilimsel araştırmaları teşvik eder.
                                 </p>
                             </div>
-                        </div> 
-                        <div class="col-lg-6">
-                            <img src="/image/global/oguzkurt-1.jpg" alt="">
-                        </div>
 
+                        </div>
                         <!-- <div class="col-12 text-center pt-5 pb-md-5 my-lg-5 ">
                             <a href="" class="text-uppercase text-decoration-underline" 
                             style="

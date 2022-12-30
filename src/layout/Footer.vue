@@ -1,58 +1,9 @@
 <template>
-  <footer class='px-lg-5 pt-4 d-none'>
-    <div class="container-fluid px-3 px-lg-5 py-3">
-      <div class="row pb-3 pt-md-4">
-        <div class="col-lg-3">
-          <div class="pb-4">
-              <img src="/image/global/eksen_logo.png" alt="Footer Logo" width="300" class="d-none d-lg-block"/>
-          </div>
-          <div class="col-md-3 pt-3 pt-lg-0">
-          <i class='bi bi-instagram'></i>
-          <i class='bi bi-linkedin ms-2'></i>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-2">
-          <ul class="list-unstyled fs-08">
-            <li>Büyükdere Cad. No.62</li>
-            <li>Kat2 Fulya Mah.</li>
-            <li>Mecidiyeköy Şişli</li>
-            <li><strong>İstanbul</strong></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 col-lg-3 pt-4 pt-sm-0">
-          <ul class="list-unstyled">
-            <li class="fs-08"><a href="tel:902122122849"><i class="bi bi-telephone-fill pe-2"></i> +90 212 212 28 49</a></li>
-            <li class="fs-08"><a href="tel:902122122515"><i class="bi bi-telephone-fill pe-2"></i> +90 212 212 25 15</a></li>
-            <li class="fs-08"><a href="tel:908508116404"><i class="bi bi-telephone-fill pe-2"></i> +90 850 811 64 04</a></li>
-            <li class="fs-08 pt-2"><a href="mailto:info@eksenlojistik.com.tr"><i class="bi bi-envelope-fill pe-2"></i> info@eksenlojistik.com.tr</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 pt-4 pt-md-0">
-          <label For="" class="d-block">Bültenimize kayıt olun</label>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="E-mail Adresi">
-            <button class="btn btn-outline-secondary bg-dark text-white" type="submit" id="button-addon2">Gönder</button>
-          </div>
-          <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
-        </div>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="col-lg-4">
-          <ul class="d-sm-flex justify-content-between justify-content-sm-start pb-3 fs-08">
-            <li class="me-sm-4 "><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar" class="fw-500">Şartlar ve Koşullar</a></li>
-            <li class="me-sm-4 py-2 py-sm-0"><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari" class="fw-500">Yasal Uyarı</a></li>
-            <li class="me-sm-4"><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi" class="fw-500">Veri Gizliliği</a></li>
-          </ul>
-        </div>
-        <!-- <div class="col-lg-3">
-          <img src="/image/global/icon/iso-9001.png" alt="ISO icon" />
-        </div> -->
-      </div>
+  <footer class="footer-area px-lg-5 position-relative overflow-hidden">
+    <div class="position-absolute top-0 end-0 overflow-hidden">
+      <img src="image/global/ff2.png" class="opacity-50" alt="" style="z-index:1;">
     </div>
-  </footer>
-
-  <footer class="footer-area px-lg-5">
-      <div class="container-fluid px-3 px-lg-5">
+      <div class="container-fluid px-3 px-lg-5 position-relative" style="z-index:99">
         <div class="footer-top-wrap py-5">
             <div class="row justify-content-between py-4">
                 <div class="col-xl-3 col-lg-4 col-sm-6 pt-3 pt-lg-0">
@@ -92,10 +43,10 @@
                     </div>
                 </div>
                 <div class="col-xl-4 pt-4 pt-md-0">
-                  <label For="" class="d-block">Bültenimize kayıt olun</label>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="E-mail Adresi">
-                    <button class="btn btn-outline-secondary bg-dark text-white" type="submit" id="button-addon2">Gönder</button>
+                  <label For="" class="d-block text-white">Bültenimize kayıt olun</label>
+                  <div class="input-group mb-3 mt-2 text-white">
+                    <input type="text" class="form-control text-white bg-transparent shadow-none border border-light border-2" placeholder="E-mail Adresi">
+                    <button class="btn btn-outline-secondary bg-dark text-white border border-2 border-start-0" type="submit" id="button-addon2">Gönder</button>
                   </div>
                   <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
                 </div>
@@ -239,6 +190,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+footer {
+  background-color: #1d5699;
+  li, a, p, span {
+    color: rgb(206, 206, 206);
+  }
+  h4, h6 {
+    color: white;
+  }
+
+  input {
+    &::placeholder {
+    color: white!important;
+  }
+  }
+
+
+}
 
 .modal-dialog-scrollable .modal-content {
     height: 650px;

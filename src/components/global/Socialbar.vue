@@ -1,8 +1,8 @@
 <template>
     <div class="socialBar d-none d-md-flex flex-column position-fixed translate-middle-y top-50 start-0 ps-3">
-        <a class="socialIcon" href="" title="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a class="socialIcon" href="" title="LinkedIn" target="_blank"><i class="bi bi-twitter"></i></a>
-        <a class="socialIcon" href="" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a class="socialIcon" href="https://www.instagram.com/eksenlojistik/" title="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a class="socialIcon" href="https://www.linkedin.com/company/86254183/admin/" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a class="socialIcon" href="" title="Twitter" target="_blank"><i class="bi bi-twitter"></i></a>
     </div>
 </template>
 

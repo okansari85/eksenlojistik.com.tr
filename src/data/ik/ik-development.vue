@@ -15,7 +15,7 @@
         online olarak çeşitli eğitimler düzenliyoruz.
       </p>
 
-      <h5 class="fs-3 fw-500">Yetenek ve Performans</h5>
+      <h5 class="fs-3 fw-500 pt-4">Yetenek ve Performans</h5>
       <p class="py-3">
         Her bir çalışanımızı birer yetenek olarak görüp, potansiyellerini performansa dönüştürmeleri için teşvik
         ediyoruz. Bu doğrultuda çalışanlarımızın bireysel gelişim planlarını oluşturup, güçlü yön ve gelişim alanlarına

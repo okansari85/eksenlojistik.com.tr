@@ -18,22 +18,19 @@
         <div class="row justify-content-between pt-4">
             <router-link :to="{ name: 'news-detail', params: { slug: item.slug } }"
               v-for="item in navsItem" :key="item.slug" 
-              class="news-item col-md-6 col-lg-4 border-0">
+              class="news-item col-md-6 col-lg-4 border-0 d-flex flex-column justify-content-between">
               <div class="news-top">
                 <img :src="item.img" alt="News Detail Image">
               </div>
-              <div class="news-bottom pt-3">
-                <!-- <div class="news-tag text-black-50 fs-08">
-                  <a href="#!"><span>{{ item.tag1 }}</span></a>
-                  <a href="#!"><span>{{ item.tag2 }}</span></a>
-                  <a href="#!"><span>{{ item.tag3 }}</span></a>
-                </div> -->
+              <div class="news-bottom pt-3 d-flex flex-column">
                 <div class="news-item-text pb-3 col-11 col-md-10">
                   <h6 class="news-item-text-title fw-500">{{ item.title }}</h6>
-                  <!-- <p class="news-item-date fs-08 text-muted fw-500 pt-3"> <i class="bi bi-calendar-week"></i> {{ item.date }} </p> -->
+                  <p class="news-item-paragraph fs-09" style="color:#767676;">
+                    <div v-html="item.paragraph2"></div>
+                  </p>
                 </div>
-
               </div>
+              <router-link class="fs-09 fw-bold " style="text-transform:uppercase;" :to="{ name: 'news-detail', params: { slug: item.slug } }">Daha Fazlasını Oku</router-link>
           </router-link>
         </div>
         <div class="cour-wrapper py-5">

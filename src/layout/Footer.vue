@@ -1,7 +1,8 @@
 <template>
   <footer class="footer-area px-lg-5 position-relative overflow-hidden">
     <div class="position-absolute top-0 end-0 overflow-hidden">
-      <img src="image/global/ff2.png" class="opacity-50" alt="" style="z-index:1;">
+      <!-- <img src="image/global/ff2.png" class="opacity-50" alt="" style="z-index:1;"> -->
+      <img src="image/global/ff.png" class="opacity-50" alt="" style="z-index:1;">
     </div>
       <div class="container-fluid px-3 px-lg-5 position-relative" style="z-index:99">
         <div class="footer-top-wrap py-5">
@@ -192,7 +193,8 @@ export default {
 <style scoped lang="scss">
 
 footer {
-  background-color: #1d5699;
+  // background-color: #1d5699;
+  background-color: #7a7d77;
   li, a, p, span {
     color: rgb(206, 206, 206);
   }

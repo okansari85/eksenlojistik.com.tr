@@ -15,6 +15,7 @@
    </router-view>
  </div>
   <Footer/>
+  <Cookie/>
 </template>
 
 <script>
@@ -22,8 +23,9 @@
   import Header from '@/layout/Header'
   import Header2 from '@/layout/Header2';
   import Footer from '@/layout/Footer'
+  import Cookie from "@/components/global/Cookie.vue";
   export default {
-    components:{Header, Header2, Footer},
+    components:{Header, Header2, Footer, Cookie},
     mounted() {
       window.scrollTo(0, 0)
     }

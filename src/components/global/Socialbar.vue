@@ -14,7 +14,7 @@
         margin-bottom: 30px;
         height: 40px;
         width: 40px;
-        background-color: rgba($color: #000000, $alpha: .05);
+        background-color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;

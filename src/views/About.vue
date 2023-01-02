@@ -75,19 +75,15 @@
                     style="width:100%; max-width:100%; object-position: bottom;"></iframe> -->
                     <div class="row">
                         <div class="col-12">
-                            <video src="/image/video/eksenrender.mp4" loop muted autoplay style="height:70vh; object-fit: cover; width: 100%; object-position: center;"></video>
+                            <video src="/image/video/12.m4v" loop muted autoplay style="height:70vh; object-fit: cover; width: 100%; object-position: center;"></video>
                         </div>
                     </div>
                     
                 </div>
             </section>
 
-            <section class="future position-relative" 
-            style="background-image: url('image/about/about-new-middle.png'); 
-                    height: 145vh; 
-                    background-size: cover; 
-                    background-position: center;">
-                <div class="container pt-3 pb-5">
+            <section class="future position-relative">
+                <div class="container pt-3 py-5">
                     <div class="row">
                         <div class="col-12 text-center d-none">
                             <div class="custom-sub-title-span">
@@ -118,7 +114,7 @@
                             </div>
 
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 d-none">
                             <div class="way-calculate-wrapper">
                                 <h5 class="lh-1">bir yılda gidilen yol</h5>
                                 <p class="way-calculate display-1 lh-1"><span class="counter" style="width:100px"></span><span class="ps-1">km</span></p>

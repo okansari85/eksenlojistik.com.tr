@@ -7,7 +7,7 @@
         <span>en hızlı</span>
         <h1 class="display-1 text-white">Lojistik <br> <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;">Çözümleri</div></h1>
         <p class="description col-lg-4 text-white py-3 py-md-5 fs-6">
-          Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Tüm sektörlerde tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz.
+          Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Tüm sektörlerde, tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz.
         </p>
       <!-- <a data-bs-toggle="modal" data-bs-target="#heroVideos" class="playBtn" style="cursor: pointer; z-index: 200000;">
           <img src="/image/home/k2.png" alt="" width="60" height="auto"  class="mt-4">

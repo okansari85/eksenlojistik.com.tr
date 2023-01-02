@@ -4,7 +4,6 @@
       <HomeServices/>
       <Map/>
       <Solutions/>
-      <!-- <CalculateForm/> -->
       <SlideWays/>
       <Team/>
       <CountryGif/>
@@ -13,18 +12,18 @@
     </main>
 
 
-    <!-- <div class="modal fade show" id="15popup" tabindex="-1" style="z-index: 9999999999;">
+    <div class="modal fade show" id="15popup" tabindex="-1" style="z-index: 9999999999;">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <a href="" class="bi bi-x-lg text-dark position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
           <div class="modal-body p-0 border-0 bg-transparent">
             <div class="modal-video-inner bg-transparent p-0">
-              <img src="/image/global/15yilliktecrube.jpg" alt="" class="d-flex justify-content-between">
+              <img src="/image/global/eksen.jpg" alt="" class="d-flex justify-content-between">
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
 </template>
 

@@ -7,25 +7,19 @@
           <img src="/image/home/eksen_videoo2.jpg" alt="Eksen Video" class="col-lg-10 m-lg-auto">
         </div>
         <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2 text-center text-lg-start">
-
-          <!-- <Title class="pb-4"
-                 title='Karayolu taşımacılığında çözüm ortağı'
-                 subtitle='size özel'
-                 paragraph='
-                  Eksen, 2005 yılından bu yana karayolu taşımacılığında çözüm ortağı olmaya devam ediyor.
-                  Uzman kadromuzla, etkin çözümlerimizle ve çalışma prensiplerimizle Eksen Lojistik olarak karayolu taşımacılığı ile siz değerli müşterilerimizin yanındayız.
-                '/> -->
-
-                <div class="globals-title pb-4">
-                  <span class="text-uppercase fs-6">size özel</span>
-                  <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold ">Karayolu taşımacılığında <br> çözüm ortağı</h1>
-                  <p class="fs-09 col-lg-9"> Eksen, 2005 yılından bu yana karayolu taşımacılığında çözüm ortağı olmaya devam ediyor.
-                  Uzman kadromuzla, etkin çözümlerimizle ve çalışma prensiplerimizle Eksen Lojistik olarak karayolu taşımacılığı ile siz değerli müşterilerimizin yanındayız. </p>
-              </div>
+          <div class="globals-title pb-4">
+            <span class="text-uppercase fs-6">size özel</span>
+            <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold ">Karayolu taşımacılığında <br> çözüm ortağı</h1>
+            <p class="fs-09 col-lg-9"> Eksen, 2005 yılından bu yana karayolu taşımacılığında çözüm ortağı olmaya devam
+              ediyor. Uzman kadromuzla, etkin çözüm ve çalışma prensiplerimizle Eksen Lojistik olarak karayolu
+              taşımacılığı ile siz değerli müşterilerimizin yanındayız. </p>
+          </div>
 
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
 
-            <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">daha fazla</router-link>
+            <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">
+              daha fazla
+            </router-link>
           </div>
 
         </div>
@@ -33,7 +27,6 @@
     </div>
 
     <!-- Modal Solutions -->
-
 
 
   </section>
@@ -52,7 +45,7 @@ export default {
 .globals-title {
   span {
     color: #3175f3;
-    text-transform: uppercase!important;
+    text-transform: uppercase !important;
     font-weight: 600;
   }
 }

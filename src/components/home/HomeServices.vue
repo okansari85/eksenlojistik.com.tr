@@ -5,9 +5,8 @@
             <div class="globals-title text-center pt-5 pb-3">
                 <span class="text-uppercase fs-6">neler yaparız?</span>
                 <h1 class="fs-1 text-capitalize pt-1 fw-semibold ">Hizmetlerimiz</h1>
-                <p class="fs-09 pb-4 pt-2"> 
-                    İster işi kazanmak için bir bütçe teklifine ihtiyacınız olsun, <br> ister yarın
-                    sevkiyata hazır olun, amacımız, ihtiyacınız olan fiyatı hızla aldığınızdan emin olmaktır.' </p>
+                <p class="fs-09 pb-4 pt-2">
+                  Eksen Lojistik, Türkiye ile Avrupa arasında 30 yılı aşkın bir süredir <br> en doğru ve hızlı şekilde faaliyet göstermektedir.</p>
             </div>
             <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero pb-5"
                 style="z-index: 555;">

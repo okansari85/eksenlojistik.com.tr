@@ -13,7 +13,7 @@
     </main>
 
 
-    <div class="modal fade show" id="15popup" tabindex="-1" style="z-index: 9999999999;">
+    <!-- <div class="modal fade show" id="15popup" tabindex="-1" style="z-index: 9999999999;">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <a href="" class="bi bi-x-lg text-dark position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 </template>
 
@@ -35,7 +35,6 @@ import Hero from "@/components/home/Hero";
 import HomeServices from "@/components/home/HomeServices";
 import Map from "@/components/home/Map";
 import Solutions from "@/components/home/Solutions";
-// import CalculateForm from "@/components/global/CalculateForm";
 import SlideWays from "@/components/home/SlideWays";
 import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";

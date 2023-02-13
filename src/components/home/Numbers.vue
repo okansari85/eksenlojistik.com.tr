@@ -9,13 +9,58 @@
           :loop="true"
           :breakpoints="swiperOptions.breakpoints"
       >
-        <swiper-slide v-for="(slide, idx) in slides" :key="idx" @click="ChangerMap(idx)">
+        <swiper-slide>
           <div class="swiper-slide-inner position-relative" style="cursor: pointer">
-            <img :src=slide.img1 alt="Slide Image"/>
+            <img src='/image/home/m1.jpg' alt="Slide Image"/>
             <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
-                <span class="fs-3 text-uppercase">{{slide.country}}</span>
+                <span class="fs-3 text-uppercase">{{ $t('home.polonya') }}</span>
                     <br />
-                </span>
+            </span>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper-slide-inner position-relative" style="cursor: pointer">
+            <img src='/image/home/m2.jpg' alt="Slide Image"/>
+            <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
+                <span class="fs-3 text-uppercase">{{ $t('home.cekya') }}</span>
+                    <br />
+            </span>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper-slide-inner position-relative" style="cursor: pointer">
+            <img src='/image/home/m3.jpg' alt="Slide Image"/>
+            <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
+                <span class="fs-3 text-uppercase">{{ $t('home.romanya') }}</span>
+                    <br />
+            </span>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper-slide-inner position-relative" style="cursor: pointer">
+            <img src='/image/home/m4.jpg' alt="Slide Image"/>
+            <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
+                <span class="fs-3 text-uppercase">{{ $t('home.slovakya') }}</span>
+                    <br />
+            </span>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper-slide-inner position-relative" style="cursor: pointer">
+            <img src='/image/home/m5.jpg' alt="Slide Image"/>
+            <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
+                <span class="fs-3 text-uppercase">{{ $t('home.macaristan') }}</span>
+                    <br />
+            </span>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper-slide-inner position-relative" style="cursor: pointer">
+            <img src='/image/home/m6.jpg' alt="Slide Image"/>
+            <span class='position-absolute bottom-0 start-50 translate-middle text-white  w-100 py-3 fw-bold countrytext'>
+                <span class="fs-3 text-uppercase">{{ $t('home.sirbistan') }}</span>
+                    <br />
+            </span>
           </div>
         </swiper-slide>
       </swiper>
@@ -33,34 +78,6 @@ export default {
   components: {Swiper, SwiperSlide  },
   data() {
     return {
-      slides: [
-        {
-          img1: ('./image/home/m1.jpg'),
-          country: "Sırbistan",
-        },
-        {
-          img1: ('/image/home/m2.jpg'),
-          country: "Romanya",
-        },
-        {
-          img1: ('/image/home/m3.jpg'),
-          country: "Çekya",
-        },
-        {
-          img1: ('/image/home/m4.jpg'),
-          country: "Polonya",
-        },
-        {
-          img1: ('/image/home/m5.jpg'),
-          country: "Macaristan",
-        },
-        {
-          img1: ('/image/home/m6.jpg'),
-          country: "Slovakya",
-        }
-
-      ],
-      ImgMaps:('/image/home/map.png'),
       swiperOptions: {
         breakpoints: {
           320: {

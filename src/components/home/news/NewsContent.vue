@@ -12,7 +12,7 @@
           <span class="text-decoration-underline text-uppercase">{{ tag2 }}</span>
           <h2 class="text-uppercase py-3 display-5 fw-bold">{{ textContent }}</h2>
           <span class="news1-date text-uppercase">{{ date }}</span>
-          <router-link :to="'/news-detail/'+slug" class="btn btn-main btn-main-news text-uppercase fs-07 px-4 d-block mt-4">Devamını Oku</router-link>
+          <router-link :to="'/haberler/haber-detay/'+slug" class="btn btn-main btn-main-news text-uppercase fs-07 px-4 d-block mt-4">Devamını Oku</router-link>
         </div>
       </div>
     </div>

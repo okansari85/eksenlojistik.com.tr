@@ -3,23 +3,46 @@
     <section class="home-services py-5" id="home-services">
         <div class="container py-md-5">
             <div class="globals-title text-center pt-5 pb-3">
-                <span class="text-uppercase fs-6">neler yaparız?</span>
-                <h1 class="fs-1 text-capitalize pt-1 fw-semibold ">Hizmetlerimiz</h1>
-                <p class="fs-09 pb-4 pt-2">
-                  Eksen Lojistik, Türkiye ile Avrupa arasında 30 yılı aşkın bir süredir <br> en doğru ve hızlı şekilde faaliyet göstermektedir.</p>
+                <span class="text-uppercase fs-6">{{ $t('home.ne-yapariz') }}</span>
+                <h1 class="fs-1 text-capitalize pt-1 fw-semibold ">{{ $t('home.hizmetlerimiz') }}</h1>
+                <p class="fs-09 pb-4 pt-2" v-html="$t('home.hizmetler1')">
+                     </p>
             </div>
             <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero pb-5"
                 style="z-index: 555;">
 
-                <div class="col-6 col-lg-3 py-md-3 text-center hero-item" v-for="(item, index) in heroData" :key="index">
-                    <!-- <router-link to="/services"> -->
-                        <div class="hero-item-image position-relative">
-                            <img :src="item.image" alt="Services Item" class="w-100" />
-                        </div>
-                        <div class="text-capitalize fw-bold mt-3 hero-item-description">
-                            <h3 class="fw-500 fs-6">{{ item.title }} <br> {{ item.subtitle }} </h3>
-                        </div>
-                    <!-- </router-link> -->
+                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                    <div class="hero-item-image position-relative">
+                        <img src="/image/home/services/karayolu.png" alt="Services Item" class="w-100" />
+                    </div>
+                    <div class="text-capitalize fw-bold mt-3 hero-item-description">
+                        <h3 class="fw-500 fs-6" v-html="$t('home.karayolu-tas')"></h3>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                    <div class="hero-item-image position-relative">
+                        <img src="/image/home/services/gumrukleme.png" alt="Services Item" class="w-100" />
+                    </div>
+                    <div class="text-capitalize fw-bold mt-3 hero-item-description">
+                        <h3 class="fw-500 fs-6" v-html="$t('home.gumrukleme')"></h3>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                    <div class="hero-item-image position-relative">
+                        <img src="/image/home/services/depolama.png" alt="Services Item" class="w-100" />
+                    </div>
+                    <div class="text-capitalize fw-bold mt-3 hero-item-description">
+                        <h3 class="fw-500 fs-6" v-html="$t('home.depolama')"></h3>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                    <div class="hero-item-image position-relative">
+                        <img src="/image/home/services/minivan.png" alt="Services Item" class="w-100" />
+                    </div>
+                    <div class="text-capitalize fw-bold mt-3 hero-item-description">
+                        <h3 class="fw-500 fs-6" v-html="$t('home.minivan')"></h3>
+                    </div>
                 </div>
 
             </div>
@@ -40,32 +63,6 @@ import Title from '@/components/global/Title.vue'
 
 export default {
     components: { Title },
-    data() {
-        return {
-            heroData: [
-                {
-                    title: 'Karayolu',
-                    subtitle: 'taşımacılığı',
-                    image: '/image/home/services/karayolu.png',
-                },
-                {
-                    title: 'Gümrükleme',
-                    subtitle: 'hizmeti',
-                    image: '/image/home/services/gumrukleme.png',
-                },
-                {
-                    title: 'Depolama',
-                    subtitle: 'hizmeti',
-                    image: '/image/home/services/depolama.png',
-                },
-                {
-                    title: 'Minivan',
-                    subtitle: 'taşımacılık',
-                    image: '/image/home/services/minivan.png',
-                },
-            ],
-        }
-    }
 }
 
 </script>

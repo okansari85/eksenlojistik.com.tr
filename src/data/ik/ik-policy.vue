@@ -1,33 +1,20 @@
 <template>
     <div class="row ik-policy justify-content-between">
         <div class="col-lg-6">
-            <h2 class="mb-4">İK Politikası</h2>
-            <p>
-                Din, dil, ırk,  engelli ayırımı gözetmeksizin doğru insanların istihdamını sağlamak, çalışanlarının memnuniyetini yükseltmek, kuruma bağlılıklarını ve verimliliğini arttırmak, kendilerini geliştirmelerine olanak sağlayacak bir ortam yaratarak karar oluşumuna katılımını sağlamak.
-            </p>
-            <p>
-                Eksen Lojistik  olarak çalışanlarımızı şirketin en değerli kaynağı olarak görüyoruz. Hızla büyüyen, değişime ve öğrenmeye açık olan şirketimizde, çalışanlarımızın gelişimini sağlamak amacıyla birçok faaliyet gerçekleştiriyoruz.
-            </p>
-            <p>
-                Eksen Lojistik olarak amacımız;
-            </p>
-            <p style="color:#e53a40 !important; font-weight: bold;">
-                Bize başvuran adaylar için;
-            </p>
+            <h2 class="mb-4">{{ $t('hr.ik-h2') }}</h2>
+            <p>{{ $t('hr.ik-p1') }}</p>
+            <p>{{ $t('hr.ik-p2') }}</p>
+            <p>{{ $t('hr.ik-p3') }}</p>
+            <p style="color:#e53a40 !important; font-weight: bold;">{{ $t('hr.ik-p4-red1') }}</p>
             <ul>
-                <li>
-                    Kendilerine en uygun olan ve kendilerinden en yüksek verim alacağımız görevler ile buluşturmak,
-
-                </li>
+                <li>{{ $t('hr.ik-ul1') }}</li>
             </ul>
-            <p class="pt-4" style="color:#e53a40 !important; font-weight: bold;">
-                Çalışanlarımız için ise;
-            </p>
+            <p class="pt-4" style="color:#e53a40 !important; font-weight: bold;">{{ $t('hr.ik-p5-red2') }}</p>
             <ul>
-                <li>Memnuniyetlerini yükseltmek,</li>
-                <li>Kuruma bağlılıklarını artırmak,</li>
-                <li>Verimliliklerini artırmak,</li>
-                <li>Kendilerini geliştirmeleri için tüm olanakları sağlamak ,</li>
+                <li>{{ $t('hr.ik-ul2') }}</li>
+                <li>{{ $t('hr.ik-ul3') }}</li>
+                <li>{{ $t('hr.ik-ul4') }}</li>
+                <li>{{ $t('hr.ik-ul5') }}</li>
             </ul>
         </div>
         <div class="col-lg-5 pt-4 pt-lg-0">

@@ -39,7 +39,7 @@
           />
           </div>
           <div class="my-5 pt-3 text-center text-lg-start">
-            <router-link to="/news" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
+            <router-link to="/haberler" class="btn btn-main w-50 fs-08">tümünü gör</router-link>
           </div>
         </div>
         <div class="col-lg-6 px-4 px-lg-0">

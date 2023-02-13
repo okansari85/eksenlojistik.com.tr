@@ -23,13 +23,13 @@
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4 column-2 pt-3 pt-lg-0">
                     <div class="footer-widget">
-                        <h4 class="fw-title">Linkler</h4>
+                        <h4 class="fw-title">{{ $t('footer.linkler') }}</h4>
                         <ul class="footer-link">
-                            <li><router-link to="/services">Hizmetler</router-link></li>
-                            <li><router-link to="/about">Kurumsal</router-link></li>
-                            <li><router-link to="/news">Haberler</router-link></li>
-                            <li><router-link to="/ik">IK</router-link></li>
-                            <li><router-link to="/contact">İletişim</router-link></li>
+                            <li><router-link to="/hizmetler">{{ $t('menu.hizmetler') }}</router-link></li>
+                            <li><router-link to="/hakkimizda">{{ $t('menu.kurumsal') }}</router-link></li>
+                            <li><router-link to="/haberler">{{ $t('menu.haberler') }}</router-link></li>
+                            <li><router-link to="/ik">{{ $t('menu.ik') }}</router-link></li>
+                            <li><router-link to="/iletisim">{{ $t('menu.iletisim') }}</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -37,19 +37,19 @@
                     <div class="footer-widget">
                         <h4 class="fw-title">KVKK</h4>
                         <ul class="footer-link">
-                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar">Şartlar ve Koşullar</a></li>
-                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari">Yasal Uyarı</a></li>
-                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi">Veri Gizliliği</a></li>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar">{{ $t('footer.sartlar-kosullar') }}</a></li>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari">{{ $t('footer.yasal-uyari') }}</a></li>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi">{{ $t('footer.veri-gizliligi') }}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-4 pt-4 pt-md-0">
-                  <label For="" class="d-block text-white">Bültenimize kayıt olun</label>
+                  <label For="" class="d-block text-white">{{ $t('footer.bultene-kayit-ol') }}</label>
                   <div class="input-group mb-3 mt-2 text-white">
-                    <input type="text" class="form-control text-white bg-transparent shadow-none border border-light border-2" placeholder="E-mail Adresi">
-                    <button class="btn btn-outline-secondary bg-dark text-white border border-2 border-start-0" type="submit" id="button-addon2">Gönder</button>
+                    <input type="text" class="form-control text-white bg-transparent shadow-none border border-light border-2" :placeholder="$t('footer.e-mail-adress')">
+                    <button class="btn btn-outline-secondary bg-dark text-white border border-2 border-start-0" type="submit" id="button-addon2">{{ $t('footer.gonder') }}</button>
                   </div>
-                  <span class="fs-08 py-3 d-block">Bu formu göndererek şartlar ve koşullarımızı <a href="#!" class="text-decoration-underline fw-bold">kabul etmiş olursunuz</a></span>
+                  <span class="fs-08 py-3 d-block">{{ $t('footer.footer-sartlar') }}</span>
                 </div>
             </div>
         </div>

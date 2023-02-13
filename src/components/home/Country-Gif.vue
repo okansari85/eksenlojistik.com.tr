@@ -9,18 +9,15 @@
         <div class="col-lg-5 py-3 py-lg-0 paragraph-margin2 text-center text-lg-start">
 
           <div class="globals-title">
-            <span class="text-uppercase fs-6 sub-title">ülkeler</span>
-            <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold ">Dünyanın Dört Bir Yanına <span class="text-muted">En Hızlı</span>
-              Savkiyatı Yapıyoruz</h1>
-            <p class="fs-09">Yüksek sorumluluk anlayışıyla çalışan ekibimiz hem yüklerinizin en hızlı şekilde teslim
-              edilmesi, hem de karayolu nakliye sürecindeki oluşabilecek olumsuzluklara karşı mücadele vermektedir.</p>
+            <span class="text-uppercase fs-6 sub-title">{{ $t('home.ulkeler') }}</span>
+            <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold" v-html="$t('home.ulkeler-h1')"></h1>
+            <p class="fs-09">{{ $t('home.ulkeler-p') }}</p>
           </div>
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center py-2">
             <a href="" class="news-2-link fw-500 text-decoration-underline text-dark text-uppercase"
                data-bs-toggle="modal" data-bs-target="#tanitimVideo">
-              tanıtım videosu
+              {{ $t('home.tanitim-videosu')  }}
             </a>
-            <!-- <router-link to="/news" class=""></router-link> -->
           </div>
 
         </div>
@@ -46,6 +43,10 @@
 
 
 </template>
+
+<script>
+
+</script>
 
 
 <style lang="scss" scope>

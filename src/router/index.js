@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index'
 
+
 const routes = [
   {
     path: '/',
@@ -8,33 +9,28 @@ const routes = [
     component: Index,
   },
   {
-    path: '/services2/:slug?',
-    name: 'services2',
-    component: () => import('@/views/Services2'),
-  },
-  {
-    path: '/about/:slug?',
-    name: 'about',
+    path: '/hakkimizda/:slug?',
+    name: 'hakkimizda',
     component: () => import('@/views/About.vue'),
   },
   {
-    path: '/news',
-    name: 'news',
+    path: '/haberler',
+    name: 'haberler',
     component: () => import('@/views/News'),
   },
   {
-    path: '/news/news-detail/:slug?',
+    path: '/haberler/haber-detay/:slug?',
     name: 'news-detail',
     component: () => import('@/views/NewsDetail'),
   },
   {
-    path: '/services',
-    name: 'services',
+    path: '/hizmetler',
+    name: 'hizmetler',
     component: () => import('@/views/Services'),
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: '/iletisim',
+    name: 'iletisim',
     component: () => import('@/views/Contact'),
   },
   {
@@ -44,10 +40,14 @@ const routes = [
   },
 ]
 
+
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+
 
 export default router;
 

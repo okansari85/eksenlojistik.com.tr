@@ -2,18 +2,14 @@
 
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <h5 class="fs-3 fw-500">Dürüstlük</h5>
+      <h5 class="fs-3 fw-500">{{ $t('hr.ik-durustluk') }}</h5>
       <p class="py-3">
-        Eksen Lojistik, tüm faaliyetlerinde doğruluk, şeffaflık ve yüksek iş ahlakı değerlerini her şeyin üzerinde
-        görür; birlikte iş yaptığı tüm taraflarımızdan aynı değerlere uygun olarak hareket etmelerini bekleriz.
+        {{ $t('hr.ik-durustluk-p') }}
       </p>
 
-      <h5 class="fs-3 fw-500">Gizlilik</h5>
+      <h5 class="fs-3 fw-500">{{ $t('hr.ik-gizlilik') }}</h5>
       <p class="py-3">
-        Eksen Lojistik’e ve tüm paydaşlarına ait bilgilerin korunmasına özen gösteririz. Bu bilgileri sadece belirlenmiş
-        olan yetkiler dahilinde ilgili kişilerle paylaşırız. <br>
-        İnsan Hakları – Fırsat Eşitliği: Hiçbir hal ve koşulda, kişilerin etnik kökenine, cinsiyetine, rengine, ırkına,
-        milliyetine, ekonomik durumuna, dinine ve diğer inanışlarına bağlı olarak ayrımcılık yapmayız.
+        {{ $t('hr.ik-gizlilik-p') }}
       </p>
     </div>
     

@@ -27,8 +27,6 @@
         </div>
       </section>
 
-      <Blog/>
-
     </main>
   </div>
 
@@ -42,13 +40,12 @@ import AboutContent from "@/data/about-us/about";
 import AboutMission from "@/data/about-us/about-mission";
 import AboutTeam from "@/data/about-us/about-team";
 import AboutSustainability from "@/data/about-us/about-sustainability";
-import Blog from "@/components/global/Blog";
 
 
 
 export default {
   name: 'About2',
-  components: {HeroImage, Title, AboutContent, AboutMission, AboutTeam, AboutSustainability, Blog},
+  components: {HeroImage, Title, AboutContent, AboutMission, AboutTeam, AboutSustainability},
   data() {
     return {
       navsItem: [

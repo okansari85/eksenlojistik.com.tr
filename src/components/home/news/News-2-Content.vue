@@ -6,7 +6,7 @@
             <div class="news-2-date py-2"><span class="text-muted fs-08"> {{ item.date }}</span></div>
             <h6 class="news-2-title fw-bold"> {{ item.title }} </h6>
             <p class="news-2-description py-3 col-11 fs-09">{{ item.description }}</p>
-            <router-link to="/news" class="news-2-link fw-500 text-decoration-underline text-dark">Devamını Oku</router-link>
+            <router-link to="/haberler" class="news-2-link fw-500 text-decoration-underline text-dark">Devamını Oku</router-link>
         </div>
 
     </div>

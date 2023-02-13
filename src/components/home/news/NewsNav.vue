@@ -14,7 +14,7 @@
             <span class="text-decoration-underline text-uppercase">{{ tag2 }}</span>
           </div>
           <div class="mobile-detail-btn d-lg-none position-relative" style="z-index: 33333;">
-            <router-link :to="'/news-detail/'+slug" class="btn btn-mobile btn-sm text-uppercase fs-07 d-block">Devamını Oku</router-link>
+            <router-link :to="'/haberler/haber-detay/'+slug" class="btn btn-mobile btn-sm text-uppercase fs-07 d-block">Devamını Oku</router-link>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default {
   mounted() {
     const selectorA  = document.querySelector(".mobile-detail-btn");
     selectorA.addEventListener("click", function () { 
-      window.location.href = '/news-detail/'+this.slug;
+      window.location.href = '/haberler/haber-detay/'+this.slug;
      })
   }
 }

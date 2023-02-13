@@ -1,22 +1,19 @@
-import { createI18n } from 'vue-i18n/index'
+import { createI18n } from 'vue-i18n'
+import en from './locales/en.json'
+import tr from './locales/tr.json'
 
-
-function loadLocaleMessages() {
-    const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
-    const messages = {}
-    locales.keys().forEach(key => {
-        const matched = key.match(/([A-Za-z0-9-_]+)\./i)
-        if (matched && matched.length > 1) {
-            const locale = matched[1]
-            messages[locale] = locales(key).default
-        }
-    })
-    return messages
+const messages = {
+    en: en,
+    tr: tr,
 }
 
-export default createI18n({
-    legacy: false,
-    locale: 'en',
-    fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
-    messages: loadLocaleMessages()
-})
+const i18n = createI18n({
+    locale: 'tr', // set locale
+    fallbackLocale: 'tr', // set fallback locale
+    messages, // set locale messages
+});
+
+
+
+export default i18n
+

@@ -7,7 +7,7 @@
         <div class="container main-footer">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-white pb-5">Ofislerimiz</h2>
+              <h2 class="text-white pb-5">{{ $t('ofislerimiz') }}</h2>
             </div>
             <div class="col-md-6 col-lg-4 office">
               <h3 class="col-md-10">EKSEN ULUSLARARASI LOJ.VE TAŞ.HİZ. İÇ.VE DIŞ TİC.LTD.ŞTİ.</h3>

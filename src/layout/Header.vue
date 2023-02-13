@@ -5,25 +5,28 @@
         <router-link to="/" class="navbar-brand">
           <img src="/image/global/eksen-01.svg" alt="Eksen Logo" style="width: 260px;">
         </router-link>
-        <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end px-lg-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Anasayfa</router-link>
+              <router-link to="/" class="nav-link">{{ $t('menu.anasayfa') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">Kurumsal</router-link>
+              <router-link to="/hakkimizda" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/services" class="nav-link">Hizmetler</router-link>
+              <router-link to="/hizmetler" class="nav-link">{{ $t('menu.hizmetler') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/news" class="nav-link">Haberler</router-link>
+              <router-link to="/haberler" class="nav-link">{{ $t('menu.haberler') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/ik" class="nav-link">IK</router-link>
+              <router-link to="/ik" class="nav-link">{{ $t('menu.ik') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link">İletişim</router-link>
+              <router-link to="/iletisim" class="nav-link">{{ $t('menu.iletisim') }}</router-link>
+            </li>
+            <li class="nav-item ps-xl-5">
+                <a href="#" class="text-white nav-link" @click.prevent="toggleLanguage">{{  selectedLanguage === 'tr' ? 'TR' : 'EN'  }}</a>
             </li>
             <li class="dot"></li>
           </ul>
@@ -45,22 +48,25 @@
             <nav>
               <ul>
                 <li>
-                  <router-link to="/" aria-current="page" class="mobile-nav-item">Anasayfa</router-link>
+                  <router-link to="/" aria-current="page" class="mobile-nav-item">{{ $t('menu.anasayfa') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/services" class="mobile-nav-item services-menu-item">Hizmetler</router-link>
+                  <router-link to="/hizmetler" class="mobile-nav-item services-menu-item">{{ $t('menu.hizmetler') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/about" class="mobile-nav-item">Kurumsal</router-link>
+                  <router-link to="/hakkimizda" class="mobile-nav-item">{{ $t('menu.kurumsal') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/news" class="mobile-nav-item">Haberler</router-link>
+                  <router-link to="/haberler" class="mobile-nav-item">{{ $t('menu.haberler') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/ik" class="mobile-nav-item">IK</router-link>
+                  <router-link to="/ik" class="mobile-nav-item">{{ $t('menu.ik') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/contact" class="mobile-nav-item">İletişim</router-link>
+                  <router-link to="/iletisim" class="mobile-nav-item">{{ $t('menu.iletisim') }}</router-link>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="text-white nav-link" @click.prevent="toggleLanguage">{{  selectedLanguage === 'tr' ? 'TR' : 'EN'  }}</a>
                 </li>
               </ul>
             </nav>
@@ -76,7 +82,6 @@
 export default {
   name: 'Nav',
   mounted() {
-    // window.scrollTo(0, 0);
     $(".mobile-nav-item").click(function () {
       $(".toggle-btn__cross").click();
     });
@@ -85,23 +90,56 @@ export default {
       $(this).addClass("active");
     });
     const header = $(".header");
-      $(window).scroll(function (e) {
+    $(window).scroll(function (e) {
+      header.removeClass("header-inactive");
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > 34) {
+        header.addClass("header-inactive");
+        $(".header .navbar-brand img").attr("src", "/image/global/eksen2-01.svg");
+      } else {
         header.removeClass("header-inactive");
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > 34) {
-          header.addClass("header-inactive");
-          $(".header .navbar-brand img").attr("src", "/image/global/eksen2-01.svg");
-        }
-        else {
-          header.removeClass("header-inactive");
-          $(".header .navbar-brand img").attr("src", "/image/global/eksen-01.svg");
-        }
-      });
+        $(".header .navbar-brand img").attr("src", "/image/global/eksen-01.svg");
+      }
+    });
+    // i18n add localstroge
+    if (localStorage.getItem("lang") === "en") {
+      this.selectedLanguage = "en";
+    } else {
+      this.selectedLanguage = "tr";
+    }
+    this.$i18n.locale = this.selectedLanguage;
+    // i18n add localstroge
+
   },
+
+  data() {
+    return {
+      selectedLanguage: 'tr',
+    };
+  },
+  methods: {
+    toggleLanguage() {
+      this.selectedLanguage = this.selectedLanguage === 'en' ? 'tr' : 'en';
+      this.$i18n.locale = this.selectedLanguage;
+      localStorage.setItem("lang", this.selectedLanguage);
+    },
+  },
+
+  created() {
+    this.$i18n.locale = this.selectedLanguage;
+  },
+
+  watch: {
+    selectedLanguage(newLanguage) {
+      this.$i18n.locale = newLanguage;
+    },
+  },
+
 }
 
-</script>
 
+
+</script>
 
 <style scoped lang="scss">
 header {

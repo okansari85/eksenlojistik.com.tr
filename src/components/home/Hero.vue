@@ -3,16 +3,16 @@
     <div class="overlay"></div>
     <video src="/image/video/Ust2.mp4" class="vh-100  w-100" style="object-fit: cover" autoplay loop
            muted></video>
-    <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
-        <span>en hızlı</span>
-        <h1 class="display-1 text-white">Lojistik <br> <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;">Çözümleri</div></h1>
+        <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
+        <span>{{ $t('home.enhizli') }}</span>
+        <h1 class="display-1 text-white">{{ $t('home.log') }} <br> 
+            <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;" v-if="$i18n.locale === 'tr'">Çözümleri</div>
+            <div class="text-white display-1 text-capitalize" style="height: 75px;" v-else>Solutions</div>
+        </h1>
         <p class="description col-lg-4 text-white py-3 py-md-5 fs-6">
-          Eksen Lojistik eksiksiz, uçtan uca bir ulaşım hizmeti sağlayıcısıdır. Tüm sektörlerde, tüm ulaşım modlarıyla dünyanın birçok noktasına lojistik hizmeti sağlıyoruz.
+          {{ $t('home.log-cozum-p') }}
         </p>
-      <!-- <a data-bs-toggle="modal" data-bs-target="#heroVideos" class="playBtn" style="cursor: pointer; z-index: 200000;">
-          <img src="/image/home/k2.png" alt="" width="60" height="auto"  class="mt-4">
-          </a> -->
-      
+
     </div>
     <a class="wrapper-down-icon" href="#home-services">
         <div class="circle">
@@ -51,45 +51,33 @@
 
 <script>
 
-export default {
-  mounted() {
-    document.addEventListener('DOMContentLoaded', function(){
-    Typed.new('#typed', {
-      strings: ["Hizmetleri", "Desteği", "Çözümleri"],
-      stringsElement: null,
-      // typing speed
-      typeSpeed: 60,
-      // time before typing starts
-      startDelay: 600,
-      // backspacing speed
-      backSpeed: 20,
-      // time before backspacing
-      backDelay: 500,
-      // loop
-      loop: true,
-      // false = infinite
-      loopCount: 5,
-      // show cursor
-      showCursor: false,
-      // character for cursor
-      cursorChar: "|",
-      // attribute to type (null == text)
-      attr: null,
-      // either html or text
-      contentType: 'html',
-    });
-});
-  }
-}
+import Typed from 'typed.js';
 
+export default {
+    watch: {
+      $i18n: {
+        handler() {
+          this.$nextTick(() => {
+            const typed = new Typed('#typed', {
+              strings: [this.$t('home.hero-strings'), this.$t('home.hero-strings2'), this.$t('home.hero-strings3')],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                showCursor: false,
+                cursorChar: "|",
+            });
+          });
+        },
+        immediate: true,
+      },
+    },
+
+}
 
 </script>
 
 
-
 <style scoped lang="scss">
-
-
 .hero {
   position: relative;
   .overlay {
@@ -116,7 +104,5 @@ export default {
   }
 
 }
-
-
 
 </style>

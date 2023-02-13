@@ -7,8 +7,8 @@
       <div class="services-banner-content">
         <div class="container">
           <div class="row">
-            <span class="text-uppercase">eksen lojistik</span>
-            <h1 class="display-6 fw-semibold text-white">Hizmetlerimiz</h1>
+            <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
+            <h1 class="display-6 fw-semibold text-white">{{ $t('menu.hizmetler')}}</h1>
           </div>
         </div>
       </div>
@@ -20,30 +20,23 @@
         <div class="row justify-content-between py-5 px-3 px-lg-0">
           <div class="col-lg-5 order-2 order-lg-1 pt-4">
             <div class="pb-3">
-              <h2 class="custom-sub-title pb-2">karayolu taşımacılığı</h2>
+              <h2 class="custom-sub-title pb-2">{{ $t('services.karayolu-tasimaciligi') }}</h2>
               <div class="description col-lg-11">
                 <p>
-                  Tümü EURO 5 ve EURO 6 standartlarında çekicilerden oluşan geniş ve çevreci özmal filosuyla farklı
-                  nitelikteki (tenteli/ havuzlu / minivan / sal kasa ) araçlarımız ile %100 müşteri memnuniyeti ve esnek
-                  fiyatlar ile kusursuz bir karayolu taşımacılığı hizmeti sunuyoruz.
+                  {{ $t('services.hizmetler-karayolu-p1') }}
                 </p>
                 <p>
-                  Kısa transit süreleri belirleyerek güzergah oluşturup hızlı ve akılcı çözümler ile müşterilerimize en
-                  iyi hizmet kalitesini veriyoruz.
+                  {{ $t('services.hizmetler-karayolu-p2') }}
                 </p>
               </div>
               <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video d-lg-none" loop muted
                      autoplay></video>
             </div>
             <div>
-              <h2 class="custom-sub-title pb-2">gümrükleme</h2>
+              <h2 class="custom-sub-title pb-2">{{ $t('services.gumrukleme') }}</h2>
               <div class="description col-lg-11">
                 <p>
-                  Kuruluşumuzdan bu yana, müşterilerimizin isteği doğrultusunda ,hızlı işlem ve güvenilir takip amacıyla
-                  hizmet verdiğimiz tüm ülkelerde gümrükleme çözümleri sunan iş ortaklarımız, müşterilerinin gümrükleme
-                  işlemlerine dair yasal yükümlülüklerini onlar adına tam ve eksiksiz yerine getirerek, ithalat ve
-                  ihracat işlemlerini standartlaştırılmış süreçler ve uzman kadrosuyla en hızlı ve güvenilir hizmeti
-                  sunmaktadır.
+                  {{ $t('services.gumrukleme-p') }}
                 </p>
               </div>
             </div>
@@ -73,20 +66,13 @@
           </div>
           <div class="col-lg-5 pt-3 pt-lg-0">
             <div class="pb-3">
-              <h2 class="custom-sub-title pb-2 fw-bold">Depolama Hizmeti</h2>
+              <h2 class="custom-sub-title pb-2 fw-bold">{{ $t('services.depolama-hizmeti')}}</h2>
               <div class="description col-lg-11">
                 <p>
-                  Eksen Lojistik olarak, gümrüksüz, sahamızda müşteriye özel lojistik alanı ve aktarma araçlarımız ile
-                  çok yönlü ve entegre depolama hizmetleri veriyoruz. Ürünün depoya ilk girişinden sevkiyata kadar olan
-                  tüm aşamaların elektronik ortamda takip edilmesi ve ürünlerin özelliklerine göre uygun koşullarda
-                  depolanmasını sağlıyoruz.
-
+                  {{ $t('services.depolama-hizmeti-p-1') }}
                 </p>
                 <p>
-                  Müşterilerimizin ihtiyaçlarına göre özelleştirilmiş otomatik çözümler ille yüksek hizmet kalitesini
-                  sunmak amacımızdır. Depomuzda bulunan online izleme ve takip sistemi sayesinde tüm bilgilere erişim
-                  sağlayabiliyorsunuz. Hasarlı-kayıp malzemeler için prosedürler, raporlamalar, bloke işlemleri yine
-                  profesyonel olarak tutulmaktadır.
+                  {{ $t('services.depolama-hizmeti-p-2') }}
                 </p>
               </div>
             </div>
@@ -96,21 +82,16 @@
     </section>
 
     <section class="services-safely min-vh-100 vh-100 "
-             style="
-      background-image: url(/image/services/safely-servicesss.png);
-      "
-    >
+             style="background-image: url(/image/services/safely-servicesss.png);">
       <div class="container h-100">
         <div class="row h-100 align-items-center px-3 px-lg-0">
           <div class="col-md-6"></div>
           <div class="col-lg-5 offset-md-1">
             <div class="pb-3">
-              <h2 class="display-4 fw-500 pb-2 lh-1 text-white">Güvenilir ve Hızlı Sevkiyat</h2>
+              <h2 class="display-4 fw-500 pb-2 lh-1 text-white">{{ $t('services.guvenilir-hizli') }}</h2>
               <div class="description col-lg-11 py-3 text-white">
                 <p class="text-white">
-                  Uluslararası karayolu taşımacılığında çözüm odaklı yaklaşımımız, uzman kadromuz, etkin çözümlerimiz,
-                  çalışma prensiplerimiz,operasyon deneyimimiz ve sınırsız desteğimizle her zaman siz değerli
-                  müşterilerimizin yanındayız.
+                  {{ $t('services.guvenilir-hizli-p') }}
                 </p>
               </div>
             </div>
@@ -124,12 +105,11 @@
         <div class="row pt-lg-5">
           <div class="col-12 text-center">
             <div class="custom-sub-title-span">
-              <span>eksen lojistik</span>
+              <span>{{ $t('services.eksen-logistic') }}</span>
             </div>
             <div>
-              <h2 class="display-4 fw-bold text-white">Alternatif Taşımacılık</h2>
-              <p class="pt-2">Belirli bir modele bağlı kalmadan sizin için sunduğumuz alternatif taşıma
-                yöntemlerinden faydalanın</p>
+              <h2 class="display-4 fw-bold text-white">{{ $t('services.alternatif-tasimacilik') }}</h2>
+              <p class="pt-2">{{ $t('services.alternatif-tasimacilik-altmetin') }}</p>
             </div>
           </div>
         </div>
@@ -137,20 +117,17 @@
         <div class="row justify-content-between py-5 px-4 px-lg-0">
           <div class="col-lg-5">
             <div class="col-sm-10">
-              <h5 class="custom-sub-title text-white">Minivan Taşımacılık</h5>
+              <h5 class="custom-sub-title text-white">{{ $t('services.alternatif-tasimacilik-h5-left') }}</h5>
               <p>
-                Tüm Avrupa ülkelerine daha hızlı Sevkiyat imkanı ile Avrupa’nın tüm bölgelerine en hızlı şekilde
-                teslimat yapmaktayız. Express taşıma hizmetimiz, müşterilerimize 1.3 ton ağırlığa kadar olan
-                taşımalarında kapıdan kapıya teslimat hizmeti sunmaktayız.
+                {{ $t('services.alternatif-tasimacilik-p-left') }}
               </p>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="col-sm-10">
-              <h5 class="custom-sub-title text-white">RULO SAC TAŞIMACILIK</h5>
+              <h5 class="custom-sub-title text-white">{{ $t('services.alternatif-tasimacilik-h5-right') }}</h5>
               <p>
-                Filomuzda bulunan; özel olarak tasarlanmis rulo havuzlu ve özel ekipmanli dorseleriyle, rulo sac
-                malzemelerinizin en güvenli sekilde musterilerimize teslim etmekteyiz..
+                {{ $t('services.alternatif-tasimacilik-p-right') }}
               </p>
             </div>
 

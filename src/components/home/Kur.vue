@@ -5,7 +5,7 @@
       <div class="row justify-content-between">
           <div class="col-md-6" v-if="!sinir_errors" >
             <div class="card px-4 py-5 bg-white shadow border-0 text-center" style="height: 330px;">
-              <h5 class="fs-3 fw-500 text-capitalize">sınır kapıları yoğunluk durumu</h5>
+              <h5 class="fs-3 fw-500 text-capitalize">{{ $t('news.sinir-kapilari') }}</h5>
               <swiper
                   :modules="[Controller]"
                   @swiper="setControlledSwiper">
@@ -34,7 +34,7 @@
 
           <div class="col-md-6" v-else >
             <div class="card px-4 py-5 bg-white shadow border-0 text-center" style="height: 330px;">
-              <h5 class="fs-3 fw-500 text-capitalize">sınır kapıları yoğunluk durumu</h5>
+              <h5 class="fs-3 fw-500 text-capitalize">{{ $t('news.sinir-kapilari') }}</h5>
               <swiper
                   :modules="[Controller]"
                   @swiper="setControlledSwiper">
@@ -57,7 +57,7 @@
         <div class="row">
           <div class="col-12">
             <div class="kurlar-wrapper">
-              <h6 class="fw-500 fs-3 text-center mb-3">Döviz Kurları</h6>
+              <h6 class="fw-500 fs-3 text-center mb-3">{{ $t('news.doviz-kuru') }}</h6>
               <div class="row justify-content-between">
 
                 <div class="col-sm-6" v-for="(kur, index) in kurlar" :key="index">
@@ -78,7 +78,7 @@
         <div class="row">
           <div class="col-12">
             <div class="kurlar-wrapper">
-              <h6 class="fw-500 fs-3 text-center mb-3">Döviz Kurları</h6>
+              <h6 class="fw-500 fs-3 text-center mb-3">{{ $t('news.doviz-kuru') }}</h6>
               <div class="row justify-content-between">
                 Kur verileri şuan da görüntülenemiyor. Lütfen sayfayı yenileyiniz.
               </div>

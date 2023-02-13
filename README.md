@@ -1,4 +1,4 @@
-# logi_vue
+# Vue JS Logistic Project
 
 ## Project setup
 ```
@@ -14,6 +14,12 @@ npm run serve
 ```
 npm run build
 ```
+
+### SCSS and SASS start for watch
+```
+npm run watch
+```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

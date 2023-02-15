@@ -34,6 +34,7 @@
 import Blog from '@/components/global/Blog';
 import Socialbar from '@/components/global/Socialbar.vue';
 import newsItem from "@/data/news/news.json";
+import router from '@/router';
 import axios from "axios";
 
 export default {
@@ -48,24 +49,41 @@ export default {
       slug: this.$route.params.slug,
     }
   },
-  created() {
-    console.log(this.slug);
-    axios.get('http://eksenlojistik.com.tr/api/get-news/' + this.slug, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        console.log(response.data.news);
-        this.news = response.data.news;
-      })
-      .catch(error => {
-        console.log(error);
-      })
 
-  }
-}
+    created() {
+        this.fetchNews();
+      },
+      watch: {
+        '$i18n.locale': function (val) {
+          this.fetchNews();
+        }
+      },
+      methods: {
+        fetchNews() {
+          const url = `http://eksenlojistik.com.tr/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
+          axios.get(url, {
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            console.log(response.data.news);
+            this.news = response.data.news;
+          })
+          .catch(error => {
+            console.log(error);
+          })
+        }
+      },
+    }
+
+
+
+    // bunu yaptığım zaman select menüsünden dil seçimi yapınca news detail sayfasında dil ve url değişmiyor ama news sayfasında değişiyor. news detail sayfasında da değişmesi gerekiyor.
+
+    
+
 </script>
 
 <style scoped>

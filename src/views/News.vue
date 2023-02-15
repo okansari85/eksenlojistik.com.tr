@@ -55,10 +55,12 @@ export default {
 
   methods: {
     getNewsItem() {
-      axios.get('http://eksenlojistik.com.tr/api/get-all-news')
+
+      if(this.$i18n.locale == 'tr') {
+
+        axios.get('http://eksenlojistik.com.tr/api/get-all-news/tr')
         .then(response => {
           this.newsItem = response.data.news;
-          console.log(this.newsItem)
         })
         .catch(() => {
           this.$swal({
@@ -68,12 +70,39 @@ export default {
             confirmButtonText: "Tamam",
           });
         })
-    }
+
+       } else {
+          
+          axios.get('http://eksenlojistik.com.tr/api/get-all-news/en')
+          .then(response => {
+            this.newsItem = response.data.news;
+          })
+          .catch(() => {
+            this.$swal({
+              title: "Error!",
+              text: "Something went wrong. Please try again later.",
+              icon: "error",
+              confirmButtonText: "OK",
+            });
+          })
+       }
+    },
   },
 
   mounted() {
     this.getNewsItem();
   },
+
+  watch: {
+    // selected language == true then get news
+    $i18n: {
+      handler() {
+        this.getNewsItem();
+      },
+      deep: true
+    } 
+  }
+
 }
 </script>
 

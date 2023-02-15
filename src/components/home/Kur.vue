@@ -59,14 +59,12 @@
             <div class="kurlar-wrapper">
               <h6 class="fw-500 fs-3 text-center mb-3">{{ $t('news.doviz-kuru') }}</h6>
               <div class="row justify-content-between">
-
                 <div class="col-sm-6" v-for="(kur, index) in kurlar" :key="index">
                   <div class="d-flex justify-content-between">
                     <span class="text-uppercase fw-500 me-md-3 col-8">{{ kur.kur_adi }}</span>
                     <span class="text-uppercase col-4"> {{ kur.kur_degeri }}</span>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -80,15 +78,13 @@
             <div class="kurlar-wrapper">
               <h6 class="fw-500 fs-3 text-center mb-3">{{ $t('news.doviz-kuru') }}</h6>
               <div class="row justify-content-between">
-                Kur verileri şuan da görüntülenemiyor. Lütfen sayfayı yenileyiniz.
+                {{ $t('news.kur-hata') }}
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
 
       </div>
     </div>
@@ -124,49 +120,45 @@ export default {
   },
   data() {
     return {
-
       kur_errors: false,
       sinir_errors: false,
       kurlar: null,
       sinirlar: null,
-
-
     };
   },
-
   methods: {
     getKur() {
-      axios.get("/api/get-kur")
-        .then(response => {
-          if(response.succeeded === true ) {
-            this.kurlar = response.kurlar;
+      axios.get("http://eksenlojistik.com.tr/api/get-kur")
+      .then((response) => {
+        if(response.data.succeeded == true ) {
+          this.kurlar = response.data.kurlar;
           } else {
             this.kur_errors = true;
           }
         })
-        .catch(error => {
+        .catch(() => {
           this.kur_errors = true;
         });
     },
 
     getSinir() {
-      axios.get("/api/get-sinir")
-        .then(response => {
-          if(response.succeeded === true ) {
-            this.sinirlar = response.sinir_datas;
+      axios.get("http://eksenlojistik.com.tr/api/get-sinir")
+        .then((response) => {
+          if(response.data.succeeded === true ) {
+            this.sinirlar = response.data.sinir_datas;
           } else {
             this.sinir_errors = true;
           }
         })
-        .catch(error => {
+        .catch(() => {
           this.sinir_errors = true;
         });
     },
 
   },
-
   mounted() {
     window.addEventListener("load", this.getKur);
+    window.addEventListener("load", this.getSinir);
   }
 }
 </script>

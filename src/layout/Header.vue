@@ -11,7 +11,7 @@
               <router-link to="/" class="nav-link">{{ $t('menu.anasayfa') }}</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/hakkimizda" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
+              <router-link to="/kurumsal" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/hizmetler" class="nav-link">{{ $t('menu.hizmetler') }}</router-link>
@@ -54,7 +54,7 @@
                   <router-link to="/hizmetler" class="mobile-nav-item services-menu-item">{{ $t('menu.hizmetler') }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/hakkimizda" class="mobile-nav-item">{{ $t('menu.kurumsal') }}</router-link>
+                  <router-link to="/kurumsal" class="mobile-nav-item">{{ $t('menu.kurumsal') }}</router-link>
                 </li>
                 <li>
                   <router-link to="/haberler" class="mobile-nav-item">{{ $t('menu.haberler') }}</router-link>

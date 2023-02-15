@@ -6,13 +6,12 @@
                 class="cookie-content d-flex flex-wrap px-3 justify-content-evenly align-items-center text-center text-lg-start">
 
                 <p class="m-0 py-2 fs-08">
-                    Yasal düzenlemelere uygun çerezler kullanıyoruz. Detaylı bilgi için Çerez (Cookie) Aydınlatma
-                    Metnimizi inceleyebilir, çerez izinlerinizi Çerez Ayarları üzerinden güncelleyebilirsiniz.
+                    {{ $t('cookie') }}
                 </p>
                 <div class="cookie-buttons py-2">
                     <button id="btn-cookie-accept"
                         class="cookie-button-accept btn py-2 fw-semibold rounded-0 fs-08 text-white"
-                        style="width: 170px; max-width:100%; background-color: #1d5699;">Kabul Et</button>
+                        style="width: 170px; max-width:100%; background-color: #1d5699;">{{ $t('cookiebutton') }}</button>
                 </div>
             </div>
         </div>

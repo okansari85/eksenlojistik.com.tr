@@ -16,22 +16,16 @@
     <section class="news-content">
       <div class="container py-5">
         <div class="row justify-content-between pt-4">
-            <router-link v-for="item in navsItem" :key="item.slug"
-                         :to="{ name: 'news-detail', params: { slug: item.slug } }"
-                         class="news-item col-md-6 col-lg-4 border-0 d-flex flex-column justify-content-between">
-              <div class="news-top">
-                <img :src="'/' + item.image_cover" :alt="item.title">
-              </div>
-              <div class="news-bottom pt-3 d-flex flex-column">
+            <router-link v-for="news in newsItem" :key="news.id" :to="{ name: 'haber-detay', params: { slug: news.slug } }" class="news-item col-md-6 col-lg-4 border-0 d-flex flex-column">
+              <div class="news-top"><img :src="'/' + news.image_cover" :alt="news.title" style="height:220px;"></div>
+              <div class="news-bottom pt-3">
                 <div class="news-item-text pb-3 col-11 col-md-10">
-                  <h6 class="news-item-text-title fw-500">{{ item.title }}</h6>
-                  <p class="news-item-paragraph fs-09" style="color:#767676;">
-                    <div v-html="item.content"></div>
-                  </p>
+                  <h6 class="news-item-text-title fw-500"><div v-html="news.title"></div></h6>
+                  <p class="news-item-paragraph fs-09" style="color:#767676;"><div v-html="news.content"></div></p>
                 </div>
               </div>
-              <router-link class="fs-09 fw-bold " style="text-transform:uppercase;" :to="{ name: 'news-detail', params: { slug: item.slug } }">Daha Fazlasını Oku</router-link>
-          </router-link>
+              <router-link class="fs-09 fw-bold text-uppercase justify-content-end" style="text-transform: uppercase!important;" :to="{ name: 'haber-detay', params: { slug: news.slug } }">{{$t('news.daha-fazla')}}</router-link>
+            </router-link>
         </div>
         <div class="cour-wrapper py-5">
           <Kur/>
@@ -46,45 +40,39 @@
 
 <script>
 
-import NewsAndAnnouncement from "@/data/news/news-and-announcement";
-import newsItem from "@/data/news/news.json";
 import Kur from "@/components/home/Kur";
 import Socialbar from "@/components/global/Socialbar.vue";
 import axios from "axios";
 
 export default {
   name: 'News',
-  components: {NewsAndAnnouncement, Kur, Socialbar},
+  components: {Kur, Socialbar},
   data() {
     return {
-        navsItem: null,
+      newsItem: [],
     }
   },
 
-  /*async asyncData({ $axios }) {
-    const response = await $axios.get('/api/get-all-news');
-    return {
-      navsItem: response.data.news,
+  methods: {
+    getNewsItem() {
+      axios.get('http://eksenlojistik.com.tr/api/get-all-news')
+        .then(response => {
+          this.newsItem = response.data.news;
+          console.log(this.newsItem)
+        })
+        .catch(() => {
+          this.$swal({
+            title: "Hata!",
+            text: "Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.",
+            icon: "error",
+            confirmButtonText: "Tamam",
+          });
+        })
     }
-  },*/
-
-  created() {
-    axios.get('/api/get-all-news')
-      .then(response => {
-        console.log(response.data.news);
-        this.navsItem = response.data.news;
-      })
-      .catch(() => {
-        this.$swal({
-          title: "Hata!",
-          text: "Bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.",
-          icon: "error",
-          confirmButtonText: "Tamam",
-        });
-      })
   },
+
   mounted() {
-    window.scrollTo(0, 0);
+    this.getNewsItem();
   },
 }
 </script>

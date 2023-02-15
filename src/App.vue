@@ -4,7 +4,7 @@
   <div v-if="$route.path.includes('/haberler/haber-detay/')">
    <Header2/>
  </div>
- <div>
+ <div v-else>
    <Header/>
  </div>
   <div class="content-wrapper">

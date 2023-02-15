@@ -17,11 +17,11 @@
       <div class="container py-5">
         <div class="row justify-content-between">
           <div class="col-md-6 news-detail-middle-text">
-            <h2 class="fs-5 fw-500">{{ news.subTitle }}</h2>
-            <div v-html="news.paragraph"></div> 
+            <h2 class="fs-5 fw-500">{{ news.top_title }}</h2>
+            <div v-html="news.content"></div>
           </div>
           <div class="col-md-5 news-detail-middle-image text-center">
-            <img :src="news.imgInner" alt="News Detail" style="height:500px; object-fit: cover;">
+            <img :src="'/' + news.image_side" alt="News Detail" style="height:500px; object-fit: cover;">
           </div>
         </div>
       </div>
@@ -34,6 +34,7 @@
 import Blog from '@/components/global/Blog';
 import Socialbar from '@/components/global/Socialbar.vue';
 import newsItem from "@/data/news/news.json";
+import axios from "axios";
 
 export default {
   name: "NewsDetail",
@@ -43,20 +44,27 @@ export default {
 },
   data() {
     return {
-      navsItem: newsItem.navItems,
-      news: []
+      news: {},
+      slug: this.$route.params.slug,
     }
   },
+  created() {
+    console.log(this.slug);
+    axios.get('http://eksenlojistik.com.tr/api/get-news/' + this.slug, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        console.log(response.data.news);
+        this.news = response.data.news;
+      })
+      .catch(error => {
+        console.log(error);
+      })
 
-  mounted() {
-   let slugParams = this.$route.params.slug
-    this.news = [
-      this.navsItem.filter(item => item.slug == slugParams)
-    ];
-    this.news = this.news[0][0];
-    window.scrollTo(0, 0);
-  },
- 
+  }
 }
 </script>
 

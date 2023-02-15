@@ -1,16 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index'
 
-
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'anasayfa',
     component: Index,
   },
   {
-    path: '/hakkimizda/:slug?',
-    name: 'hakkimizda',
+    path: '/services2/:slug?',
+    name: 'services2',
+    component: () => import('@/views/Services2'),
+  },
+  {
+    path: '/kurumsal',
+    name: 'kurumsal',
     component: () => import('@/views/About.vue'),
   },
   {
@@ -20,7 +24,7 @@ const routes = [
   },
   {
     path: '/haberler/haber-detay/:slug?',
-    name: 'news-detail',
+    name: 'haber-detay',
     component: () => import('@/views/NewsDetail'),
   },
   {
@@ -40,15 +44,16 @@ const routes = [
   },
 ]
 
-
-
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+  // page scrool always top 
+});
 
+router.beforeEach((to, from, next) => {
+    window.scrollTo(0, 0);
+    next();
+});
 
 
 export default router;
-
-

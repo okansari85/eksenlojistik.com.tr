@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "watch": ""
+    "watch": "sass --watch src/assets/scss/style.scss src/assets/css/style.css"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -26,8 +26,7 @@
     "vue": "^3.2.36",
     "vue-awesome-swiper": "^5.0.1",
     "vue-i18n": "^9.3.0-beta.16",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",

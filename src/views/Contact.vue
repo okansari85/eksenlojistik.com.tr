@@ -10,16 +10,16 @@
               <h2 class="text-white pb-5">{{ $t('ofislerimiz') }}</h2>
             </div>
             <div class="col-md-6 col-lg-4 office">
-              <h3 class="col-md-10">EKSEN ULUSLARARASI LOJ.VE TAŞ.HİZ. İÇ.VE DIŞ TİC.LTD.ŞTİ.</h3>
-              <p>Fulya Mahallesi, <br> Büyükdere Caddesi No.62 <br> Şişli - İstanbul </p>
+              <h3 class="col-md-10">{{ $t('contact-global') }}</h3>
+              <p v-html="$t('contact-address1')"></p>
               <p>Tel: +90 212 267 07 21<br>
                 info@eksenlojistik.com.tr</p>
               <a class="maps-btn" href="https://goo.gl/maps/kZnxnCXuX7jVFeGZ6" title="Google Maps" target="_blank"><i class="bi bi-geo-alt-fill pe-2 text-danger"></i>Google
                 Maps</a>
             </div>
             <div class="col-md-6 col-lg-4 office">
-              <h3>EKSEN DEPO</h3>
-                <p>Muratbey Merkez Mahallesi, <br> Fabrikalar Caddesi No.29 <br> Çatalca - İSTANBUL</p>
+              <h3>{{ $t('contact-depo') }}</h3>
+                <p v-html="$t('contact-address2')"></p>
               <p>Tel: +90 212 267 07 21<br>
                 info@eksenlojistik.com.tr</p>
                 <a class="maps-btn" href="https://goo.gl/maps/kiS6j1yeb5HXL8Lc7" title="Google Maps" target="_blank"><i class="bi bi-geo-alt-fill pe-2 text-danger"></i>Google

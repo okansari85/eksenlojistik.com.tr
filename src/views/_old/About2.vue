@@ -34,12 +34,12 @@
 </template>
 
 <script>
-import HeroImage from "@/components/global/HeroImage";
-import Title from "@/components/global/Title";
-import AboutContent from "@/data/about-us/about";
-import AboutMission from "@/data/about-us/about-mission";
-import AboutTeam from "@/data/about-us/about-team";
-import AboutSustainability from "@/data/about-us/about-sustainability";
+import HeroImage from "@/components/global/HeroImage.vue";
+import Title from "@/components/global/Title.vue";
+import AboutContent from "@/data/about-us/about.vue";
+import AboutMission from "@/data/about-us/about-mission.vue";
+import AboutTeam from "@/data/about-us/about-team.vue";
+import AboutSustainability from "@/data/about-us/about-sustainability.vue";
 
 
 

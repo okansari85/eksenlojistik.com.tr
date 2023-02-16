@@ -1,13 +1,12 @@
 <template>
-
   <main>
     <section class="news-news banner">
-        <img src="/image/services/news.jpg" alt="News Banner" style="filter:brightness(60%)">
+        <img src="/image/news/news-background.jpg" alt="News Banner" style="filter:brightness(60%)">
         <div class="services-banner-content">
             <div class="container">
-                <div class="row">
+                <div class="row title-animation">
                   <span class="text-uppercase fw-semibold">{{ $t('services.eksen-logistic') }}</span>
-                  <h1 class="display-6 fw-semibold text-white">{{ $t('menu.haberler') }}</h1>
+                  <h1 class="display-4 fw-600 text-white">{{ $t('menu.haberler') }}</h1>
                 </div>
             </div>
         </div>
@@ -18,10 +17,13 @@
         <div class="row justify-content-between pt-4">
             <router-link v-for="news in newsItem" :key="news.id" :to="{ name: 'haber-detay', params: { slug: news.slug } }" class="news-item col-md-6 col-lg-4 border-0 d-flex flex-column">
               <div class="news-top"><img :src="'/' + news.image_cover" :alt="news.title" style="height:220px;"></div>
+<!--              <div class="news-top"><img :src="news.image_cover" :alt="news.title" style="height:220px;"></div>-->
               <div class="news-bottom pt-3">
                 <div class="news-item-text pb-3 col-11 col-md-10">
-                  <h6 class="news-item-text-title fw-500"><div v-html="news.title"></div></h6>
-                  <p class="news-item-paragraph fs-09" style="color:#767676;"><div v-html="news.content"></div></p>
+                  <h6 class="news-item-text-title fw-500" style="color: #040c2c"><div v-html="news.title"></div></h6>
+                  <p class="news-item-paragraph fs-09" style="color:#8a8a8a;">
+                    <div v-html="news.content"></div>
+                  </p>
                 </div>
               </div>
               <router-link class="fs-09 fw-bold text-uppercase justify-content-end" style="text-transform: uppercase!important;" :to="{ name: 'haber-detay', params: { slug: news.slug } }">{{$t('news.daha-fazla')}}</router-link>
@@ -57,8 +59,8 @@ export default {
     getNewsItem() {
 
       if(this.$i18n.locale == 'tr') {
-
         axios.get('http://eksenlojistik.com.tr/api/get-all-news/tr')
+        // axios.get('http://127.0.0.1:8000/api/get-all-news')
         .then(response => {
           this.newsItem = response.data.news;
         })
@@ -94,7 +96,6 @@ export default {
   },
 
   watch: {
-    // selected language == true then get news
     $i18n: {
       handler() {
         this.getNewsItem();

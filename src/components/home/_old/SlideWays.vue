@@ -44,7 +44,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import {Navigation} from 'swiper'
-import SliderNavigation from "@/components/global/SliderNavigation";
+import SliderNavigation from "@/components/global/SliderNavigation.vue";
 
 export default {
   name: "HeroSlide1",

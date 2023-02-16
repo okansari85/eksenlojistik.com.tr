@@ -6,9 +6,9 @@
       <img src="/image/services/services-banner-1.png" alt="Services Banner">
       <div class="services-banner-content">
         <div class="container">
-          <div class="row">
+          <div class="row title-animation">
             <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
-            <h1 class="display-6 fw-semibold text-white">{{ $t('menu.hizmetler')}}</h1>
+            <h1 class="display-4 fw-600 text-white">{{ $t('menu.hizmetler')}}</h1>
           </div>
         </div>
       </div>

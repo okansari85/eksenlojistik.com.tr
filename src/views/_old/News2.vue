@@ -11,7 +11,6 @@
                 >
                 <b-card-text class="pb-5 px-3">
                   <!-- <component class="pt-3" :is="navs.content" :navs="navs"></component> -->
-                  
                 </b-card-text>
               </b-tab>
             </b-tabs>
@@ -31,8 +30,8 @@
 
 <script>
 
-import NewsAndAnnouncement from "@/data/news/news-and-announcement";
-import Kur from "@/components/home/Kur";
+import NewsAndAnnouncement from "@/data/news/news-and-announcement.vue";
+import Kur from "@/components/home/Kur.vue";
 import Socialbar from "@/components/global/Socialbar.vue";
 
 export default {

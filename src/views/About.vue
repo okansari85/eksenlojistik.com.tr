@@ -2,14 +2,13 @@
 
   <div>
     <main>
-
       <section class="about-banner banner">
         <img src="/image/about/about-new-banner-2.png" alt="About Banner">
         <div class="banner-content">
           <div class="container">
-            <div class="row">
-              <span class="text-uppercase">{{ $t('') }}</span>
-              <h1 class="display-6 fw-semibold text-white">{{ $t('menu.kurumsal') }}</h1>
+            <div class="row title-animation">
+              <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
+              <h1 class="display-4 fw-600 text-white">{{ $t('menu.kurumsal') }}</h1>
             </div>
           </div>
         </div>
@@ -38,7 +37,6 @@
           </div>
         </div>
       </section>
-
       <section class="quality-policy">
         <div class="container py-5">
           <div class="row justify-content-between align-items-center py-5 px-3 px-lg-0 position-relative">
@@ -63,7 +61,6 @@
           </div>
         </div>
       </section>
-
       <section class="about-middle-video pb-5">
         <div class="container">
           <div class="row">
@@ -75,7 +72,6 @@
 
         </div>
       </section>
-
       <section class="future position-relative">
         <div class="container pt-3 py-5">
           <div class="row justify-content-between py-5 px-4 px-lg-0">
@@ -99,8 +95,6 @@
           </div>
         </div>
       </section>
-
-
       <section class="sustainability pt-lg-5">
         <div class="container py-md-5">
           <div class="row py-md-5">

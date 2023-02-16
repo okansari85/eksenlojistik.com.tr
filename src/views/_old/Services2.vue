@@ -30,14 +30,14 @@
 
 <script>
 
-import Title from "@/components/global/Title";
-import HeroImage from "@/components/global/HeroImage";
-import ServicesCustom from "@/data/services/Services-Custom";
-import ServicesHighway from "@/data/services/Services-Highway";
-import ServicesStore from "@/data/services/Services-Store";
-import ServicesFTLandLTL from "@/data/services/Services-FTL-LTL";
-import ServicesMinivan from "@/data/services/Services-Minivan";
-import ServicesRulo from "@/data/services/Services-Rulo";
+import Title from "@/components/global/Title.vue";
+import HeroImage from "@/components/global/HeroImage.vue";
+import ServicesCustom from "@/data/services/Services-Custom.vue";
+import ServicesHighway from "@/data/services/Services-Highway.vue";
+import ServicesStore from "@/data/services/Services-Store.vue";
+import ServicesFTLandLTL from "@/data/services/Services-FTL-LTL.vue";
+import ServicesMinivan from "@/data/services/Services-Minivan.vue";
+import ServicesRulo from "@/data/services/Services-Rulo.vue";
 
 
 export default {

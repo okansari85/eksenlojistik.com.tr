@@ -4,7 +4,6 @@
       <HomeServices/>
       <Map/>
       <Solutions/>
-      <SlideWays/>
       <Team/>
       <CountryGif/>
       <Numbers/>
@@ -20,7 +19,6 @@ import Hero from "@/components/home/Hero";
 import HomeServices from "@/components/home/HomeServices";
 import Map from "@/components/home/Map";
 import Solutions from "@/components/home/Solutions";
-import SlideWays from "@/components/home/SlideWays";
 import Team from "@/components/home/Team";
 import Numbers from "@/components/home/Numbers";
 import SocialBar from "@/components/global/Socialbar.vue";
@@ -28,10 +26,9 @@ import CountryGif from "@/components/home/Country-Gif.vue";
 
 
 
-
 export default {
   name: 'Index',
-  components: {Hero, HomeServices, Map, Solutions, SlideWays, Team, Numbers, SocialBar, CountryGif},
+  components: {Hero, HomeServices, Map, Solutions, Team, Numbers, SocialBar, CountryGif},
 }
 </script>
 

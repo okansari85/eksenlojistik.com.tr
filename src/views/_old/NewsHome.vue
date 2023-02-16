@@ -75,8 +75,8 @@
 </template>
 
 <script>
-import NewsNav from "@/components/home/news/NewsNav";
-import NewsContent from "@/components/home/news/NewsContent";
+import NewsNav from "@/components/home/news/NewsNav.vue";
+import NewsContent from "@/components/home/news/NewsContent.vue";
 import Socialbar from "@/components/global/Socialbar.vue";
 export default {
   name: "NewsHome",

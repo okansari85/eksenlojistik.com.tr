@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/services2/:slug?',
     name: 'services2',
-    component: () => import('@/views/Services2'),
+    component: () => import('@/views/_old/Services2.vue'),
   },
   {
     path: '/kurumsal',

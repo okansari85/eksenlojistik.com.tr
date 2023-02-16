@@ -15,7 +15,7 @@
 
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
 
-            <router-link to="/services" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">
+            <router-link to="/hizmetler" class="btn btn-main my-2 my-md-0 fs-09" style="width: 165px; max-width: 100%;">
               {{  $t('home.daha-fazla')  }}
             </router-link>
           </div>
@@ -23,9 +23,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Modal Solutions -->
-
 
   </section>
 </template>

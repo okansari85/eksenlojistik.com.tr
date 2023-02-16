@@ -31,10 +31,10 @@
   </template>
   
   <script>
-  import HeroImage from "@/components/global/HeroImage";
-  import Title from "@/components/global/Title";
-  import IkPrinciple from "@/data/ik/ik-principle";
-  import IkDevelopment from "@/data/ik/ik-development";
+  import HeroImage from "@/components/global/HeroImage.vue";
+  import Title from "@/components/global/Title.vue";
+  import IkPrinciple from "@/data/ik/ik-principle.vue";
+  import IkDevelopment from "@/data/ik/ik-development.vue";
   import ikApplication from "@/data/ik/ik-application.vue";
   
   

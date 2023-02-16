@@ -1,29 +1,27 @@
 <template>
-  <section class="news-detail py-5">
+  <section class="news-detail">
     <!-- Banner -->
-    <div class="news-detail-top pt-5">
-      <div class="container pb-3 pt-md-5">
-        <div class="d-md-flex justify-content-between">
-          <div class="w-100 pt-5 pb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <h1 class="fs-2 fw-500 col-md-8">{{ news.title }}</h1>
+    <section class="news-news banner">
+      <img src="/image/news/news-background2.jpg" alt="News Banner" style="filter:brightness(60%)">
+        <div class="services-banner-content text-start">
+            <div class="container pb-3 pt-md-5 title-animation">
+              <div class="row">
+                <span class="text-uppercase fw-semibold">{{ $t('services.eksen-logistic') }}</span>
+                <h1 class="display-5 fw-600 text-white">{{ news.title }}</h1>
+              </div>
             </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
     <!-- Content -->
     <div class="news-detail-middle bg-light">
-      <div class="container py-5">
-        <div class="row justify-content-between">
-          <div class="col-md-6 news-detail-middle-text">
-            <h2 class="fs-5 fw-500">{{ news.top_title }}</h2>
-            <div v-html="news.content"></div>
+      <div class="py-5" style="max-width: 760px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
+          <div class="news-detail-middle-text">
+            <h2 class="fs-4 mb-4 fw-500">{{ news.top_title }}</h2>
+            <p style="color: #8a8a8a; font-size: 18px" v-html="news.content"></p>
+            <div class="news-detail-middle-image text-center">
+                  <img :src="'/' + news.image_side" alt="News Detail" style="height:auto; width: 100%; max-width: 100%; object-fit: cover;">
+            </div>
           </div>
-          <div class="col-md-5 news-detail-middle-image text-center">
-            <img :src="'/' + news.image_side" alt="News Detail" style="height:500px; object-fit: cover;">
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -61,6 +59,7 @@ export default {
       methods: {
         fetchNews() {
           const url = `http://eksenlojistik.com.tr/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
+          // const url = `http://127.0.0.1:8000/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
           axios.get(url, {
             headers: {
               'Content-Type': 'application/json',
@@ -78,16 +77,10 @@ export default {
       },
     }
 
-
-
-    // bunu yaptığım zaman select menüsünden dil seçimi yapınca news detail sayfasında dil ve url değişmiyor ama news sayfasında değişiyor. news detail sayfasında da değişmesi gerekiyor.
-
-    
-
 </script>
-
-<style scoped>
+<style scoped lang="scss">
 .text-orange {
   color: #ffa10e;
 }
+
 </style>

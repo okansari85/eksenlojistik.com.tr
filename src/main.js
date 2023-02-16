@@ -7,7 +7,6 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'bootstrap/dist/css/bootstrap.css'
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js' 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/assets/css/style.css';
 import i18n from './i18n'

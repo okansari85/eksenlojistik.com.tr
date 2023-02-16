@@ -11,45 +11,40 @@
             <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero pb-5"
                 style="z-index: 555;">
 
-                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                <router-link to="/hizmetler" class="col-6 col-lg-3 py-md-3 text-center hero-item">
                     <div class="hero-item-image position-relative">
                         <img src="/image/home/services/karayolu.png" alt="Services Item" class="w-100" />
                     </div>
                     <div class="text-capitalize fw-bold mt-3 hero-item-description">
                         <h3 class="fw-500 fs-6" v-html="$t('home.karayolu-tas')"></h3>
                     </div>
-                </div>
+                </router-link>
 
-                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                <router-link to="/hizmetler" class="col-6 col-lg-3 py-md-3 text-center hero-item">
                     <div class="hero-item-image position-relative">
                         <img src="/image/home/services/gumrukleme.png" alt="Services Item" class="w-100" />
                     </div>
                     <div class="text-capitalize fw-bold mt-3 hero-item-description">
                         <h3 class="fw-500 fs-6" v-html="$t('home.gumrukleme')"></h3>
                     </div>
-                </div>
-                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                </router-link>
+                <router-link to="/hizmetler" class="col-6 col-lg-3 py-md-3 text-center hero-item">
                     <div class="hero-item-image position-relative">
                         <img src="/image/home/services/depolama.png" alt="Services Item" class="w-100" />
                     </div>
                     <div class="text-capitalize fw-bold mt-3 hero-item-description">
                         <h3 class="fw-500 fs-6" v-html="$t('home.depolama')"></h3>
                     </div>
-                </div>
-                <div class="col-6 col-lg-3 py-md-3 text-center hero-item">
+                </router-link>
+                <router-link to="/hizmetler" class="col-6 col-lg-3 py-md-3 text-center hero-item">
                     <div class="hero-item-image position-relative">
                         <img src="/image/home/services/minivan.png" alt="Services Item" class="w-100" />
                     </div>
                     <div class="text-capitalize fw-bold mt-3 hero-item-description">
                         <h3 class="fw-500 fs-6" v-html="$t('home.minivan')"></h3>
                     </div>
-                </div>
-
+                </router-link>
             </div>
-
-
-
-
         </div>
     </section>
 

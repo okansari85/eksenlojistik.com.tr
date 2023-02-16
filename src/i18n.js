@@ -11,6 +11,7 @@ const i18n = createI18n({
     locale: 'tr', // set locale
     fallbackLocale: 'tr', // set fallback locale
     messages, // set locale messages
+    warnHtmlInMessage: false
 });
 
 

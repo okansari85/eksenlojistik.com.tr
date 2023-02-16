@@ -12,7 +12,7 @@
                         <div class="footer-contact-info">
                             <h6 class="number m-0 pb-2"> <i class="bi bi-telephone-fill pe-1"></i> +90 212 212 28 49</h6>
                             <h6 class="email m-0 pb-3"><i class="bi bi-envelope-fill pe-2"></i>info@eksenlojistik.com.tr</h6>
-                            <p>Büyükdere Cad. Fulya Mah. Lale İş Mrkz. <br> No.62 K.2 D.15 <br>Mecidiyeköy - Şişli </p>
+                            <p>Büyükdere Cad. Fulya Mah. Lale İş Mrkz. <br> No.62 K.2 D.15 <br>Mecidiyeköy - Şişli  </p>
                             <ul class="footer-social list-wrap d-flex gap-3">
                                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>

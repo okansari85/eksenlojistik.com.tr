@@ -6,7 +6,7 @@
         <div class="d-md-flex justify-content-between">
           <div class="w-100 pt-5 pb-3">
             <div class="d-flex justify-content-between align-items-center">
-              <h1 class="text-capitalize fs-2 fw-500 col-md-8">{{ news.title }}</h1>
+              <h1 class="fs-2 fw-500 col-md-8">{{ news.title }}</h1>
             </div>
           </div>
         </div>

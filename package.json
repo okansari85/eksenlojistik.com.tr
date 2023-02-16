@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "watch": ""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@leanera/vue-i18n": "^0.3.12",
     "@popperjs/core": "^2.11.5",
     "animate.css": "^4.1.1",

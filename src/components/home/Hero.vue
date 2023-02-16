@@ -2,7 +2,7 @@
   <section class="hero w-100 vh-100">
     <div class="overlay"></div>
     <video src="/image/video/Ust2.mp4" class="vh-100  w-100" style="object-fit: cover" autoplay loop
-           muted></video>
+           muted playsinline></video>
         <div class="position-absolute text-white hero-content hero-text start-0 offset-md-1 px-4 px-lg-0 translate-middle-y top-50">
         <span>{{ $t('home.enhizli') }}</span>
         <h1 class="display-1 text-white">{{ $t('home.log') }} <br> 
@@ -38,7 +38,7 @@
           <a href="" class="bi bi-x-circle-fill text-danger position-absolute fs-1" data-bs-dismiss="modal" style="z-index: 5; right:10px;"></a>
           <div class="modal-body p-0 border-0 bg-transparent">
             <div class="modal-video-inner bg-transparent p-0">
-              <video src="/image/home/eksen_hero_video2.mp4" autoplay loop muted style="max-width: 100%;"></video>
+              <video src="/image/home/eksen_hero_video2.mp4" autoplay loop muted playsinline style="max-width: 100%;"></video>
             </div>
           </div>
         </div>

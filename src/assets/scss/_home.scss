@@ -133,66 +133,12 @@ section.news {
     }
 }
 
-// @media (min-width:768px){
-//     .modal-video-inner video {
-//         height: 80vh;
-//     }
-// }
-
-
 
 $delay: 0.015s;
 $duration: 0.6s;
 $easing: cubic-bezier(0.76, 0, 0.24, 1);
 
 
-
-@media(min-width:1366px) {
-    .rolling-text{
-        display: inline-block;
-        font-family: 'Playfair Display', serif;
-        $font-size: 6rem;
-        font-size: $font-size;
-        line-height: $font-size * 1.5;
-        letter-spacing: $font-size / 2;
-        height: $font-size * 1.5;
-        text-decoration: none;
-        overflow: hidden;
-        color: #fff;
-        cursor: pointer;
-
-        &:hover,
-        &.play{
-            .letter{
-                transform: translateY(-100%);
-            }
-        }
-
-        .block:last-child{
-            color: #d3a13b;
-        }
-
-        .letter{
-            display: inline-block;
-            transition: transform $duration $easing;
-        }
-    }
-
-    @for $i from 0 through 20 {
-        .letter:nth-child(#{$i + 1}) {
-            transition-delay: $delay * $i;
-        }
-    }
-    .mobile-rolling {
-        display: none!important;
-    }
-}
-
-@media (max-width:1365.98px) {
-    .rolling-text {
-        display: none;
-    }
-}
 
 .hero-bottom-map {
     transition: all .3s ease-in-out;

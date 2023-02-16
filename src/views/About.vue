@@ -20,11 +20,12 @@
           <div class="row justify-content-between align-items-center py-5 px-3 px-lg-0">
             <div class="col-lg-5 order-2 order-lg-1">
               <h2 class="custom-sub-title pb-2">{{ $t('menu.hakkimizda')  }}</h2>
+              <img src="/image/about/oguzbey.jpg" alt="" class="mw-100 d-lg-none py-3"/>
               <div class="description col-lg-11">
                 <p>
                   {{ $t('kurumsal.about-p1')  }}
                 </p>
-                <video src="/image/about/word-globe.mp4" class="mw-100 w-100 d-lg-none" loop muted autoplay></video>
+                <video src="/image/about/word-globe.mp4" class="mw-100 w-100 d-lg-none" loop muted autoplay playsinline></video>
                 <p>
                   {{ $t('kurumsal.about-p2')  }}
                 </p>
@@ -33,7 +34,6 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-2 d-none d-lg-block">
               <img src="/image/about/oguzbey.jpg" alt="" class="mw-100">
-              <!-- <video src="/image/about/word-globe.mp4" class="mw-100 w-100" loop muted autoplay></video> -->
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <video src="/image/video/12.m4v" loop muted autoplay
+              <video src="/image/video/12.m4v" loop muted autoplay playsinline
                      style="height:70vh; object-fit: cover; width: 100%; object-position: center;"></video>
             </div>
           </div>

@@ -1,11 +1,11 @@
 <template>
   <header class="fixed-top header">
-    <div class="container-fluid px-md-5">
+    <div class="container-fluid px-xl-5">
       <nav class="navbar navbar-expand-lg d-none d-lg-flex">
         <router-link to="/" class="navbar-brand">
           <img src="/image/global/eksen-01.svg" alt="Eksen Logo" style="width: 260px;">
         </router-link>
-        <div class="collapse navbar-collapse justify-content-end px-lg-5" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end px-xl-5" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/" class="nav-link">{{ $t('menu.anasayfa') }}</router-link>
@@ -25,10 +25,23 @@
             <li class="nav-item">
               <router-link to="/iletisim" class="nav-link">{{ $t('menu.iletisim') }}</router-link>
             </li>
-            <li class="nav-item ps-xl-5">
-                <a href="#" class="text-white nav-link" @click.prevent="toggleLanguage">{{  selectedLanguage === 'tr' ? 'TR' : 'EN'  }}</a>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img :src="getFlag(selectedLanguage)" alt="Language flag">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <a class="dropdown-item" href="#" @click.prevent="changeLanguage('en')">
+                    <img :src="getFlag('en')" alt="English flag">
+                    <span class="ms-2 text-dark">{{ $t('language.english') }}</span>
+                  </a>
+                  <a class="dropdown-item" href="#" @click.prevent="changeLanguage('tr')">
+                    <img :src="getFlag('tr')" alt="Turkish flag">
+                    <span class="ms-2 text-dark">{{ $t('language.turkish')}}</span>
+                  </a>
+                </div>
+              </div>
             </li>
-            <li class="dot"></li>
           </ul>
         </div>
       </nav>
@@ -36,7 +49,7 @@
       <div class="d-lg-none">
         <div class="d-flex justify-content-between align-items-center">
           <a href="" class="navbar-brand">
-            <img src="/image/global/eksen_logo.png" alt="Eksen Logo Mobile" style="width: 200px">
+            <img src="/image/global/eksen-01.svg" alt="Eksen Logo Mobile" style="width: 200px">
           </a>
           <div>
             <input type='checkbox' id='toggle' style='display:none;' />
@@ -65,8 +78,17 @@
                 <li>
                   <router-link to="/iletisim" class="mobile-nav-item">{{ $t('menu.iletisim') }}</router-link>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="text-white nav-link" @click.prevent="toggleLanguage">{{  selectedLanguage === 'tr' ? 'TR' : 'EN'  }}</a>
+                <li class="nav-item ps-4 pt-3">
+                  <div class="d-flex gap-3">
+                    <a class="d-flex flex-column align-items-center justify-content-center gap-2" href="#" @click.prevent="changeLanguage('en')">
+                      <img :src="getFlag('en')" alt="English flag">
+                      <span class="text-dark text-white fs-08">{{ $t('language.english') }}</span>
+                    </a>
+                    <a class="d-flex flex-column align-items-center justify-content-center gap-2" href="#" @click.prevent="changeLanguage('tr')">
+                      <img :src="getFlag('tr')" alt="Turkish flag">
+                      <span class="text-dark text-white fs-08">{{ $t('language.turkish')}}</span>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -115,25 +137,23 @@ export default {
   data() {
     return {
       selectedLanguage: 'tr',
+      flags: {
+        'en': '/image/en.png',
+        'tr': '/image/tr.png'
+      }
     };
   },
+
   methods: {
-    toggleLanguage() {
-      this.selectedLanguage = this.selectedLanguage === 'en' ? 'tr' : 'en';
+    changeLanguage(lang) {
+      this.selectedLanguage = lang;
       this.$i18n.locale = this.selectedLanguage;
       localStorage.setItem("lang", this.selectedLanguage);
     },
-  },
-
-  created() {
-    this.$i18n.locale = this.selectedLanguage;
-  },
-
-  watch: {
-    selectedLanguage(newLanguage) {
-      this.$i18n.locale = newLanguage;
-    },
-  },
+    getFlag(lang) {
+      return this.flags[lang];
+    }
+  }
 
 }
 
@@ -142,6 +162,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 header {
   z-index: 99999;
 }
@@ -151,6 +172,12 @@ header {
   font-size: 14px;
 }
 
-</style>
 
+.item-last::before {
+  background:transparent!important;
+}
+
+
+
+</style>
 

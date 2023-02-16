@@ -96,7 +96,7 @@ header {
                 margin:0;
                 position:absolute;
                 left:50%;
-                top:170px;
+                top:100px;
                 transition:all 0.3s ease-in-out;
                 transform:translateX(-50%);
 
@@ -106,7 +106,7 @@ header {
 
                     a {
                         display:block;
-                        font-size:2em;
+                        font-size:1.5em;
                         text-decoration:none;
                         padding:10px 0;
                         text-align:center;
@@ -138,8 +138,6 @@ header {
             margin:7px auto;
             background-color:#fff;
             transition:all 0.3s ease-in-out;
-            // box-shadow:0 0 3px 1px rgba(0,0,0,.3);
-
             &:nth-child(2) {
                 width:20px;
             }
@@ -152,11 +150,12 @@ header {
             visibility:visible;
 
             ul {
-                top:200px;
+                top:100px;
 
                 li {
                     transform:translateY(0px);
                     opacity:1;
+                    
 
                     @for $i from 1 through 7 {
                         $t: $i * 0.1;

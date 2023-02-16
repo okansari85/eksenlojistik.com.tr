@@ -30,7 +30,7 @@
                 </p>
               </div>
               <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video d-lg-none" loop muted
-                     autoplay></video>
+                     autoplay playsinline></video>
             </div>
             <div>
               <h2 class="custom-sub-title pb-2">{{ $t('services.gumrukleme') }}</h2>
@@ -47,7 +47,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <img src="/image/services/servicess-2.png" alt="Services" class="img-fluid d-none d-lg-block">
-                <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video" loop muted autoplay></video>
+                <video src="/image/video/1.m4v" class="mw-100 w-100 services-hero-video" loop muted autoplay playsinline></video>
               </div>
               <div class="col-lg-6 d-none d-lg-block">
                 <img src="/image/services/servicess-1.png" alt="Services" class="img-fluid">
@@ -62,7 +62,7 @@
       <div class="container pb-5">
         <div class="row align-items-center justify-content-between py-5 px-3 px-lg-0">
           <div class="col-lg-6">
-            <video src="/image/video/4.mp4" class="w-100 mw-100" autoplay loop muted></video>
+            <video src="/image/video/4.mp4" class="w-100 mw-100" autoplay loop muted playsinline></video>
           </div>
           <div class="col-lg-5 pt-3 pt-lg-0">
             <div class="pb-3">
@@ -136,7 +136,7 @@
         </div>
 
         <div class="alternative-transport-video text-center">
-          <video src="/image/video/2.mp4" autoplay loop muted
+          <video src="/image/video/2.mp4" autoplay loop muted playsinline
                  style="width: 836px; height: 413px; max-width: 100%; margin: auto; object-fit: cover;"></video>
         </div>
       </div>

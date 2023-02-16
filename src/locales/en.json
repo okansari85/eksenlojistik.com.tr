@@ -8,6 +8,10 @@
     "ik": "HR",
     "iletisim": "Contact"
   },
+  "language": {
+    "turkish": "Turkish",
+    "english": "English"
+  },
   "home": {
     "enhizli": "Fastest",
     "log": "Logistic",

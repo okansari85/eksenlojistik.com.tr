@@ -1,7 +1,7 @@
 <template>
     <div class="row ik-policy justify-content-between">
         <div class="col-lg-6">
-            <h2 class="mb-4">{{ $t('hr.ik-h2') }}</h2>
+            <h5 class="mb-4 fs-3 text-black">{{ $t('hr.ik-h2') }}</h5>
             <p>{{ $t('hr.ik-p1') }}</p>
             <p>{{ $t('hr.ik-p2') }}</p>
             <p>{{ $t('hr.ik-p3') }}</p>

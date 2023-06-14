@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row title-animation">
                   <span class="text-uppercase fw-semibold">{{ $t('services.eksen-logistic') }}</span>
-                  <h1 class="display-4 fw-600 text-white">{{ $t('menu.haberler') }}</h1>
+                  <h1 class="display-5 fw-600 text-white">{{ $t('menu.haberler') }}</h1>
                 </div>
             </div>
         </div>
@@ -76,6 +76,7 @@ export default {
        } else {
           
           axios.get('http://eksenlojistik.com.tr/api/get-all-news/en')
+          // axios.get('http://127.0.0.1:8000/api/get-all-news')
           .then(response => {
             this.newsItem = response.data.news;
           })

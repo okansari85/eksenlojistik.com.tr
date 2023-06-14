@@ -2,7 +2,7 @@
   <section class="news-detail">
     <!-- Banner -->
     <section class="news-news banner">
-      <img src="/image/news/news-background2.jpg" alt="News Banner" style="filter:brightness(60%)">
+      <img :src="news.image_brand" alt="News Banner" style="filter:brightness(60%)">
         <div class="services-banner-content text-start">
             <div class="container pb-3 pt-md-5 title-animation">
               <div class="row">
@@ -13,15 +13,28 @@
       </div>
     </section>
     <!-- Content -->
+<!--    <div class="news-detail-middle bg-light">-->
+<!--      <div class="py-5" style="max-width: 760px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">-->
+<!--          <div class="news-detail-middle-text">-->
+<!--            <h2 class="fs-4 mb-4 fw-500">{{ news.top_title }}</h2>-->
+<!--            <p style="color: #8a8a8a; font-size: 18px" v-html="news.content"></p>-->
+<!--            <div class="news-detail-middle-image text-center">-->
+<!--                  <img :src="'/' + news.image_side" alt="News Detail" style="height:auto; width: 100%; max-width: 100%; object-fit: cover;">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--    </div>-->
     <div class="news-detail-middle bg-light">
-      <div class="py-5" style="max-width: 760px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
-          <div class="news-detail-middle-text">
+      <div class="py-5 container">
+        <div class="news-detail-middle-text row gap-2 justify-content-between">
+          <div class="col-xl-7">
             <h2 class="fs-4 mb-4 fw-500">{{ news.top_title }}</h2>
             <p style="color: #8a8a8a; font-size: 18px" v-html="news.content"></p>
-            <div class="news-detail-middle-image text-center">
-                  <img :src="'/' + news.image_side" alt="News Detail" style="height:auto; width: 100%; max-width: 100%; object-fit: cover;">
-            </div>
           </div>
+          <div class="news-detail-middle-image col-xl-4">
+            <img :src="'/' + news.image_side" alt="News Detail" style="height:auto; width: 100%; max-width: 100%; object-fit: cover;">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -58,8 +71,9 @@ export default {
       },
       methods: {
         fetchNews() {
-          const url = `http://eksenlojistik.com.tr/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
-          // const url = `http://127.0.0.1:8000/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
+          // const url = `http://eksenlojistik.com.tr/api/get-news/${this.slug}${this.$i18n.locale === 'tr' ? '' : 'en'}`;
+          const url = `http://eksenlojistik.com.tr/api/get-news/${this.slug}`;
+          // const url = `http://127.0.0.1:8000/api/get-news/${this.slug}`;
           axios.get(url, {
             headers: {
               'Content-Type': 'application/json',

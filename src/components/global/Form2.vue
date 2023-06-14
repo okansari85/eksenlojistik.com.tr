@@ -4,7 +4,7 @@
       <h2 class="text-uppercase bg-dark text-white fw-bold p-3">{{ $t('hr.bize-yazin') }}</h2>
     </div>
     <div class="about-form-bottom p-3">
-      <form action="http://127.0.0.1:8000/api/concat">
+      <form action="/api/concat">
         <div class="row">
           <div class="col-md-6 pb-3">
             <input type="text" class="form-control" :placeholder="$t('hr.form-adsoyad')" v-model="form.name">

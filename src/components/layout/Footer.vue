@@ -37,7 +37,7 @@
                     <div class="footer-widget">
                         <h4 class="fw-title">KVKK</h4>
                         <ul class="footer-link">
-                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar">{{ $t('footer.sartlar-kosullar') }}</a></li>
+<!--                          <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-sartlar">{{ $t('footer.sartlar-kosullar') }}</a></li>-->
                           <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-yasal-uyari">{{ $t('footer.yasal-uyari') }}</a></li>
                           <li><a href="" data-bs-toggle="modal" data-bs-target="#modal-veri-gizliligi">{{ $t('footer.veri-gizliligi') }}</a></li>
                         </ul>
@@ -69,8 +69,7 @@
             <div class="modal-body">
               <div id="content" class="container">
                 <div v-if="isTurkishLocale">
-                  <p><b>ÜYELİK SÖZLEŞMESİ</b><br><br><b>Lütfen sitemizi kullanmadan evvel bu ‘site kullanım şartları’nı dikkatlice okuyunuz.</b><br><br>
-                    Bu alışveriş sitesini kullanan ve alışveriş yapan müşterilerimiz aşağıdaki şartları kabul etmiş varsayılmaktadır: <br>
+                  <p><b>Lütfen sitemizi kullanmadan evvel bu site kullanım şartları’nı dikkatlice okuyunuz.</b><br><br>
                     Sitemizdeki web sayfaları ve ona bağlı tüm sayfalar (‘site’) Eksen Lojistik adresindeki Lojistik firmasına (‘Firma) aittir ve onun tarafından işletilir. Sizler (‘Kullanıcı’) sitede sunulan tüm hizmetleri kullanırken aşağıdaki şartlara tabi olduğunuzu, sitedeki hizmetten yararlanmakla ve kullanmaya devam etmekle; Bağlı olduğunuz yasalara göre sözleşme imzalama hakkına, yetkisine ve hukuki ehliyetine sahip ve 18 yaşın üzerinde olduğunuzu, bu sözleşmeyi okuduğunuzu, anladığınızı ve sözleşmede yazan şartlarla bağlı olduğunuzu kabul etmiş sayılırsınız.<br><br>
                     İşbu sözleşme süresiz olmakla, taraflara sözleşme konusu site ile ilgili hak ve yükümlülükler yükler ve taraflar işbu sözleşmeyi online veya yazık olarak kabul ettiklerinde/onayladıklarında bahsi geçen hak ve yükümlülükleri eksiksiz, doğru, zamanında, işbu sözleşmede talep edilen şartlar dâhilinde yerine getireceklerini beyan ve taahhüt ederler.
                     <br><br><b>1. SORUMLULUKLAR</b><br><br>
@@ -153,9 +152,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 
 </template>

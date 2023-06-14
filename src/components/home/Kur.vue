@@ -129,6 +129,7 @@ export default {
   methods: {
     getKur() {
       axios.get("http://eksenlojistik.com.tr/api/get-kur")
+      // axios.get("http://localhost:8000/api/get-kur")
       .then((response) => {
         if(response.data.succeeded == true ) {
           this.kurlar = response.data.kurlar;
@@ -143,6 +144,7 @@ export default {
 
     getSinir() {
       axios.get("http://eksenlojistik.com.tr/api/get-sinir")
+      // axios.get("http://localhost:8000/api/get-sinir")
         .then((response) => {
           if(response.data.succeeded === true ) {
             this.sinirlar = response.data.sinir_datas;

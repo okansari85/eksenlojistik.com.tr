@@ -2,7 +2,7 @@
 
   <div class="row justify-content-between">
     <div class="col-lg-6">
-      <h5 class="fs-3 fw-500">{{ $t('hr.ik-egitim-gelisim-content1-h5') }}</h5>
+      <h5 class="fs-3 fw-500 text-black">{{ $t('hr.ik-egitim-gelisim-content1-h5') }}</h5>
       <p class="py-3">
         {{ $t('hr.ik-egitim-gelisim-content1-p1') }}
       </p>
@@ -13,7 +13,7 @@
         {{ $t('hr.ik-egitim-gelisim-content1-p3') }}
       </p>
 
-      <h5 class="fs-3 fw-500 pt-4">{{ $t('hr.ik-egitim-gelisim-content2-h5') }}</h5>
+      <h5 class="fs-3 fw-500 pt-4 text-black">{{ $t('hr.ik-egitim-gelisim-content2-h5') }}</h5>
       <p class="py-3">
         {{ $t('hr.ik-egitim-gelisim-content2-p1') }}
       </p>

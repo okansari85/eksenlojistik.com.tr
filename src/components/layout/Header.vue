@@ -168,8 +168,8 @@ header {
 }
 
 .nav-link {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400!important;
+  font-size: 15px;
 }
 
 

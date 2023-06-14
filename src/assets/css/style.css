@@ -30,11 +30,10 @@ ul {
 
 p {
   word-wrap: break-word;
-  line-height: 1.6;
-  letter-spacing: 0px;
-  color: #313030;
-  font-size: 1.125rem;
-
+  color: #8a8a8a!important;
+  line-height: 1.75rem;
+  font-size: 1.135rem!important;
+  letter-spacing: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -773,6 +772,10 @@ footer ul li {
   font-size: 0.9rem;
 }
 
+footer p {
+  color: rgb(206, 206, 206)!important;
+}
+
 .social-media-icons a {
   width: 45px;
   height: 45px;
@@ -791,6 +794,7 @@ footer ul li {
     border-bottom: 1px solid #e6e6e6;
   }
 }
+
 .news-item .news-top img {
   width: 100%;
   max-width: 100%;
@@ -1009,10 +1013,10 @@ main.global-sub-page .about-us-table td:nth-child(odd) {
 
 
 .title-animation {
-  animation: teaserIn 0.8s;
+  animation: teaserIn 1.4s;
   opacity: 1;
   transform: translateY(0);
-  -webkit-animation: teaserIn 0.8s;
+  -webkit-animation: teaserIn 1.4s;
 }
 
 @keyframes teaserIn {

@@ -3,12 +3,12 @@
   <main>
 
     <section class="services-banner">
-      <img src="/image/services/services-banner-1.png" alt="Services Banner">
+      <img src="/image/home/services/a1.jpg" alt="Services Banner">
       <div class="services-banner-content">
         <div class="container">
           <div class="row title-animation">
             <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
-            <h1 class="display-4 fw-600 text-white">{{ $t('menu.hizmetler')}}</h1>
+            <h1 class="display-5 fw-600 text-white">{{ $t('menu.hizmetler')}}</h1>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
         <div class="row pt-lg-5">
           <div class="col-12 text-center">
             <div class="custom-sub-title-span">
-              <span>{{ $t('services.eksen-logistic') }}</span>
+              <span class="text-danger">{{ $t('services.eksen-logistic') }}</span>
             </div>
             <div>
               <h2 class="display-4 fw-bold text-white">{{ $t('services.alternatif-tasimacilik') }}</h2>
@@ -164,6 +164,9 @@ export default {
 .custom-sub-title-span {
   span {
     background-color: #0A0A0A !important;
+  }
+  &::after {
+    background-color: rgb(220, 53, 69) !important;
   }
 }
 

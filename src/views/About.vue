@@ -8,14 +8,14 @@
           <div class="container">
             <div class="row title-animation">
               <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
-              <h1 class="display-4 fw-600 text-white">{{ $t('menu.kurumsal') }}</h1>
+              <h1 class="display-5 fw-600 text-white">{{ $t('menu.kurumsal') }}</h1>
             </div>
           </div>
         </div>
       </section>
       <section class="about-globe">
-        <img src="/image/about/about-new-bg-2.png" alt="" class="position-absolute top-0 start-0">
-        <div class="container">
+        <img src="/image/about/about-new-bg-2.png" alt="" class="position-absolute top-0 start-0" >
+        <div class="container position-relative">
           <div class="row justify-content-between align-items-center py-5 px-3 px-lg-0">
             <div class="col-lg-5 order-2 order-lg-1">
               <h2 class="custom-sub-title pb-2">{{ $t('menu.hakkimizda')  }}</h2>

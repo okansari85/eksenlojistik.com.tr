@@ -36,10 +36,9 @@
 
       <div class="row align-items-center py-5 content-text">
         <div class="numbers-top col-lg-7 pb-5 px-3 px-lg-0">
-          <div class="title text-lg-start text-capitalize display-2 pb-3 text-white">{{ $t('home.bir-yilda') }} <div class="display-2 text-white">
+          <div class="title text-lg-start text-capitalize display-4 pb-3 text-white">{{ $t('home.bir-yilda') }} <div class="display-4 text-white">
             <span class="counter"></span> Km</div> {{ $t('home.yol-yaptik') }}</div>
           <p class="text-lg-start text-white">{{ $t('home.yol-yaptik-p') }}</p>
-
         </div>
       </div>
     </div>

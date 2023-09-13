@@ -3,13 +3,11 @@
   <main>
 
     <section class="services-banner">
-      <img src="/image/home/services/a1.jpg" alt="Services Banner">
-      <div class="services-banner-content">
-        <div class="container">
-          <div class="row title-animation">
-            <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
-            <h1 class="display-5 fw-600 text-white">{{ $t('menu.hizmetler')}}</h1>
-          </div>
+      <img src="/image/home/services/a1.jpg" alt="Services Banner" style="filter:brightness(60%)"  class="position-absolute top-0 end-0 start-0 w-100 h-100">
+      <div class="services-banner-content text-start h-100 pb-5 px-3 px-lg-0" style="z-index:333">
+        <div class="container py-md-5 title-animation h-100 d-flex flex-column text-center align-items-center justify-content-end">
+          <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
+          <h1 class="display-5 fw-600 text-white">{{ $t('menu.hizmetler')}}</h1>
         </div>
       </div>
     </section>
@@ -81,21 +79,21 @@
       </div>
     </section>
 
-    <section class="services-safely min-vh-100 vh-100 "
-             style="background-image: url(/image/services/safely-servicesss.png);">
-      <div class="container h-100">
+    <section class="services-safely min-vh-100 vh-100 my-5"
+             style="background-image: url(/image/services/eks1.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class=" h-100" style="max-width:1800px; margin: auto;">
         <div class="row h-100 align-items-center px-3 px-lg-0">
-          <div class="col-md-6"></div>
-          <div class="col-lg-5 offset-md-1">
+          <div class="col-md-6 col-lg-4 px-5">
             <div class="pb-3">
-              <h2 class="display-4 fw-500 pb-2 lh-1 text-white">{{ $t('services.guvenilir-hizli') }}</h2>
+              <h2 class="fw-500 lh-1 display-3" style="color: #4c5868;">{{ $t('services.guvenilir-hizli') }}</h2>
               <div class="description col-lg-11 py-3 text-white">
-                <p class="text-white">
+                <p class="text-dark">
                   {{ $t('services.guvenilir-hizli-p') }}
                 </p>
               </div>
             </div>
           </div>
+          <div class="col-md-6"></div>
         </div>
       </div>
     </section>
@@ -108,7 +106,7 @@
               <span class="text-danger">{{ $t('services.eksen-logistic') }}</span>
             </div>
             <div>
-              <h2 class="display-4 fw-bold text-white">{{ $t('services.alternatif-tasimacilik') }}</h2>
+              <h2 class="display-4 fw-bold">{{ $t('services.alternatif-tasimacilik') }}</h2>
               <p class="pt-2">{{ $t('services.alternatif-tasimacilik-altmetin') }}</p>
             </div>
           </div>
@@ -117,7 +115,7 @@
         <div class="row justify-content-between py-5 px-4 px-lg-0">
           <div class="col-lg-5">
             <div class="col-sm-10">
-              <h5 class="custom-sub-title text-white">{{ $t('services.alternatif-tasimacilik-h5-left') }}</h5>
+              <h5 class="custom-sub-title">{{ $t('services.alternatif-tasimacilik-h5-left') }}</h5>
               <p>
                 {{ $t('services.alternatif-tasimacilik-p-left') }}
               </p>
@@ -125,7 +123,7 @@
           </div>
           <div class="col-lg-5">
             <div class="col-sm-10">
-              <h5 class="custom-sub-title text-white">{{ $t('services.alternatif-tasimacilik-h5-right') }}</h5>
+              <h5 class="custom-sub-title">{{ $t('services.alternatif-tasimacilik-h5-right') }}</h5>
               <p>
                 {{ $t('services.alternatif-tasimacilik-p-right') }}
               </p>
@@ -163,7 +161,7 @@ export default {
 
 .custom-sub-title-span {
   span {
-    background-color: #0A0A0A !important;
+    background-color: #fff !important;
   }
   &::after {
     background-color: rgb(220, 53, 69) !important;
@@ -171,19 +169,23 @@ export default {
 }
 
 .alternative-transport {
-  background-color: #070707;
+  // background-color: #d0e3f1;
 
-  p {
-    color: #D0D0D0 !important;
-  }
 }
 
 .services-safely {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0A0A0A;
+  background-color: #d0e3f1;
   @media(min-width: 992px) {
     background-position: center;
+  }
+  @media(max-width: 768px) {
+    background-image: none!important;
+    height: auto!important;
+    padding: 45px 0;
+    min-height: auto!important;
+    background-color: #d0e3f1;
   }
 }
 

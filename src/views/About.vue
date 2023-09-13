@@ -3,13 +3,11 @@
   <div>
     <main>
       <section class="about-banner banner">
-        <img src="/image/about/about-new-banner-2.png" alt="About Banner">
-        <div class="banner-content">
-          <div class="container">
-            <div class="row title-animation">
+        <img src="/image/about/about-new-banner-2.png" alt="About Banner" class="position-absolute top-0 end-0 start-0 w-100 h-100">
+        <div class="services-banner-content text-start h-100 pb-5 px-3 px-lg-0" style="z-index:333">
+          <div class="container py-md-5 title-animation h-100 d-flex flex-column text-center align-items-center justify-content-end">
               <span class="text-uppercase">{{ $t('services.eksen-logistic')  }}</span>
               <h1 class="display-5 fw-600 text-white">{{ $t('menu.kurumsal') }}</h1>
-            </div>
           </div>
         </div>
       </section>
@@ -158,13 +156,6 @@ export default {
 
 <style lang="scss" scope>
 
-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 31px;
-  letter-spacing: -0.03em;
-  color: #252626;
-}
 
 .custom-sub-title-span {
   span {
@@ -189,7 +180,7 @@ p {
   }
 
   p {
-    font-weight: 600;
+    // font-weight: 600;
     text-align: right;
     color: #FFFFFF;
     text-shadow: 0px 4px 44px rgba(0, 0, 0, 0.55);
@@ -202,12 +193,6 @@ p {
   }
 }
 
-
-//@media(max-width: 768px) {
-//  .future {
-//    height: 200vh !important;
-//  }
-//}
 
 .html5-video-container {
   video {

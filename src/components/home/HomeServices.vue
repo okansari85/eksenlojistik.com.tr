@@ -5,8 +5,7 @@
             <div class="globals-title text-center pt-5 pb-3">
                 <span class="text-uppercase fs-6">{{ $t('home.ne-yapariz') }}</span>
                 <h1 class="fs-1 text-capitalize pt-1 fw-semibold ">{{ $t('home.hizmetlerimiz') }}</h1>
-                <p class="fs-09 pb-4 pt-2" v-html="$t('home.hizmetler1')">
-                     </p>
+                <p v-html="$t('home.hizmetler1')"></p>
             </div>
             <div class="row justify-content-center justify-content-lg-between align-items-center position-relative services-item-hero pb-5"
                 style="z-index: 555;">

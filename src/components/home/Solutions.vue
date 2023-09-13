@@ -10,7 +10,7 @@
           <div class="globals-title pb-4">
             <span class="text-uppercase fs-6">{{  $t('home.size-ozel')  }}</span>
             <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold" v-html="$t('home.size-ozel-h1')"></h1>
-            <p class="fs-09 col-lg-9"> {{  $t('home.size-ozel-p')  }}</p>
+            <p class="col-lg-9"> {{  $t('home.size-ozel-p')  }}</p>
           </div>
 
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center">

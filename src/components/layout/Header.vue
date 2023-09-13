@@ -13,9 +13,21 @@
             <li class="nav-item">
               <router-link to="/kurumsal" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/hizmetler" class="nav-link">{{ $t('menu.hizmetler') }}</router-link>
-            </li>
+            </li> -->
+            <li class="nav-item dropdown">
+                  <a class="nav-link d-flex align-items-center" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>{{ $t('menu.hizmetler') }}</span>
+                    <span class="ps-2"><i class="bi bi-chevron-down" style="font-size: 12px;"></i></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <router-link to="/hizmetler/karayolu-tasimaciligi" class="dropdown-item">{{ $t('menu.karayolu-tasimaciligi') }}</router-link>
+                    <router-link to="/hizmetler/gumrukleme-hizmetleri" class="dropdown-item">{{ $t('menu.gumrukleme') }}</router-link>
+                    <router-link to="/hizmetler/depolama-hizmetleri" class="dropdown-item">{{ $t('menu.depolama') }}</router-link>
+                    <router-link to="/hizmetler/minivan-tasimaciligi" class="dropdown-item">{{ $t('menu.minivan') }}</router-link>
+                  </div>
+              </li>
             <li class="nav-item">
               <router-link to="/haberler" class="nav-link">{{ $t('menu.haberler') }}</router-link>
             </li>
@@ -25,27 +37,28 @@
             <li class="nav-item">
               <router-link to="/iletisim" class="nav-link">{{ $t('menu.iletisim') }}</router-link>
             </li>
-            <li class="nav-item">
-              <div class="dropdown">
+            <li class="nav-item d-flex align-items-center gap-3 ps-md-4">
+              <a href="#" @click.prevent="changeLanguage('en')">
+                <img :src="getFlag('en')" alt="English flag">
+                <!-- <span class="ms-2 text-dark">{{ $t('language.english') }}</span> -->
+              </a>
+              <a href="#" @click.prevent="changeLanguage('tr')">
+                <img :src="getFlag('tr')" alt="Turkish flag">
+                <!-- <span class="ms-2 text-dark">{{ $t('language.turkish')}}</span> -->
+              </a>
+              <!-- <div class="dropdown">
                 <button class="btn" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img :src="getFlag(selectedLanguage)" alt="Language flag">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                  <a class="dropdown-item" href="#" @click.prevent="changeLanguage('en')">
-                    <img :src="getFlag('en')" alt="English flag">
-                    <span class="ms-2 text-dark">{{ $t('language.english') }}</span>
-                  </a>
-                  <a class="dropdown-item" href="#" @click.prevent="changeLanguage('tr')">
-                    <img :src="getFlag('tr')" alt="Turkish flag">
-                    <span class="ms-2 text-dark">{{ $t('language.turkish')}}</span>
-                  </a>
+
                 </div>
-              </div>
+              </div> -->
             </li>
           </ul>
         </div>
       </nav>
-      <!--   Mobile Menu     -->
+      <!-- Mobile Menu  -->
       <div class="d-lg-none">
         <div class="d-flex justify-content-between align-items-center">
           <a href="" class="navbar-brand">
@@ -123,14 +136,12 @@ export default {
         $(".header .navbar-brand img").attr("src", "/image/global/eksen-01.svg");
       }
     });
-    // i18n add localstroge
     if (localStorage.getItem("lang") === "en") {
       this.selectedLanguage = "en";
     } else {
       this.selectedLanguage = "tr";
     }
     this.$i18n.locale = this.selectedLanguage;
-    // i18n add localstroge
 
   },
 
@@ -157,8 +168,6 @@ export default {
 
 }
 
-
-
 </script>
 
 <style scoped lang="scss">
@@ -172,6 +181,14 @@ header {
   font-size: 15px;
 }
 
+a.dropdown-item {
+  font-weight: 400!important;
+  font-size: 15px;
+  color: #000!important;
+  &:hover {
+    color: #000!important;
+  }
+}
 
 .item-last::before {
   background:transparent!important;

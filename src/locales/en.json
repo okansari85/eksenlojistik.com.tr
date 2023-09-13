@@ -6,7 +6,14 @@
     "hizmetler": "Our Services",
     "hakkimizda": "About",
     "ik": "HR",
-    "iletisim": "Contact"
+    "iletisim": "Contact",
+    "gumrukleme": "Customs Clearance",
+    "depolama": "Storage",
+    "karayolu-tasimaciligi": "Road Transportation",
+    "alternatif-tasimacilik": "Alternative Transportation",
+    "minivan": "Minivan Transportation",
+    "roll-bag": "Roll Bag Transportation"
+    
   },
   "language": {
     "turkish": "Turkish",
@@ -24,10 +31,13 @@
     "hizmetler1": "Eksen Logistics has been operating accurately and <br/> quickly between Turkey and Europe for over 30 years.",
     "karayolu-tas": "Road <br/> Transportation",
     "gumrukleme": "Customs Clearance <br/> Service",
+    "gumrukleme2": "Customs Clearance Service",
     "depolama": "Storage <br/> Service",
+    "depolama2": "Storage Service",
     "minivan": "Minivan <br/> Transportation",
-    "bir-yilda": "In one year, we made",
-    "yol-yaptik": "Shipness",
+    "minivan2": "Minivan Transportation",
+    "bir-yilda": "In One Year, We Made",
+    "yol-yaptik": "Shipments",
     "yol-yaptik-p": "Eksen Logistics is a comprehensive end-to-end transportation service provider. Whether it's a vehicle or a shipment, LTL or FTL, we provide logistics services to many parts of the world in all modes of transportation across all industries.",
     "size-ozel": "Customized for you",
     "size-ozel-h1": "Partner for Solutions <br /> in Road Transportation",

@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import '@/assets/css/style.css';
+import '../public/style.css'
 import i18n from './i18n'
 
 const app = createApp(App);

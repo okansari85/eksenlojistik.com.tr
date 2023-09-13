@@ -11,7 +11,7 @@
           <div class="globals-title">
             <span class="text-uppercase fs-6 sub-title">{{ $t('home.ulkeler') }}</span>
             <h1 class="fs-3 text-capitalize pt-1 pb-4 fw-semibold" v-html="$t('home.ulkeler-h1')"></h1>
-            <p class="fs-09" v-html="$t('home.ulkeler-p')"></p>
+            <p v-html="$t('home.ulkeler-p')"></p>
           </div>
           <div class="d-flex justify-content-center justify-content-lg-start align-items-center py-2">
             <a href="" class="news-2-link fw-500 text-decoration-underline text-dark text-uppercase"

@@ -12,7 +12,7 @@
             <div class="col-md-6 col-lg-4 office">
               <h3 class="col-md-10">{{ $t('contact-global') }}</h3>
               <p v-html="$t('contact-address1')"></p>
-              <p>Tel: +90 212 267 07 21<br>
+              <p>Tel: +90 212 212 28 49 - 50<br>
                 info@eksenlojistik.com.tr</p>
               <a class="maps-btn" href="https://goo.gl/maps/kZnxnCXuX7jVFeGZ6" title="Google Maps" target="_blank"><i class="bi bi-geo-alt-fill pe-2 text-danger"></i>Google
                 Maps</a>
@@ -20,7 +20,7 @@
             <div class="col-md-6 col-lg-4 office">
               <h3>{{ $t('contact-depo') }}</h3>
                 <p v-html="$t('contact-address2')"></p>
-              <p>Tel: +90 212 267 07 21<br>
+              <p>Tel: 0850 811 64 04<br>
                 info@eksenlojistik.com.tr</p>
                 <a class="maps-btn" href="https://goo.gl/maps/kiS6j1yeb5HXL8Lc7" title="Google Maps" target="_blank"><i class="bi bi-geo-alt-fill pe-2 text-danger"></i>Google
                 Maps</a>
@@ -46,7 +46,6 @@
           </div>
         </div>
       </section>
-
 
     </main>
   </div>
@@ -99,7 +98,6 @@ export default {
   }
   p {
     color: rgb(187, 185, 185);
-    font-size: .85rem;
   }
   @media(max-width:991px) {
     margin-bottom: 50px;
@@ -111,7 +109,6 @@ export default {
     margin-top: auto;
   }
 }
-
 
 
 </style>

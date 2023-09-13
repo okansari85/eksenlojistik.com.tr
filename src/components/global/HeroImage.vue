@@ -22,13 +22,40 @@ export default {
 
 
 <style scoped lang="scss">
-.global-hero-img {
-  img {
-    height: 400px;
-    object-fit: cover;
-    width: 100%;
-  }
+.global-hero-top {
+  position: relative;
 }
+.global-hero-tops:not(:nth-child(1)) {
+  display: none;
+}
+.global-hero-tops::after {
+  position: absolute;
+  right: -20px;
+  content: "";
+  padding: 20px;
+  height: 100%;
+  z-index: -1;
+}
+.global-hero-tops h1 {
+  font-weight: bold;
+}
+.global-hero-tops h1 span {
+  color: #1d5699;
+}
+.global-hero-img {
+  position: relative;
+}
+.global-hero-bottom-btn {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  bottom: 0px;
+  background-color: #202020;
+  width: 200px;
+  padding: 10px;
+  color: white;
+}
+
 
 </style>
 

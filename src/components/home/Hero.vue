@@ -9,7 +9,7 @@
             <div class="text-white display-1 text-capitalize" id="typed" style="height: 75px;" v-if="$i18n.locale === 'tr'">Çözümleri</div>
             <div class="text-white display-1 text-capitalize" style="height: 75px;" v-else>Solutions</div>
         </h1>
-        <p class="description col-lg-4 text-white py-3 py-md-5 fs-6">
+        <p class="description col-lg-4 text-white py-3 py-md-5">
           {{ $t('home.log-cozum-p') }}
         </p>
 

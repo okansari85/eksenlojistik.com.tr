@@ -6,7 +6,13 @@
         "hizmetler":"Hizmetlerimiz",
         "hakkimizda":"Hakkımızda",
         "ik":"IK",
-        "iletisim": "İletişim"
+        "iletisim": "İletişim",
+        "gumrukleme":"Gümrükleme Hizmeti",
+        "depolama":"Depolama Hizmeti",
+        "karayolu-tasimaciligi":"Karayolu Taşımacılığı",
+        "alternatif-tasimacilik":"Alternatif Taşımacılık",
+        "minivan":"Minivan Taşımacılık",
+        "rulo-sac-tasimacilik":"Rulo Sac Taşımacılık"
     },
 
     "language": {
@@ -48,7 +54,7 @@
             "slovakya":"Slovakya",
             "macaristan":"Macaristan",
             "sirbistan":"Sırbistan"
-        },
+    },
 
 
     "footer": {
@@ -66,7 +72,7 @@
     "kurumsal": {
         "about-p1": " Eksen Lojistik , kuruluşundan bu yana uluslararası karayolu taşımacılığı sektöründe istikrarlı şekilde büyümesini sürdürerek Romanya hattında marka olma hedefini gerçekleştiren bir lojistik şirketidir. Sürekli yenilenen araç filosu, depolama ve gümrükleme hizmetleri ile beraber parsiyel, komple ve transit tüm taşımalarda aynı güven anlayışı ve müşteri odaklı hizmet prensibini devam ettirmekteyiz.",
         "about-p2": " Taşımacılık, gümrük , depolama ve tedarik zinciri yönetimi alanında bir çok ülkede en iyi hizmet anlayışı ile faaliyet göstermeye ve büyümeye devam eden Eksen Lojistik her zaman müşterilerine entegre, akılcı ve en etkin çözümleri sunar.",
-        "kalite-politikamiz": "Kalite Politikamız",
+        "kalite-politikamiz": "KALİTE POLİTİKAMIZ",
         "kalite-politikamiz-p1": "Eksen Lojistik , vizyonu ve stratejisiyle , taşımacılık ve lojistik hizmetlerinde müşteri ihtiyaçlarını karşılayan, kapsamlı büyümeye odaklanan ve sektörümüzde en karlı şirketler arasında yer alan lider bir küresel tedarikçi olmayı hedeflemektedir. Çalışanlarımız bu konuda başrolü oynuyor. Sorumluluk, güçlendirme ve büyüme fırsatları sunarak yetenekli insanları cezbetmek, motive etmek ve elde tutmak için çalışıyoruz. Sağlıklı bir iş anlayışı geliştiriyor ve işi büyütmek için küresel bir aile olarak birlikte çalışıyoruz.",
         "kalite-politikamiz-p2": "Eksen'de staj veya iş ile ilgileniyorsanız, açık pozisyonlarımıza bir göz atın ve yandaki alandaki bilgileri doldurduğunuzda, işe alım uzmanlarımız sizinle iletişime geçecektir. İşler ve stajlarla ilgili sürekli güncellemeler için sosyal medyamızı takip ettiğinizden emin olun.",
         "gelecek-misyonu": "EKSEN MİSYONU",
@@ -83,7 +89,7 @@
     },
 
      "services": {
-         "hizmetler-karayolu-p1": "Tümü EURO 5 ve EURO 6 standartlarında çekicilerden oluşan geniş ve çevreci özmal filosuyla farklı nitelikteki (tenteli/ havuzlu / minivan / sal kasa ) araçlarımız ile %100 müşteri memnuniyeti ve esnek fiyatlar ile kusursuz bir karayolu taşımacılığı hizmeti sunuyoruz.",
+         "hizmetler-karayolu-p1": "Tümü EURO 5 ve EURO 6 standartlarında çekicilerden oluşan geniş ve çevreci özmal filosuyla farklı nitelikteki tenteli, havuzlu, minivan, sal kasa araçlarımız ile %100 müşteri memnuniyeti ve esnek fiyatlar ile kusursuz bir karayolu taşımacılığı hizmeti sunuyoruz.",
          "hizmetler-karayolu-p2": "Kısa transit süreleri belirleyerek güzergah oluşturup hızlı ve akılcı çözümler ile müşterilerimize en iyi hizmet kalitesini veriyoruz.",
          "hizmetler-gümrük-p": "Eksen Lojistik olarak, gümrüksüz sahamızda müşteriye özel lojistik alanı ve aktarma araçlarımız ile çok yönlü ve entegre depolama hizmetleri veriyoruz. Ürünün depoya ilk girişinden sevkiyata kadar olan tüm aşamaların elektronik ortamda takip edilmesi ve ürünlerin özelliklerine göre uygun koşullarda depolanmasını sağlıyoruz.",
          "hizmetler-depolama-p1": "Eksen Lojistik olarak gümrüksüz bölgemizde özel lojistik alanımız ve transfer araçlarımız ile çok yönlü ve entegre depolama hizmeti vermekteyiz. Ürünün depoya ilk girişinden sevkiyatına kadar olan sürecin tüm aşamalarının elektronik ortamda takip edilmesini ve ürünlerin özelliklerine göre uygun koşullarda saklanmasını sağlıyoruz.",
@@ -99,7 +105,7 @@
          "depolama-hizmeti-p-2": "Müşterilerimizin ihtiyaçlarına göre özelleştirilmiş otomatik çözümler ille yüksek hizmet kalitesini sunmak amacımızdır. Depomuzda bulunan online izleme ve takip sistemi sayesinde tüm bilgilere erişim sağlayabiliyorsunuz. Hasarlı-kayıp malzemeler için prosedürler, raporlamalar, bloke işlemleri yine profesyonel olarak tutulmaktadır.",
          "alternatif-tasimacilik": "Alternatif Taşımacılık",
          "alternatif-tasimacilik-altmetin": "Belirli bir modele bağlı kalmadan sizin için sunduğumuz alternatif taşıma yöntemlerinden faydalanın",
-         "alternatif-tasimacilik-h5-left": "MINIVAN TAŞIMACILIK",
+         "alternatif-tasimacilik-h5-left": "MİNİVAN TAŞIMACILIK",
          "alternatif-tasimacilik-p-left": "Tüm Avrupa ülkelerine daha hızlı sevkiyat imkanı ile Avrupa’nın tüm bölgelerine en hızlı şekilde teslimat yapmaktayız. Express taşıma hizmetimiz, müşterilerimize 1.3 ton ağırlığa kadar olan taşımalarında kapıdan kapıya teslimat hizmeti sunmaktayız.",
          "alternatif-tasimacilik-h5-right": "RULO SAC TAŞIMACILIK",
          "alternatif-tasimacilik-p-right": "Filomuzda bulunan; özel olarak tasarlanmis rulo havuzlu ve özel ekipmanli dorseleriyle, rulo sac malzemelerinizin en güvenli sekilde musterilerimize teslim etmekteyiz."

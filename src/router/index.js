@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/services2/:slug?',
     name: 'services2',
-    component: () => import('@/views/_old/Services2.vue'),
+    component: () => import('@/views/Services2.vue'),
   },
   {
     path: '/kurumsal',
@@ -27,11 +27,11 @@ const routes = [
     name: 'haber-detay',
     component: () => import('@/views/NewsDetail'),
   },
-  {
-    path: '/hizmetler',
-    name: 'hizmetler',
-    component: () => import('@/views/Services'),
-  },
+  // {
+  //   path: '/hizmetler',
+  //   name: 'hizmetler',
+  //   component: () => import('@/views/Services'),
+  // },
   {
     path: '/iletisim',
     name: 'iletisim',
@@ -41,6 +41,26 @@ const routes = [
     path: '/ik/:slug?',
     name: 'ik',
     component: () => import('@/views/Ik'),
+  },
+  {
+    path: '/hizmetler/karayolu-tasimaciligi',
+    name: 'karayolu-tasimaciligi',
+    component: () => import('@/views/Services/KarayoluTasimaciligi'),
+  },
+  {
+    path: '/hizmetler/gumrukleme-hizmetleri',
+    name: 'gumrukleme-hizmetleri',
+    component: () => import('@/views/Services/GumruklemeHizmeti'),
+  },
+  {
+    path: '/hizmetler/depolama-hizmetleri',
+    name: 'depolama-hizmetleri',
+    component: () => import('@/views/Services/DepolamaHizmeti'),
+  },
+  {
+    path: '/hizmetler/minivan-tasimaciligi',
+    name: 'minivan-tasimaciligi',
+    component: () => import('@/views/Services/MinivanTasimacilik'),
   },
 ]
 

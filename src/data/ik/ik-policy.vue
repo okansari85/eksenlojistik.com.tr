@@ -24,20 +24,19 @@
 </template>
 
 
-<style lang="scss">
-.ik-policy p, li {
-    color:#666e70;
+<script>
+export default {
+  name: "ik-policy",
 }
+</script>
+
+
+<style lang="scss">
 .ik-policy ul {
     padding-left: 18px;
     li {
         list-style-image: url(../../../public/image/global/icon/red-dot.png)!important;
     }
 }
-
-
-
-
-    /* list-style-type: square !important; */
 
 </style>

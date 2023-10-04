@@ -66,28 +66,35 @@ const routes = [
   },
   {
     path: '/:slug',
-    name: 'pagedetail',
-    async beforeEnter (to, from, next) {
+    component: () => import('@/components/Pages'),
+    beforeEnter: (async  (to, from) => {
 
       const findPageBySlug = store.getters['findPageBySlug'];
-      const routeName = await findPageBySlug(to.params.slug);
+      const page = await  findPageBySlug(to.params.slug);
+    
+      console.log(page);
 
-      
-      console.log(routeName);
+      // reject the navigation
+      return false
+    }),
 
-
-      //console.log(findPageBySlug);
-
-      if (routeName) {
-        next({ replace: true, name: routeName, params: { slug } }) // <2>
-      } else {
-        next({ replace: true, name: 'page-not-found', params: { pathSegments: [ 'catalog', slug ] } }) // <2>
-      }
-      
-    },
-    component: () => import('@/components/Pages'),
   },
+
 ]
+
+/*
+ controlslug(async (to, from)  =>{
+
+
+
+}
+*/
+
+
+
+
+
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

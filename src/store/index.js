@@ -11,15 +11,15 @@ export default createStore({
     },
   },
   getters:{
-    
 
     findPageBySlug: (state) => (slug) => {
-
+      var page_item =[];
       state.menus.map((item)=>{
-        
+        var page = item.pages.find(a=>a.slug==slug);
+        page_item = page;
+    
       })
-
-      return state.menus;
+      return page_item;
     },
   },
   actions: {

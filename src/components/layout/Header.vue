@@ -13,9 +13,17 @@
             <li class="nav-item">
               <router-link to="/kurumsal" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
             </li>
-            <!-- <li class="nav-item">
-              <router-link to="/hizmetler" class="nav-link">{{ $t('menu.hizmetler') }}</router-link>
-            </li> -->
+            <li v-for="item in menus" class="nav-item" :key="item.id" :class="item.pages.length > 0 ? 'dropdown' : ''">
+              <router-link v-if="item.pages.length==0" to="/" class="nav-link">{{ item.name }}</router-link>
+
+              <a v-if="item.pages.length>0" class="nav-link d-flex align-items-center" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>{{ item.name  }}</span>
+                    <span class="ps-2"><i class="bi bi-chevron-down" style="font-size: 12px;"></i></span>
+              </a>
+              <div v-if="item.pages.length>0" class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                <router-link  v-for="page in item.pages" :key="page.id" :to="page.slug" class="dropdown-item">{{ page.title }}</router-link>
+              </div>
+            </li>
             <li class="nav-item dropdown">
                   <a class="nav-link d-flex align-items-center" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>{{ $t('menu.hizmetler') }}</span>
@@ -56,6 +64,7 @@
               </div> -->
             </li>
           </ul>
+        
         </div>
       </nav>
       <!-- Mobile Menu  -->
@@ -71,6 +80,7 @@
               <div class="bar"></div>
               <div class="bar"></div>
             </label>
+          
             <nav>
               <ul>
                 <li>
@@ -113,9 +123,20 @@
 </template>
 
 <script>
+import { mapState,mapGetters,mapActions,mapMutations } from "vuex";
 
 export default {
   name: 'Nav',
+  async created() {
+  await this.getMenus().then(r=>{
+    console.log("then");
+  });
+  },
+  computed: {
+        ...mapState({
+            menus: (state) => state.menus,
+        }),
+  },
   mounted() {
     $(".mobile-nav-item").click(function () {
       $(".toggle-btn__cross").click();
@@ -156,6 +177,13 @@ export default {
   },
 
   methods: {
+    ...mapActions({
+          getMenus:'getMenus',
+    }),
+
+
+
+
     changeLanguage(lang) {
       this.selectedLanguage = lang;
       this.$i18n.locale = this.selectedLanguage;

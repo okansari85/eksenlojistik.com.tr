@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index'
+import store from '@/store';
+
 
 const routes = [
   {
@@ -61,6 +63,29 @@ const routes = [
     path: '/hizmetler/minivan-tasimaciligi',
     name: 'minivan-tasimaciligi',
     component: () => import('@/views/Services/MinivanTasimacilik'),
+  },
+  {
+    path: '/:slug',
+    name: 'pagedetail',
+    async beforeEnter (to, from, next) {
+
+      const findPageBySlug = store.getters['findPageBySlug'];
+      const routeName = await findPageBySlug(to.params.slug);
+
+      
+      console.log(routeName);
+
+
+      //console.log(findPageBySlug);
+
+      if (routeName) {
+        next({ replace: true, name: routeName, params: { slug } }) // <2>
+      } else {
+        next({ replace: true, name: 'page-not-found', params: { pathSegments: [ 'catalog', slug ] } }) // <2>
+      }
+      
+    },
+    component: () => import('@/components/Pages'),
   },
 ]
 

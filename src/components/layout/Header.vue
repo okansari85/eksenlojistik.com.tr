@@ -10,7 +10,7 @@
             <li class="nav-item">
               <router-link to="/" class="nav-link">{{ $t('menu.anasayfa') }}</router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"  v-if="1==0">
               <router-link to="/kurumsal" class="nav-link">{{ $t('menu.kurumsal') }}</router-link>
             </li>
             <li v-for="item in menus" class="nav-item" :key="item.id" :class="item.pages.length > 0 ? 'dropdown' : ''">
@@ -24,7 +24,7 @@
                 <router-link  v-for="page in item.pages" :key="page.id" :to="{ name: 'pages', params: {id: page.id, slug: page.slug }}" class="dropdown-item">{{ page.title }}</router-link>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" v-if="1==0">
                   <a class="nav-link d-flex align-items-center" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>{{ $t('menu.hizmetler') }}</span>
                     <span class="ps-2"><i class="bi bi-chevron-down" style="font-size: 12px;"></i></span>
@@ -59,7 +59,6 @@
                   <img :src="getFlag(selectedLanguage)" alt="Language flag">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="languageDropdown">
-
                 </div>
               </div> -->
             </li>

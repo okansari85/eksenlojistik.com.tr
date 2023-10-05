@@ -22,7 +22,7 @@ export default createStore({
   },
   actions: {
     async getMenus({commit}){
-      return await axios.get('http://localhost:8000/api/get-categories').then(res=>{
+      return await axios.get('http://eksenlojistik.com.tr/api/get-categories').then(res=>{
          commit('SET_MENUS', res.data.pages)
          commit ('SET_PAGES', res.data.all)
          return res.data;

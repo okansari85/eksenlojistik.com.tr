@@ -3,35 +3,32 @@ import axios from 'axios'
 
 export default createStore({
   state: {
-    menus:[]
+    menus:[],
+    pages:[],
+    
   },
   mutations: {
     SET_MENUS(state,data){
         state.menus=data
     },
+    SET_PAGES(state,data){
+      state.pages=data
+  },
   },
   getters:{
-
-    findPageBySlug: (state) => (slug) => {
-      var page_item =[];
-      
-      state.menus.map((item)=>{
-        var page = item.pages.find(a=>a.slug==slug);
-        page_item = page;
-    
-      })
-      return page_item;
+    findPageBySlug: (state) => (id,slug) => {
+      return state.pages.filter(a=>a.slug==slug)[0]
     },
   },
   actions: {
     async getMenus({commit}){
       return await axios.get('http://localhost:8000/api/get-categories').then(res=>{
          commit('SET_MENUS', res.data.pages)
+         commit ('SET_PAGES', res.data.all)
          return res.data;
       })
     },
-
-  
+   
   
   },
 })

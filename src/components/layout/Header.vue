@@ -21,7 +21,7 @@
                     <span class="ps-2"><i class="bi bi-chevron-down" style="font-size: 12px;"></i></span>
               </a>
               <div v-if="item.pages.length>0" class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                <router-link  v-for="page in item.pages" :key="page.id" :to="page.slug" class="dropdown-item">{{ page.title }}</router-link>
+                <router-link  v-for="page in item.pages" :key="page.id" :to="{ name: 'pages', params: {id: page.id, slug: page.slug }}" class="dropdown-item">{{ page.title }}</router-link>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -136,6 +136,7 @@ export default {
         ...mapState({
             menus: (state) => state.menus,
         }),
+        
   },
   mounted() {
     $(".mobile-nav-item").click(function () {

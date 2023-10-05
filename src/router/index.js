@@ -65,7 +65,7 @@ const routes = [
     component: () => import('@/views/Services/MinivanTasimacilik'),
   },
   {
-    path: '/pages/:slug?',
+    path: '/pages/:id/:slug?',
     name: 'pages',
     component: () => import('@/components/Pages'),
   },

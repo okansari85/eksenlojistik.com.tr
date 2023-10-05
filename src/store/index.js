@@ -14,6 +14,7 @@ export default createStore({
 
     findPageBySlug: (state) => (slug) => {
       var page_item =[];
+      
       state.menus.map((item)=>{
         var page = item.pages.find(a=>a.slug==slug);
         page_item = page;

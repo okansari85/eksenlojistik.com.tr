@@ -65,35 +65,12 @@ const routes = [
     component: () => import('@/views/Services/MinivanTasimacilik'),
   },
   {
-    path: '/:slug',
+    path: '/pages/:slug?',
+    name: 'pages',
     component: () => import('@/components/Pages'),
-    beforeEnter: (async  (to, from) => {
-
-      const findPageBySlug = store.getters['findPageBySlug'];
-      const page = await  findPageBySlug(to.params.slug);
-    
-      console.log(page);
-
-      // reject the navigation
-      return false
-    }),
-
   },
 
 ]
-
-/*
- controlslug(async (to, from)  =>{
-
-
-
-}
-*/
-
-
-
-
-
 
 
 const router = createRouter({

@@ -31,9 +31,7 @@
               :to="{ name: 'haber-detay', params: { slug: news.slug } }">{{ $t('news.daha-fazla') }}</router-link>
           </router-link>
         </div>
-        <div class="cour-wrapper py-5">
-          <Kur />
-        </div>
+
       </div>
     </section>
   </main>

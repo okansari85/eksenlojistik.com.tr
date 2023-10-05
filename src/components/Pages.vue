@@ -21,5 +21,19 @@
     </section>
     
     </template>
-    
+<script>
+export default{
+    name : 'Pages',
+    created(){
+        const slug = this.$route.params.slug;
+        console.log(slug);
+        
+    },
+    mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+
+</script>
+
     

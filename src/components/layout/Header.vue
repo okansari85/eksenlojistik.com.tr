@@ -122,20 +122,28 @@
 </template>
 
 <script>
-import { mapState,mapGetters,mapActions,mapMutations } from "vuex";
+import { mapState,mapGetters,mapActions } from "vuex";
 
 export default {
   name: 'Nav',
   async created() {
-  await this.getMenus().then(r=>{
-    console.log("then");
-  });
+    await this.getMenus(this.selectedLanguage).then(r=>{
+      console.log("then");
+    });
   },
   computed: {
-        ...mapState({
+    ...mapState({
             menus: (state) => state.menus,
-        }),
-        
+    }),
+    ...mapGetters([
+      'findPageBySlug',
+    ]),
+    slug(){
+        return this.$route.params.slug;
+    },
+    id(){
+        return this.$route.params.id;
+    },
   },
   mounted() {
     $(".mobile-nav-item").click(function () {
@@ -147,6 +155,8 @@ export default {
     });
     const header = $(".header");
     $(window).scroll(function (e) {
+
+
       header.removeClass("header-inactive");
       var scrollTop = $(window).scrollTop();
       if (scrollTop > 34) {
@@ -163,9 +173,9 @@ export default {
       this.selectedLanguage = "tr";
     }
     this.$i18n.locale = this.selectedLanguage;
+    this.getMenus(this.selectedLanguage)
 
   },
-
   data() {
     return {
       selectedLanguage: 'tr',
@@ -175,24 +185,26 @@ export default {
       }
     };
   },
-
   methods: {
     ...mapActions({
           getMenus:'getMenus',
     }),
-
-
-
-
     changeLanguage(lang) {
       this.selectedLanguage = lang;
       this.$i18n.locale = this.selectedLanguage;
+      this.getMenus(this.selectedLanguage)
       localStorage.setItem("lang", this.selectedLanguage);
     },
     getFlag(lang) {
       return this.flags[lang];
     }
-  }
+  },
+  watch:{
+    $route (to, from){
+      this.findPageBySlug(this.id,this.slug); 
+
+    }
+} 
 
 }
 

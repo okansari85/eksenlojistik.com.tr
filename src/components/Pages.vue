@@ -1,7 +1,7 @@
 <template>
-    
+
     <section class="news-news banner" style="">
-          <img  :src="page.image_cover ? + 'http://eksenlojistik.com.tr/' + page.image_cover : '/image/news/news-background2.jpg'"  alt="News Banner" class="position-absolute top-0 end-0 start-0 w-100 h-100" style="filter:brightness(60%)">
+          <img  :src="base_url"  alt="News Banner" class="position-absolute top-0 end-0 start-0 w-100 h-100" style="filter:brightness(60%)">
           <div class="services-banner-content text-start h-100 pb-5 px-3 px-lg-0" style="z-index:333">
             <div class="container py-md-5 title-animation h-100 d-flex flex-column text-center align-items-center justify-content-end">
                 <span class="text-uppercase fw-semibold">{{ page.top_title }}</span>
@@ -29,7 +29,7 @@ export default{
       'findPageBySlug',
     ]),
     base_url(){
-        return process.env.VUE_APP_API_KEY
+        return this.page ? this.page.image_cover !=null ? 'http://localhost:8000/' + this.page.image_cover : 'http://localhost:8000/image/news/news-background2.jpg' : 'http://localhost:8000/image/news/news-background2.jpg';
     },
     slug(){
         return this.$route.params.slug;
@@ -37,7 +37,7 @@ export default{
     id(){
         return this.$route.params.id;
     },
-    page(){
+    page(){d
         return this.findPageBySlug(this.id,this.slug);
     },
     

@@ -29,7 +29,7 @@ export default{
       'findPageBySlug',
     ]),
     base_url(){
-        return this.page ? this.page.image_cover !=null ? 'http://localhost:8000/' + this.page.image_cover : 'http://localhost:8000/image/news/news-background2.jpg' : 'http://localhost:8000/image/news/news-background2.jpg';
+        return this.page ? this.page.image_cover !=null ? 'https://okansari.com.tr/eksenapi/' + this.page.image_cover : 'https://okansari.com.tr/eksenapi/image/news/news-background2.jpg' : 'https://okansari.com.tr/eksenapi/image/news/news-background2.jpg';
     },
     slug(){
         return this.$route.params.slug;
@@ -37,7 +37,7 @@ export default{
     id(){
         return this.$route.params.id;
     },
-    page(){d
+    page(){
         return this.findPageBySlug(this.id,this.slug);
     },
     

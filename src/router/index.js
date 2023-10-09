@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from '@/views/Index'
-import store from '@/store';
 
 
 const routes = [
@@ -29,11 +28,11 @@ const routes = [
     name: 'haber-detay',
     component: () => import('@/views/NewsDetail'),
   },
-  // {
-  //   path: '/hizmetler',
-  //   name: 'hizmetler',
-  //   component: () => import('@/views/Services'),
-  // },
+  {
+    path: '/hizmetler',
+    name: 'hizmetler',
+    component: () => import('@/views/Services'),
+  },
   {
     path: '/iletisim',
     name: 'iletisim',
@@ -74,16 +73,16 @@ const routes = [
 
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
-  // page scrool always top 
 });
 
+/*
 router.beforeEach((to, from, next) => {
     window.scrollTo(0, 0);
     next();
 });
-
+*/
 
 
 export default router;

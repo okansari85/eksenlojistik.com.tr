@@ -14,7 +14,6 @@ import i18n from './i18n'
 import store from './store'
 
 
-
 const app = createApp(App);
 app.config.productionTip = false
 app.use(BootstrapVue3)
